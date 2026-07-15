@@ -56,7 +56,7 @@ export const CE06_SIT_RIOS_ERKENNEN: SituationsPhase = {
             explanation:
               "Richtig. Eine Hypoglykämie kann Bewusstseinstrübung, neurologische Ausfälle und sogar einen Schlaganfall imitieren — und die Diagnose ist durch Blutzuckermessung sofort möglich. Gerade beim Diabetiker unter Insulin, der heute wenig gegessen hat, ist das der schnellste und wichtigste erste Schritt. Parallel: Bewusstsein, Atmung, Puls prüfen.",
             explanationB1:
-              "Richtig. Eine Unterzuckerung kann wie ein Schlaganfall aussehen — und du klärst sie mit einem Blutzucker-Stich sofort. Bei einem Diabetiker mit Insulin, der wenig gegessen hat, ist das der wichtigste erste Schritt.",
+              "Richtig. Eine Hypoglykämie (Unterzuckerung) kann wie ein Schlaganfall aussehen — und du klärst die Diagnose mit einem Blutzucker-Stich sofort. Bei einem Diabetiker mit Insulin, der wenig gegessen hat, ist das der wichtigste erste Schritt. Dabei prüfst du auch: Bewusstsein, Atmung, Puls.",
           },
           {
             text: "Sofort den Schlaganfall-Alarm auslösen — die verdrehten Augen und die Bewusstseinsstörung sprechen eindeutig für einen Apoplex.",
@@ -105,16 +105,24 @@ export const CE06_SIT_RIOS_ERKENNEN: SituationsPhase = {
         themenSekundaer: ["notfallassessment"],
         storyAufhaenger:
           "Ein Stich, ein Wert: 48. Warum war genau dieser eine Handgriff bei Herrn Ríos wichtiger als jeder andere — und was macht die Unterzuckerung so tückisch?",
+        storyAufhaengerB1:
+          "Ein Stich, ein Wert: 48. Warum war genau dieser Handgriff bei Herrn Ríos so wichtig? Und warum ist eine Unterzuckerung so gefährlich? Sie versteckt sich gut.",
         kerntext:
           "Eine Hypoglykämie ist definitionsgemäß ein Blutzucker unter etwa 50 mg/dl — erste Symptome und Behandlungsbedarf können aber schon bei Werten unter 70 mg/dl auftreten. Beim Diabetiker entsteht sie klassisch aus einer Kombination: die gewohnte Insulindosis, aber zu wenig gegessen (oder mehr verbraucht, etwa durch Belastung).\n\nDas Gehirn lebt von Glukose. Fehlt sie, kommt es zu Unruhe, Schwitzen, Verwirrtheit, bis hin zu einseitigen Ausfällen. Und genau das ist die Falle: Die Unterzuckerung kann einen Schlaganfall täuschend imitieren. Deshalb ist der Blutzucker-Stich der erste — und oft vergessene — Schritt bei jeder unklaren neurologischen Akutsituation. Er klärt in Sekunden, ob eine sofort behebbare Ursache dahintersteckt.\n\nWie behandelt wird, hängt vom Bewusstsein ab. Wer wach ist und sicher schlucken kann, bekommt schnelle Kohlenhydrate zu essen oder trinken (etwa Traubenzucker). Wer bewusstseinsgetrübt ist, bekommt NICHTS oral — Aspirationsgefahr. Dann ist Glukose über die Vene die Behandlung, und die ordnet der Arzt an und verabreicht sie.",
+        kerntextB1:
+          "Eine Hypoglykämie ist eine Unterzuckerung. Das heißt: Der Blutzucker liegt unter etwa 50 mg/dl. Erste Zeichen kommen manchmal schon unter 70 mg/dl. Beim Diabetiker entsteht sie oft so: Er spritzt sein normales Insulin, isst aber zu wenig. Oder er verbraucht mehr Zucker, zum Beispiel durch Anstrengung.\n\nDas Gehirn braucht Zucker. Fehlt der Zucker, wird der Mensch unruhig. Er schwitzt und wird verwirrt. Manchmal fällt sogar eine Körperseite oder die Sprache aus. Und genau das ist die Falle: Eine Unterzuckerung kann wie ein Schlaganfall aussehen. Deshalb ist der Blutzucker-Stich der erste Schritt bei jedem unklaren Notfall mit dem Bewusstsein. Viele vergessen ihn. Er zeigt in Sekunden, ob eine Ursache dahintersteckt. Und ob man sie schnell beheben kann.\n\nWie du behandelst, hängt vom Bewusstsein ab. Ist der Mensch wach und kann er sicher schlucken? Dann gibst du schnellen Zucker zu essen oder trinken, zum Beispiel Traubenzucker. Ist der Mensch benommen? Dann gibst du NICHTS in den Mund. Er könnte sich verschlucken. Dann läuft Flüssigkeit in die Lunge (Aspiration). Jetzt hilft Zucker über die Vene. Das ordnet der Arzt an, und der Arzt gibt es auch.",
         faustregel:
           "Insulin plus zu wenig gegessen = Unterzucker im Verdacht. Erst Blutzucker messen. Wach → etwas Süßes; benommen → nichts oral, Glukose i.v. durch den Arzt.",
+        faustregelB1:
+          "Insulin und zu wenig gegessen? Dann denk an Unterzucker. Erst Blutzucker messen. Wach → etwas Süßes. Benommen → nichts in den Mund, Zucker i.v. (über die Vene) durch den Arzt.",
         spektrum: [
           {
             patientName: "Wacher Patient",
             hauptfaktor: "schluckfähig",
             kurzbeschreibung:
               "Kann sicher schlucken → schnelle Kohlenhydrate zu essen/trinken (Traubenzucker, Saft), dann nachmessen.",
+            kurzbeschreibungB1:
+              "Er kann sicher schlucken. Dann gibst du schnellen Zucker zu essen oder trinken, zum Beispiel Traubenzucker oder Saft. Danach misst du nach.",
           },
           {
             patientName: "Herr Ríos",
@@ -122,12 +130,16 @@ export const CE06_SIT_RIOS_ERKENNEN: SituationsPhase = {
             hauptfaktor: "bewusstseinsgetrübt",
             kurzbeschreibung:
               "Reagiert nur auf Schmerzreiz → nichts oral (Aspiration). Glukose i.v. ist ärztliche Behandlung; du bereitest vor und assistierst.",
+            kurzbeschreibungB1:
+              "Er reagiert nur auf Schmerz. Dann gibst du nichts in den Mund, sonst verschluckt er sich. Zucker i.v. (über die Vene) ist Sache des Arztes. Du bereitest vor und hilfst mit.",
           },
           {
             patientName: "Symptome, aber Blutzucker normal",
             hauptfaktor: "andere Ursache",
             kurzbeschreibung:
               "Kein Unterzucker → weiterdenken: Synkope, Schlaganfall, kardiales Ereignis? Nicht bei der Hypoglykämie hängenbleiben.",
+            kurzbeschreibungB1:
+              "Der Blutzucker ist normal? Dann denk weiter: eine Synkope (kurze Ohnmacht), ein Schlaganfall oder ein Problem am Herzen? Bleib nicht bei der Unterzuckerung hängen.",
           },
         ],
         karteikarte: {
@@ -135,6 +147,10 @@ export const CE06_SIT_RIOS_ERKENNEN: SituationsPhase = {
             "Diabetiker unter Insulin wird plötzlich verwirrt/bewusstseinsgetrübt — was zuerst, und wie behandelst du je nach Bewusstsein?",
           rueckseite:
             "Zuerst Blutzucker messen (unter ~50 = Hypoglykämie, imitiert einen Schlaganfall). Wach + schluckfähig → schnelle Kohlenhydrate oral. Bewusstseinsgetrübt → nichts oral (Aspiration), Glukose i.v. durch den Arzt.",
+          vorderseiteB1:
+            "Ein Diabetiker mit Insulin wird plötzlich verwirrt oder benommen. Was machst du zuerst? Und wie behandelst du je nach Bewusstsein?",
+          rueckseiteB1:
+            "Zuerst Blutzucker messen. Unter etwa 50 ist es eine Unterzuckerung. Sie kann wie ein Schlaganfall aussehen. Wach und kann schlucken → schnellen Zucker in den Mund. Benommen → nichts in den Mund (Verschlucken), Zucker i.v. (über die Vene) durch den Arzt.",
         },
       },
     },
@@ -171,7 +187,7 @@ export const CE06_SIT_RIOS_ERKENNEN: SituationsPhase = {
             explanation:
               "Richtig. Eine Hypoglykämie liegt bei einem Blutzucker unter 50 mg/dl vor. Die typische Ursache ist genau diese Kombination: gewohnte Insulindosis, aber zu wenig gegessen. Das erklärt die neurologischen Zeichen — sie sind Folge des Glukosemangels im Gehirn und bilden sich bei rechtzeitiger Behandlung zurück. (Hinweis: Manche Leitlinien setzen die Schwelle höher an — bei Symptomen und Insulintherapie ist schon ein niedrig-normaler Wert behandlungsbedürftig; 48 mg/dl ist ohnehin eindeutig zu niedrig.)",
             explanationB1:
-              "Richtig. Unter 50 mg/dl ist eine Unterzuckerung. Die Ursache hier: normales Insulin, aber zu wenig gegessen. Das erklärt die Bewusstseinsstörung — mit schneller Behandlung bildet sie sich zurück.",
+              "Richtig. Unter 50 mg/dl ist eine Hypoglykämie (Unterzuckerung). Die Ursache hier: normales Insulin, aber zu wenig gegessen. Das erklärt die Bewusstseinsstörung — mit schneller Behandlung bildet sie sich zurück.",
           },
           {
             text: "48 mg/dl ist zwar niedrig, aber noch im Normbereich — solange er nicht krampft, ist das unkritisch.",
@@ -241,7 +257,7 @@ export const CE06_SIT_RIOS_ALARMIEREN: SituationsPhase = {
             explanation:
               "Richtig. Bei schwerer Hypoglykämie mit Bewusstseinsstörung ist Fremdhilfe nötig, und die weitergehende Behandlung (Glukose i.v.) ist ärztliche Aufgabe. Du sicherst parallel Bewusstsein, Atmung und Kreislauf und bleibst am Patienten. Klare, namentliche Delegation an die Kollegin statt ungerichteter Rufe.",
             explanationB1:
-              "Richtig. Eine schwere Unterzuckerung mit Bewusstseinsstörung braucht den Arzt. Du sprichst die Kollegin direkt an, lässt den Arzt holen und bleibst bei Herrn Ríos, um ihn zu überwachen.",
+              "Richtig. Eine schwere Hypoglykämie (Unterzuckerung) mit Bewusstseinsstörung braucht den Arzt — die Glukose i.v. (über die Vene) ist seine Aufgabe. Du sprichst die Kollegin direkt an, lässt den Arzt holen, überwachst Atmung und Kreislauf und bleibst bei Herrn Ríos.",
           },
           {
             text: "Ich versuche es erst allein — ich flöße ihm schnell etwas Traubenzucker ein, dann muss ich niemanden stören.",
@@ -310,7 +326,7 @@ export const CE06_SIT_RIOS_ERSTMASSNAHMEN: SituationsPhase = {
             feedback:
               "Genau richtig — und das ist die entscheidende Sicherheitsentscheidung dieser Situation. Orale Kohlenhydrate helfen nur beim wachen, schluckfähigen Patienten. Bei Bewusstseinsstörung besteht Aspirationsgefahr: Saft in die Lunge kann eine lebensbedrohliche Aspirationspneumonie auslösen. Für den bewusstseinsgetrübten Patienten ist die Behandlung Glukose 40 % i.v. — und die ist ärztliche Aufgabe; du bereitest vor und assistierst.",
             feedbackB1:
-              "Genau richtig — das ist die wichtigste Entscheidung hier. Saft hilft nur, wenn jemand wach ist und schlucken kann. Bei Bewusstseinsstörung kann der Saft in die Lunge laufen — das ist lebensgefährlich. Für Herrn Ríos ist Glukose über die Vene richtig, und die gibt der Arzt.",
+              "Genau richtig — das ist die wichtigste Entscheidung hier. Saft hilft nur, wenn jemand wach ist und schlucken kann. Bei Bewusstseinsstörung kann der Saft in die Lunge laufen (Aspiration) — das ist lebensgefährlich. Für Herrn Ríos ist Glukose i.v. (über die Vene) richtig, und die gibt der Arzt.",
           },
           {
             text: "Ich helfe ihr, den Apfelsaft vorsichtig einzuflößen — Hauptsache, der Zucker kommt schnell hoch.",
@@ -326,7 +342,7 @@ export const CE06_SIT_RIOS_ERSTMASSNAHMEN: SituationsPhase = {
             feedback:
               "Nein — auch wenn es Überwindung kostet, eine erfahrenere Kollegin zu stoppen: Patientensicherheit geht vor Hierarchie. Hier droht eine Aspiration, und dein Wissen ist an dieser Stelle das richtige. Ein ruhiges, klares 'Stopp — er kann nicht sicher schlucken' schützt den Patienten. Sich hinter Erfahrung zu verstecken, wäre unterlassene Hilfeleistung am Patienten.",
             feedbackB1:
-              "Nein. Auch wenn es schwerfällt, eine erfahrenere Kollegin zu stoppen: Die Sicherheit des Patienten ist wichtiger. Hier droht Verschlucken. Ein ruhiges 'Stopp — er kann nicht sicher schlucken' schützt Herrn Ríos.",
+              "Nein. Auch wenn es schwerfällt, eine erfahrenere Kollegin zu stoppen: Der Patient muss geschützt werden — das zählt mehr als Hierarchie. Hier droht Verschlucken. Ein ruhiges 'Stopp — er kann nicht sicher schlucken' schützt Herrn Ríos.",
           },
         ],
       },
@@ -364,7 +380,7 @@ export const CE06_SIT_RIOS_ERSTMASSNAHMEN: SituationsPhase = {
             explanation:
               "Richtig. Die Behandlung der schweren Hypoglykämie mit Glukose 40 % i.v. ist eine ärztliche Tätigkeit. Der Shunt ist die Lebensader des Dialysepatienten und wird geschützt — Pflege punktiert ihn nicht eigenmächtig für Medikamente. Deine Rolle: Material vorbereiten, Zugangssituation melden, assistieren, überwachen.",
             explanationB1:
-              "Richtig. Glukose über die Vene ist Aufgabe des Arztes. Der Shunt ist lebenswichtig für die Dialyse — du stichst ihn nicht selbst für Medikamente an. Deine Aufgabe: Material vorbereiten, dem Arzt melden, assistieren, überwachen.",
+              "Richtig. Diese schwere Hypoglykämie (Unterzuckerung) wird mit Glukose i.v. (über die Vene) behandelt — das macht der Arzt, nicht du. Der Shunt ist lebenswichtig für die Dialyse — du stichst ihn nicht selbst für Medikamente an. Deine Aufgabe: Material vorbereiten, dem Arzt melden, assistieren, überwachen.",
           },
           {
             text: "Gute Idee — der Shunt ist der schnellste Zugang, ich spritze die Glukose selbst hinein, damit es zügig geht.",
@@ -418,7 +434,7 @@ export const CE06_SIT_RIOS_ERSTMASSNAHMEN: SituationsPhase = {
             explanation:
               "Richtig. Weil Herr Ríos bereits bewusstseinsgetrübt ist (reagiert nur auf Schmerzreiz), steht der Atemwegsschutz an erster Stelle: die stabile Seitenlage verhindert Aspiration. Das Hochlegen der Beine unterstützt bei niedrigem Blutdruck ergänzend den Kreislauf, soweit es die Blutlinien/Zugänge der Dialyse zulassen — in der Praxis heißt das oft, die Dialyse zuerst geordnet zu unterbrechen, damit eine sichere Lagerung überhaupt möglich ist. Dazu kontinuierliche Überwachung von Atmung und Bewusstsein.",
             explanationB1:
-              "Richtig. Weil Herr Ríos nur auf Schmerzreiz reagiert, kommt er zum Schutz der Atemwege in die stabile Seitenlage. Beine hochlegen hilft zusätzlich dem Kreislauf, soweit die Dialyse-Zugänge es zulassen. Dabei ständig überwachen.",
+              "Richtig. Weil Herr Ríos nur auf Schmerzreiz reagiert, kommt er zum Schutz der Atemwege in die stabile Seitenlage — sie verhindert eine Aspiration (Verschlucken in die Atemwege). Beine hochlegen hilft zusätzlich dem Kreislauf, soweit die Dialyse-Zugänge es zulassen. Dabei Atmung und Bewusstsein ständig überwachen.",
           },
           {
             text: "Sofort eine ausgeprägte Kopftieflage (Trendelenburg) — je tiefer der Kopf, desto mehr Blut kommt ins Gehirn.",
@@ -488,7 +504,7 @@ export const CE06_SIT_RIOS_UEBERGEBEN: SituationsPhase = {
             explanation:
               "Richtig. Vollständiges SBAR: Situation (Ereignis + wann), Background (Dialyse, Diabetes/Insulin, wenig gegessen — die Ursache), Assessment (Messwert, Diagnose, Verlauf nach Therapie, Shunt-Status), Recommendation (Überwachung, Blutzuckerkontrolle, Insulinschema). Der Empfänger kann sofort sicher weiterarbeiten.",
             explanationB1:
-              "Richtig. Vollständiges SBAR: Was ist passiert, Vorgeschichte (Dialyse, Diabetes, wenig gegessen), Zustand (Blutzucker, Verlauf, Shunt) und die Bitte (überwachen, Blutzucker kontrollieren, Insulin prüfen).",
+              "Richtig. Vollständiges SBAR: Was ist passiert, Vorgeschichte (Dialyse, Diabetes, wenig gegessen), Zustand (Blutzucker, Diagnose, Verlauf, Shunt) und die Bitte (überwachen, Blutzucker kontrollieren, Insulin prüfen).",
           },
           {
             text: "\"Kurze Unterzuckerung, ist wieder wach, alles gut — müsst ihr nicht groß überwachen.\"",
@@ -554,28 +570,40 @@ export const CE06_SIT_RIOS_REFLEKTIEREN: SituationsPhase = {
         themenSekundaer: ["notfallassessment"],
         storyAufhaenger:
           "Bei Herrn Ríos war es die Unterzuckerung. Aber genau dieselben Zeichen — plötzlich weg, verwirrt, Ausfälle — können vier ganz verschiedene Ursachen haben, und jede braucht eine andere erste Reaktion. Erkennst du sie auseinander?",
+        storyAufhaengerB1:
+          "Bei Herrn Ríos war es die Unterzuckerung. Aber die gleichen Zeichen — plötzlich weg, verwirrt, Ausfälle — können vier verschiedene Ursachen haben. Und jede braucht eine andere erste Reaktion. Erkennst du sie auseinander?",
         kerntext:
           "Vier Bilder, die sich ähneln und doch verschieden sind:\n\nSynkope — eine kurze Ohnmacht. Der Kreislauf fängt sich von allein, der Mensch ist in Sekunden bis Minuten wieder wach. Erste Reaktion: hinlegen, Beine hoch, beobachten — und die Ursache klären, denn eine Synkope aus dem Herzen (kardial) kann gefährlich sein.\n\nUnterzucker (Hypoglykämie) — Diabetiker, Insulin, zu wenig gegessen. Das Tückische: sie imitiert alle anderen, sogar einen Schlaganfall. Erste Reaktion: sofort den Blutzucker messen.\n\nSchlaganfall (Apoplex) — ein plötzlicher, schlagartiger Ausfall von Hirnfunktionen, meist auf EINER Seite: hängender Mundwinkel, kraftloser Arm, verwaschene Sprache. Die Ausfälle bleiben. Erste Reaktion: Notfall, sofort Arzt, jede Minute zählt.\n\nKrampfanfall — Sturz, oft ein kurzer Schrei, Bewusstlosigkeit, dann Zuckungen am ganzen Körper. Erste Reaktion: vor Verletzungen schützen, nichts in den Mund, Zeit stoppen.\n\nÜber allem steht ein Handgriff: bei JEDER unklaren neurologischen Akutsituation zuerst den Blutzucker. Denn die Unterzuckerung ist die eine, die sich schnell beheben lässt — und die die anderen drei täuschend nachahmt.",
+        kerntextB1:
+          "Vier Bilder, die sich ähneln und doch verschieden sind:\n\nSynkope — das ist eine kurze Ohnmacht. Der Kreislauf fängt sich von allein. Der Mensch wacht nach Sekunden bis Minuten wieder auf. Erste Reaktion: hinlegen, Beine hoch, beobachten. Und die Ursache klären. Denn eine kardiale Synkope — eine Ohnmacht, die vom Herzen kommt — kann gefährlich sein.\n\nUnterzucker (Hypoglykämie) — Diabetiker, Insulin, zu wenig gegessen. Das Gemeine daran: Sie sieht aus wie alle anderen, sogar wie ein Schlaganfall. Erste Reaktion: sofort den Blutzucker messen.\n\nSchlaganfall (Apoplex) — plötzlich fallen Funktionen im Gehirn aus. Fast immer betrifft es nur EINE Körperseite: Der Mundwinkel hängt, der Arm ist kraftlos, die Sprache klingt verwaschen. Diese Ausfälle bleiben. Erste Reaktion: Das ist ein Notfall. Sofort den Arzt holen. Jede Minute zählt.\n\nKrampfanfall — der Mensch stürzt, schreit oft kurz auf, wird bewusstlos. Dann zuckt er am ganzen Körper. Erste Reaktion: vor Verletzungen schützen, nichts in den Mund, Zeit stoppen.\n\nÜber allem steht ein Handgriff: Bei JEDEM unklaren Notfall mit dem Bewusstsein misst du zuerst den Blutzucker. Denn die Unterzuckerung kannst du schnell beheben. Und sie ahmt die anderen drei täuschend nach.",
         faustregel:
           "Erst Blutzucker, dann weiterdenken. Einseitig + bleibend = Schlaganfall, solange nichts anderes gesichert ist; Zuckungen am ganzen Körper = Krampfanfall.",
+        faustregelB1:
+          "Erst Blutzucker, dann weiterdenken. Einseitig und bleibend = Schlaganfall, solange nichts anderes sicher ist. Zuckungen am ganzen Körper = Krampfanfall.",
         spektrum: [
           {
             patientName: "Synkope",
             hauptfaktor: "kommt von allein zurück",
             kurzbeschreibung:
               "Kurz weg, dann wieder da — keine bleibenden Ausfälle, kein Stillstand. Hinlegen, Beine hoch, beobachten.",
+            kurzbeschreibungB1:
+              "Kurz weg, dann wieder da. Keine bleibenden Ausfälle, kein Stillstand. Hinlegen, Beine hoch, beobachten.",
           },
           {
             patientName: "Apoplex",
             hauptfaktor: "einseitig + bleibend",
             kurzbeschreibung:
               "Ausfälle bleiben und betreffen eine Körperseite. Zeit zählt — sofort Arzt/Notruf, nicht abwarten.",
+            kurzbeschreibungB1:
+              "Die Ausfälle bleiben und betreffen eine Körperseite. Zeit zählt. Sofort Arzt oder Notruf, nicht abwarten.",
           },
           {
             patientName: "Krampfanfall",
             hauptfaktor: "Zuckungen am ganzen Körper",
             kurzbeschreibung:
               "Sturz, Zuckungen, danach oft verwirrt/müde. Schützen, nicht festhalten, nichts in den Mund.",
+            kurzbeschreibungB1:
+              "Sturz, Zuckungen, danach oft verwirrt oder müde. Schützen, nicht festhalten, nichts in den Mund.",
           },
         ],
         wiederbegegnung: {
@@ -587,8 +615,12 @@ export const CE06_SIT_RIOS_REFLEKTIEREN: SituationsPhase = {
         karteikarte: {
           vorderseite:
             "Jemand wird plötzlich bewusstseinsgestört — was prüfst du bei jeder unklaren neurologischen Akutsituation zuerst, und woran erkennst du einen Schlaganfall?",
+          vorderseiteB1:
+            "Jemand wird plötzlich bewusstseinsgestört. Was prüfst du bei jedem unklaren Notfall mit dem Bewusstsein zuerst? Und woran erkennst du einen Schlaganfall?",
           rueckseite:
             "Zuerst IMMER Blutzucker (Hypoglykämie imitiert alles). Schlaganfall = plötzliche, einseitige, bleibende Ausfälle (Mundwinkel/Arm/Sprache) → sofort Arzt, time is brain. Krampfanfall = Zuckungen am ganzen Körper → schützen, nichts in den Mund.",
+          rueckseiteB1:
+            "Zuerst IMMER Blutzucker messen. Eine Unterzuckerung ahmt alles nach. Schlaganfall = plötzliche, einseitige, bleibende Ausfälle (Mundwinkel, Arm, Sprache) → sofort Arzt, jede Minute zählt. Krampfanfall = Zuckungen am ganzen Körper → schützen, nichts in den Mund.",
         },
       },
     },
@@ -625,7 +657,7 @@ export const CE06_SIT_RIOS_REFLEKTIEREN: SituationsPhase = {
             explanation:
               "Richtig. Plötzliche, einseitige, bleibende Ausfälle (hängender Mundwinkel, kraftloser Arm, verwaschene Sprache) bei normalem Blutzucker sind ein Schlaganfall bis zum Beweis des Gegenteils. Der Schlaganfall ist ein Notfall — je früher die Therapie beginnt, desto mehr Hirngewebe lässt sich retten (time is brain). Deshalb: sofort Arzt/Notruf, überwachen, Symptombeginn dokumentieren (wichtig fürs Zeitfenster).",
             explanationB1:
-              "Richtig. Plötzliche einseitige Ausfälle (Mundwinkel, Arm, Sprache) bei normalem Blutzucker = Schlaganfall bis zum Beweis des Gegenteils. Das ist ein Notfall: sofort Arzt/Notruf, überwachen, den Zeitpunkt notieren. Jede Minute zählt.",
+              "Richtig. Plötzliche einseitige Ausfälle (Mundwinkel, Arm, Sprache) bei normalem Blutzucker gelten als Schlaganfall, solange nichts anderes gesichert ist. Das ist ein Notfall: sofort Arzt/Notruf, überwachen, den Zeitpunkt notieren. Jede Minute zählt.",
           },
           {
             text: "Halbseitenzeichen bei normalem Blutzucker sind meist harmlos — ich lege sie hin und beobachte erst mal eine Stunde.",
@@ -679,7 +711,7 @@ export const CE06_SIT_RIOS_REFLEKTIEREN: SituationsPhase = {
             explanation:
               "Richtig. Im Anfall kannst du den Ablauf nicht stoppen — du sorgst dafür, dass er sich nicht verletzt (Gefahrenquellen weg, Kopf schützen) und lässt ihn gewähren. NICHT festhalten und NICHTS zwischen die Zähne (der Beißkeil ist obsolet und verletzt eher). Die Uhrzeit ist wichtig: Dauert der Anfall länger als 5 Minuten oder folgt Anfall auf Anfall ohne Erholung, ist es ein lebensbedrohlicher Status epilepticus — dann sofort ärztliche Hilfe.",
             explanationB1:
-              "Richtig. Du kannst den Anfall nicht stoppen — du schützt ihn vor Verletzungen und lässt ihn gewähren. Nicht festhalten, nichts in den Mund. Uhrzeit merken: Dauert der Anfall länger als 5 Minuten, ist es ein gefährlicher Status epilepticus — sofort Arzt.",
+              "Richtig. Du kannst den Anfall nicht stoppen — du schützt ihn vor Verletzungen und lässt ihn gewähren. Nicht festhalten, nichts in den Mund. Uhrzeit merken: Hört der Anfall nach 5 Minuten nicht auf, ist es ein gefährlicher Status epilepticus — sofort Arzt.",
           },
           {
             text: "Ich halte seine Arme und Beine fest, damit er sich nicht verletzt, und schiebe etwas zwischen die Zähne gegen den Zungenbiss.",
@@ -719,7 +751,7 @@ export const CE06_SIT_RIOS_REFLEKTIEREN: SituationsPhase = {
       },
       contentB1: {
         title: "Was nimmst du mit?",
-        body: "Frühe Zeichen einer Unterzuckerung (Unruhe, Schwitzen, 'sich komisch fühlen') werden leicht übersehen — besonders bei Menschen, die Beschwerden herunterspielen. Denke über den Fall nach.",
+        body: "Frühe Zeichen einer Hypoglykämie (Unterzuckerung) — Unruhe, Schwitzen, 'sich komisch fühlen' — werden leicht übersehen, besonders bei Menschen, die Beschwerden herunterspielen. Denke über den Fall nach.",
         glossarBegriffe: ["Frühwarnzeichen"],
       },
       question: {

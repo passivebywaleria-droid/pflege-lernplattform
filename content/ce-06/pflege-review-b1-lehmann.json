@@ -1,0 +1,27 @@
+{
+  "situation": "ls-lehmann-sturz-sht",
+  "ce": "ce-06",
+  "modus": "b1-revalidierung-5-lens",
+  "geprueft": "2026-07-15",
+  "file": "content/ce-06/situationen/ls-lehmann-sturz-sht/phases.ts",
+  "scope": "reine B1-Sprach-Sanierung nach C1-PASS; deterministische Gates gruen",
+  "fokus": [
+    "fachlich falsche/irrefuehrende B1-Vereinfachung",
+    "inkorrekte Fachwort-Glossierung",
+    "Standard-/Anti-Pattern-Verstoss",
+    "Rechts-Praezision § 1831 BGB / FeM",
+    "Kinaesthetik (keine Achseln, kein Hochziehen)",
+    "Licht-voll-an bei Sturz-Inspektion"
+  ],
+  "findings": [],
+  "counts": { "hoch": 0, "mittel": 0, "niedrig": 0 },
+  "geprueftePunkte": {
+    "recht_fem_1831": "PASS — FeM-Definition (laenger/regelmaessig + kann-nicht-selbst-raus), Genehmigung Betreuungsgericht, Akut-Ausnahme mit unverzueglichem Nachholen, Abgrenzung einseitig=keine-FeM alle in B1 erhalten; korrekte Norm § 1831 BGB (Fassung 2023, kein §1906a-Drift)",
+    "kinaesthetik": "PASS — Achseln/Hochziehen nur als Distraktoren, B1 korrigiert; en bloc erhalten",
+    "licht_inspektion": "PASS — Licht-voll-an in B1, gedaempftes Licht nur als Distraktor",
+    "fachwort_gloss": "PASS — Blutverduenner/Antikoagulans, SHT, sterile Kompresse, Validation, SBAR korrekt geglosst",
+    "anti_pattern_distraktoren": "PASS — 'Glueck gehabt/nichts passiert' korrektiv entlarvt",
+    "cross_step_konsistenz": "PASS — Patientendaten konsistent, B1 fuehrt keine abweichenden Werte ein"
+  },
+  "verdikt": "PASS"
+}

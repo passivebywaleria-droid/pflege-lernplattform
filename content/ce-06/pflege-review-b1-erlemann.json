@@ -1,0 +1,36 @@
+{
+  "situation": "ls-erlemann-organspende",
+  "scope": "B1-Sprach-Sanierung (5. Lens, semantisch) — B1 gegen C1",
+  "datum": "2026-07-15",
+  "file": "content/ce-06/situationen/ls-erlemann-organspende/phases.ts",
+  "gepruefteB1Felder": [
+    "erk-00b: kerntextB1, faustregelB1, storyAufhaengerB1, spektrum[].kurzbeschreibungB1, karteikarte rueckseiteB1",
+    "erk-01: option[].explanationB1 (3)",
+    "ala-00b: kerntextB1, faustregelB1, spektrum[].kurzbeschreibungB1, karteikarte rueckseiteB1",
+    "ala-01: option[].explanationB1 (3)",
+    "erm-01: option[].explanationB1 (3)",
+    "erm-00b: kerntextB1, faustregelB1, spektrum[].kurzbeschreibungB1, karteikarte rueckseiteB1",
+    "erm-02: trueFalseCards[].explanationB1 (2)",
+    "erm-03: option[].explanationB1 (3)",
+    "ueb-01: branchingOptions[].feedbackB1 (3)",
+    "ref-01/ref-02: contentB1/bodyB1"
+  ],
+  "kritischeAnkerGeprueft": {
+    "entscheidungsloesung_nicht_widerspruchsloesung": "erhalten",
+    "niemand_automatisch_spender": "erhalten",
+    "einwilligung_UND_festgestellter_hirntod": "erhalten",
+    "mutmasslicher_wille_ohne_eigene_entscheidung": "erhalten",
+    "gesamthirntod_alle_hirnfunktionen_unwiderruflich": "erhalten",
+    "tpg_definiert_nicht_den_tod_nur_mindestvoraussetzung": "erhalten",
+    "zwei_unabhaengige_erfahrene_aerzte_ohne_transplantationsbezug": "erhalten",
+    "pflege_gibt_nichts_frei_draengt_nicht": "erhalten"
+  },
+  "findings": [],
+  "zusammenfassung": {
+    "hoch": 0,
+    "mittel": 0,
+    "niedrig": 0,
+    "verdikt": "PASS",
+    "begruendung": "Reine B1-Sprachvereinfachung. Alle acht rechtlich-ethisch-fachlichen Kernanker in jedem claim-tragenden B1-Feld exakt gegenueber C1 erhalten. Weggelassene Details (2024-Transplantationszahlen in erm-03) sind zulaessige B1-Kuerzungen ohne Faktenfehler. Keine falsche Vereinfachung."
+  }
+}

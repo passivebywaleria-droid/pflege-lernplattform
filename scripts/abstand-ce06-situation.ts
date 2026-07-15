@@ -26,6 +26,12 @@ const QUELLEN = [
   "recherche/pflege-heute-volltext/pflege-heute.txt",
   "recherche/icare-krankheitslehre-volltext/icare-krankheitslehre.txt",
   "recherche/icare-pflege-volltext/icare-pflege.txt",
+  "recherche/icare-pflege-3aufl-volltext/icare-pflege-3aufl.txt",
+  // B1/DaZ-Lehrwerke (Elsevier) — Stil-Referenz für die B1-Tab-Varianten,
+  // deshalb ebenfalls Paraphrase-Pflicht:
+  "recherche/deutsch-b1-pflege-volltext/deutsch-b1-pflege.txt",
+  "recherche/deutsch-a2b1-pflege-volltext/deutsch-a2b1-pflege.txt",
+  "recherche/fsp-b2c1-medizin-volltext/fsp-b2c1-medizin.txt",
 ];
 
 function norm(t: string): string {
@@ -62,20 +68,45 @@ function loadQuellen(): Set<string> {
 function prosaOf(iw: any): string {
   return [
     iw.storyAufhaenger,
+    iw.storyAufhaengerB1,
     iw.kerntext,
+    iw.kerntextB1,
     iw.faustregel,
+    iw.faustregelB1,
     iw.sonstBox,
+    iw.sonstBoxB1,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    ...(iw.spektrum ?? []).map((x: any) => x.kurzbeschreibung),
+    ...(iw.spektrum ?? []).flatMap((x: any) => [x.kurzbeschreibung, x.kurzbeschreibungB1]),
     iw.karteikarte?.vorderseite,
     iw.karteikarte?.rueckseite,
+    iw.karteikarte?.vorderseiteB1,
+    iw.karteikarte?.rueckseiteB1,
     iw.wiederbegegnung?.vertiefung,
+    iw.wiederbegegnung?.vertiefungB1,
   ]
     .filter(Boolean)
     .join("\n");
 }
 
+// B1-Prosa der Nicht-Tab-Steps (MC/Branching/TrueFalse/Dialog/Pflegewagen) — nur die
+// B1-Textfelder, die wir sanieren. Wird mit --steps/--all-fields in den Abstandstest einbezogen.
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function b1StepProsa(step: any): string {
+  const q = step.question ?? {};
+  const parts: (string | undefined)[] = [step.contentB1?.body, q.begruendungB1];
+  for (const o of q.optionen ?? []) parts.push(o.explanationB1);
+  for (const o of q.branchingOptions ?? []) { parts.push(o.feedbackB1); parts.push(o.patientResponseB1); }
+  for (const c of q.trueFalseCards ?? []) parts.push(c.explanationB1);
+  const pw = q.pflegewagen;
+  if (pw) {
+    parts.push(pw.fragetextB1);
+    for (const it of pw.items ?? []) { parts.push(it.beschreibungB1); parts.push(it.erklaerungB1); }
+  }
+  return parts.filter(Boolean).join("\n");
+}
+
 function checkSituation(situationId: string): number {
+  const includeSteps = process.argv.includes("--steps") || process.argv.includes("--all-fields");
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const sit = (CE06_SITUATIONEN as any[]).find((s) => s.situationId === situationId);
   if (!sit) {
@@ -86,13 +117,22 @@ function checkSituation(situationId: string): number {
   let hits = 0;
   let total = 0;
   let tabs = 0;
+  let steps = 0;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   for (const ph of sit.phasen as any[]) {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    for (const step of ph.kernSteps as any[]) {
-      if (step.stepType !== "inlineWissen" || !step.inlineWissen) continue;
-      tabs++;
-      for (const g of ngrams(prosaOf(step.inlineWissen), MIN_NGRAM)) {
+    for (const step of [...(ph.kernSteps ?? []), ...(ph.optionaleSteps ?? [])] as any[]) {
+      let prosa = "";
+      if (step.stepType === "inlineWissen" && step.inlineWissen) {
+        tabs++;
+        prosa = prosaOf(step.inlineWissen);
+      } else if (includeSteps) {
+        const p = b1StepProsa(step);
+        if (!p) continue;
+        steps++;
+        prosa = p;
+      } else continue;
+      for (const g of ngrams(prosa, MIN_NGRAM)) {
         total++;
         if (src.has(g)) {
           hits++;
@@ -102,7 +142,8 @@ function checkSituation(situationId: string): number {
     }
   }
   const status = hits === 0 ? "✅ ABSTAND 0" : `⚠️  ${hits} Treffer — prüfen (Gesetzestext = ok, sonst paraphrasieren)`;
-  console.log(`  ${situationId}: ${tabs} Tabs · ${total} 5-Gramme · ${hits} Treffer → ${status}`);
+  const scope = includeSteps ? `${tabs} Tabs + ${steps} Steps` : `${tabs} Tabs`;
+  console.log(`  ${situationId}: ${scope} · ${total} 5-Gramme · ${hits} Treffer → ${status}`);
   return hits === 0 ? 0 : 2;
 }
 

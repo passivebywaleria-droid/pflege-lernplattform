@@ -71,7 +71,7 @@ export const CE06_SIT_LEHMANN_ERKENNEN: SituationsPhase = {
             explanation:
               "Richtig. Zur Bewusstseinsprüfung wird angesprochen UND angefasst — gerade bei einer alten, möglicherweise schwerhörigen Frau kann eine fehlende Antwort eine Bewusstseinsstörung nur vortäuschen. Und weil nach einem Sturz eine Wirbelsäulenverletzung nicht ausgeschlossen ist, wird ein reagierender Mensch zunächst in der vorgefundenen Lage belassen — nicht sofort hochgezogen.",
             explanationB1:
-              "Richtig. Bewusstsein prüfen heißt: ansprechen UND anfassen. Sie hört vielleicht schlecht — keine Antwort heißt nicht sofort Bewusstlosigkeit. Nach einem Sturz kann die Wirbelsäule verletzt sein, darum lässt du sie erst in ihrer Lage.",
+              "Richtig. Das nennt man Bewusstseinsprüfung: ansprechen UND anfassen. Sie hört vielleicht schlecht — keine Antwort heißt nicht sofort Bewusstlosigkeit. Nach einem Sturz kann die Wirbelsäule verletzt sein, darum lässt du sie erst in ihrer Lage.",
           },
           {
             text: "Sie schnell hochheben und zurück ins Bett bringen, damit sie nicht auf dem kalten Boden liegt.",
@@ -127,16 +127,24 @@ export const CE06_SIT_LEHMANN_ERKENNEN: SituationsPhase = {
         themenSekundaer: ["notfallassessment"],
         storyAufhaenger:
           "02:45 Uhr, du kniest neben Frau Lehmann. Sie murmelt, bewegt sich, an der Stirn blutet es. Zwei Reflexe ziehen an dir: sie schnell hochheben und ins Bett, oder noch mal lauter von der Tür rufen. Beide sind falsch. Was stattdessen?",
+        storyAufhaengerB1:
+          "02:45 Uhr. Du kniest neben Frau Lehmann. Sie murmelt und bewegt sich. An der Stirn blutet es. Zwei Reflexe ziehen an dir: sie schnell hochheben und ins Bett, oder noch mal lauter von der Tür rufen. Beide sind falsch. Was tust du stattdessen?",
         kerntext:
           "Zwei Handgriffe zuerst — beide in Sekunden. Erstens das Bewusstsein prüfen: ansprechen UND anfassen, ein leichtes Rütteln an den Schultern. Das Anfassen ist entscheidend, denn Schwerhörigkeit kann eine Bewusstseinsstörung nur vortäuschen — gerade bei alten oder verwirrten Menschen heißt keine Antwort nicht automatisch bewusstlos. Rufen aus der Tür genügt also nie.\n\nZweitens: Reagiert sie, bleibt sie zunächst dort liegen, wo du sie findest. Nach einem Sturz ist eine Wirbelsäulenverletzung nicht ausgeschlossen, und dann verschlechtert jedes Hochziehen die Lage. Also nicht ins Bett heben — gegen die Kälte deckst du sie zu. Nur wenn eine echte Gefahr am Ort sie zwingt, sich zu bewegen, dann mit vielen Helfern, Kopf und Rumpf als eine Einheit (en bloc), den Kopf nicht beugen und nicht strecken.\n\nUnd der blutende Kopf? Der ist mehr als eine Platzwunde. Ein Schädel-Hirn-Trauma birgt die Gefahr einer Hirnblutung, die sich auch verzögert entwickeln kann — Stunden später. Deshalb ist eine ärztliche Abklärung Pflicht, und eine Verschlechterung des Bewusstseins ist das wichtigste Warnzeichen.",
+        kerntextB1:
+          "Zwei Handgriffe zuerst — beide in Sekunden. Erstens: das Bewusstsein prüfen. Das heißt: ansprechen UND anfassen, ein leichtes Rütteln an den Schultern. Das Anfassen ist wichtig. Denn wenn jemand schlecht hört, wirkt er vielleicht bewusstlos, ist es aber nicht. Gerade bei alten oder verwirrten Menschen heißt keine Antwort nicht automatisch bewusstlos. Rufen von der Tür reicht also nie.\n\nZweitens: Reagiert sie, dann lass sie erst dort liegen, wo du sie findest. Nach einem Sturz kann die Wirbelsäule verletzt sein. Dann macht jedes Hochziehen die Lage schlimmer. Also hebst du sie nicht ins Bett. Gegen die Kälte deckst du sie zu. Nur bei echter Gefahr am Ort musst du sie bewegen. Dann mit vielen Helfern. Kopf und Rumpf bleiben eine Einheit — das nennt man en bloc. Den Kopf dabei nicht beugen und nicht strecken.\n\nUnd der blutende Kopf? Der ist mehr als eine Platzwunde. Eine schwere Kopfverletzung heißt mit Fachwort Schädel-Hirn-Trauma, kurz SHT. Dabei kann es im Kopf bluten. Diese Blutung kann auch erst Stunden später kommen. Darum muss ein Arzt sie untersuchen. Das wichtigste Warnzeichen ist: Ihr Bewusstsein wird schlechter.",
         faustregel:
           "Ansprechen UND anfassen — keine Antwort heißt nicht bewusstlos. Nach dem Sturz: liegen lassen, zudecken, nicht hochziehen. Kopfverletzung = mögliche (verzögerte) Hirnblutung → ärztlich abklären.",
+        faustregelB1:
+          "Ansprechen UND anfassen — keine Antwort heißt nicht bewusstlos. Nach dem Sturz: liegen lassen, zudecken, nicht hochziehen. Kopfverletzung = mögliche Blutung im Kopf, auch später → der Arzt muss sie untersuchen.",
         spektrum: [
           {
             patientName: "Schwerhörige Bewohnerin",
             hauptfaktor: "täuscht Bewusstlosigkeit vor",
             kurzbeschreibung:
               "Reagiert nicht auf Rufen aus der Distanz — ist aber wach. Erst hingehen, ansprechen UND anfassen zeigt: sie ist bei Bewusstsein.",
+            kurzbeschreibungB1:
+              "Sie reagiert nicht, wenn du von weitem rufst — aber sie ist wach. Erst wenn du hingehst, ansprichst UND anfasst, merkst du: Sie ist bei Bewusstsein.",
           },
           {
             patientName: "Frau Lehmann",
@@ -144,12 +152,16 @@ export const CE06_SIT_LEHMANN_ERKENNEN: SituationsPhase = {
             hauptfaktor: "SHT unter Blutverdünner",
             kurzbeschreibung:
               "Reagiert, aber Kopf blutet und sie nimmt ein Antikoagulans. In der Lage belassen, zudecken — und trotzdem zwingend in die Klinik.",
+            kurzbeschreibungB1:
+              "Sie reagiert, aber ihr Kopf blutet und sie nimmt einen Blutverdünner (Fachwort: Antikoagulans). Lass sie liegen, deck sie zu — und trotzdem muss sie in die Klinik.",
           },
           {
             patientName: "Sturz mit Gefahr am Ort",
             hauptfaktor: "Bewegung unvermeidbar",
             kurzbeschreibung:
               "Muss sie doch weg (z.B. akute Gefahr), dann mit vielen Helfern, Kopf und Rumpf en bloc, Kopf nicht beugen/strecken.",
+            kurzbeschreibungB1:
+              "Muss sie doch weg, zum Beispiel bei akuter Gefahr, dann mit vielen Helfern. Kopf und Rumpf bleiben eine Einheit (en bloc). Den Kopf nicht beugen und nicht strecken.",
           },
         ],
         wiederbegegnung: {
@@ -163,6 +175,10 @@ export const CE06_SIT_LEHMANN_ERKENNEN: SituationsPhase = {
             "Frau Lehmann liegt nach einem Sturz am Boden, murmelt, reagiert nicht auf deine Frage von der Tür — was tust du, und darfst du sie hochheben?",
           rueckseite:
             "Hingehen, ansprechen UND anfassen (Schwerhörigkeit täuscht Bewusstlosigkeit vor). Reagiert sie: in der Lage belassen — nach Sturz mögliche Wirbelsäulenverletzung, nicht hochziehen; gegen Kälte zudecken. Kopfverletzung = Gefahr (verzögerter) Hirnblutung → ärztlich abklären.",
+          vorderseiteB1:
+            "Frau Lehmann liegt nach einem Sturz am Boden. Sie murmelt und reagiert nicht auf deine Frage von der Tür. Was tust du? Darfst du sie hochheben?",
+          rueckseiteB1:
+            "Hingehen, ansprechen UND anfassen. Wenn jemand schlecht hört, wirkt er bewusstlos, ist es aber nicht. Reagiert sie: liegen lassen — nach dem Sturz kann die Wirbelsäule verletzt sein, also nicht hochziehen. Gegen die Kälte zudecken. Kopfverletzung = mögliche Blutung im Kopf, auch später → der Arzt muss sie untersuchen.",
         },
       },
     },
@@ -199,7 +215,7 @@ export const CE06_SIT_LEHMANN_ERKENNEN: SituationsPhase = {
             explanation:
               "Richtig. Blutgerinnungshemmende Arzneimittel erhöhen die Blutungsgefahr. In Kombination mit einem Schädel-Hirn-Trauma droht eine intrakranielle Blutung, die sich auch verzögert (Stunden später) entwickeln kann. Deshalb ist eine ärztliche Abklärung mit Bildgebung (CT) zwingend — unabhängig davon, wie 'klein' die Wunde aussieht.",
             explanationB1:
-              "Richtig. Blutverdünner erhöhen die Blutungsgefahr. Bei einem Kopftrauma kann es im Schädel bluten — auch erst Stunden später. Darum muss sie in die Klinik (CT), egal wie klein die Wunde aussieht.",
+              "Richtig. Blutverdünner erhöhen die Blutungsgefahr. Gerade bei diesem Kopftrauma — einem Schädel-Hirn-Trauma — droht eine Blutung im Schädel, auch erst Stunden später. Darum muss sie in die Klinik (CT), egal wie klein die Wunde aussieht.",
           },
           {
             text: "Er ist jetzt nicht relevant — solange die Wunde äußerlich klein ist, kann nichts Ernstes passieren.",
@@ -269,7 +285,7 @@ export const CE06_SIT_LEHMANN_ALARMIEREN: SituationsPhase = {
             explanation:
               "Richtig. Ein Schädel-Hirn-Trauma unter Antikoagulation ist eine Indikation zur sofortigen Klinikeinweisung, auch wenn die Patientin (noch) ansprechbar ist — die gefährliche Blutung kann sich verzögert entwickeln. Parallel Heimarzt/ärztlichen Bereitschaftsdienst und die bevollmächtigte Tochter informieren.",
             explanationB1:
-              "Richtig. Ein Kopftrauma unter Blutverdünner muss sofort in die Klinik — auch wenn sie wach ist. Die Blutung kann später kommen. Daneben den Arzt und die Tochter informieren.",
+              "Richtig. Ein Schädel-Hirn-Trauma unter Blutverdünner ist eine klare Indikation für die Klinik — ein eindeutiger Grund. Das gilt sofort, auch wenn sie wach ist. Die Blutung kann später kommen. Daneben den Arzt und die Tochter informieren.",
           },
           {
             text: "Sie beobachten und den Hausarzt am Morgen rufen — solange sie wach bleibt, ist es nicht dringend.",
@@ -340,10 +356,16 @@ export const CE06_SIT_LEHMANN_ERSTMASSNAHMEN: SituationsPhase = {
         themenSekundaer: ["notfallassessment"],
         storyAufhaenger:
           "Der Rettungsdienst ist unterwegs, die Stirn blutet weiter, im Zimmer brennt nur das gedämpfte Nachtlicht. Dein Impuls: schnell irgendetwas auf die Wunde drücken. Aber womit, wie fest — und reicht dieses Licht überhaupt, um zu sehen, was da ist?",
+        storyAufhaengerB1:
+          "Der Rettungsdienst ist unterwegs. Die Stirn blutet weiter. Im Zimmer brennt nur das schwache Nachtlicht. Dein Impuls: schnell irgendetwas auf die Wunde drücken. Aber womit? Wie fest? Und reicht dieses Licht, um zu sehen, was da ist?",
         kerntext:
           "Zuerst sehen können. Eine Verletzung lässt sich nur bei ausreichendem Licht beurteilen — das gedämpfte Nachtlicht genügt dafür nicht. Also das Licht voll einschalten, auch wenn es im ersten Moment unsanft wirkt; Rücksicht nimmst du über eine ruhige Stimme, nicht über Halbdunkel.\n\nDann die Blutung. Eine blutende Wunde wird mit einer sterilen Kompresse und leichtem Druck versorgt — kein unsteriles Taschentuch. Bei Frau Lehmanns Kopfplatzwunde genügt genau dieser leichte Druck. Ein fester Druckverband ist für starke Blutungen gedacht, etwa an Armen oder Beinen; er hält den Druck, ohne dass du dauernd mit der Hand zudrücken musst.\n\nUnd das Dritte, das leicht vergessen wird: Wärme. Verletzte kühlen aus, das belastet den Kreislauf zusätzlich. Deshalb zudecken und warm halten. Die Lage änderst du dabei nicht — der Wirbelsäulenverdacht nach dem Sturz bleibt.",
+        kerntextB1:
+          "Zuerst musst du gut sehen können. Eine Verletzung kannst du nur bei genug Licht beurteilen. Das schwache Nachtlicht reicht dafür nicht. Also schalte das Licht voll ein, auch wenn das im ersten Moment unsanft wirkt. Rücksicht zeigst du mit einer ruhigen Stimme, nicht mit Halbdunkel.\n\nDann die Blutung. Eine blutende Wunde versorgst du mit einer sterilen Kompresse und leichtem Druck. Eine Kompresse ist ein sauberes Wund-Kissen. Steril heißt: keimfrei verpackt. Kein Taschentuch — das ist nicht sauber genug. Bei Frau Lehmanns Wunde am Kopf reicht dieser leichte Druck. Ein fester Druckverband ist für starke Blutungen, zum Beispiel am Arm oder Bein. Er hält den Druck von allein. Du musst nicht dauernd mit der Hand drücken.\n\nUnd das Dritte, das man leicht vergisst: der Wärmeerhalt, also warm halten. Verletzte Menschen kühlen aus. Das belastet den Kreislauf zusätzlich. Deshalb deckst du sie zu und hältst sie warm. Die Lage änderst du dabei nicht. Denn nach dem Sturz besteht ein Wirbelsäulenverdacht — der Verdacht, dass die Wirbelsäule verletzt ist.",
         faustregel:
           "Erst Licht voll an — sehen, was ist. Kopfwunde: sterile Kompresse mit leichtem Druck; starke Blutung: Druckverband. Zudecken gegen die Kälte, nicht umlagern.",
+        faustregelB1:
+          "Erst Licht voll an — du musst sehen, was ist. Kopfwunde: sterile Kompresse mit leichtem Druck. Starke Blutung: Druckverband. Zudecken gegen die Kälte, nicht umlagern.",
         spektrum: [
           {
             patientName: "Frau Lehmann",
@@ -351,18 +373,24 @@ export const CE06_SIT_LEHMANN_ERSTMASSNAHMEN: SituationsPhase = {
             hauptfaktor: "Kopfplatzwunde",
             kurzbeschreibung:
               "Sterile Kompresse mit leichtem Druck — bei einer Platzwunde am Kopf reicht das meist, bis der Rettungsdienst da ist.",
+            kurzbeschreibungB1:
+              "Sterile Kompresse mit leichtem Druck. Bei einer Wunde am Kopf reicht das meist, bis der Rettungsdienst da ist.",
           },
           {
             patientName: "Stark blutende Wunde am Bein",
             hauptfaktor: "starke Blutung",
             kurzbeschreibung:
               "Blutet es kräftig weiter, wird die Blutung mit einem Druckverband gestillt.",
+            kurzbeschreibungB1:
+              "Blutet es stark weiter, stillst du die Blutung mit einem Druckverband.",
           },
           {
             patientName: "Unterkühlter Verletzter",
             hauptfaktor: "Auskühlung",
             kurzbeschreibung:
               "Zusätzlich konsequent zudecken und warm halten — Auskühlung belastet den Kreislauf und verschlechtert die Lage.",
+            kurzbeschreibungB1:
+              "Deck ihn gut zu und halte ihn warm. Auskühlen belastet den Kreislauf und macht die Lage schlechter.",
           },
         ],
         karteikarte: {
@@ -370,6 +398,10 @@ export const CE06_SIT_LEHMANN_ERSTMASSNAHMEN: SituationsPhase = {
             "Frau Lehmann blutet nachts an der Stirn, nur das Nachtlicht brennt — wie versorgst du die Wunde richtig?",
           rueckseite:
             "Licht voll einschalten (Inspektion braucht Licht). Kopfwunde: sterile Kompresse + leichter Druck; starke Blutung → Druckverband. Zudecken (Wärmeerhalt), nicht umlagern (Wirbelsäulenverdacht).",
+          vorderseiteB1:
+            "Frau Lehmann blutet nachts an der Stirn. Nur das Nachtlicht brennt. Wie versorgst du die Wunde richtig?",
+          rueckseiteB1:
+            "Licht voll einschalten — nur so kannst du die Wunde gut sehen. Kopfwunde: sterile Kompresse und leichter Druck. Starke Blutung → Druckverband. Zudecken, damit sie warm bleibt. Nicht umlagern, denn die Wirbelsäule kann verletzt sein.",
         },
       },
     },
@@ -406,7 +438,7 @@ export const CE06_SIT_LEHMANN_ERSTMASSNAHMEN: SituationsPhase = {
             explanation:
               "Richtig. Zur sicheren Verletzungs-Inspektion braucht es volles Licht (nicht das gedämpfte Nachtlicht). Die blutende Platzwunde wird mit steriler Kompresse und leichtem Druck versorgt; ein kräftiger Druckverband ist für starke Blutungen gedacht (z.B. an Extremitäten). Wärmeerhalt durch Zudecken. Die Lage bleibt unverändert (Wirbelsäulenverdacht).",
             explanationB1:
-              "Richtig. Für die Inspektion brauchst du volles Licht — nicht das schwache Nachtlicht. Die Wunde: sterile Kompresse mit leichtem Druck. Sie zudecken gegen die Kälte. Nicht umlagern.",
+              "Richtig. Für die Inspektion brauchst du volles Licht — nicht das schwache Nachtlicht. Die Wunde versorgst du mit steriler Kompresse und leichtem Druck. Bei starker Blutung wäre stattdessen ein Druckverband nötig. Du deckst sie zu für den Wärmeerhalt. Nicht umlagern — der Wirbelsäulenverdacht bleibt bestehen.",
           },
           {
             text: "Das gedämpfte Nachtlicht anlassen, damit sie nicht erschrickt, und die Wunde erst mal mit einem Taschentuch abtupfen.",
@@ -463,7 +495,7 @@ export const CE06_SIT_LEHMANN_ERSTMASSNAHMEN: SituationsPhase = {
             feedback:
               "Frau Lehmann hält inne, schaut dich an und wird ruhiger; sie bleibt liegen, bis der Rettungsdienst kommt. — Genau richtig. Bei Menschen mit Demenz wirkt Deeskalation über ruhige, wertschätzende Ansprache auf Augenhöhe besser als Kraft. Zu dieser Ansprache gehört, ihre Gefühlswelt ernst zu nehmen (Validation): Du korrigierst ihre Frage nach der Mutter nicht und stellst sie nicht bloß, sondern nimmst die Angst dahinter an und gibst ihr Sicherheit. Du verhinderst den erneuten Sturz durch Präsenz und behutsames Sichern — nicht durch Fixieren. Kraftvolles Festhalten würde die Panik steigern und bei Osteoporose Verletzungen riskieren. So schützt du sie und die (mögliche) Wirbelsäulenverletzung, ohne ihre Rechte zu verletzen.",
             feedbackB1:
-              "Frau Lehmann wird ruhiger und bleibt liegen. — Genau richtig. Bei Demenz hilft ruhiges, freundliches Reden auf Augenhöhe mehr als Kraft. Nimm ihre Angst ernst, statt ihre Frage nach der Mutter zu korrigieren (Validation). Du hinderst sie sanft am Aufstehen — ohne sie festzuhalten. Festhalten würde die Panik verstärken und bei Osteoporose verletzen.",
+              "Frau Lehmann wird ruhiger und bleibt liegen. — Genau richtig. Das ist Deeskalation: Bei Demenz hilft ruhiges, freundliches Reden auf Augenhöhe mehr als Kraft. Nimm ihre Angst ernst, statt ihre Frage nach der Mutter zu korrigieren (Validation). Du hinderst sie sanft am Aufstehen — ohne sie festzuhalten. Festhalten würde die Panik verstärken und bei Osteoporose verletzen.",
           },
           {
             text: "Sie fest unter den Achseln greifen und zurückhalten, damit sie sich nicht verletzt.",
@@ -518,28 +550,40 @@ export const CE06_SIT_LEHMANN_ERSTMASSNAHMEN: SituationsPhase = {
         themaPrimaer: "traumatologische-erstversorgung",
         storyAufhaenger:
           "In der Panik kam der schnelle, gut gemeinte Gedanke: ab ins Bett, beide Gitter hoch, dann liegt sie sicher und steht nicht wieder auf. Genau dieser Griff ist rechtlich heikel — warum eigentlich?",
+        storyAufhaengerB1:
+          "In der Panik kam ein schneller, gut gemeinter Gedanke. Ab ins Bett, beide Gitter hoch — dann liegt sie sicher und steht nicht wieder auf. Genau das ist rechtlich heikel. Aber warum?",
         kerntext:
           "Wird einem Menschen durch mechanische Vorrichtungen — etwa beidseitige Bettgitter — über einen längeren Zeitraum oder regelmäßig die Freiheit entzogen, ist das eine freiheitsentziehende Maßnahme (FeM). Sie ist grundsätzlich nur mit Genehmigung des Betreuungsgerichts zulässig (§ 1831 BGB, Fassung ab 2023). „Das machen wir immer so“ oder „nur zur Sicherheit“ ist keine Rechtsgrundlage — beidseitiges Hochziehen, um jemanden am Aufstehen zu hindern, ist keine Erste-Hilfe-Maßnahme, sondern rechtlich eine Fixierung.\n\nEs gibt eine wichtige Ausnahme: Besteht eine akute Gefahr, ist ein kurzfristiges Handeln zulässig — die Genehmigung ist dann aber unverzüglich nachzuholen. Und immer gilt der Vorrang milderer Wege: erst Präsenz, ruhige Ansprache, behutsames Sichern, dazu Arzt und Bevollmächtigte einbinden (bei Frau Lehmann die Tochter mit Vorsorgevollmacht). Einsperren ist das letzte Mittel, nicht das erste.",
+        kerntextB1:
+          "Manchmal hält man einen Menschen mit einem Gerät fest, zum Beispiel mit beiden Bettgittern oben. Passiert das über längere Zeit oder immer wieder? Und kann die Person das Bett so nicht mehr allein verlassen? Dann nimmt man ihr die Freiheit. Das nennt man eine freiheitsentziehende Maßnahme, kurz FeM. So etwas ist nur mit einer Erlaubnis erlaubt: Das Betreuungsgericht muss zustimmen (§ 1831 BGB). Das Betreuungsgericht ist ein Gericht, das hilfsbedürftige Menschen schützt. „Das machen wir immer so“ oder „nur zur Sicherheit“ ist keine Erlaubnis. Beide Gitter hoch, damit jemand nicht aufsteht, ist keine Erste Hilfe. Es ist rechtlich eine Fixierung — das heißt, jemand wird festgehalten oder festgebunden.\n\nEs gibt eine wichtige Ausnahme. Wenn gerade eine akute Gefahr besteht, darfst du kurz handeln. Aber die Erlaubnis vom Gericht musst du dann sofort nachholen. Und es gilt immer: zuerst die sanfteren Wege. Also: da sein, ruhig reden, sie behutsam sichern. Dazu holst du den Arzt und die Person dazu, die für Frau Lehmann entscheiden darf. Das ist die Tochter. Sie hat eine Vorsorgevollmacht — das heißt, sie darf für die Mutter entscheiden. Jemanden einsperren ist das letzte Mittel, nicht das erste.",
         faustregel:
           "Beidseitige Bettgitter gegen das Aufstehen sind eine freiheitsentziehende Maßnahme — grundsätzlich nur mit Gerichtsgenehmigung (§ 1831 BGB). „Zur Sicherheit“ ersetzt keine Rechtsgrundlage; erst mildere Wege.",
+        faustregelB1:
+          "Beide Bettgitter hoch, damit jemand nicht aufsteht — das ist eine freiheitsentziehende Maßnahme. Erlaubt nur mit Genehmigung vom Betreuungsgericht (§ 1831 BGB). „Zur Sicherheit“ ist keine Erlaubnis. Zuerst die sanfteren Wege.",
         spektrum: [
           {
             patientName: "Beide Gitter dauerhaft hoch",
             hauptfaktor: "regelmäßig / länger",
             kurzbeschreibung:
               "Um jemanden am Aufstehen zu hindern → freiheitsentziehende Maßnahme, braucht die Genehmigung des Betreuungsgerichts.",
+            kurzbeschreibungB1:
+              "Damit jemand nicht aufstehen kann → freiheitsentziehende Maßnahme. Dafür brauchst du die Genehmigung vom Betreuungsgericht.",
           },
           {
             patientName: "Akute Sturzgefahr jetzt",
             hauptfaktor: "kurzfristige Gefahr",
             kurzbeschreibung:
               "Kurzfristiges Handeln zulässig, Genehmigung unverzüglich nachholen — und zuerst Arzt und Bevollmächtigte einbinden.",
+            kurzbeschreibungB1:
+              "Bei akuter Gefahr darfst du kurz handeln. Die Genehmigung holst du sofort nach. Und zuerst holst du den Arzt und die Person dazu, die entscheiden darf.",
           },
           {
             patientName: "Einseitiges Gitter",
             hauptfaktor: "Patient kann selbst heraus",
             kurzbeschreibung:
               "Wird sie nicht am Verlassen des Bettes gehindert, ist es keine Freiheitsentziehung — also keine genehmigungspflichtige FeM.",
+            kurzbeschreibungB1:
+              "Kann sie das Bett noch selbst verlassen, nimmst du ihr die Freiheit nicht. Dann ist es keine FeM und du brauchst keine Genehmigung.",
           },
         ],
         karteikarte: {
@@ -547,6 +591,10 @@ export const CE06_SIT_LEHMANN_ERSTMASSNAHMEN: SituationsPhase = {
             "Darfst du im Heim beide Bettgitter hochziehen, damit Frau Lehmann nicht aufsteht?",
           rueckseite:
             "Nein, nicht einfach so. Beidseitige Bettgitter zum Am-Aufstehen-Hindern über längere Zeit/regelmäßig sind eine freiheitsentziehende Maßnahme — grundsätzlich nur mit Genehmigung des Betreuungsgerichts (§ 1831 BGB). In akuter Gefahr kurzfristig zulässig, Genehmigung unverzüglich nachholen; vorher mildere Wege + Arzt/Bevollmächtigte.",
+          vorderseiteB1:
+            "Darfst du im Heim beide Bettgitter hochziehen, damit Frau Lehmann nicht aufsteht?",
+          rueckseiteB1:
+            "Nein, nicht einfach so. Beide Bettgitter hoch, damit sie über längere Zeit nicht aufsteht — das ist eine freiheitsentziehende Maßnahme. Erlaubt nur mit Genehmigung vom Betreuungsgericht (§ 1831 BGB). Bei akuter Gefahr darfst du kurz handeln und holst die Genehmigung sofort nach. Vorher: sanftere Wege, Arzt und die Person, die entscheiden darf.",
         },
       },
     },
@@ -571,7 +619,7 @@ export const CE06_SIT_LEHMANN_ERSTMASSNAHMEN: SituationsPhase = {
       },
       contentB1: {
         title: "Bettgitter — einfach erlaubt?",
-        body: "Deine Kollegin sagt: 'Zieh beide Bettgitter hoch, das dürfen wir doch.' Stimmt das?",
+        body: "Deine Kollegin sagt: 'Zieh beide Bettgitter hoch, das dürfen wir doch.' Stimmt das? Merke: Das kann eine freiheitsentziehende Maßnahme sein. Dafür braucht es meist die Genehmigung vom Betreuungsgericht.",
         glossarBegriffe: ["freiheitsentziehende Maßnahme"],
       },
       question: {
@@ -582,12 +630,16 @@ export const CE06_SIT_LEHMANN_ERSTMASSNAHMEN: SituationsPhase = {
             isTrue: false,
             explanation:
               "Falsch. Werden einem Menschen durch mechanische Vorrichtungen (beidseitiges Bettgitter) über einen längeren Zeitraum oder regelmäßig die Freiheit entzogen, ist das eine freiheitsentziehende Maßnahme und grundsätzlich nur mit Genehmigung des Betreuungsgerichts zulässig (§ 1831 BGB). In akuter Gefahr ist ein kurzfristiges Handeln möglich, die Genehmigung ist dann aber unverzüglich nachzuholen; zuerst sind mildere Alternativen und die Einbindung von Arzt und Bevollmächtigter (Tochter) zu prüfen. 'Das machen wir immer so' ersetzt keine Rechtsgrundlage.",
+            explanationB1:
+              "Falsch. Beide Bettgitter dauerhaft hoch, damit sie nicht aufsteht — das ist eine freiheitsentziehende Maßnahme (FeM). Das dürft ihr nicht einfach selbst entscheiden. Ihr braucht die Genehmigung vom Betreuungsgericht (§ 1831 BGB). Nur bei akuter Gefahr darfst du kurz handeln — dann holst du die Genehmigung sofort nach. Zuerst gelten die sanfteren Wege, dazu der Arzt und die Tochter (sie hat die Vollmacht). 'Das machen wir immer so' ist keine Rechtsgrundlage.",
           },
           {
             statement: "Ein einzelnes, niedriges Bettgitter, über das Frau Lehmann selbst hinaussteigen kann, ist keine genehmigungspflichtige freiheitsentziehende Maßnahme.",
             isTrue: true,
             explanation:
               "Richtig. Entscheidend ist, ob dem Menschen die Bewegungsfreiheit tatsächlich genommen wird. Kann Frau Lehmann das Bett selbst verlassen (einseitiges/niedriges Gitter, sie wird nicht am Aufstehen gehindert), liegt keine Freiheitsentziehung vor — also keine genehmigungspflichtige FeM. Zur FeM wird es erst, wenn sie durch die Vorrichtung über längere Zeit oder regelmäßig am Verlassen des Bettes gehindert wird (dann § 1831 BGB, Genehmigung des Betreuungsgerichts). Die mildere, freiheitswahrende Lösung ist immer vorzuziehen.",
+            explanationB1:
+              "Richtig. Wichtig ist: Wird ihr die Bewegungsfreiheit wirklich genommen? Kann Frau Lehmann das Bett selbst verlassen (ein einseitiges, niedriges Gitter), dann nimmst du ihr die Freiheit nicht. Also ist es keine genehmigungspflichtige freiheitsentziehende Maßnahme (FeM). Zur FeM wird es erst, wenn sie über längere Zeit am Verlassen des Bettes gehindert wird (dann § 1831 BGB, Genehmigung vom Betreuungsgericht). Der sanftere Weg, der die Freiheit wahrt, ist immer besser.",
           },
         ],
       },
@@ -642,7 +694,7 @@ export const CE06_SIT_LEHMANN_UEBERGEBEN: SituationsPhase = {
             explanation:
               "Richtig. Vollständiges SBAR mit dem entscheidenden Background (Apixaban!) und einer klaren Recommendation (Klinik/CT wegen Antikoagulation). Der Sanitäter hat sofort das Risiko und den Handlungsbedarf im Blick. Sturzzeit und Bewusstseinsverlauf gehören ins Assessment.",
             explanationB1:
-              "Richtig. Vollständiges SBAR mit dem wichtigen Punkt (Apixaban!) und klarer Bitte (Klinik/CT). Der Sanitäter sieht sofort das Risiko.",
+              "Richtig. Vollständiges SBAR mit dem wichtigen Punkt (Apixaban!) und klarer Bitte (Klinik/CT). Der Sanitäter sieht sofort das Risiko. Auch der Verlauf vom Bewusstsein gehört in die Übergabe.",
           },
           {
             text: "\"Sie ist gestürzt und blutet am Kopf, aber sie ist ja wieder wach — wird schon nichts Schlimmes sein.\"",

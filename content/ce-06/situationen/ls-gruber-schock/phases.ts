@@ -53,7 +53,7 @@ export const CE06_SIT_GRUBER_ERKENNEN: SituationsPhase = {
       },
       contentB1: {
         title: "Warum wird er blass?",
-        body: "Herr Gruber verliert Blut. Warum wird er blass und die Haut feuchtkalt? Ein Blick auf das Herz und den Kreislauf hilft. Was passiert gerade?",
+        body: "Herr Gruber verliert Blut. Warum wird er blass und die Haut feuchtkalt? Ein Blick auf Herz und Kreislauf erklärt es. Was passiert gerade?",
         glossarBegriffe: ["Herzzeitvolumen (= Blutmenge pro Minute)", "Zentralisation"],
       },
       question: {
@@ -66,7 +66,7 @@ export const CE06_SIT_GRUBER_ERKENNEN: SituationsPhase = {
             explanation:
               "Richtig. Das Herz ist die zentrale Pumpe: Es fördert das Blut über den Lungen- in den Körperkreislauf (Herzzeitvolumen in Ruhe ca. 5 l/min). Fehlt Volumen, kommt weniger Blut zurück, das Herzzeitvolumen und der Blutdruck sinken. Als Gegenmaßnahme schüttet der Körper Adrenalin und Noradrenalin aus, die die Gefäße in Haut und Muskulatur eng stellen (Vasokonstriktion) — das Blut wird zu Herz und Gehirn zentralisiert. Daher die blasse, feuchtkalte Haut.",
             explanationB1:
-              "Richtig. Das Herz ist die Pumpe für den ganzen Körper. Fehlt Blut, kommt weniger zum Herzen zurück, die Pumpmenge und der Blutdruck fallen. Der Körper stellt die Gefäße in Haut und Muskeln eng, um Herz und Gehirn zu schützen. Darum ist die Haut blass und feuchtkalt.",
+              "Richtig. Das Herz ist die Pumpe für den ganzen Körper. Fehlt Blut, kommt weniger zum Herzen zurück, das Herzzeitvolumen (die Pumpmenge pro Minute) und der Blutdruck fallen. Adrenalin und Noradrenalin, die Stresshormone, stellen die Gefäße in Haut und Muskeln eng — so schützt der Körper Herz und Gehirn. Darum ist die Haut blass und feuchtkalt.",
           },
           {
             text: "Solange das Herz kräftig weiterschlägt, ist der Blutverlust für den Blutdruck unwichtig — der Kreislauf gleicht die fehlende Menge von selbst wieder aus.",
@@ -116,10 +116,16 @@ export const CE06_SIT_GRUBER_ERKENNEN: SituationsPhase = {
         themenSekundaer: ["notfallassessment"],
         storyAufhaenger:
           "Herr Gruber wird blass, die Stirn feuchtkalt, der Puls jagt. Sein Körper macht gerade etwas Kluges — und Gefährliches zugleich. Um im nächsten Moment richtig zu entscheiden, musst du verstehen, was ein Schock überhaupt ist und woran du seine Form erkennst.",
+        storyAufhaengerB1:
+          "Herr Gruber wird blass. Die Stirn ist feuchtkalt, der Puls jagt. Sein Körper macht gerade etwas Kluges — und zugleich Gefährliches. Für die nächste Entscheidung musst du wissen: Was ist ein Schock? Und wie erkennst du seine Form?",
         kerntext:
           "Das Herz ist die Pumpe des Kreislaufs: Die rechte Herzkammer treibt das Blut zur Lunge, die linke in den übrigen Körper; in Ruhe bewegt es pro Minute rund fünf Liter. Diese Pumpe kann aber nur so viel weitergeben, wie an Blut zu ihr zurückfließt.\n\nEin Schock bedeutet: Der Kreislauf versagt so weit, dass die Organe zu wenig Sauerstoff bekommen. Bei Herrn Gruber ist die Ursache der Blutverlust — man nennt das Volumenmangelschock. Weil Volumen fehlt, kommt weniger zum Herzen zurück, die Auswurfmenge und der Blutdruck sinken. Der Körper wehrt sich: Stresshormone (Adrenalin, Noradrenalin) engen die Gefäße in Haut und Muskeln ein und lenken das verbliebene Blut zu Herz und Gehirn um. Daher die blasse, feuchtkalte Haut.\n\nEs gibt vier Grundformen: durch Volumenmangel (wie hier), durch ein pumpschwaches Herz, durch eine Blockade im Blutfluss und durch ein „Versacken\" des Blutes in weitgestellten Gefäßen (dann ist das Volumen zunächst normal). Die Warnzeichen ähneln sich: Unruhe, ein schneller und immer schwächerer Puls, sinkender Blutdruck, kühle blasse Haut mit feinem Schweiß. Eine grobe Orientierungszahl ist der Schockindex — Puls geteilt durch den oberen Blutdruckwert; beim Gesunden liegt er bei etwa 0,5, ein Wert Richtung 1 warnt (aussagekräftig nur beim Volumenmangel).",
+        kerntextB1:
+          "Das Herz ist die Pumpe für den Kreislauf. Die rechte Herzkammer pumpt das Blut zur Lunge. Die linke Herzkammer pumpt es in den restlichen Körper. In Ruhe sind das rund fünf Liter pro Minute. Aber die Pumpe kann nur so viel weitergeben, wie an Blut zu ihr zurückkommt.\n\nEin Schock heißt: Der Kreislauf versagt so stark, dass die Organe zu wenig Sauerstoff bekommen. Bei Herrn Gruber ist die Ursache der Blutverlust. Das nennt man Volumenmangelschock — ein Schock, weil Blut oder Flüssigkeit fehlt. Weil Blut fehlt, kommt weniger zum Herzen zurück. Die Pumpmenge und der Blutdruck sinken. Der Körper wehrt sich. Er schüttet Stresshormone aus: Adrenalin und Noradrenalin. Diese stellen die Gefäße in Haut und Muskeln eng. So lenken sie das restliche Blut zu Herz und Gehirn. Darum ist die Haut blass und feuchtkalt.\n\nEs gibt vier Grundformen. Erstens: durch Volumenmangel (wie hier). Zweitens: durch ein zu schwaches Herz. Drittens: durch eine Blockade im Blutfluss. Viertens: durch ein Versacken des Blutes in weiten Gefäßen — dann ist das Blutvolumen zuerst normal. Die Warnzeichen ähneln sich: Unruhe, ein schneller und immer schwächerer Puls, fallender Blutdruck, kühle blasse Haut mit feinem Schweiß. Eine grobe Zahl zur Orientierung ist der Schockindex. Du teilst den Puls durch den oberen Blutdruckwert. Beim Gesunden liegt er bei etwa 0,5. Ein Wert Richtung 1 warnt. Er hilft aber nur beim Volumenmangel.",
         faustregel:
           "Schock = der Kreislauf versagt, die Organe hungern nach Sauerstoff. Bei Herrn Gruber: Volumenmangel durch Blutung. Zeichen: schneller schwacher Puls, fallender Druck, blass-kalt-schweißig. Schockindex Richtung 1 = Alarm.",
+        faustregelB1:
+          "Schock heißt: Der Kreislauf versagt, die Organe bekommen zu wenig Sauerstoff. Bei Herrn Gruber: Volumenmangel durch die Blutung. Zeichen: schneller schwacher Puls, fallender Druck, blass-kalt-schweißig. Schockindex Richtung 1 = Alarm.",
         spektrum: [
           {
             patientName: "Herr Gruber",
@@ -127,6 +133,8 @@ export const CE06_SIT_GRUBER_ERKENNEN: SituationsPhase = {
             hauptfaktor: "Volumenmangel",
             kurzbeschreibung:
               "Blut fehlt — hier durch die Blutung. Der Körper zentralisiert; Beine-hoch kann stützen (mit einer wichtigen Ausnahme, gleich mehr).",
+            kurzbeschreibungB1:
+              "Blut fehlt — hier durch die Blutung. Der Körper lenkt das Blut zu Herz und Gehirn. Beine-hoch kann helfen. Aber es gibt eine wichtige Ausnahme, gleich mehr.",
           },
           {
             patientName: "Frau Yıldız",
@@ -134,18 +142,24 @@ export const CE06_SIT_GRUBER_ERKENNEN: SituationsPhase = {
             hauptfaktor: "pumpschwaches Herz",
             kurzbeschreibung:
               "Das Herz selbst pumpt zu schwach (kardiogen, z. B. beim Infarkt). Hier wird NICHT flach mit Beinen hoch, sondern der Oberkörper hoch gelagert.",
+            kurzbeschreibungB1:
+              "Das Herz selbst pumpt zu schwach. Das nennt man kardiogen — vom Herzen kommend, zum Beispiel beim Infarkt. Hier legst du NICHT die Beine hoch. Du lagerst den Oberkörper hoch.",
           },
           {
             patientName: "Blockade im Blutfluss",
             hauptfaktor: "obstruktiv",
             kurzbeschreibung:
               "Etwas versperrt den Blutstrom, z. B. eine große Lungenembolie — das Herz kann nicht mehr genug fördern.",
+            kurzbeschreibungB1:
+              "Etwas versperrt den Blutstrom, zum Beispiel eine große Lungenembolie. Dabei verstopft ein Blutpfropf ein Gefäß in der Lunge. Das Herz kann nicht mehr genug pumpen.",
           },
           {
             patientName: "Weitgestellte Gefäße",
             hauptfaktor: "distributiv (Versacken)",
             kurzbeschreibung:
               "Die Gefäße stellen sich weit, das Blut versackt — z. B. bei schwerer Allergie oder Sepsis; das Blutvolumen ist zunächst normal.",
+            kurzbeschreibungB1:
+              "Die Gefäße stellen sich weit, das Blut versackt. Das passiert zum Beispiel bei einer schweren Allergie oder einer Blutvergiftung (Sepsis). Das Blutvolumen ist zuerst normal.",
           },
         ],
         karteikarte: {
@@ -153,6 +167,10 @@ export const CE06_SIT_GRUBER_ERKENNEN: SituationsPhase = {
             "Warum wird Herr Gruber blass und feuchtkalt — und welche Schockform ist das?",
           rueckseite:
             "Volumenmangelschock durch Blutung: weniger Rückfluss → weniger Auswurf → Blutdruck fällt; der Körper zentralisiert (Gefäße eng, Blut zu Herz/Hirn) → blass-kalt-schweißig. Vier Formen: Volumenmangel, pumpschwaches Herz (kardiogen), Blockade (obstruktiv), Versacken (distributiv). Zeichen: schneller schwacher Puls, fallender Druck; Schockindex Richtung 1 warnt.",
+          vorderseiteB1:
+            "Warum wird Herr Gruber blass und feuchtkalt? Und welche Schockform ist das?",
+          rueckseiteB1:
+            "Volumenmangelschock durch die Blutung: weniger Rückfluss, weniger Auswurf, der Blutdruck fällt. Der Körper lenkt das Blut zu Herz und Gehirn (Gefäße eng) — darum blass-kalt-schweißig. Vier Formen: Volumenmangel, zu schwaches Herz (kardiogen), Blockade (obstruktiv), Versacken (distributiv). Zeichen: schneller schwacher Puls, fallender Druck. Schockindex Richtung 1 warnt.",
         },
       },
     },
@@ -189,7 +207,7 @@ export const CE06_SIT_GRUBER_ERKENNEN: SituationsPhase = {
             explanation:
               "Richtig. Bei starker Blutung entsteht ein hypovolämischer Schock (Volumenmangelschock). Die Leitsymptome sind genau das, was du siehst: ein schneller (über 100/min), schwächer werdender Puls, ein sinkender systolischer Blutdruck, kalte blasse Haut mit feinperligem Schweiß, Unruhe. Sein 'normaler' Blutdruck ist hyperton — 100/70 ist für ihn schon ein Abfall. Der Schockindex (Puls geteilt durch systolischen Blutdruck) steigt über den Normwert von etwa 0,5 in Richtung 1.",
             explanationB1:
-              "Richtig. Durch den Blutverlust entsteht ein Schock durch Volumenmangel. Die Zeichen: schneller, schwacher Puls, fallender Blutdruck, kalte blasse Haut mit Schweiß, Unruhe. Sein Blutdruck ist normal sehr hoch — 100/70 ist für ihn schon zu niedrig.",
+              "Richtig. Durch den Blutverlust entsteht ein hypovolämischer Schock (ein Volumenmangelschock). Die Zeichen: schneller, schwacher Puls, fallender Blutdruck, kalte blasse Haut mit Schweiß, Unruhe. Sein Blutdruck ist normal sehr hoch — 100/70 ist für ihn schon zu niedrig. Der Schockindex (Puls geteilt durch den oberen Blutdruckwert) steigt hier Richtung 1.",
           },
           {
             text: "Ein kardiogener Schock — das Herz selbst pumpt zu schwach, deshalb der schnelle Puls und die blasse Haut.",
@@ -256,22 +274,32 @@ export const CE06_SIT_GRUBER_ALARMIEREN: SituationsPhase = {
         themenSekundaer: ["notfallassessment"],
         storyAufhaenger:
           "Herr Gruber blutet, der Kreislauf kippt, Renate schaut dich an. Das Entscheidende jetzt schaffst du nicht allein — und einiges darfst du gar nicht allein. Was ist dein Part im Team, und wo endet deine Kompetenz?",
+        storyAufhaengerB1:
+          "Herr Gruber blutet, der Kreislauf wird schlechter. Renate schaut dich an. Das Wichtige schaffst du jetzt nicht allein. Und einiges darfst du auch gar nicht allein. Was ist deine Aufgabe im Team? Und wo endet deine Kompetenz?",
         kerntext:
           "Beim schockverdächtigen Notfall ist deine erste Handlung, sofort den Arzt zu rufen und eine zweite Pflegefachperson dazuzuholen. Zu zweit teilt ihr euch auf: Eine bleibt bei Herrn Gruber, überwacht und betreut, die andere richtet Material und bahnt an, dass er so schnell wie möglich auf die Intensivstation kommt. Allein bekommst du Überwachung, Zugänge und Zuwendung nicht gleichzeitig hin.\n\nDabei kennst du deine Grenze genau. Große venöse Zugänge, reichlich Volumen und — wenn der Kreislauf weiter absackt — kreislaufstützende Medikamente (Katecholamine über eine Spritzenpumpe, den Perfusor) ordnet der Arzt an. Wie schnell die Infusion läuft und wie der Perfusor eingestellt wird, entscheidet nicht die Pflege eigenmächtig. Dein Part: Material herrichten, assistieren, die angeordnete Laufrate exakt umsetzen, überwachen und dokumentieren.\n\nUnd Renate? Auch sie gehört dazu. Ein kurzer, klarer Satz — was gerade passiert und was als Nächstes kommt — gibt ihr Halt, während das Team arbeitet.",
+        kerntextB1:
+          "Bei einem Notfall mit Schock-Verdacht ist deine erste Handlung klar: Du rufst sofort den Arzt und holst eine zweite Pflegekraft. Zu zweit teilt ihr euch auf. Eine bleibt bei Herrn Gruber, überwacht ihn und betreut ihn. Die andere richtet Material und bereitet vor, dass er schnell auf die Intensivstation kommt. Allein schaffst du Überwachung, Zugänge und Zuwendung nicht gleichzeitig.\n\nDabei kennst du deine Grenze genau. Große Zugänge in die Vene und viel Flüssigkeit ordnet der Arzt an. Sackt der Kreislauf weiter ab, ordnet er auch Medikamente für den Kreislauf an. Diese Medikamente heißen Katecholamine. Sie laufen über eine Spritzenpumpe, den Perfusor. Wie schnell die Infusion läuft und wie der Perfusor eingestellt wird, entscheidet die Pflege nicht allein. Deine Aufgabe: Material richten, assistieren, die angeordnete Laufrate genau einstellen, überwachen und dokumentieren.\n\nUnd Renate? Auch sie gehört dazu. Sag ihr kurz und klar, was gerade passiert und was als Nächstes kommt. Das gibt ihr Halt, während das Team arbeitet.",
         faustregel:
           "Zuerst: Arzt + zweite Pflegekraft, dann die Intensivverlegung anbahnen. Grenze: Zugänge, Volumen, Katecholamine/Perfusor und Laufraten ordnet der Arzt an — die Pflege richtet, assistiert, dosiert nach Anordnung, überwacht. Und: Renate mit einem klaren Satz mitnehmen.",
+        faustregelB1:
+          "Zuerst: Arzt und zweite Pflegekraft rufen, dann vorbereiten, dass er auf die Intensivstation kommt. Grenze: Zugänge, Flüssigkeit, Katecholamine, Perfusor und Laufraten ordnet der Arzt an. Die Pflege richtet, assistiert, dosiert nach Anordnung und überwacht. Und: Renate mit einem klaren Satz mitnehmen.",
         spektrum: [
           {
             patientName: "Die ersten Sekunden",
             hauptfaktor: "Arzt + zweite Kraft",
             kurzbeschreibung:
               "Sofort den Arzt rufen und eine weitere Pflegefachperson holen — einer bleibt bei Herrn Gruber, einer organisiert.",
+            kurzbeschreibungB1:
+              "Sofort den Arzt rufen und eine weitere Pflegekraft holen. Einer bleibt bei Herrn Gruber, einer organisiert.",
           },
           {
             patientName: "Volumen, Katecholamine, Perfusor",
             hauptfaktor: "Kompetenzgrenze",
             kurzbeschreibung:
               "Ordnet der Arzt an. Die Pflege richtet das Material, assistiert und stellt die verordnete Laufrate ein — nie eigenmächtig.",
+            kurzbeschreibungB1:
+              "Das ordnet der Arzt an. Die Pflege richtet das Material, assistiert und stellt die angeordnete Laufrate ein — nie allein.",
           },
           {
             patientName: "Frau Yıldız (Herzinfarkt)",
@@ -279,6 +307,8 @@ export const CE06_SIT_GRUBER_ALARMIEREN: SituationsPhase = {
             hauptfaktor: "dieselbe Grenze",
             kurzbeschreibung:
               "Auch dort galt: sofort Arzt + zweite Kraft, und O2/Nitro/Schmerzmittel nur auf Anordnung. Hier heißen die ärztlichen Mittel Volumen und Katecholamine.",
+            kurzbeschreibungB1:
+              "Auch dort galt: sofort Arzt und zweite Kraft. Und Sauerstoff, Nitro und Schmerzmittel nur auf Anordnung. Hier heißen die ärztlichen Mittel Flüssigkeit und Katecholamine.",
           },
         ],
         karteikarte: {
@@ -286,6 +316,10 @@ export const CE06_SIT_GRUBER_ALARMIEREN: SituationsPhase = {
             "Schockverdächtiger Notfall — was ist deine erste Handlung, und wo liegt deine Kompetenzgrenze?",
           rueckseite:
             "Erst: sofort Arzt + zweite Pflegefachperson, Intensivverlegung vorbereiten. Grenze: große Zugänge, Volumen, Katecholamine/Perfusor und die Laufraten ordnet der Arzt an — die Pflege richtet, assistiert, dosiert nach Anordnung, überwacht, dokumentiert. Angehörige (Renate) mit klarer, ruhiger Information mitnehmen.",
+          vorderseiteB1:
+            "Notfall mit Schock-Verdacht — was ist deine erste Handlung? Und wo liegt deine Kompetenzgrenze?",
+          rueckseiteB1:
+            "Erst: sofort Arzt und zweite Pflegekraft rufen und vorbereiten, dass er auf die Intensivstation kommt. Grenze: große Zugänge, Flüssigkeit, Katecholamine, Perfusor und die Laufraten ordnet der Arzt an. Die Pflege richtet, assistiert, dosiert nach Anordnung, überwacht und dokumentiert. Angehörige (Renate) mit klarer, ruhiger Information mitnehmen.",
         },
       },
     },
@@ -310,7 +344,7 @@ export const CE06_SIT_GRUBER_ALARMIEREN: SituationsPhase = {
       },
       contentB1: {
         title: "Wie handelst du jetzt?",
-        body: "Verdacht auf eine Blutung im Magen mit beginnendem Schock. Was tust du zuerst?",
+        body: "Du vermutest eine Blutung im Magen, dazu ein beginnender Schock. Was tust du zuerst?",
         glossarBegriffe: ["Intensivstation"],
       },
       question: {
@@ -390,15 +424,23 @@ export const CE06_SIT_GRUBER_ERSTMASSNAHMEN: SituationsPhase = {
         themenSekundaer: ["notfallassessment"],
         storyAufhaenger:
           "Volumenmangelschock — im Unterricht hast du gelernt: flach hinlegen, Beine hoch, dann fließt Blut aus den Beinen zurück. Der Reflex ist richtig … fast immer. Bei Herrn Gruber wäre er ein Fehler. Warum?",
+        storyAufhaengerB1:
+          "Volumenmangelschock — im Unterricht hast du gelernt: flach hinlegen, Beine hoch. Dann fließt Blut aus den Beinen zurück. Der Reflex ist richtig … fast immer. Bei Herrn Gruber wäre er ein Fehler. Warum?",
         kerntext:
-          "Beim Volumenmangelschock hilft die Autotransfusionslage: Der Mensch liegt flach, die Beine werden hochgelagert, so fließt Blut aus den Beinvenen zurück in den Kreislauf und stützt kurzfristig den Blutdruck. Das ist der Standard-Reflex — und er hat klare Ausnahmen.\n\nAusgenommen sind drei Orte der Blutung: der Kopf, die Lunge und der obere Verdauungstrakt. Genau das trifft auf Herrn Gruber zu: Er blutet oben im Magen-Darm-Bereich und erbricht. Beine hoch bringt bei der aktiven Blutung keinen Vorteil, und flach zu liegen erhöht beim Erbrechen die Gefahr, dass er Erbrochenes einatmet (Aspiration). Deshalb lagerst du ihn nach seinem Bedürfnis — den Oberkörper eher leicht erhöht — und drehst den Kopf beim Erbrechen zur Seite.\n\nParallel läuft der Rest der Erstversorgung: Sauerstoff nach Anordnung, große venöse Zugänge vorbereiten, engmaschig Puls, Blutdruck, Atmung, Bewusstsein und die Haut überwachen. Und wichtig: nichts zu essen oder zu trinken — er bleibt nüchtern, weil eine Magenspiegelung oder eine Operation folgen kann.",
+          "Beim Volumenmangelschock hilft die Autotransfusionslage: Der Mensch liegt flach, die Beine werden hochgelagert, so fließt Blut aus den Beinvenen zurück in den Kreislauf und stützt kurzfristig den Blutdruck. Das ist der Standard-Reflex — und er hat klare Ausnahmen.\n\nAusgenommen sind drei Orte der Blutung: der Kopf, die Lunge und der obere Verdauungstrakt. Genau das trifft auf Herrn Gruber zu: Er blutet oben im Magen-Darm-Bereich und erbricht. Beine hoch bringt bei der aktiven Blutung keinen Vorteil, und flach zu liegen erhöht beim Erbrechen die Gefahr, dass er Erbrochenes einatmet (Aspiration). Deshalb lagerst du ihn nach seinem Bedürfnis — den Oberkörper eher leicht erhöht — und drehst den Kopf beim Erbrechen zur Seite.\n\nParallel läuft der Rest der Erstversorgung: Sauerstoff nach Anordnung, große venöse Zugänge vorbereiten, engmaschig Puls, Blutdruck, Atmung, Bewusstsein und die Haut überwachen. Und wichtig: nichts essen, nichts trinken — er bleibt nüchtern, weil eine Magenspiegelung oder eine Operation folgen kann.",
+        kerntextB1:
+          "Beim Volumenmangelschock hilft die Autotransfusionslage. Das heißt: Der Mensch liegt flach, die Beine liegen hoch. So fließt Blut aus den Beinvenen zurück in den Kreislauf. Das stützt kurz den Blutdruck. Das ist der Standard-Reflex. Aber er hat klare Ausnahmen.\n\nAusgenommen sind drei Orte der Blutung: der Kopf, die Lunge und der obere Magen-Darm-Bereich. Genau das trifft auf Herrn Gruber zu. Er blutet oben im Magen-Darm-Bereich und erbricht. Beine hoch bringt bei der aktiven Blutung keinen Vorteil. Und flach zu liegen erhöht beim Erbrechen eine Gefahr: Er atmet Erbrochenes ein. Das nennt man Aspiration — das Verschlucken in die Atemwege. Deshalb lagerst du ihn nach seinem Wunsch, den Oberkörper eher leicht hoch. Und beim Erbrechen drehst du den Kopf zur Seite.\n\nGleichzeitig läuft der Rest der Erstversorgung. Du gibst Sauerstoff nach Anordnung. Du bereitest große Zugänge in die Vene vor. Und du überwachst engmaschig Puls, Blutdruck, Atmung, Bewusstsein und Haut. Wichtig: nichts essen, nichts trinken. Er bleibt nüchtern, denn eine Magenspiegelung oder eine Operation kann folgen.",
         faustregel:
           "Beine hoch beim Volumenmangel — AUSSER bei Blutung an Kopf, Lunge oder oberem Magen-Darm-Trakt. Herr Gruber: Oberkörper leicht erhöht, Kopf beim Erbrechen zur Seite, nüchtern lassen. Sonst droht die Aspiration.",
+        faustregelB1:
+          "Beine hoch beim Volumenmangel — AUSSER bei Blutung an Kopf, Lunge oder oberem Magen-Darm-Bereich. Herr Gruber: Oberkörper leicht hoch, Kopf beim Erbrechen zur Seite, nüchtern lassen. Sonst droht die Aspiration — das Verschlucken in die Atemwege.",
         spektrum: [
           {
             patientName: "Volumenmangel ohne obere Blutung",
             hauptfaktor: "Beine hoch",
             kurzbeschreibung:
+              "Hier stützt die Autotransfusionslage den Druck: flach liegen, Beine hoch.",
+            kurzbeschreibungB1:
               "Hier stützt die Autotransfusionslage den Druck: flach liegen, Beine hoch.",
           },
           {
@@ -407,6 +449,8 @@ export const CE06_SIT_GRUBER_ERSTMASSNAHMEN: SituationsPhase = {
             hauptfaktor: "Ausnahme!",
             kurzbeschreibung:
               "Beine hoch bringt nichts, flach liegen erhöht die Aspirationsgefahr. Oberkörper leicht hoch, Kopf zur Seite, nüchtern.",
+            kurzbeschreibungB1:
+              "Beine hoch bringt nichts. Flach liegen erhöht die Gefahr des Verschluckens (Aspiration). Oberkörper leicht hoch, Kopf zur Seite, nüchtern.",
           },
           {
             patientName: "Frau Yıldız (kardiogen)",
@@ -414,6 +458,8 @@ export const CE06_SIT_GRUBER_ERSTMASSNAHMEN: SituationsPhase = {
             hauptfaktor: "Oberkörper hoch",
             kurzbeschreibung:
               "Auch beim pumpschwachen Herzen keine Autotransfusionslage — der Oberkörper wird hoch gelagert, damit das Herz entlastet wird.",
+            kurzbeschreibungB1:
+              "Auch beim zu schwachen Herzen keine Autotransfusionslage. Der Oberkörper wird hoch gelagert. Das entlastet das Herz.",
           },
         ],
         karteikarte: {
@@ -421,6 +467,10 @@ export const CE06_SIT_GRUBER_ERSTMASSNAHMEN: SituationsPhase = {
             "Volumenmangelschock — wann NICHT Beine hoch?",
           rueckseite:
             "Autotransfusionslage (flach, Beine hoch) stützt den Druck beim Volumenmangel — AUSGENOMMEN Blutungen an drei Orten — Kopf, Lunge, oberer Verdauungstrakt (und beim kardiogenen Schock). Herr Gruber blutet oben und erbricht → Oberkörper leicht erhöht, Kopf zur Seite, nüchtern; sonst Aspirationsgefahr.",
+          vorderseiteB1:
+            "Volumenmangelschock — wann NICHT die Beine hoch?",
+          rueckseiteB1:
+            "Autotransfusionslage (flach, Beine hoch) stützt den Druck beim Volumenmangel. AUSGENOMMEN sind Blutungen an drei Orten: Kopf, Lunge, oberer Magen-Darm-Bereich (und der kardiogene Schock). Herr Gruber blutet oben und erbricht. Also: Oberkörper leicht hoch, Kopf zur Seite, nüchtern. Sonst droht die Aspiration — das Verschlucken in die Atemwege.",
         },
       },
     },
@@ -445,7 +495,7 @@ export const CE06_SIT_GRUBER_ERSTMASSNAHMEN: SituationsPhase = {
       },
       contentB1: {
         title: "Wie lagerst du ihn?",
-        body: "Schock durch Blutverlust, er ist noch wach. Die Autotransfusionslage (flach, Beine hoch) klingt naheliegend. Ist das hier richtig?",
+        body: "Hypovolämischer Schock (Schock durch Blutverlust), er ist noch bei Bewusstsein. Die Autotransfusionslage (flach, Beine hoch) klingt naheliegend. Ist das hier richtig?",
         glossarBegriffe: ["Autotransfusionslage (= flach, Beine hoch)", "Aspiration (= Verschlucken)"],
       },
       question: {
@@ -458,7 +508,7 @@ export const CE06_SIT_GRUBER_ERSTMASSNAHMEN: SituationsPhase = {
             explanation:
               "Richtig — und das ist die Falle. Die Autotransfusionslage (Kopf/Oberkörper flach, Beine hoch) hilft beim hypovolämischen Schock, das Blut aus den Beinvenen in den Kreislauf zu bringen. Aber sie ist ausdrücklich ausgenommen bei Blutungen an Kopf, Lunge und oberem Magen-Darm-Trakt. Herr Gruber blutet aus dem oberen GI-Trakt und erbricht — Beine hoch bringt bei der aktiven Blutung keinen Vorteil, und die flache Kopf-/Oberkörperlagerung erhöht bei ihm die Aspirationsgefahr. Deshalb: nach seinem Wunsch positionieren (Oberkörper eher leicht erhöht), bei Erbrechen den Kopf zur Seite, Sauerstoff und venöse Zugänge parallel vorbereiten.",
             explanationB1:
-              "Richtig — und das ist die Falle. Die Beine-hoch-Lagerung hilft bei Schock durch Volumenmangel. Aber NICHT bei Blutungen an Kopf, Lunge oder Magen-Darm-Trakt. Herr Gruber blutet aus dem Magen und erbricht. Beine hoch hilft nicht, und flach liegen erhöht beim Erbrechen die Gefahr des Verschluckens (Aspiration). Also: nach seinem Wunsch lagern (Oberkörper eher etwas höher), Kopf beim Erbrechen zur Seite.",
+              "Richtig — und das ist die Falle. Die Beine-hoch-Lagerung hilft bei Schock durch Volumenmangel. Aber NICHT bei Blutungen an Kopf, Lunge oder Magen-Darm-Trakt. Herr Gruber blutet aus dem Magen und erbricht. Beine hoch hilft nicht, und flach liegen erhöht beim Erbrechen die Gefahr des Verschluckens (Aspiration). Also: nach seinem Wunsch lagern (Oberkörper eher etwas höher), Kopf beim Erbrechen zur Seite, Sauerstoff und Zugänge parallel vorbereiten.",
           },
           {
             text: "Autotransfusionslage: flach hinlegen und beide Beine hochlagern, damit das in den Beinvenen gespeicherte Blut zurück in den Kreislauf fließt und den Blutdruck stützt.",
@@ -466,7 +516,7 @@ export const CE06_SIT_GRUBER_ERSTMASSNAHMEN: SituationsPhase = {
             explanation:
               "Falsch — hier die klassische Falle. Die Regel 'Beine hoch bei Volumenmangel' stimmt grundsätzlich, ist aber ausdrücklich ausgenommen bei Blutungen an Kopf, Lunge und oberem Magen-Darm-Trakt. Bei Herrn Grubers oberer GI-Blutung mit Erbrechen bringt die flache Lagerung mit hochgelagerten Beinen keinen Vorteil und erhöht die Aspirationsgefahr. Fachwissen heißt hier: die Ausnahme kennen.",
             explanationB1:
-              "Falsch — die Falle. 'Beine hoch bei Volumenmangel' stimmt oft. Aber NICHT bei Blutung im Magen-Darm-Trakt. Herr Gruber erbricht Blut — flach liegen erhöht die Gefahr des Verschluckens.",
+              "Falsch — die Falle. 'Beine hoch bei Volumenmangel' stimmt oft. Aber NICHT, wenn die Blutung oben im Magen-Darm-Bereich sitzt. Herr Gruber erbricht Blut — flach liegen erhöht die Gefahr des Verschluckens.",
           },
           {
             text: "Ihn ganz steil aufrecht hinsetzen, damit ihm nicht mehr übel wird.",
@@ -500,7 +550,7 @@ export const CE06_SIT_GRUBER_ERSTMASSNAHMEN: SituationsPhase = {
       },
       contentB1: {
         title: "Material für die Zugänge richten",
-        body: "Der Arzt will große Zugänge legen und Flüssigkeit geben. Richte das Material. Wichtig: Herr Gruber darf nichts essen oder trinken (Magen-Blutung, evtl. Untersuchung/OP).",
+        body: "Der Arzt will große Zugänge legen und Flüssigkeit geben. Richte das Material. Wichtig: Herr Gruber bleibt nüchtern — er darf nichts essen oder trinken (Magen-Blutung, evtl. Untersuchung/OP).",
         glossarBegriffe: ["Venenverweilkanüle (= Zugang in die Vene)", "ZVK (= zentraler Zugang)"],
       },
       question: {
@@ -545,7 +595,7 @@ export const CE06_SIT_GRUBER_ERSTMASSNAHMEN: SituationsPhase = {
               korrekteZoneId: "richten",
               erklaerung:
                 "Beim Volumenmangelschock werden baldmöglichst mehrere große venöse Zugänge gelegt — über großlumige Kanülen läuft Volumen schnell.",
-              erklaerungB1: "Große Kanülen braucht man, damit die Flüssigkeit schnell laufen kann.",
+              erklaerungB1: "Beim Volumenmangelschock (Schock durch Blutverlust) braucht man große Kanülen. So läuft die Flüssigkeit schnell.",
             },
             {
               id: "ringer",
@@ -555,7 +605,7 @@ export const CE06_SIT_GRUBER_ERSTMASSNAHMEN: SituationsPhase = {
               korrekteZoneId: "richten",
               erklaerung:
                 "Zum Volumenausgleich werden großzügig Infusionen gegeben, z. B. isotone Kochsalz- oder Ringer-Lösung — passendes Infusionsbesteck dazu.",
-              erklaerungB1: "Die Flüssigkeit gleicht den Blutverlust aus. Das Besteck gehört dazu.",
+              erklaerungB1: "Die Flüssigkeit gleicht erst einmal den Volumen-Verlust aus. Das Besteck gehört dazu.",
             },
             {
               id: "kreuzblut",
@@ -565,7 +615,7 @@ export const CE06_SIT_GRUBER_ERSTMASSNAHMEN: SituationsPhase = {
               korrekteZoneId: "richten",
               erklaerung:
                 "Bei Blutverlust können Erythrozytenkonzentrate nötig werden — dafür braucht es Blutgruppe und Kreuzblut. Röhrchen gleich mitrichten.",
-              erklaerungB1: "Bei Blutverlust braucht man vielleicht Blutkonserven. Dafür bestimmt man die Blutgruppe.",
+              erklaerungB1: "Bei Blutverlust braucht man vielleicht Blutkonserven. Dafür bestimmt man die Blutgruppe und macht Kreuzblut (ein Test, ob das Spenderblut passt).",
             },
             {
               id: "zvk-set",
@@ -586,7 +636,7 @@ export const CE06_SIT_GRUBER_ERSTMASSNAHMEN: SituationsPhase = {
               erklaerung:
                 "Falsch — und die Verbindung zur Lagerung: Bei einer oberen GI-Blutung ist die Beine-hoch-Lagerung (Autotransfusionslage) ausgenommen. Ein Keil zum Hochlagern der Beine ist hier also nicht angezeigt.",
               erklaerungB1:
-                "Nein. Bei einer Blutung im Magen legt man die Beine NICHT hoch. Der Keil dafür wird jetzt nicht gebraucht.",
+                "Nein. Die Beine-hoch-Lagerung heißt Autotransfusionslage. Bei einer Blutung im Magen macht man das NICHT. Der Keil wird jetzt nicht gebraucht.",
             },
             {
               id: "kalium-brause",
@@ -596,7 +646,7 @@ export const CE06_SIT_GRUBER_ERSTMASSNAHMEN: SituationsPhase = {
               korrekteZoneId: "weglegen",
               erklaerung:
                 "Falsch. Herr Gruber muss nüchtern bleiben (GI-Blutung, mögliche Endoskopie/OP) und erbricht — nichts oral geben. Kalium wird, wenn nötig, ärztlich intravenös und langsam ersetzt, nicht als Brausetablette.",
-              erklaerungB1: "Nein. Herr Gruber darf nichts trinken (Magen-Blutung). Er erbricht. Kalium gibt der Arzt bei Bedarf über die Vene, nicht zum Trinken.",
+              erklaerungB1: "Nein. Herr Gruber muss nüchtern bleiben (Magen-Blutung) und erbricht. Kalium gibt der Arzt bei Bedarf intravenös (über die Vene), nicht zum Trinken.",
             },
             {
               id: "abendessen",
@@ -612,7 +662,7 @@ export const CE06_SIT_GRUBER_ERSTMASSNAHMEN: SituationsPhase = {
           begruendung:
             "Beim hypovolämischen Schock zählt schneller Volumenzugang: Stauschlauch/Spritzen/Kanülen, mehrere großlumige Venenverweilkanülen, Ringer-/NaCl-Infusion mit Besteck, Blutröhrchen inkl. Kreuzblut und ein bereitgelegtes ZVK-Set. Nichts oral — Herr Gruber bleibt nüchtern.",
           begruendungB1:
-            "Beim Schock durch Blutverlust zählt schneller Zugang zur Vene: Stauschlauch, Spritzen, Kanülen, große Venen-Kanülen, Infusionslösung mit Besteck, Blutröhrchen und ein ZVK-Set bereit. Nichts zum Essen oder Trinken — er bleibt nüchtern.",
+            "Beim Schock durch Blutverlust zählt schneller Zugang zur Vene: Stauschlauch, Spritzen, Kanülen, große Venen-Kanülen, Infusionslösung mit Besteck, Blutröhrchen fürs Kreuzblut und ein ZVK-Set bereit. Nichts zum Essen oder Trinken — er bleibt nüchtern.",
         },
       },
     },
@@ -650,7 +700,7 @@ export const CE06_SIT_GRUBER_ERSTMASSNAHMEN: SituationsPhase = {
             explanation:
               "Richtig. Im Schock ist der Sauerstoffbedarf hoch; die einfache Sauerstoffmaske ermöglicht eine höhere Dosierung von 5–10 l/min, im Schock werden häufig 6–8 l/min gegeben. Wichtig: Bei der Maske darf der Fluss nicht unter 5 l/min absinken, sonst droht ein CO2-Stau in der Maske. Die Gabe erfolgt auf ärztliche Anordnung.",
             explanationB1:
-              "Richtig. Im Schock braucht er viel Sauerstoff. Die Maske gibt 5–10 l/min. Im Schock oft 6–8 l/min. Bei der Maske darf der Fluss nicht unter 5 l/min sinken, sonst staut sich CO2. Der Arzt ordnet es an.",
+              "Richtig. Im Schock braucht er viel Sauerstoff. Die Maske gibt 5–10 l/min. Im Schock oft 6–8 l/min. Bei der Maske muss der Fluss mindestens 5 l/min betragen, sonst staut sich CO2. Der Arzt ordnet es an.",
           },
           {
             text: "Eine Sauerstoffbrille mit 1 l/min genügt — das ist für den Anfang immer ausreichend.",
@@ -666,7 +716,7 @@ export const CE06_SIT_GRUBER_ERSTMASSNAHMEN: SituationsPhase = {
             explanation:
               "Falsch — und genau verkehrt herum. Bei der Maske darf der Fluss gerade NICHT unter 5 l/min absinken, sonst staut sich die ausgeatmete Luft (CO2-Stau in der Maske). 3 l/min sind für eine Maske zu wenig.",
             explanationB1:
-              "Falsch. Bei der Maske darf der Fluss NICHT unter 5 l/min sein, sonst staut sich CO2. 3 l/min sind zu wenig für eine Maske.",
+              "Falsch. Bei der Maske ist die Grenze 5 l/min — weniger darf es nicht sein, sonst staut sich CO2. 3 l/min sind zu wenig für eine Maske.",
           },
         ],
       },
@@ -704,6 +754,8 @@ export const CE06_SIT_GRUBER_ERSTMASSNAHMEN: SituationsPhase = {
             isTrue: false,
             explanation:
               "Falsch. Kreislaufunterstützende Katecholamine (z. B. über Dopamin-/Dobutaminperfusor) und die Infusionsgeschwindigkeit werden nur auf ärztliche Anordnung eingestellt — nicht eigenmächtig. Eine falsch dosierte Katecholamingabe oder unkontrollierte Volumenzufuhr kann gefährlich sein. Deine Aufgabe: Material richten, assistieren, Perfusor/Infusion nach Anordnung bedienen, überwachen und dokumentieren.",
+            explanationB1:
+              "Falsch. Katecholamine sind kreislaufstützende Medikamente, die über den Perfusor (die Spritzenpumpe) laufen. Die Infusions-Geschwindigkeit stellt nur der Arzt ein — du machst das nicht allein. Eine falsche Dosis oder zu viel Flüssigkeit kann gefährlich sein. Deine Aufgabe: Material richten, assistieren, Perfusor und Infusion nach Anordnung bedienen, überwachen und dokumentieren.",
           },
           {
             statement:
@@ -711,6 +763,8 @@ export const CE06_SIT_GRUBER_ERSTMASSNAHMEN: SituationsPhase = {
             isTrue: true,
             explanation:
               "Richtig. Die Pflege bereitet die Notfallausstattung vor — Perfusoren und Infusomaten mit passendem Infusionsmaterial, Trägerlösungen wie Ringer-Lösung — und setzt die ärztlich angeordnete Laufrate um. Vorbereiten, assistieren, exakt nach Anordnung dosieren und überwachen: genau das ist die pflegerische Rolle.",
+            explanationB1:
+              "Richtig. Die Pflege bereitet die Notfall-Geräte vor: Perfusor und Infusomat mit dem passenden Material, dazu Trägerlösungen wie Ringer-Lösung. Die Laufrate stellst du nach der Anordnung des Arztes ein. Vorbereiten, assistieren, genau nach Anordnung dosieren und überwachen — das ist deine Rolle.",
           },
         ],
       },
@@ -748,7 +802,7 @@ export const CE06_SIT_GRUBER_ERSTMASSNAHMEN: SituationsPhase = {
             feedback:
               "Genau richtig. Ein steigender Puls (132/min), fallender Blutdruck (80/50) und sinkende Sättigung mit zunehmender Benommenheit sind Zeichen der Dekompensation — der Schock schreitet fort. Der Monitor macht die Verschlechterung sichtbar, ersetzt aber nicht dein Handeln: sofort den Arzt informieren, die angeordnete Volumen-/Transfusionstherapie umsetzen, Bewusstsein/Atmung/Puls/Blutdruck engmaschig überwachen. Herr Gruber wird zügig weiterversorgt.",
             feedbackB1:
-              "Genau richtig. Puls 132, Blutdruck 80/50, Sättigung fällt, er wird benommener — der Schock wird schlimmer. Der Monitor zeigt es, aber du musst handeln: sofort den Arzt rufen, die angeordnete Flüssigkeit/Blutkonserve laufen lassen, engmaschig überwachen.",
+              "Genau richtig. Puls 132, Blutdruck 80/50, Sättigung fällt, er wird benommener — der Schock wird schlimmer. Der Monitor zeigt es, aber du musst handeln: sofort den Arzt rufen und die angeordnete Flüssigkeit oder Blutkonserve laufen lassen. Dazu überwachst du engmaschig Bewusstsein, Atmung, Puls und Blutdruck.",
           },
           {
             text: "Den Monitor-Alarm stummschalten, damit Renate nicht erschrickt, und beim nächsten Rundgang wieder nach ihm sehen.",
@@ -793,7 +847,7 @@ export const CE06_SIT_GRUBER_ERSTMASSNAHMEN: SituationsPhase = {
       },
       contentB1: {
         title: "Kalium und der Herzrhythmus",
-        body: "Das Labor zeigt einen niedrigen Kaliumwert. Der Arzt will Kalium ausgleichen. Warum ist das fürs Herz wichtig — und wie gibt man Kalium sicher in die Vene?",
+        body: "Das Labor zeigt einen niedrigen Kaliumwert. Der Arzt will Kalium ausgleichen. Warum ist das fürs Herz wichtig — und wie gibt man Kalium sicher i.v. (in die Vene)?",
         glossarBegriffe: ["Sinusknoten (= Taktgeber des Herzens)", "ZVK (= zentraler Zugang)"],
       },
       question: {
@@ -806,7 +860,7 @@ export const CE06_SIT_GRUBER_ERSTMASSNAHMEN: SituationsPhase = {
             explanation:
               "Richtig. Der Herzrhythmus entsteht im Sinusknoten (dem Taktgeber) und läuft über AV-Knoten, His-Bündel, Tawara-Schenkel und Purkinje-Fasern zum Kammermyokard. Kaliumstörungen greifen direkt in dieses System ein: sowohl die Hyperkaliämie als auch die Hypokaliämie können Herzrhythmusstörungen bis zum Herzstillstand auslösen. Deshalb wird i.v.-Kalium wegen der Gefahr lebensbedrohlicher Rhythmusstörungen langsam gegeben; höher konzentrierte Lösungen dürfen nur über einen ZVK laufen (Kalium reizt die Venenwand).",
             explanationB1:
-              "Richtig. Der Herzschlag beginnt im Sinusknoten, dem Taktgeber. Zu viel oder zu wenig Kalium stört den Rhythmus — bis zum Herzstillstand. Darum gibt man Kalium über die Vene nur langsam. Hohe Konzentrationen laufen nur über einen ZVK, weil Kalium die Venenwand reizt.",
+              "Richtig. Der Herzschlag beginnt im Sinusknoten, dem Taktgeber. Sowohl zu hohes als auch zu niedriges Kalium (Hypokaliämie) stört den Rhythmus — bis zum Herzstillstand. Darum gibt man Kalium i.v. (in die Vene) nur langsam. Hohe Konzentrationen laufen nur über einen ZVK, weil Kalium die Venenwand reizt.",
           },
           {
             text: "Kalium hat mit dem Herzrhythmus wenig zu tun — man kann es zur Not schnell als Bolus über die periphere Kanüle spritzen.",
@@ -877,7 +931,7 @@ export const CE06_SIT_GRUBER_UEBERGEBEN: SituationsPhase = {
             explanation:
               "Richtig. Vollständiges SBAR: die aktuelle Situation (Bluterbrechen), der entscheidende Background (NSAR-Ulkus, verschwiegene Meläna), das kritische Assessment (Tachykardie, Hypotonie, Zugänge/Volumen, nüchtern) und eine klare Empfehlung (Intensivaufnahme, Kreuzblut, Endoskopie-Bereitschaft). Das Gegenüber kann sofort priorisieren.",
             explanationB1:
-              "Richtig. Vollständiges SBAR: was jetzt ist (Bluterbrechen), der wichtige Hintergrund (Ibuprofen-Magengeschwür, verschwiegener schwarzer Stuhl), der kritische Zustand (schneller Puls, niedriger Blutdruck, Zugänge, nüchtern) und eine klare Bitte (Intensiv, Blutgruppe, Magenspiegelung bereit).",
+              "Richtig. Vollständiges SBAR: was jetzt ist (Bluterbrechen), der wichtige Hintergrund (Ibuprofen-Magengeschwür, verschwiegener schwarzer Stuhl), der kritische Zustand (schneller Puls, niedriger Blutdruck, Zugänge, nüchtern) und eine klare Bitte (Intensiv, Kreuzblut/Blutgruppe unterwegs, Magenspiegelung bereit).",
           },
           {
             text: "\"Der Herr aus Zimmer 12 hat beim Abendessen Blut gebrochen, ich habe ihn schon gelagert und ihm Sauerstoff gegeben, er kommt jetzt gleich zu euch hoch — macht euch mal bereit für ihn.\"",

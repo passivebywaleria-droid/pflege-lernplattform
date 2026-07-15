@@ -67,7 +67,7 @@ export const CE06_SIT_NOVAK_ERKENNEN: SituationsPhase = {
             explanation:
               "Richtig. Bei akuter Erregung stehen Eigen- und Fremdschutz und eine ruhige, reizarme Annäherung an erster Stelle. Abstand und ein freier Rückweg schützen beide; Bedrängen oder lautes Auftreten steigert die Anspannung. Erst wenn Sicherheit gewährleistet ist, kann Deeskalation gelingen.",
             explanationB1:
-              "Richtig. Zuerst Sicherheit: Abstand halten, Rückweg frei lassen, ruhig sprechen. Ihn zu bedrängen macht alles schlimmer. Erst mit Sicherheit klappt das Beruhigen.",
+              "Richtig. Zuerst Sicherheit: Abstand halten, Rückweg frei lassen, ruhig sprechen. Ihn zu bedrängen macht alles schlimmer. Erst mit Sicherheit klappt die Deeskalation (das Beruhigen).",
           },
           {
             text: "Ihn sofort festhalten, damit er sich und niemanden verletzt.",
@@ -121,22 +121,32 @@ export const CE06_SIT_NOVAK_ERKENNEN: SituationsPhase = {
         themenSekundaer: ["notfallassessment"],
         storyAufhaenger:
           "23:30 Uhr, Herr Novak steht angespannt am Bett, weicht zurück, wird laut: „Sie wollen mich vergiften!“ Dein Herz klopft. Zwei Fragen zugleich: Wie bleibst DU sicher — und wie nimmst du ihm die Angst, ohne ihn in die Enge zu treiben?",
+        storyAufhaengerB1:
+          "23:30 Uhr. Herr Novak steht angespannt am Bett. Er weicht zurück und wird laut: „Sie wollen mich vergiften!“ Dein Herz klopft. Zwei Fragen sind jetzt wichtig: Wie bleibst DU sicher? Und wie nimmst du ihm die Angst, ohne ihn zu bedrängen?",
         kerntext:
           "Zuerst dein eigener Schutz — nicht aus Egoismus, sondern weil eine verletzte Pflegekraft niemandem mehr hilft. Halte sicheren Abstand, steh stabil, sorge dafür, dass dein Rückweg frei bleibt. Zeigt er erste Anzeichen, gewalttätig zu werden, verlässt du die Situation und holst Hilfe. Beobachte ihn dezent, ohne ihn mit Blicken zu fixieren, und sprich in normaler Lautstärke.\n\nParallel beginnt die Deeskalation — der Sammelbegriff für alles, was das Entstehen oder Hochschaukeln von Gewalt verhindert. Das Ziel ist schlicht: dass weder er noch du zu Schaden kommt.\n\nUnd ein Punkt, der sich falsch anfühlt, aber entscheidend ist: Geh nicht mit mehreren gleichzeitig auf ihn zu. Deeskalation gelingt besser, wenn EINE Person den Kontakt hält — die mit dem besten Zugang. Die Kollegen bleiben im Hintergrund und wirken unbeteiligt. Je mehr Menschen, Stimmen und Bewegung, desto größer seine Anspannung. Weniger Reiz ist hier mehr Sicherheit.",
+        kerntextB1:
+          "Zuerst kommt dein eigener Schutz. Man nennt das Eigenschutz. Das ist kein Egoismus. Eine verletzte Pflegekraft kann niemandem mehr helfen. Halte sicheren Abstand und steh fest. Sorge dafür, dass dein Fluchtweg frei bleibt. Das ist der Weg nach draußen. Wenn er gewaltbereit wird, gehst du raus und holst Hilfe. Beobachte ihn ruhig, aber starre ihn nicht an. Sprich in normaler Lautstärke.\n\nGleichzeitig beginnst du mit der Deeskalation. Deeskalation heißt: alles tun, was Gewalt verhindert. Das Ziel ist einfach: Weder er noch du soll zu Schaden kommen.\n\nEin Punkt fühlt sich falsch an, ist aber wichtig: Geh nicht mit mehreren Leuten gleichzeitig auf ihn zu. Beruhigen klappt besser, wenn EINE Person den Kontakt hält. Am besten die Person mit dem besten Draht zu ihm. Die Kollegen bleiben im Hintergrund. Denn viele Menschen, Stimmen und Bewegungen machen ihm mehr Angst. Weniger Reiz bedeutet hier mehr Sicherheit.",
         faustregel:
           "Erst dein Schutz: Abstand, fester Stand, freier Rückweg. Dann deeskalieren — allein, reizarm, ruhige Stimme. Bei Gewaltbereitschaft raus und Hilfe holen.",
+        faustregelB1:
+          "Erst dein Schutz: Abstand, fester Stand, freier Rückweg. Dann beruhigen — allein, wenig Reize, ruhige Stimme. Wenn er gewaltbereit wird: raus und Hilfe holen.",
         spektrum: [
           {
             patientName: "Erste Anzeichen von Gewaltbereitschaft",
             hauptfaktor: "raus & Hilfe",
             kurzbeschreibung:
               "Kein Held sein — lieber rechtzeitig aus dem Zimmer gehen und Verstärkung rufen, bevor etwas passiert.",
+            kurzbeschreibungB1:
+              "Spiel nicht den Helden. Geh lieber rechtzeitig raus und ruf Verstärkung — bevor etwas passiert.",
           },
           {
             patientName: "Das ganze Team drängt mit rein",
             hauptfaktor: "zu viele Reize",
             kurzbeschreibung:
               "Mehrere Menschen gleichzeitig steigern Angst und Eskalation. Einer bleibt im Kontakt, der Rest hält sich im Hintergrund.",
+            kurzbeschreibungB1:
+              "Viele Menschen auf einmal machen mehr Angst. Einer bleibt im Kontakt, die anderen bleiben im Hintergrund.",
           },
           {
             patientName: "Herr Novak",
@@ -144,6 +154,8 @@ export const CE06_SIT_NOVAK_ERKENNEN: SituationsPhase = {
             hauptfaktor: "reizarm, allein",
             kurzbeschreibung:
               "Eine Person, leise Stimme, Abstand, freier Rückweg — so bleibt der Kontakt bestehen, ohne ihn zu bedrängen.",
+            kurzbeschreibungB1:
+              "Eine Person, leise Stimme, Abstand, freier Rückweg. So bleibt der Kontakt — ohne ihn zu bedrängen.",
           },
         ],
         karteikarte: {
@@ -151,6 +163,10 @@ export const CE06_SIT_NOVAK_ERKENNEN: SituationsPhase = {
             "Ein Patient ist akut erregt und misstrauisch, weicht zurück — was zuerst, und gehst du allein oder mit dem ganzen Team rein?",
           rueckseite:
             "Zuerst Eigenschutz: Abstand, stabiler Stand, freier Fluchtweg; bei Gewaltbereitschaft raus + Hilfe. Dann deeskalieren — allein (nicht mit mehreren), reizarm, ruhige Stimme, dezent beobachten. Kollegen im Hintergrund.",
+          vorderseiteB1:
+            "Ein Patient ist sehr erregt und misstrauisch und weicht zurück. Was zuerst? Und gehst du allein oder mit dem ganzen Team rein?",
+          rueckseiteB1:
+            "Zuerst dein Schutz (Eigenschutz): Abstand, fester Stand, freier Fluchtweg. Wenn er gewaltbereit wird: raus und Hilfe holen. Dann beruhigen — allein (nicht mit mehreren), wenig Reize, ruhige Stimme, ruhig beobachten. Die Kollegen bleiben im Hintergrund.",
         },
       },
     },
@@ -187,7 +203,7 @@ export const CE06_SIT_NOVAK_ERKENNEN: SituationsPhase = {
             explanation:
               "Richtig. Eine akute Erregung kann organisch bedingt sein: Bei hohem Fieber treten motorische Unruhe, ängstliche Erregung und Sinnestäuschungen auf (Delir). Eine Pneumonie kann außerdem zu Sauerstoffmangel führen. Deshalb wird der Zustand nicht automatisch der Schizophrenie zugeschrieben, sondern es werden organische Ursachen geprüft — das kann lebenswichtig sein. Praktisch: SpO2-Clip und Blutzucker-Stich brauchen Nähe/Berührung — die Messung gelingt oft erst, wenn er dich heranlässt. Deeskalation und Assessment gehen daher Hand in Hand, notfalls unter ärztlicher Begleitung.",
             explanationB1:
-              "Richtig. Eine akute Erregung kann körperliche Ursachen haben: Fieber kann Unruhe und Sinnestäuschungen auslösen (Delir), eine Lungenentzündung auch Sauerstoffmangel. Darum prüfst du Vitalzeichen, Temperatur, Sauerstoff und Blutzucker — nicht einfach 'nur Psychose'.",
+              "Richtig. Eine akute Erregung kann körperliche Ursachen haben: Fieber kann Unruhe und Sinnestäuschungen auslösen (Delir), eine Lungenentzündung auch Sauerstoffmangel. Darum prüfst du Vitalzeichen, Temperatur, Sauerstoff und Blutzucker — nicht einfach 'nur Psychose'. Beruhigen (Deeskalation) und Untersuchen gehören zusammen.",
           },
           {
             text: "Das ist eindeutig ein Schizophrenie-Schub — das Fieber hat damit nichts zu tun.",
@@ -241,10 +257,16 @@ export const CE06_SIT_NOVAK_ERKENNEN: SituationsPhase = {
         themenSekundaer: ["notfallassessment", "neurologische-akutsituationen"],
         storyAufhaenger:
           "Der naheliegende Gedanke bei einem Mann mit bekannter Schizophrenie: „Das ist sein Schub.“ Aber da sind 39,2 °C Fieber bei einer Pneumonie. Was, wenn hier nicht die Psychose spricht, sondern der Körper?",
+        storyAufhaengerB1:
+          "Der Mann hat eine bekannte Schizophrenie. Der schnelle Gedanke ist: „Das ist sein Schub.“ Aber er hat 39,2 °C Fieber bei einer Lungenentzündung. Was, wenn hier nicht die Psychose spricht, sondern der Körper?",
         kerntext:
           "Eine akute Erregung kann körperliche Ursachen haben. Bei hohem Fieber entstehen motorische Unruhe, ängstliche Erregung, sogar Sinnestäuschungen — ein Fieberdelir. Eine Pneumonie bringt zusätzlich die Gefahr von Sauerstoffmangel.\n\nGenau hier liegt die Falle: Bei einem psychiatrisch vorerkrankten Menschen schiebt man eine Erregung schnell auf die Grunderkrankung. Dieses vorschnelle Zuschreiben (diagnostic overshadowing) übersieht leicht einen behandelbaren körperlichen Notfall — und der kann lebensbedrohlich sein.\n\nDeshalb gilt: nicht vorschnell „nur Psychose“ denken. Erst die körperlichen Ursachen prüfen — Vitalzeichen, Temperatur, Sauerstoffsättigung, Blutzucker. Das ist praktisch heikel, denn SpO2-Clip und Blutzucker-Stich brauchen Nähe; die Messung gelingt oft erst, wenn er dich heranlässt. Beliebig aufschieben lässt sie sich aber nicht: Bleibt er unzugänglich und ist die körperliche Gefahr hoch, holst du ohne Zögern den Arzt dazu. Deeskalation und Assessment gehen Hand in Hand.",
+        kerntextB1:
+          "Eine akute Erregung kann körperliche Ursachen haben. Hohes Fieber macht oft unruhig und ängstlich. Manche Menschen sehen oder hören dann sogar Dinge, die nicht da sind. Das nennt man Fieberdelir — eine akute Verwirrtheit durch Fieber. Eine Lungenentzündung bringt außerdem die Gefahr von Sauerstoffmangel.\n\nGenau hier liegt die Falle: Bei einem psychisch kranken Menschen schiebt man die Erregung schnell auf die Krankheit. Man nennt das diagnostic overshadowing — die Psyche überdeckt den Blick auf den Körper. So übersieht man leicht einen körperlichen Notfall. Und der kann lebensgefährlich sein.\n\nDeshalb gilt: nicht zu schnell „nur Psychose“ denken. Prüfe zuerst die körperlichen Ursachen — Vitalzeichen, Temperatur, Sauerstoff im Blut und Blutzucker. Das ist praktisch schwierig. Denn du brauchst dafür Nähe: Der Sauerstoff-Clip am Finger und der Blutzucker-Stich gehen nur, wenn er dich heranlässt. Aber du darfst es nicht beliebig aufschieben. Bleibt er abweisend und ist die körperliche Gefahr groß, holst du sofort den Arzt dazu. Beruhigen (Deeskalation) und Untersuchen gehören zusammen.",
         faustregel:
           "Akute Erregung ist nicht automatisch Psychose. Erst an Fieber, Sauerstoffmangel, Unterzucker denken — Vitalzeichen, Temperatur, SpO2, Blutzucker. Sonst übersiehst du einen körperlichen Notfall.",
+        faustregelB1:
+          "Akute Erregung ist nicht automatisch eine Psychose. Denk zuerst an Fieber, Sauerstoffmangel und Unterzucker. Prüfe Vitalzeichen, Temperatur, Sauerstoff und Blutzucker. Sonst übersiehst du einen körperlichen Notfall.",
         spektrum: [
           {
             patientName: "Herr Novak (39,2 °C)",
@@ -252,18 +274,24 @@ export const CE06_SIT_NOVAK_ERKENNEN: SituationsPhase = {
             hauptfaktor: "Fieberdelir",
             kurzbeschreibung:
               "Unruhe und Sinnestäuschungen können vom Fieber kommen. Ursache mitbehandeln (Fieber senken), nicht nur beruhigen.",
+            kurzbeschreibungB1:
+              "Die Unruhe kann vom Fieber kommen. Darum auch die Ursache behandeln — das Fieber senken. Nicht nur beruhigen.",
           },
           {
             patientName: "Bekannte Schizophrenie",
             hauptfaktor: "diagnostic overshadowing",
             kurzbeschreibung:
               "Die Gefahr, alles der Psyche zuzuschreiben. Körperliche Ursachen trotzdem konsequent ausschließen.",
+            kurzbeschreibungB1:
+              "Die Gefahr: Man schiebt alles auf die Psyche. Prüfe die körperlichen Ursachen trotzdem genau.",
           },
           {
             patientName: "Erregung ohne Fieber, Blutzucker normal",
             hauptfaktor: "organisch geklärt",
             kurzbeschreibung:
               "Körperlich unauffällig → jetzt gezielt psychiatrisch deeskalieren und behandeln.",
+            kurzbeschreibungB1:
+              "Körperlich ist alles in Ordnung. Jetzt kannst du gezielt psychisch beruhigen und behandeln.",
           },
         ],
         wiederbegegnung: {
@@ -277,6 +305,10 @@ export const CE06_SIT_NOVAK_ERKENNEN: SituationsPhase = {
             "Ein Mann mit bekannter Schizophrenie ist akut erregt und hat 39,2 °C Fieber — ist das einfach „sein Schub“?",
           rueckseite:
             "Nicht vorschnell annehmen. Akute Erregung kann organisch sein (Fieberdelir, Hypoxie bei Pneumonie, Hypoglykämie). Bei psychisch Vorerkrankten Gefahr des diagnostic overshadowing. Erst Vitalzeichen/Temperatur/SpO2/Blutzucker, dann psychiatrisch einordnen.",
+          vorderseiteB1:
+            "Ein Mann mit bekannter Schizophrenie ist sehr erregt und hat 39,2 °C Fieber. Ist das einfach „sein Schub“?",
+          rueckseiteB1:
+            "Nicht zu schnell annehmen. Akute Erregung kann körperliche Ursachen haben: Fieberdelir, Sauerstoffmangel bei Lungenentzündung, Hypoglykämie (Unterzucker). Bei psychisch Kranken droht diagnostic overshadowing — die Psyche überdeckt den Körper. Erst Vitalzeichen, Temperatur, Sauerstoff und Blutzucker prüfen. Dann psychisch einordnen.",
         },
       },
     },
@@ -454,28 +486,40 @@ export const CE06_SIT_NOVAK_ERSTMASSNAHMEN: SituationsPhase = {
         themaPrimaer: "psychische-akutsituationen",
         storyAufhaenger:
           "Was, wenn das ruhige Reden nicht ausreicht und er sich oder andere ernsthaft gefährdet? Der schnelle Reflex im Team: fixieren und ein Beruhigungsmittel, dann ist Ruhe. Genau hier verläuft eine Grenze — fachlich und rechtlich. Wo?",
+        storyAufhaengerB1:
+          "Was, wenn das ruhige Reden nicht reicht und er sich oder andere ernsthaft gefährdet? Der schnelle Reflex im Team: fixieren und ein Beruhigungsmittel geben, dann ist Ruhe. Genau hier verläuft eine Grenze — fachlich und rechtlich. Wo?",
         kerntext:
           "Körperliche Fixierung ist die LETZTE Deeskalationsstufe — nie der erste, bequeme Griff. Wenn überhaupt, dann mit mehreren im Team, klarer Kommandostruktur und patientenschonend, während eine Person im sprechenden Kontakt bleibt.\n\nZwang darf nur bei echter Selbst- oder Fremdgefährdung eingesetzt werden, nie aggressiv und nur als allerletzter Ausweg, wenn kein milderer Weg mehr bleibt. Er muss rechtlich gedeckt sein und auf das unbedingt nötige Mindestmaß begrenzt bleiben.\n\nDie Rechtslage: Eine Freiheitsentziehung darf es nur geben, wenn der Betroffene einwilligt, wenn akute Gefahr keinen Aufschub erlaubt (Gefahr im Verzug) oder wenn ein Gericht sie beschlossen hat. Auf einer somatischen Station (hier die Innere) ist die richterliche Grundlage das Betreuungsrecht — die Genehmigung des Betreuungsgerichts (§ 1831 BGB). Bei Gefahr im Verzug ist die akute Sofortmaßnahme ohne Genehmigung erlaubt, sie ist aber unverzüglich nachzuholen. Das PsychKG der Länder ist eine zusätzliche Regelung nur für die Unterbringung in psychiatrischen Einrichtungen; auf der Inneren greift es nicht automatisch.\n\nUnd die Beruhigungsspritze? Eine medikamentöse Sedierung (etwa Haloperidol) ordnet der Arzt an. Die Pflege erkennt, deeskaliert, sichert und assistiert — sie gibt Sedativa nie eigenmächtig.",
+        kerntextB1:
+          "Eine körperliche Fixierung ist die letzte Stufe der Deeskalation — nie der erste, bequeme Griff. Fixierung heißt: einen Menschen am Bett oder Stuhl festbinden, damit er nicht mehr aufstehen oder weggehen kann. Wenn überhaupt, dann mit mehreren im Team und mit klaren Ansagen. Man geht dabei schonend vor. Und eine Person bleibt im Gespräch mit ihm.\n\nZwang darf man nur einsetzen, wenn echte Gefahr besteht — für ihn oder für andere Menschen. Nie aggressiv. Und nur als allerletzten Weg, wenn nichts Milderes mehr hilft. Zwang muss rechtlich erlaubt sein. Und man beschränkt sich dabei auf das absolut Nötige.\n\nDie Rechtslage: Man darf einem Menschen die Freiheit nur in drei Fällen nehmen. Erstens, wenn er selbst zustimmt. Zweitens, wenn keine Zeit zum Warten bleibt — das nennt man Gefahr im Verzug. Drittens, wenn ein Gericht es beschlossen hat. Herr Novak liegt auf einer normalen Station, hier der Inneren Medizin. Die richterliche Grundlage ist dann das Betreuungsrecht: die Genehmigung vom Betreuungsgericht (§ 1831 BGB). Bei Gefahr im Verzug darfst du sofort das Nötigste tun, auch ohne Genehmigung. Aber du musst die Genehmigung sofort danach nachholen. Das PsychKG der Länder ist eine extra Regel. Es gilt nur, wenn jemand in einer Psychiatrie untergebracht wird. Auf der Inneren gilt es nicht automatisch.\n\nUnd die Beruhigungsspritze? Man nennt das Sedierung: ein Beruhigungsmittel (zum Beispiel Haloperidol) geben. Das ordnet der Arzt an. Die Pflege erkennt die Lage, beruhigt, sichert und hilft mit. Sie gibt ein Beruhigungsmittel nie allein — also nie ohne ärztliche Anordnung.",
         faustregel:
           "Fixierung ist die letzte Stufe, nie der erste Griff — nur bei echter Gefahr, legitimiert, Mindestmaß, im Team, eine Person spricht weiter. Die Fixierung selbst muss ärztlich angeordnet sein. Rechtsgrundlage: Zustimmung / Gefahr im Verzug / Genehmigung (§ 1831 BGB); PsychKG nur in der Psychiatrie. Sedierung = ärztlich.",
+        faustregelB1:
+          "Fixierung ist die letzte Stufe, nie der erste Griff. Nur bei echter Gefahr, erlaubt, im nötigsten Umfang, im Team — eine Person spricht weiter. Die Fixierung selbst muss der Arzt anordnen. Rechtsgrundlage: Zustimmung, Gefahr im Verzug oder Genehmigung vom Gericht (§ 1831 BGB). Das PsychKG gilt nur in der Psychiatrie. Ein Beruhigungsmittel ordnet der Arzt an.",
         spektrum: [
           {
             patientName: "Gefahr im Verzug",
             hauptfaktor: "akute Sofortmaßnahme",
             kurzbeschreibung:
               "Das Nötigste zum Schutz ist sofort zulässig — die richterliche Genehmigung wird unverzüglich nachgeholt.",
+            kurzbeschreibungB1:
+              "Das Nötigste zum Schutz ist sofort erlaubt. Die Genehmigung vom Gericht holst du sofort danach nach.",
           },
           {
             patientName: "Nur Unruhe, kein akuter Notfall",
             hauptfaktor: "keine Rechtsgrundlage",
             kurzbeschreibung:
               "Ohne echte Gefahr keine Fixierung. Weiter deeskalieren, Arzt einbinden — Zwang ist nicht das erste Mittel.",
+            kurzbeschreibungB1:
+              "Ohne echte Gefahr keine Fixierung. Weiter beruhigen und den Arzt einbinden. Zwang ist nicht das erste Mittel.",
           },
           {
             patientName: "Team will Beruhigungsmittel geben",
             hauptfaktor: "ärztliche Anordnung",
             kurzbeschreibung:
               "Haloperidol und andere Sedativa ordnet der Arzt an. Die Pflege assistiert und überwacht — gibt sie nicht selbst.",
+            kurzbeschreibungB1:
+              "Beruhigungsmittel wie Haloperidol ordnet der Arzt an. Die Pflege hilft mit und überwacht — sie gibt sie nicht selbst.",
           },
         ],
         karteikarte: {
@@ -483,6 +527,10 @@ export const CE06_SIT_NOVAK_ERSTMASSNAHMEN: SituationsPhase = {
             "Die Kollegin will den erregten Patienten sofort fixieren und ein Beruhigungsmittel geben — geht das?",
           rueckseite:
             "Nein, nicht als erster/freier Schritt. Fixierung = letzte Deeskalationsstufe, nur bei echter Gefahr, legitimiert, Mindestmaß, im Team (eine Person spricht weiter). Die Fixierung selbst wird ärztlich angeordnet. Rechtsgrundlage: Zustimmung / Gefahr im Verzug / richterliche Genehmigung (§ 1831 BGB; PsychKG nur in der Psychiatrie). Sedierung (Haloperidol) = ärztliche Anordnung.",
+          vorderseiteB1:
+            "Die Kollegin will den erregten Patienten sofort fixieren und ein Beruhigungsmittel geben. Geht das?",
+          rueckseiteB1:
+            "Nein, nicht als erster, freier Schritt. Fixierung ist die letzte Stufe. Sie ist nur bei echter Gefahr erlaubt, im nötigsten Umfang und im Team — eine Person spricht weiter. Die Fixierung selbst ordnet der Arzt an. Rechtsgrundlage: Zustimmung, Gefahr im Verzug oder Genehmigung vom Gericht (§ 1831 BGB; das PsychKG gilt nur in der Psychiatrie). Die Sedierung (ein Beruhigungsmittel wie Haloperidol) ordnet der Arzt an.",
         },
       },
     },
@@ -522,7 +570,7 @@ export const CE06_SIT_NOVAK_ERSTMASSNAHMEN: SituationsPhase = {
             explanation:
               "Richtig. Körperliche Fixierung ist erst die letzte Deeskalationsstufe — nicht der bequeme erste Griff. Zwang darf nur bei tatsächlicher Selbst-/Fremdgefährdung, nicht aggressiv, legitimiert und auf das Mindestmaß beschränkt eingesetzt werden. Rechtsgrundlage hier (internistische Station): bei Gefahr im Verzug die akute Sofortmaßnahme, darüber hinaus die richterliche Genehmigung freiheitsentziehender Maßnahmen nach Betreuungsrecht (§ 1831 BGB, unverzüglich nachzuholen). Das PsychKG/Unterbringungsgesetz greift erst bei einer psychiatrischen Unterbringung, nicht automatisch auf der somatischen Station. Eine medikamentöse Sedierung (z.B. Haloperidol) ist ärztliche Anordnung.",
             explanationB1:
-              "Richtig. Fixierung ist erst der allerletzte Schritt — nur bei echter Gefahr, nicht aggressiv, so wenig wie möglich. Bei Gefahr im Verzug darfst du sofort das Nötigste tun; alles Weitere braucht die Genehmigung des Betreuungsgerichts (§ 1831 BGB). Ein Beruhigungsmittel ordnet der Arzt an.",
+              "Richtig. Fixierung ist die letzte Stufe der Deeskalation (des Beruhigens), nicht der erste Schritt. Sie ist nur bei echter Gefahr erlaubt und nie aggressiv. Sie bleibt auf das Nötigste beschränkt. Bei Gefahr im Verzug darfst du sofort das Nötigste tun. Alles Weitere braucht die Genehmigung des Betreuungsgerichts (§ 1831 BGB). Das PsychKG (das Gesetz für die Psychiatrie) gilt hier nicht, weil er auf einer normalen Station liegt. Ein Beruhigungsmittel (die Sedierung) ordnet der Arzt an.",
           },
           {
             text: "Ja, sofort fixieren und ein Beruhigungsmittel geben — im Krankenhaus dürfen wir das aus Sicherheitsgründen selbst entscheiden, dafür brauchen wir keine ärztliche Anordnung oder Genehmigung.",
@@ -593,7 +641,7 @@ export const CE06_SIT_NOVAK_UEBERGEBEN: SituationsPhase = {
             explanation:
               "Richtig. Vollständiges SBAR — und wichtig: die organische Spur (Fieber/Hypoxie) ist als offene, zu klärende Ursache benannt, nicht vorschnell als 'nur Psychose' abgetan. Der Arzt kann sofort priorisieren (Vitalzeichen, Ursachensuche, Vorgehen bei Erregung).",
             explanationB1:
-              "Richtig. Vollständiges SBAR — und die körperliche Spur (Fieber) ist als offene Ursache genannt, nicht als 'nur Psychose' abgetan. Der Arzt kann sofort handeln.",
+              "Richtig. Vollständiges SBAR — und die körperliche Spur (Fieber) ist als offene Ursache genannt, nicht als 'nur Psychose' abgetan. Der Arzt kann sofort handeln: Vitalzeichen prüfen, die Ursache klären, das Vorgehen festlegen.",
           },
           {
             text: "\"Der Psychiatrie-Patient dreht durch und ist aggressiv — geben Sie ihm bitte was zur Beruhigung.\"",
@@ -650,7 +698,7 @@ export const CE06_SIT_NOVAK_REFLEKTIEREN: SituationsPhase = {
       },
       contentB1: {
         title: "Was nimmst du mit?",
-        body: "Der Reflex 'ist ja psychisch krank', die eigene Sicherheit und die Ethik von Zwang — denke über die Situation nach.",
+        body: "Der Reflex 'ist ja psychisch krank', dein eigener Schutz und die Ethik von Zwang — denke über die Situation nach.",
         glossarBegriffe: ["Deeskalation", "Nachbesprechung"],
       },
       question: {

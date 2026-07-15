@@ -51,7 +51,7 @@ export const CE06_SIT_WAGNER_ERKENNEN: SituationsPhase = {
             explanation:
               "Ein gefährlicher Trugschluss. Schnappatmung (agonale Atmung) ist KEINE normale Atmung — sie tritt kurz nach dem Herz-Kreislauf-Stillstand auf. Wer sie als 'atmet noch' deutet und in die Seitenlage legt, verliert die entscheidenden Minuten. Bei fehlender Reaktion UND fehlender normaler Atmung gilt: Herz-Kreislauf-Stillstand.",
             explanationB1:
-              "Falsch. Schnappatmung ist keine normale Atmung. Sie kommt kurz nach dem Herzstillstand. Wenn du ihn jetzt nur zur Seite legst, verlierst du wertvolle Zeit.",
+              "Falsch. Schnappatmung ist keine normale Atmung. Sie kommt kurz nach dem Herz-Kreislauf-Stillstand. Wenn du ihn jetzt nur zur Seite legst, verlierst du wertvolle Zeit.",
           },
           {
             text: "Keine Reaktion und keine normale Atmung — ich gehe von einem Herz-Kreislauf-Stillstand aus und handle sofort.",
@@ -59,7 +59,7 @@ export const CE06_SIT_WAGNER_ERKENNEN: SituationsPhase = {
             explanation:
               "Richtig. Reagiert der Patient nicht und ist keine normale Atmung vorhanden, muss ein Herz-Kreislauf-Stillstand angenommen werden — vereinzelte, schnappende Atemzüge zählen ausdrücklich NICHT als normale Atmung. Genau jetzt beginnt die Rettungskette.",
             explanationB1:
-              "Richtig. Keine Reaktion und keine normale Atmung heißt: Herz-Kreislauf-Stillstand. Schnappatmung zählt nicht als Atmung. Jetzt sofort handeln.",
+              "Richtig. Prüfe zwei Dinge: Reagiert er? Ist seine Atmung normal? Fehlt beides, nennt man das einen Herz-Kreislauf-Stillstand. Schnappatmung zählt nicht als Atmung. Jetzt beginnt die Rettungskette (die Schritte, die jetzt sein Leben retten) — du handelst sofort.",
           },
           {
             text: "Ich bin unsicher — ich hole erst ein Stethoskop und höre die Lunge ab, um sicherzugehen.",
@@ -108,10 +108,16 @@ export const CE06_SIT_WAGNER_ERKENNEN: SituationsPhase = {
         themenSekundaer: ["notfallassessment"],
         storyAufhaenger:
           "Frühdienst, du kommst auf den Flur — und Herr Wagner sackt ein paar Meter vor dir zusammen. Du bist sofort bei ihm, sprichst ihn an, rüttelst an den Schultern. Nichts. Nur alle paar Sekunden ein einzelnes, schnappendes Luftholen. Und jetzt?",
+        storyAufhaengerB1:
+          "Frühdienst. Herr Wagner fällt ein paar Meter vor dir um. Du bist sofort bei ihm. Du sprichst ihn an und rüttelst an den Schultern. Nichts. Nur alle paar Sekunden ein einzelnes, schnappendes Luftholen. Was jetzt?",
         kerntext:
           "Zwei Fragen entscheiden alles, beide beantwortest du in Sekunden: Wacht er auf, wenn du ihn ansprichst und rüttelst? Und hebt sich sein Brustkorb ruhig und regelmäßig? Bleibt beides aus, behandelst du ihn als Herz-Kreislauf-Stillstand.\n\nDer Haken liegt genau bei der Atmung: Kurz nachdem der Kreislauf steht, ringt der Körper oft noch nach einzelnen, ruckartigen Atemzügen mit langen Pausen — der Schnappatmung. Sie wirkt wie ein letztes bisschen Leben, ist aber das Gegenteil: ein Zeichen, dass der Kreislauf bereits steht. Wer sie für Atmung hält, verliert die wichtigsten Minuten.\n\nUnd der Puls? Als erfahrene Pflegekraft darfst du ihn tasten — aber nur zeitgleich zur Atemkontrolle und höchstens zehn Sekunden lang, denn selbst geübte Hände liegen dabei oft daneben. Verschenk dafür keine extra Zeit: Bleiben Reaktion und normale Atmung aus, wird sofort reanimiert. Dieses Erkennen ist Glied 1 der Rettungskette: Erkennen, Alarmieren, Drücken, Defibrillator.",
+        kerntextB1:
+          "Zwei Fragen entscheiden alles. Erstens: Wacht er auf, wenn du ihn ansprichst und rüttelst? Zweitens: Hebt sich sein Brustkorb ruhig und regelmäßig? Wenn beides fehlt, gilt: Herz-Kreislauf-Stillstand. Du handelst sofort.\n\nVorsicht bei der Atmung: Kurz nach dem Stillstand schnappt der Körper oft noch nach Luft. Das sind einzelne, ruckartige Atemzüge mit langen Pausen. Das nennt man Schnappatmung. Sie sieht aus wie Leben. Aber sie bedeutet das Gegenteil: Der Kreislauf steht schon. Wer das für normale Atmung hält, verliert die wichtigsten Minuten.\n\nUnd der Puls? Als erfahrene Pflegekraft darfst du ihn tasten — aber nur gleichzeitig mit der Atem-Kontrolle. Und höchstens zehn Sekunden lang. Denn auch geübte Hände irren sich oft beim Puls. Verliere keine extra Zeit: Er reagiert nicht und atmet nicht normal? Dann sofort reanimieren. Das Erkennen ist Glied 1 der Rettungskette: Erkennen, Alarmieren, Drücken, Defibrillator.",
         faustregel:
           "Keine Reaktion und kein ruhiges, gleichmäßiges Atmen — mehr brauchst du nicht, um zu handeln. Schnappen ist kein Atmen.",
+        faustregelB1:
+          "Keine Reaktion und kein ruhiges, gleichmäßiges Atmen? Dann handelst du. Schnappen ist kein Atmen.",
         spektrum: [
           {
             patientName: "Frau Ríos",
@@ -119,12 +125,16 @@ export const CE06_SIT_WAGNER_ERKENNEN: SituationsPhase = {
             hauptfaktor: "Synkope",
             kurzbeschreibung:
               "Kippt auch weg — aber ihr Gehirn wird nur kurz zu schwach durchblutet. Der Kreislauf läuft weiter, sie kommt von allein zu sich. Kein Stillstand.",
+            kurzbeschreibungB1:
+              "Sie kippt auch um. Aber ihr Gehirn bekommt nur kurz zu wenig Blut. Der Kreislauf läuft weiter. Sie wacht von allein wieder auf. Kein Stillstand.",
           },
           {
             patientName: "Bewusstloser mit ruhiger Atmung",
             hauptfaktor: "erhaltene Atmung",
             kurzbeschreibung:
               "Reagiert nicht, atmet aber gleichmäßig weiter — dann stabile Seitenlage, keine Wiederbelebung.",
+            kurzbeschreibungB1:
+              "Er reagiert nicht, aber er atmet ruhig und gleichmäßig weiter. Dann: stabile Seitenlage. Keine Wiederbelebung.",
           },
           {
             patientName: "Herr Wagner",
@@ -132,6 +142,8 @@ export const CE06_SIT_WAGNER_ERKENNEN: SituationsPhase = {
             hauptfaktor: "Schnappatmung",
             kurzbeschreibung:
               "Genau dieses ruhige Atmen fehlt. Das Schnappen täuscht es nur vor. Das ist der Stillstand.",
+            kurzbeschreibungB1:
+              "Bei ihm fehlt das ruhige Atmen. Das Schnappen sieht nur so aus wie Atmen. Das ist der Stillstand.",
           },
         ],
         karteikarte: {
@@ -139,6 +151,10 @@ export const CE06_SIT_WAGNER_ERKENNEN: SituationsPhase = {
             "Herr Wagner reagiert nicht und schnappt nur nach Luft — handeln oder warten?",
           rueckseite:
             "Handeln. Keine Reaktion + kein ruhiges, gleichmäßiges Atmen = Herz-Kreislauf-Stillstand. Schnappen ist kein Atmen. Kein Pulstasten — direkt in die Rettungskette.",
+          vorderseiteB1:
+            "Herr Wagner reagiert nicht und schnappt nur nach Luft. Handeln oder warten?",
+          rueckseiteB1:
+            "Handeln. Keine Reaktion + kein ruhiges, gleichmäßiges Atmen = Herz-Kreislauf-Stillstand. Schnappen ist kein Atmen. Nicht den Puls suchen — sofort mit der Rettungskette starten.",
         },
       },
     },
@@ -172,6 +188,8 @@ export const CE06_SIT_WAGNER_ERKENNEN: SituationsPhase = {
             isTrue: false,
             explanation:
               "Falsch. Die Pulskontrolle vor Beginn der Wiederbelebung wird auch für professionelle Helfer nicht mehr generell empfohlen — sie ist fehleranfällig und kostet wertvolle Zeit. Bei fehlender Reaktion und fehlender normaler Atmung wird sofort reanimiert. Nur ein Erfahrener darf gleichzeitig kurz (max. 10 Sek.) den Karotispuls tasten, während er nach anderen Lebenszeichen sucht. (Einfach gesagt: Keine Reaktion + keine normale Atmung = sofort reanimieren.)",
+            explanationB1:
+              "Falsch. Vor der Reanimation musst du nicht sicher den Puls tasten. Das kostet zu viel Zeit und ist auch für erfahrene Helfer schwierig. Wichtig ist nur: Reagiert er nicht, und ist die Atmung nicht normal? Dann musst du sofort reanimieren. Nur eine erfahrene Person darf anders vorgehen: Sie fühlt gleichzeitig ganz kurz — höchstens 10 Sekunden — den Puls am Hals, während sie nach anderen Lebenszeichen sucht.",
           },
         ],
       },
@@ -227,10 +245,16 @@ export const CE06_SIT_WAGNER_ALARMIEREN: SituationsPhase = {
         themenSekundaer: ["notfallassessment"],
         storyAufhaenger:
           "Herr Wagner liegt vor dir, du hast es erkannt: keine Reaktion, kein ruhiges Atmen — Stillstand. Dein eigener Puls rast. Und jetzt kommt die Frage, die über Minuten entscheidet: Was zuerst — Hilfe holen oder sofort drücken? Und darfst du ihn dafür überhaupt allein lassen?",
+        storyAufhaengerB1:
+          "Herr Wagner liegt vor dir. Du weißt jetzt: keine Reaktion, kein ruhiges Atmen — Stillstand. Dein eigener Puls rast. Jetzt kommt die wichtige Frage: Was zuerst — Hilfe holen oder sofort drücken? Und darfst du ihn dafür allein lassen?",
         kerntext:
           "Vier Schritte, immer in derselben Ordnung — das ist die Rettungskette (bei der Reanimation auch Überlebenskette genannt): erkennen, alarmieren, drücken, mit dem Defibrillator schocken. Glied 1 hast du hinter dir. Jetzt zählt Glied 2, und es geht allem anderen vor: Das Notfallteam muss sofort unterwegs sein — im Krankenhaus über den Reanimationsruf, draußen über die 112. Ohne diesen Anruf kommt weder das Gerät noch die erweiterte Hilfe rechtzeitig.\n\nDer erste Reflex ist oft, selbst loszurennen — zum Telefon, zum Defi. Doch bist du allein, gilt: Notruf absetzen, dann ohne Zögern die Herzdruckmassage aufnehmen und beim Patienten bleiben. Du läufst nicht weg, nur um ein Gerät zu holen. Der Grund ist die No-Flow-Zeit: Jede Sekunde ohne Drücken fließt kein Blut zum Gehirn. Ein Defibrillator dreißig Meter entfernt ist diese Pause nicht wert.\n\nBist du zu zweit, teilst du auf: Eine Person beginnt sofort mit dem Drücken, die andere ruft das Team und bringt das Gerät. Und du sprichst die Menschen einzeln und mit klarem Auftrag an — Sie rufen das Team, Sie holen den Defi —, denn ein allgemeines Hilferufen lässt oft jeden auf den anderen warten.\n\nWarum die Eile mit dem Defibrillator? Der häufigste Rhythmus, den das Herz bei einem plötzlichen Stillstand des Erwachsenen zeigt, ist das Kammerflimmern — ein wildes, ungeordnetes Zucken der Herzkammern, bei dem kein Blut mehr hinausgepumpt wird. Dagegen kommt das Drücken allein nicht an; nur der Stromstoß kann es durchbrechen. Je früher er gesetzt wird, desto größer die Chance.",
+        kerntextB1:
+          "Die Rettungskette hat vier Schritte, immer in dieser Reihenfolge: erkennen, alarmieren, drücken, mit dem Defibrillator schocken. (Bei der Reanimation heißt sie auch Überlebenskette.) Schritt 1 hast du geschafft. Jetzt kommt Schritt 2, und er geht vor allem anderen: Das Notfallteam muss sofort losfahren. Im Krankenhaus nutzt du den Reanimationsruf. Draußen wählst du die 112. Ohne diesen Anruf kommt die Hilfe nicht rechtzeitig.\n\nViele wollen zuerst selbst losrennen — zum Telefon oder zum Defi. Aber wenn du allein bist, gilt: Erst den Notruf machen. Dann sofort mit der Herzdruckmassage anfangen. Und beim Patienten bleiben! Du läufst nicht weg, nur um ein Gerät zu holen. Der Grund heißt No-Flow-Zeit: Jede Sekunde ohne Drücken fließt kein Blut zum Gehirn. Ein Defi 30 Meter weiter ist diese Pause nicht wert.\n\nSeid ihr zu zweit, teilt ihr auf: Eine Person drückt sofort. Die andere ruft das Team und bringt den Defi. Wichtig: Sprich die Menschen einzeln an und gib klare Aufträge — 'Sie rufen das Team!', 'Sie holen den Defi!'. Bei einem allgemeinen 'Hilfe!' wartet oft jeder auf den anderen.\n\nWarum ist der Defi so wichtig? Bei einem plötzlichen Stillstand zeigt das Herz beim Erwachsenen meistens Kammerflimmern. Das ist ein wildes, ungeordnetes Zucken der Herzkammern. Das Herz pumpt dann kein Blut mehr. Drücken allein stoppt das Flimmern nicht. Nur der Stromstoß kann es beenden. Je früher, desto besser die Chance.",
         faustregel:
           "Erst das Team rufen (lassen), dann sofort drücken — und nie den Patienten allein lassen, nur um ein Gerät zu holen.",
+        faustregelB1:
+          "Erst das Team rufen (lassen), dann sofort drücken. Und nie den Patienten allein lassen, nur um ein Gerät zu holen.",
         spektrum: [
           {
             patientName: "Allein bei Herrn Wagner",
@@ -238,18 +262,24 @@ export const CE06_SIT_WAGNER_ALARMIEREN: SituationsPhase = {
             hauptfaktor: "Einzelhelfer",
             kurzbeschreibung:
               "Erst den Notruf absetzen, dann sofort drücken — und bei ihm bleiben. Kein Weglaufen zum Defi; die Kompression zählt mehr als das Gerät.",
+            kurzbeschreibungB1:
+              "Erst der Notruf. Dann sofort drücken. Du bleibst bei ihm. Nicht zum Defi weglaufen — das Drücken ist wichtiger als das Gerät.",
           },
           {
             patientName: "Zwei Helfer im Flur",
             hauptfaktor: "Delegation",
             kurzbeschreibung:
               "Einer drückt sofort, einer ruft das Team und bringt den Defi. Du sprichst beide einzeln und namentlich an, damit sich jeder gemeint fühlt.",
+            kurzbeschreibungB1:
+              "Einer drückt sofort. Einer ruft das Team und bringt den Defi. Sprich beide einzeln und direkt an — dann fühlt sich jeder gemeint.",
           },
           {
             patientName: "Kollaps direkt beobachtet",
             hauptfaktor: "früher Schock",
             kurzbeschreibung:
               "Team rufen und den Defibrillator sofort holen lassen — beim Kammerflimmern entscheidet der frühe Stromstoß über die Chance.",
+            kurzbeschreibungB1:
+              "Team rufen und den Defi sofort holen lassen. Beim Kammerflimmern rettet der frühe Stromstoß.",
           },
         ],
         karteikarte: {
@@ -257,6 +287,10 @@ export const CE06_SIT_WAGNER_ALARMIEREN: SituationsPhase = {
             "Du bist allein bei Herrn Wagner, Stillstand erkannt, der Defi hängt 30 m weg — was zuerst, und darfst du ihn dafür allein lassen?",
           rueckseite:
             "Erst Notruf/Team (Priorität, phone-first). Dann sofort Herzdruckmassage — und beim Patienten bleiben, nicht zum Defi weglaufen. Zu zweit: einer drückt, einer holt den Defi. Jede Pause ist No-Flow-Zeit.",
+          vorderseiteB1:
+            "Du bist allein bei Herrn Wagner. Stillstand erkannt. Der Defi hängt 30 m weg. Was zuerst? Darfst du ihn allein lassen?",
+          rueckseiteB1:
+            "Zuerst der Notruf (das Team hat Vorrang). Dann sofort Herzdruckmassage. Du bleibst beim Patienten — nicht zum Defi weglaufen. Zu zweit: einer drückt, einer holt den Defi. Jede Pause = No-Flow-Zeit.",
         },
       },
     },
@@ -361,28 +395,40 @@ export const CE06_SIT_WAGNER_ERSTMASSNAHMEN: SituationsPhase = {
         themenSekundaer: ["notfallassessment"],
         storyAufhaenger:
           "Deine Handballen liegen auf Herrn Wagners Brustbein, die Arme gestreckt, du drückst. Aber einfach nur drücken und wirksam drücken sind zwei verschiedene Dinge — und dazwischen liegt seine Überlebenschance. Was macht den Unterschied?",
+        storyAufhaengerB1:
+          "Deine Handballen liegen auf Herrn Wagners Brustbein. Die Arme sind gestreckt. Du drückst. Aber nur drücken reicht nicht — es muss wirksam sein. Davon hängt seine Chance ab. Was macht den Unterschied?",
         kerntext:
           "Sobald sein Herz steht, übernimmst DU die Pumpe. Jede Kompression presst Blut in Richtung Gehirn — aber nur, wenn vier Dinge stimmen.\n\nTief genug: Der Brustkorb muss beim Erwachsenen fünf bis sechs Zentimeter nachgeben, sonst bewegst du zu wenig Blut. Vollständig loslassen: Nach jedem Druck nimmst du die Last ganz vom Brustkorb — erst dann füllt es sich erneut mit Blut. Die Hände bleiben dabei aufliegen, damit du den Druckpunkt nicht verlierst. Schnell genug: hundert bis hundertzwanzig Mal pro Minute, ein zügiger, gleichmäßiger Takt. Und die Unterlage muss hart sein — auf einer nachgiebigen Matratze versinkt der Betroffene nur, die Kraft verpufft. Deshalb liegt Herr Wagner richtig: auf dem harten Flurboden.\n\nDer rote Faden hinter allem heißt No-Flow-Zeit: jede Sekunde, in der du nicht drückst, steht auch der Blutfluss zum Gehirn. Genau darum ist der Takt von dreißig Kompressionen zu zwei Beatmungen so knapp gehalten, darum geht es nach einem Schock ohne Umweg sofort weiter, darum wird ein müder Helfer in Sekunden gewechselt. Nicht die perfekte einzelne Kompression rettet — sondern möglichst wenig Pause dazwischen.\n\nUnd du hörst nicht auf: weiter, bis er von allein wieder atmet, das Team übernimmt oder eine Ärztin es beendet.",
+        kerntextB1:
+          "Sein Herz steht. Jetzt bist DU die Pumpe. Jeder Druck presst Blut zum Gehirn — aber nur, wenn vier Dinge stimmen.\n\nErstens, tief genug: Drücke den Brustkorb beim Erwachsenen fünf bis sechs Zentimeter tief ein. Sonst bewegst du zu wenig Blut. Zweitens, ganz loslassen: Nach jedem Druck entlastest du den Brustkorb komplett. Nur dann kann neues Blut ins Herz strömen. Deine Hände bleiben dabei liegen — so verlierst du den Druckpunkt nicht. Drittens, schnell genug: hundert bis hundertzwanzig Mal pro Minute, in einem gleichmäßigen Takt. Viertens: Die Unterlage muss hart sein. In einer weichen Matratze versinkt der Patient nur, und die Kraft geht verloren. Herr Wagner liegt darum richtig — auf dem harten Boden.\n\nDas wichtigste Prinzip heißt No-Flow-Zeit: Jede Sekunde ohne Drücken fließt kein Blut zum Gehirn. Darum ist der Takt von 30 Drücken zu 2 Beatmungen so knapp. Darum drückst du nach einem Schock sofort weiter. Darum wechselt ein müder Helfer in Sekunden. Nicht der perfekte einzelne Druck rettet — sondern möglichst wenig Pause.\n\nUnd du hörst nicht auf. Du drückst weiter — bis er von allein atmet, das Team übernimmt oder eine Ärztin die Reanimation beendet.",
         faustregel:
           "Drücke tief, drücke schnell, lass vollständig los — und hör so gut wie nie auf. Jede Pause ist No-Flow-Zeit.",
+        faustregelB1:
+          "Drücke tief, drücke schnell, lass ganz los — und höre fast nie auf. Jede Pause ist No-Flow-Zeit.",
         spektrum: [
           {
             patientName: "Zu flach, zu langsam",
             hauptfaktor: "Ermüdung",
             kurzbeschreibung:
               "Nach etwa zwei Minuten werden die Kompressionen flacher und langsamer — dann wird gewechselt, bevor die Qualität kippt.",
+            kurzbeschreibungB1:
+              "Nach etwa zwei Minuten wird dein Drücken flacher und langsamer. Dann wechselt ihr — bevor die Qualität schlecht wird.",
           },
           {
             patientName: "Pause fürs Pulstasten",
             hauptfaktor: "No-Flow-Falle",
             kurzbeschreibung:
               "Jede eingeschobene Kontrolle unterbricht den Blutfluss. Darum nach dem Schock ohne Pulscheck sofort weiterdrücken.",
+            kurzbeschreibungB1:
+              "Jede extra Kontrolle stoppt den Blutfluss. Darum nach dem Schock sofort weiterdrücken — ohne den Puls zu prüfen.",
           },
           {
             patientName: "Patient im Bett",
             hauptfaktor: "weiche Unterlage",
             kurzbeschreibung:
               "In der Matratze verpufft der Druck. Erst harte Unterlage schaffen (Reanimationsbrett oder Boden), dann drücken.",
+            kurzbeschreibungB1:
+              "In der Matratze geht der Druck verloren. Erst eine harte Unterlage schaffen (Brett oder Boden), dann drücken.",
           },
         ],
         karteikarte: {
@@ -390,6 +436,10 @@ export const CE06_SIT_WAGNER_ERSTMASSNAHMEN: SituationsPhase = {
             "Was macht die Herzdruckmassage wirksam — und was ruiniert sie?",
           rueckseite:
             "Wirksam: 5–6 cm tief, 100–120/min, vollständig entlasten, harte Unterlage. Ruiniert: Pausen (No-Flow-Zeit). Darum 30:2 knapp, nach Schock sofort weiter, bei Ermüdung wechseln.",
+          vorderseiteB1:
+            "Was macht die Herzdruckmassage wirksam? Und was macht sie unwirksam?",
+          rueckseiteB1:
+            "Wirksam: 5–6 cm tief, 100–120 pro Minute, ganz loslassen, harte Unterlage. Unwirksam machen sie: Pausen (No-Flow-Zeit). Darum: 30:2, nach dem Schock sofort weiter, bei Müdigkeit wechseln.",
         },
       },
     },
@@ -452,7 +502,7 @@ export const CE06_SIT_WAGNER_ERSTMASSNAHMEN: SituationsPhase = {
       },
       contentB1: {
         title: "Der AED sagt: „Schock empfohlen.“",
-        body: "Die Schülerin bringt den AED. Du klebst die Elektroden auf. Der AED sagt: \"Patienten nicht berühren, Analyse läuft.\" — alle nehmen kurz die Hände weg. Dann: \"Schock empfohlen. Laden.\" Eine Kollegin hat schon wieder die Hände auf dem Brustkorb. Was tust du?",
+        body: "Die Schülerin bringt den AED. Du klebst die Elektroden auf. Der AED sagt: \"Patienten nicht berühren, Analyse läuft.\" — alle nehmen kurz die Hände weg. Dann: \"Schock empfohlen. Laden.\" Eine Kollegin legt ihre Hände schon wieder auf seinen Brustkorb. Was tust du?",
         glossarBegriffe: ["AED (= Defi, der selbst analysiert)", "Kammerflimmern (= gefährliche Herzrhythmusstörung)"],
       },
       question: {
@@ -464,7 +514,7 @@ export const CE06_SIT_WAGNER_ERSTMASSNAHMEN: SituationsPhase = {
             feedback:
               "Genau richtig — und in der richtigen Reihenfolge. Kammerflimmern ist ein defibrillierbarer Rhythmus, der Schock ist die kausale Therapie. Vor jeder Schockabgabe MUSS sichergestellt sein, dass niemand den Patienten berührt (Eigenschutz und korrekte Energieabgabe) — deshalb die klare Ansage 'Alle weg!' plus Sichtkontrolle. Und weil jede Pause 'No-Flow'-Zeit ist, wird unmittelbar nach dem Schock ohne Puls-Check sofort weiter komprimiert. Vorbildliche Team-Führung.",
             feedbackB1:
-              "Genau richtig. Kammerflimmern braucht den Schock. Vor dem Schock musst du sicher sein, dass niemand den Patienten berührt — darum sagst du laut 'Alle weg!' und schaust hin. Direkt nach dem Schock geht die Herzdruckmassage sofort weiter. Sehr gut geführt.",
+              "Genau richtig. Kammerflimmern braucht den Schock. Vor dem Schock musst du sicher sein, dass niemand den Patienten berührt. Das ist Eigenschutz — du schützt dich und andere vor dem Stromstoß. Darum sagst du laut 'Alle weg!' und schaust hin. Direkt nach dem Schock geht die Herzdruckmassage sofort weiter. Sehr gut geführt.",
           },
           {
             text: "Ich drücke sofort den Schock-Knopf, damit keine Zeit verloren geht — die Kollegin zieht ihre Hände schon rechtzeitig weg.",
@@ -652,28 +702,40 @@ export const CE06_SIT_WAGNER_UEBERGEBEN: SituationsPhase = {
         themenSekundaer: ["notfallassessment"],
         storyAufhaenger:
           "Die Ärztin und die Intensivpflegekraft sind da, sie übernehmen. Du trittst einen halben Schritt zurück — und fragst dich vielleicht: Was machen die jetzt anders als du? Und war dein Teil damit unwichtig?",
+        storyAufhaengerB1:
+          "Die Ärztin und die Intensivpflegekraft sind da. Sie übernehmen. Du trittst einen Schritt zurück. Vielleicht denkst du: Was machen die jetzt anders als ich? War mein Teil unwichtig?",
         kerntext:
           "Kaum etwas ist anders — und das ist die wichtigste Erkenntnis. Der erweiterte Ablauf, den das Team jetzt fährt (ALS), ersetzt deine Basismaßnahmen nicht, er baut auf ihnen auf. Die hochwertige Herzdruckmassage läuft ununterbrochen weiter; sie bleibt das Fundament.\n\nWas dazukommt, sind ärztliche Schritte: Die Ärztin legt einen Zugang (in eine Vene, notfalls in den Knochen), um Medikamente geben zu können — allen voran Adrenalin, das etwa alle drei bis fünf Minuten wiederholt wird. Bei einem defibrillierbaren Rhythmus wird weiter geschockt. Und das Team sucht parallel nach einer behebbaren Ursache — zum Beispiel einer Unterkühlung oder einer Vergiftung —, denn ohne sie bleibt die Wiederbelebung oft erfolglos.\n\nDeine Rolle endet damit nicht, sie verschiebt sich: Du drückst weiter oder wechselst dich ab, hältst die Qualität hoch, reichst Material, ziehst Medikamente auf, dokumentierst die Zeiten. Das Medikament allein rettet niemanden — es wirkt nur, wenn dein Drücken das Blut überhaupt dorthin bringt. Dein Teil war und bleibt zentral.",
+        kerntextB1:
+          "Die wichtigste Antwort: Fast nichts ist anders. Das Team macht jetzt die erweiterten Maßnahmen (ALS = Advanced Life Support). Aber ALS ersetzt deine Basis-Maßnahmen nicht. Es baut auf ihnen auf. Die gute Herzdruckmassage läuft ohne Pause weiter. Sie bleibt das Fundament.\n\nNeu sind die ärztlichen Schritte: Die Ärztin legt einen Zugang — in eine Vene, im Notfall in den Knochen. Über den Zugang gibt sie Medikamente. Das wichtigste Medikament heißt Adrenalin. Es wird etwa alle drei bis fünf Minuten wiederholt. Bei Kammerflimmern wird weiter geschockt. Und das Team sucht eine Ursache, die man beheben kann — zum Beispiel eine Unterkühlung oder eine Vergiftung. Ohne das bleibt die Wiederbelebung oft ohne Erfolg.\n\nDeine Rolle endet nicht. Sie verändert sich: Du drückst weiter oder wechselst dich ab. Du reichst Material. Du ziehst Medikamente auf. Du schreibst die Zeiten auf. Merke dir: Das Medikament allein rettet niemanden. Es wirkt nur, wenn dein Drücken das Blut dorthin bringt. Dein Teil bleibt zentral.",
         faustregel:
           "ALS ersetzt BLS nicht — es baut darauf auf. Gute Herzdruckmassage bleibt das Fundament; Medikamente wirken nur, wenn das Blut fließt.",
+        faustregelB1:
+          "ALS ersetzt BLS nicht — es baut darauf auf. Gute Herzdruckmassage bleibt das Fundament. Medikamente wirken nur, wenn das Blut fließt.",
         spektrum: [
           {
             patientName: "Defibrillierbarer Rhythmus",
             hauptfaktor: "Schock + Adrenalin",
             kurzbeschreibung:
               "Kammerflimmern → weiter schocken, Adrenalin alle drei bis fünf Minuten. Die Herzdruckmassage läuft zwischen allem durch.",
+            kurzbeschreibungB1:
+              "Kammerflimmern → weiter schocken. Adrenalin alle drei bis fünf Minuten. Die Herzdruckmassage läuft die ganze Zeit weiter.",
           },
           {
             patientName: "Unterkühlung als Ursache",
             hauptfaktor: "reversible Ursache",
             kurzbeschreibung:
               "Erst die Ursache behandeln (aufwärmen), sonst bleibt die Reanimation erfolglos. Bei Unterkühlung wird länger reanimiert.",
+            kurzbeschreibungB1:
+              "Erst die Ursache behandeln: aufwärmen. Sonst bleibt die Reanimation ohne Erfolg. Bei Unterkühlung reanimiert man länger.",
           },
           {
             patientName: "Deine Rolle als Schülerin",
             hauptfaktor: "assistieren",
             kurzbeschreibung:
               "Weiterdrücken oder abwechseln, Material reichen, Medikamente aufziehen, Zeiten dokumentieren — das Fundament hältst du.",
+            kurzbeschreibungB1:
+              "Weiterdrücken oder abwechseln. Material reichen. Medikamente aufziehen. Zeiten aufschreiben. Du hältst das Fundament.",
           },
         ],
         karteikarte: {
@@ -681,6 +743,10 @@ export const CE06_SIT_WAGNER_UEBERGEBEN: SituationsPhase = {
             "Das Team übernimmt (ALS) — was ändert sich, und was bleibt dein Teil?",
           rueckseite:
             "ALS ersetzt BLS nicht, es baut darauf auf: gute Herzdruckmassage läuft weiter (Fundament). Arzt legt Zugang + gibt Adrenalin (alle 3–5 Min), schockt defibrillierbare Rhythmen, sucht reversible Ursachen. Du assistierst: drücken, Material, Medikamente aufziehen, Zeiten dokumentieren.",
+          vorderseiteB1:
+            "Das Team übernimmt (ALS). Was ändert sich? Was bleibt dein Teil?",
+          rueckseiteB1:
+            "ALS ersetzt BLS nicht. Die gute Herzdruckmassage läuft weiter — sie ist das Fundament. Der Arzt legt einen Zugang, gibt Adrenalin (alle 3–5 Min), schockt weiter, sucht die Ursache. Du hilfst: drücken, Material reichen, Medikamente aufziehen, Zeiten aufschreiben.",
         },
       },
     },
@@ -795,10 +861,16 @@ export const CE06_SIT_WAGNER_REFLEKTIEREN: SituationsPhase = {
         themenSekundaer: ["reanimation-bls"],
         storyAufhaenger:
           "Herr Wagner ist versorgt, sein Kreislauf zurück. Vielleicht bleibt eine Frage: Musstest du das eigentlich tun — einfach so bei einem fremden Menschen? Und gäbe es einen Moment, in dem du gerade NICHT drückst?",
+        storyAufhaengerB1:
+          "Herr Wagner ist versorgt. Sein Kreislauf ist zurück. Vielleicht fragst du dich jetzt: Musste ich das eigentlich tun — einfach so bei einem fremden Menschen? Und gibt es Momente, in denen man NICHT drückt?",
         kerntext:
           "Zwei Seiten, eine Entscheidung.\n\nDie erste Seite ist deine Pflicht. Bei einem Notfall muss jeder zumutbare Hilfe leisten — wer wegsieht, macht sich strafbar (unterlassene Hilfeleistung). Für dich als Pflegekraft wiegt das doppelt: Der Mensch ist dir anvertraut. Nichtstun ist hier keine Option, sondern eine Straftat. Dein Handeln bei Herrn Wagner war also nicht nur richtig — es war Pflicht.\n\nDie zweite Seite ist der Wille des Patienten. Der Grundsatz lautet: im Zweifel wird reanimiert. Nur wenn ein Arzt den Verzicht ausdrücklich angeordnet hat — etwa weil eine gültige Patientenverfügung genau das festlegt — wird nicht wiederbelebt. Ein Zettel im Nachttisch, ein Gerücht oder die Vermutung, er habe bestimmt nicht gewollt, reicht dafür NICHT: Ohne klare, gültige Grundlage handelst du.\n\nUnd es gibt Grenzen, an denen selbst Profis den Abbruch erwägen: wenn die eigene Sicherheit nicht mehr da ist, bei sicheren Todeszeichen, bei einer gültigen Patientenverfügung, wenn weitere Maßnahmen dem erklärten Willen des Menschen widersprechen — oder wenn sie aussichtslos sind. Diese Entscheidung trifft das ärztliche Team, nicht du allein.\n\nBei Herrn Wagner war nichts davon gegeben. Also galt das Einfachste und Wichtigste: handeln.",
+        kerntextB1:
+          "Es gibt zwei Seiten, aber eine Entscheidung.\n\nDie erste Seite ist deine Pflicht: Bei einem Notfall muss jeder Mensch helfen, so gut er kann. Wer wegsieht, macht sich strafbar. Das heißt unterlassene Hilfeleistung. Für dich als Pflegekraft gilt das doppelt: Der Mensch ist dir anvertraut. Nichts tun ist keine Option — es ist eine Straftat. Dein Handeln bei Herrn Wagner war also nicht nur richtig. Es war Pflicht.\n\nDie zweite Seite ist der Wille des Patienten. Die Regel ist: Im Zweifel wird reanimiert. Nur wenn ein Arzt den Verzicht klar angeordnet hat, wird nicht wiederbelebt — zum Beispiel wegen einer gültigen Patientenverfügung. Ein Zettel im Nachttisch reicht NICHT. Ein Gerücht reicht nicht. Eine Vermutung reicht nicht. Ohne klare, gültige Grundlage handelst du.\n\nEs gibt auch Grenzen. Dann überlegen sogar Profis, ob sie aufhören. Zum Beispiel: Die eigene Sicherheit fehlt. Es gibt sichere Todeszeichen. Eine gültige Patientenverfügung lehnt die Maßnahmen ab. Oder die Maßnahmen haben keine Aussicht auf Erfolg. Diese Entscheidung trifft das ärztliche Team. Nicht du allein.\n\nBei Herrn Wagner gab es nichts davon. Also galt das Wichtigste: handeln.",
         faustregel:
           "Im Zweifel immer reanimieren. Nur ein ärztlich angeordneter Verzicht — meist auf Basis einer gültigen Patientenverfügung — hält dich zurück. Nichtstun ist bei einem Notfall strafbar.",
+        faustregelB1:
+          "Im Zweifel immer reanimieren. Nur wenn der Arzt den Verzicht angeordnet hat (meist wegen einer gültigen Patientenverfügung), reanimierst du nicht. Nichts tun ist bei einem Notfall strafbar.",
         spektrum: [
           {
             patientName: "Herr Wagner",
@@ -806,18 +878,24 @@ export const CE06_SIT_WAGNER_REFLEKTIEREN: SituationsPhase = {
             hauptfaktor: "keine Verfügung",
             kurzbeschreibung:
               "Nichts spricht gegen die Reanimation — also wird sofort und vollständig gehandelt. Der Normalfall.",
+            kurzbeschreibungB1:
+              "Nichts spricht gegen die Reanimation. Also wird sofort und komplett gehandelt. Das ist der Normalfall.",
           },
           {
             patientName: "Gültige Patientenverfügung",
             hauptfaktor: "erklärter Wille",
             kurzbeschreibung:
               "Eine wirksame Verfügung lehnt die Wiederbelebung ab und der Arzt hat den Verzicht angeordnet — dann wird dieser Wille respektiert, nicht überstimmt.",
+            kurzbeschreibungB1:
+              "Die gültige Verfügung lehnt die Wiederbelebung ab. Der Arzt hat den Verzicht angeordnet. Dann gilt dieser Wille — man handelt nicht dagegen.",
           },
           {
             patientName: "Nur eine Vermutung",
             hauptfaktor: "unklare Grundlage",
             kurzbeschreibung:
               "Eine bloße Annahme oder ein ungültiger Zettel reicht nicht. Ohne klare ärztliche Anordnung gilt: reanimieren.",
+            kurzbeschreibungB1:
+              "Eine Vermutung oder ein ungültiger Zettel reicht nicht. Ohne klare ärztliche Anordnung gilt: reanimieren.",
           },
         ],
         karteikarte: {
@@ -825,6 +903,10 @@ export const CE06_SIT_WAGNER_REFLEKTIEREN: SituationsPhase = {
             "Ein fremder Mensch bricht zusammen — musst du helfen, und wann reanimierst du NICHT?",
           rueckseite:
             "Helfen ist Pflicht (Nichtstun = strafbar, § 323c). Im Zweifel immer reanimieren. Nicht reanimiert wird nur bei ärztlich angeordnetem Verzicht (meist gültige Patientenverfügung) oder an klaren Grenzen (sichere Todeszeichen, Aussichtslosigkeit). Die Entscheidung trifft das Ärzteteam.",
+          vorderseiteB1:
+            "Ein fremder Mensch bricht zusammen. Musst du helfen? Und wann reanimierst du NICHT?",
+          rueckseiteB1:
+            "Helfen ist Pflicht — nichts tun ist strafbar (§ 323c). Im Zweifel immer reanimieren. Du reanimierst nur dann nicht, wenn der Arzt den Verzicht angeordnet hat — meist wegen einer gültigen Patientenverfügung. Auch bei klaren Grenzen wird gestoppt: sichere Todeszeichen oder keine Aussicht auf Erfolg. Das Ärzteteam entscheidet.",
         },
       },
     },
@@ -851,7 +933,7 @@ export const CE06_SIT_WAGNER_REFLEKTIEREN: SituationsPhase = {
       },
       contentB1: {
         title: "Ein anderer Fall — Frau Kellner",
-        body: "Andere Patientin: Frau Kellner, 84, wird bewusstlos und atmet nicht normal. In ihrer Akte liegt eine gültige Patientenverfügung, die eine Wiederbelebung ablehnt. Der Arzt hat den Verzicht angeordnet. Was tust du?",
+        body: "Andere Patientin: Frau Kellner, 84, wird bewusstlos, ihre Atmung ist nicht normal. In ihrer Akte liegt eine gültige Patientenverfügung, die eine Wiederbelebung ablehnt. Der Arzt hat den Verzicht auf Reanimation angeordnet. Was tust du?",
       },
       question: {
         fragetext: "Wie handelst du bei Frau Kellner?",
@@ -940,7 +1022,7 @@ export const CE06_SIT_WAGNER_REFLEKTIEREN: SituationsPhase = {
       },
       contentB1: {
         title: "Der Defi war weit weg",
-        body: "In der Nachbesprechung fällt auf: Der Defi hing 30 Meter weg — das hat Sekunden gekostet. Wie gehst du damit um?",
+        body: "In der Nachbesprechung fällt auf: Der Defibrillator (Defi) hing 30 Meter weg — das hat Sekunden gekostet. Wie gehst du damit um?",
         glossarBegriffe: ["CIRS (= System, um Beinahe-Fehler zu melden)"],
       },
       question: {
@@ -997,7 +1079,7 @@ export const CE06_SIT_WAGNER_REFLEKTIEREN: SituationsPhase = {
       },
       contentB1: {
         title: "Der Notfallplan deiner Station",
-        body: "Bei Herrn Wagner war der Defi 30 Meter weg. Denke an deine eigene Station.",
+        body: "Bei Herrn Wagner war der Defibrillator (Defi) 30 Meter weg. Denke an deine eigene Station.",
       },
       question: {
         fragetext: "Analysiere den Notfallplan deines Einsatzortes.",

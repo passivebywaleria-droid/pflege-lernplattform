@@ -63,7 +63,7 @@ export const CE06_SIT_RADTKE_ERKENNEN: SituationsPhase = {
             explanation:
               "Richtig. Krankenhäuser und Pflegeeinrichtungen besitzen Notfallpläne und Vorgaben zur Notfall-Evakuierung; Pflegende müssen die Vorgehensweisen ihrer Einrichtung kennen und wissen, wo die Informationen zu finden sind. Pflegende sollen im Krisen- und Katastrophenfall mitwirken (Feuerschutz, Evakuierung). Und immer gilt: niemals den Eigenschutz vergessen — nur wer selbst handlungsfähig bleibt, kann anderen helfen.",
             explanationB1:
-              "Richtig. Jedes Heim hat einen Notfallplan für den Brandfall. Du musst ihn kennen: alarmieren, Bewohner retten, dich selbst schützen. Nur wer selbst sicher ist, kann helfen.",
+              "Richtig. Jedes Heim hat einen Notfallplan für den Brandfall — auch für den Katastrophenfall, wenn viele Menschen in Gefahr sind. Du musst ihn kennen: alarmieren, Bewohner retten, dich selbst schützen. Nur wer selbst sicher ist, kann helfen.",
           },
           {
             text: "Ich renne zuerst allein zum brennenden Zimmer und versuche, das Feuer selbst zu löschen, bevor ich irgendwen alarmiere oder Bewohner wecke.",
@@ -184,16 +184,24 @@ export const CE06_SIT_RADTKE_ALARMIEREN: SituationsPhase = {
         themaPrimaer: "katastrophe-triage-krise",
         storyAufhaenger:
           "Vor wenigen Minuten war es ein Brand in einem Zimmer. Jetzt stehen mehr Verletzte am Sammelplatz, als ihr im Nachtdienst versorgen könnt. Ab diesem Moment gilt eine andere Logik als sonst — welche?",
+        storyAufhaengerB1:
+          "Vor wenigen Minuten war es nur ein Brand in einem Zimmer. Jetzt stehen mehr Verletzte am Sammelplatz, als ihr im Nachtdienst versorgen könnt. Ab jetzt gilt eine andere Logik als sonst. Welche?",
         kerntext:
           "Solange du einen einzelnen Menschen versorgst, gibst du ihm alles, was er braucht. Sobald es aber mehr Betroffene gibt, als die vorhandenen Kräfte einzeln versorgen können, kippt die Lage in einen Massenanfall von Verletzten (kurz MANV; als grobe Schwelle gilt: ab etwa 5 Betroffenen). Wird das Ereignis so groß, dass die örtlichen Kräfte es allein nicht mehr bewältigen und viele Menschen an Leben und Gesundheit bedroht sind, heißt das Katastrophe oder Großschadensereignis.\n\nJetzt gilt ein anderes Leitprinzip: nicht mehr für den Einzelnen das Maximum, sondern für möglichst viele das Beste. Das klingt hart, rettet aber unterm Strich die meisten Leben — würdest du dich sofort ganz in die erste schwere Verletzung vertiefen, bliebe die Hilfe für alle anderen liegen. Deshalb wird zuerst gesichtet (nach Dringlichkeit eingeteilt) und erst dann geholfen.\n\nZwei Dinge trägst du durch die ganze Nacht: Handle nach dem Notfall- und Brandschutzplan deiner eigenen Einrichtung — du musst wissen, wo er zu finden ist und was er vorgibt. Und vergiss nie den Eigenschutz: Wer selbst in Rauch, Feuer oder einen einsturzgefährdeten Bereich läuft, wird schnell selbst zum Opfer und fällt als Helfer aus.",
+        kerntextB1:
+          "Solange du nur einen Menschen versorgst, gibst du ihm alles, was er braucht. Aber jetzt gibt es mehr Betroffene, als ihr Kräfte habt. Dann kippt die Lage in einen Massenanfall von Verletzten. Kurz sagt man MANV. Als grobe Grenze gilt: ab etwa 5 Betroffenen. Wird das Ereignis noch größer, schaffen es die Kräfte vor Ort allein nicht mehr. Dann sind viele Menschen in Lebensgefahr. Das nennt man Katastrophe oder Großschadensereignis.\n\nJetzt gilt ein anderes Leitprinzip. Nicht mehr für den Einzelnen das Maximum, sondern für möglichst viele das Beste. Das klingt hart. Aber so rettet man am Ende die meisten Leben. Denn wenn du dich sofort ganz auf die erste schwere Verletzung stürzt, bleibt die Hilfe für alle anderen liegen. Deshalb wird zuerst gesichtet. Sichten heißt: die Betroffenen nach Dringlichkeit einteilen. Erst danach hilfst du.\n\nZwei Dinge trägst du durch die ganze Nacht. Erstens: Handle nach dem Notfallplan und dem Brandschutzplan deiner eigenen Einrichtung. Du musst wissen, wo er steht und was er vorgibt. Zweitens: Vergiss nie den Eigenschutz. Wer selbst in Rauch, Feuer oder einen Bereich läuft, der einstürzen kann, wird schnell selbst zum Opfer. Dann kann er niemandem mehr helfen.",
         faustregel:
           "Mehr Betroffene als Kräfte = MANV. Jetzt gilt: für möglichst viele das Beste — erst sichten, dann helfen. Immer nach dem Plan der eigenen Einrichtung, und Eigenschutz zuerst.",
+        faustregelB1:
+          "Mehr Betroffene als Kräfte = MANV. Jetzt gilt: für möglichst viele das Beste. Erst sichten, dann helfen. Immer nach dem Plan der eigenen Einrichtung. Und Eigenschutz zuerst.",
         spektrum: [
           {
             patientName: "Einzelnotfall",
             hauptfaktor: "volle Versorgung",
             kurzbeschreibung:
               "Ein Betroffener, genug Kräfte — du gibst ihm die ganze Aufmerksamkeit und Versorgung.",
+            kurzbeschreibungB1:
+              "Ein Betroffener, genug Kräfte. Du gibst ihm die ganze Aufmerksamkeit und Versorgung.",
           },
           {
             patientName: "Massenanfall (MANV)",
@@ -201,12 +209,16 @@ export const CE06_SIT_RADTKE_ALARMIEREN: SituationsPhase = {
             hauptfaktor: "sichten & priorisieren",
             kurzbeschreibung:
               "Mehr Verletzte als Kräfte → erst nach Dringlichkeit einteilen, dann helfen: für möglichst viele das Beste.",
+            kurzbeschreibungB1:
+              "Mehr Verletzte als Kräfte. Erst nach Dringlichkeit einteilen, dann helfen: für möglichst viele das Beste.",
           },
           {
             patientName: "Katastrophe / Großschadensereignis",
             hauptfaktor: "überörtliche Hilfe",
             kurzbeschreibung:
               "So groß, dass die örtlichen Kräfte es allein nicht schaffen — viele Menschen bedroht, Hilfe von außen nötig.",
+            kurzbeschreibungB1:
+              "So groß, dass die Kräfte vor Ort es allein nicht schaffen. Viele Menschen sind bedroht. Man braucht Hilfe von außen.",
           },
         ],
         karteikarte: {
@@ -214,6 +226,10 @@ export const CE06_SIT_RADTKE_ALARMIEREN: SituationsPhase = {
             "Am Sammelplatz sind mehr Verletzte als Helfer — welche Logik gilt jetzt?",
           rueckseite:
             "Massenanfall von Verletzten (MANV): mehr Betroffene als Kräfte. Das Leitprinzip wechselt von „für den Einzelnen das Maximum\" zu „für möglichst viele das Beste\" → erst sichten, dann helfen. Immer nach dem Notfallplan der eigenen Einrichtung, Eigenschutz zuerst. Katastrophe = örtliche Kräfte reichen allein nicht.",
+          vorderseiteB1:
+            "Am Sammelplatz sind mehr Verletzte als Helfer. Welche Logik gilt jetzt?",
+          rueckseiteB1:
+            "Massenanfall von Verletzten (MANV): mehr Betroffene als Kräfte. Das Leitprinzip wechselt. Vorher: für den Einzelnen das Maximum. Jetzt: für möglichst viele das Beste. Also erst sichten, dann helfen. Immer nach dem Notfallplan der eigenen Einrichtung. Eigenschutz zuerst. Katastrophe = die Kräfte vor Ort reichen allein nicht.",
         },
       },
     },
@@ -251,7 +267,7 @@ export const CE06_SIT_RADTKE_ALARMIEREN: SituationsPhase = {
             explanation:
               "Richtig. Ein MANV ist ein Notfall mit einer größeren Anzahl von Verletzten oder Erkrankten, der mit der vorhandenen Vorhaltung nicht bewältigt werden kann; eine Katastrophe ist ein Großschadensereignis mit Gefahr für Leben/Gesundheit vieler Menschen, das örtliche Kräfte nicht allein bewältigen. Die Strategie unterscheidet sich von der Individualmedizin: Ziel ist, für möglichst viele Patienten das Beste zu tun.",
             explanationB1:
-              "Richtig. Ein MANV heißt: mehr Verletzte, als man einzeln versorgen kann. Eine Katastrophe bedroht viele Menschen. Anders als sonst gilt jetzt: für möglichst viele das Beste tun.",
+              "Richtig. Ein MANV heißt: mehr Verletzte, als man einzeln versorgen kann. Eine Katastrophe (ein Großschadensereignis) bedroht viele Menschen. Anders als sonst gilt jetzt: für möglichst viele das Beste tun.",
           },
           {
             text: "Ein normaler Einzelnotfall — ich versorge einfach der Reihe nach jeden Bewohner vollständig, so wie ich es sonst auch mache, bis alle dran waren.",
@@ -318,34 +334,48 @@ export const CE06_SIT_RADTKE_ERSTMASSNAHMEN: SituationsPhase = {
         themenSekundaer: ["notfallassessment"],
         storyAufhaenger:
           "Am Sammelplatz warten mehrere Betroffene, der Rettungsdienst ist noch nicht da. Du kannst nicht allen zugleich helfen — also brauchst du erst einen schnellen, geordneten Blick und dann eine klare Rangfolge. Wie?",
+        storyAufhaengerB1:
+          "Am Sammelplatz warten mehrere Betroffene. Der Rettungsdienst ist noch nicht da. Du kannst nicht allen zugleich helfen. Also brauchst du erst einen schnellen, geordneten Blick. Und dann eine klare Rangfolge. Wie?",
         kerntext:
           "Zuerst der schnelle Blick auf den Einzelnen: Das ABCDE-Schema prüft in fester Reihenfolge das Lebensbedrohlichste zuerst — Atemweg (A), Atmung (B), Kreislauf (C), Bewusstsein (D) und zuletzt Entkleiden/Umgebung (E). Diese Reihenfolge kennst du schon aus der Ersteinschätzung; sie sorgt dafür, dass dir kein sofort tödliches Problem (etwa ein verlegter Atemweg) durchrutscht.\n\nAuf dieser Grundlage sichtest (triagierst) du: Du teilst die Betroffenen nach Dringlichkeit in Farbkategorien ein. Rot (SK I) heißt vitale Bedrohung — sofort behandeln (z. B. bedrohte Atmung, starke Blutung). Gelb (SK II) heißt schwer verletzt, aber kreislaufstabil — dringlich, aber nach den Roten. Grün (SK III) heißt leicht verletzt und gehfähig — kann warten. Blau (SK IV) kennzeichnet Betroffene ohne realistische Überlebenschance — sie werden betreuend und schmerzlindernd begleitet; diese Kategorie vergibt nur ein Arzt. Schwarz steht für Verstorbene.\n\nEntscheidend: Du sichtest nach Dringlichkeit, nicht nach Lautstärke. Wer laut ruft und umhergeht, ist meist grün; die stillen, kaum atmenden Betroffenen sind oft die roten. Und Grün heißt nicht „fertig\": Gerade nach dem Einatmen von Rauch kann sich ein Zustand verzögert verschlechtern — also weiter beobachten.",
+        kerntextB1:
+          "Zuerst der schnelle Blick auf den Einzelnen. Dafür gibt es das ABCDE-Schema. Es prüft immer in fester Reihenfolge — das Gefährlichste zuerst. A ist der Atemweg. B ist die Atmung. C ist der Kreislauf. D ist das Bewusstsein. E ist das Entkleiden und der Blick auf die Umgebung. Diese Reihenfolge kennst du schon aus der Ersteinschätzung. So rutscht dir kein sofort tödliches Problem durch, zum Beispiel ein blockierter Atemweg.\n\nDanach sichtest du. Sichten (oder triagieren) heißt: Du teilst die Betroffenen nach Dringlichkeit in Farben ein. Rot (SK I) heißt Lebensgefahr — sofort behandeln, zum Beispiel bei schwerer Atemnot oder starker Blutung. Gelb (SK II) heißt schwer verletzt, aber der Kreislauf ist stabil — dringlich, aber erst nach den Roten. Grün (SK III) heißt leicht verletzt und kann selbst gehen — kann warten. Blau (SK IV) heißt: keine echte Überlebenschance mehr. Diese Menschen begleitet man und lindert ihre Schmerzen. Diese Farbe vergibt nur ein Arzt. Schwarz steht für Verstorbene.\n\nWichtig: Du sichtest nach Dringlichkeit, nicht nach Lautstärke. Wer laut ruft und umhergeht, ist meistens grün. Die stillen Betroffenen, die kaum atmen, sind oft die roten. Und Grün heißt nicht „fertig\". Gerade nach dem Einatmen von Rauch kann es später schlechter werden. Deshalb: weiter beobachten.",
         faustregel:
           "Erst ABCDE (Lebensbedrohlichstes zuerst), dann sichten nach Dringlichkeit: rot = sofort, gelb = dringlich, grün = kann warten, blau = ohne Überlebenschance (palliativ), schwarz = tot. Nach Dringlichkeit, nicht nach Lautstärke.",
+        faustregelB1:
+          "Erst ABCDE (das Gefährlichste zuerst). Dann sichten nach Dringlichkeit. Rot = sofort, gelb = dringlich, grün = kann warten. Blau = keine Überlebenschance (palliativ — nur noch Begleitung, keine Heilung). Schwarz = tot. Nach Dringlichkeit, nicht nach Lautstärke.",
         spektrum: [
           {
             patientName: "SK I — rot",
             hauptfaktor: "vitale Bedrohung",
             kurzbeschreibung:
               "Bedrohte Atmung, starke Blutung, Bewusstlosigkeit → sofort behandeln.",
+            kurzbeschreibungB1:
+              "Schwere Atemnot, starke Blutung oder Bewusstlosigkeit → sofort behandeln.",
           },
           {
             patientName: "SK II — gelb",
             hauptfaktor: "schwer, aber stabil",
             kurzbeschreibung:
               "Schwer verletzt, Kreislauf (noch) stabil → dringlich, kommt nach den Roten.",
+            kurzbeschreibungB1:
+              "Schwer verletzt, aber der Kreislauf ist noch stabil. Dringlich, kommt nach den Roten.",
           },
           {
             patientName: "SK III — grün",
             hauptfaktor: "leicht / gehfähig",
             kurzbeschreibung:
               "Leicht verletzt, läuft selbst umher → kann warten; trotzdem weiter beobachten (Rauchgas!).",
+            kurzbeschreibungB1:
+              "Leicht verletzt, läuft selbst umher → kann warten. Trotzdem weiter beobachten, denn der Rauch kann noch wirken.",
           },
           {
             patientName: "SK IV blau (lebend) · schwarz (tot)",
             hauptfaktor: "zwei verschiedene Zustände",
             kurzbeschreibung:
               "Blau = noch lebend, aber ohne realistische Überlebenschance → palliative Begleitung. Schwarz dagegen = bereits Verstorbene. Nicht verwechseln.",
+            kurzbeschreibungB1:
+              "Blau = lebt noch, aber ohne echte Überlebenschance. Man pflegt jetzt palliativ: begleiten und die Schmerzen lindern, nicht mehr heilen. Schwarz = schon verstorben. Nicht verwechseln.",
           },
         ],
         karteikarte: {
@@ -353,6 +383,10 @@ export const CE06_SIT_RADTKE_ERSTMASSNAHMEN: SituationsPhase = {
             "Wie verschaffst du dir Überblick und setzt Prioritäten am Sammelplatz?",
           rueckseite:
             "Erst ABCDE (A Atemweg, B Atmung, C Kreislauf, D Bewusstsein, E Entkleiden/Umgebung) — Lebensbedrohlichstes zuerst. Dann Sichtung in Farben: SK I rot = sofort (vital), SK II gelb = dringlich (schwer, stabil), SK III grün = kann warten (leicht/gehfähig), SK IV blau = ohne Überlebenschance (palliativ), schwarz = tot. Nach Dringlichkeit, nicht Lautstärke; grün weiter beobachten.",
+          vorderseiteB1:
+            "Wie bekommst du am Sammelplatz einen Überblick und setzt Prioritäten?",
+          rueckseiteB1:
+            "Erst ABCDE: A Atemweg, B Atmung, C Kreislauf, D Bewusstsein, E Entkleiden und Umgebung. Das Gefährlichste zuerst. Dann sichten in Farben. Rot (SK I) = sofort. Gelb (SK II) = dringlich (schwer, aber stabil). Grün (SK III) = kann warten (leicht, geht selbst). Blau (SK IV) = keine Überlebenschance, palliativ (nur noch Begleitung, keine Heilung). Schwarz = tot. Nach Dringlichkeit, nicht Lautstärke. Grün weiter beobachten.",
         },
       },
     },
@@ -390,7 +424,7 @@ export const CE06_SIT_RADTKE_ERSTMASSNAHMEN: SituationsPhase = {
             explanation:
               "Richtig. Zur Ersteinschätzung kritisch kranker oder verletzter Patienten anhand einer Prioritätenliste dient das ABCDE-Notfallschema (Airway, Breathing, Circulation, Disability, Exposure). Es ist für internistische und traumatologische Patienten geeignet und kann außerklinisch wie im Krankenhaus angewendet werden. Es arbeitet die lebensbedrohlichsten Probleme zuerst ab.",
             explanationB1:
-              "Richtig. Das ABCDE-Schema prüft in fester Reihenfolge: Atemweg, Atmung, Kreislauf, Bewusstsein, Entkleiden/Umgebung. Zuerst kommt das Lebensbedrohlichste. Es passt überall — draußen und in der Klinik.",
+              "Richtig. Das ABCDE-Schema ist deine Ersteinschätzung. Es prüft in fester Reihenfolge: Atemweg, Atmung, Kreislauf, Bewusstsein, Entkleiden/Umgebung. Zuerst kommt das Lebensbedrohlichste. Es passt überall — draußen und in der Klinik.",
           },
           {
             text: "Ich schätze rein nach dem Bauchgefühl ein und beginne bei der Person, die mir zufällig am nächsten steht oder am lautesten ruft, ganz ohne feste Reihenfolge.",
@@ -431,8 +465,8 @@ export const CE06_SIT_RADTKE_ERSTMASSNAHMEN: SituationsPhase = {
         glossarBegriffe: ["Triage", "Sichtungskategorie", "SK I / II / III"],
       },
       contentB1: {
-        title: "Triage: Kategorien zuordnen",
-        body: "Ordne jeden Betroffenen der richtigen Kategorie zu. Rot (SK I) = Lebensgefahr, sofort; Gelb (SK II) = schwer, dringlich; Grün (SK III) = leicht, kann warten.",
+        title: "Triage: Sichtungskategorie zuordnen",
+        body: "Ordne jeden Betroffenen der richtigen Sichtungskategorie (Kategorie nach Dringlichkeit) zu. Rot (SK I) = Lebensgefahr, sofort; Gelb (SK II) = schwer, dringlich; Grün (SK III) = leicht, kann warten.",
         glossarBegriffe: ["Triage (= Sichtung/Einteilung nach Dringlichkeit)"],
       },
       question: {
@@ -475,7 +509,7 @@ export const CE06_SIT_RADTKE_ERSTMASSNAHMEN: SituationsPhase = {
               korrekteZoneId: "sk1",
               erklaerung:
                 "SK I (rot): Bewusstlosigkeit mit bedrohter Atmung ist eine vitale Bedrohung — Sofortbehandlung. Der Atemweg/die Atmung (A/B im ABCDE) hat höchste Priorität.",
-              erklaerungB1: "Rot (SK I): keine Reaktion und schwere Atemnot ist Lebensgefahr — sofort behandeln.",
+              erklaerungB1: "Rot (SK I): keine Reaktion und schwere Atemnot ist Lebensgefahr — sofort behandeln. Atemweg und Atmung (A und B im ABCDE) haben höchste Priorität.",
             },
             {
               id: "spritzende-blutung",
@@ -505,7 +539,7 @@ export const CE06_SIT_RADTKE_ERSTMASSNAHMEN: SituationsPhase = {
               korrekteZoneId: "sk2",
               erklaerung:
                 "SK II (gelb): eine schwere Verletzung (Fraktur) ohne vitale Bedrohung — dringliche Behandlung, aber der Betroffene ist stabil und kann kurz warten, bis die vital Bedrohten versorgt sind.",
-              erklaerungB1: "Gelb (SK II): schwerer Bruch, aber Kreislauf stabil — dringlich, kann aber kurz nach den Lebensgefährlichen warten.",
+              erklaerungB1: "Gelb (SK II): ein schwerer Bruch (Fraktur), aber Kreislauf stabil — dringlich, kann aber kurz nach den Lebensgefährlichen warten.",
             },
             {
               id: "schuerfwunde",
@@ -568,6 +602,8 @@ export const CE06_SIT_RADTKE_ERSTMASSNAHMEN: SituationsPhase = {
             isTrue: false,
             explanation:
               "Falsch. Erst werden alle Geschädigten gesichtet (= nach Dringlichkeit eingeteilt), dann wird geholfen. So wird sichergestellt, dass möglichst vielen geholfen wird und die Behandlung Einzelner die Hilfe für viele nicht verzögert. Der Grundsatz lautet: für möglichst viele das Beste.",
+            explanationB1:
+              "Falsch. Erst sichtet man alle Betroffenen — das heißt: nach Dringlichkeit einteilen. Dann erst hilfst du. So bekommen möglichst viele Menschen Hilfe. Der Grundsatz heißt: für möglichst viele das Beste.",
           },
           {
             statement:
@@ -575,6 +611,8 @@ export const CE06_SIT_RADTKE_ERSTMASSNAHMEN: SituationsPhase = {
             isTrue: true,
             explanation:
               "Richtig. Eigenschutz geht vor — niemals den Eigenschutz vergessen. Wer sich selbst in Rauch, Feuer oder einsturzgefährdete (= vom Einsturz bedrohte) Bereiche begibt, wird schnell selbst zum Opfer und fällt als Helfer aus. Erst die eigene Sicherheit prüfen, dann helfen.",
+            explanationB1:
+              "Richtig. Der Eigenschutz (du schützt dich selbst) geht immer vor — vergiss das nie. Wer in Rauch, Feuer oder einsturzgefährdete Bereiche (Bereiche, die einstürzen können) geht, wird selbst zum Opfer. Dann kann er niemandem mehr helfen. Erst deine eigene Sicherheit prüfen, dann helfen.",
           },
         ],
       },
@@ -624,10 +662,16 @@ export const CE06_SIT_RADTKE_UEBERGEBEN: SituationsPhase = {
         themaPrimaer: "katastrophe-triage-krise",
         storyAufhaenger:
           "Frau Radtke steht zitternd am Sammelplatz, will zurück ins brennende Haus — und ein Reporter drängt sich mit der Kamera heran und fragt dich nach Namen. Zwei Dinge zugleich: der verängstigte Mensch und dein Platz im großen Ablauf.",
+        storyAufhaengerB1:
+          "Frau Radtke steht zitternd am Sammelplatz. Sie will zurück ins brennende Haus. Und ein Reporter drängt sich mit der Kamera heran. Er fragt dich nach Namen. Zwei Dinge auf einmal: der verängstigte Mensch und dein Platz im großen Ablauf.",
         kerntext:
           "Für Menschen wie Frau Radtke leistest du psychische Erste Hilfe. Das heißt: Betroffene abschirmen und vor Schaulustigen und Presse schützen, auf Augenhöhe gehen, Blickkontakt herstellen, sich mit Namen und der eigenen Funktion vorstellen und den Menschen ruhig mit Namen ansprechen. Bei einer schwerhörigen, verwirrten Frau ist besonders wichtig, deutlich von vorne zu sprechen, damit sie von den Lippen lesen kann, jede Berührung vorher anzukündigen und einfache Orientierung zu geben. Ziel ist, sie aus der hilflosen Opferrolle herauszuholen und ihr wieder ein Stück Handlungsfähigkeit zurückzugeben.\n\nGleichzeitig kennst du deinen Platz im System. Auskünfte über Betroffene gibst du nicht an Dritte — schon gar nicht an die Presse; dazu ist allein die Einsatzleitung berechtigt (Persönlichkeitsrecht, Datenschutz, Fürsorge). Und für die tiefergehende psychische Betreuung bist nicht du zuständig, sondern speziell ausgebildete Kräfte: das Kriseninterventionsteam (KIT) und die Notfallseelsorge, die auf solche Belastungen geschult sind. Dein Part ist die erste Zuwendung und das Weiterleiten an die Richtigen.",
+        kerntextB1:
+          "Für Menschen wie Frau Radtke leistest du psychische Erste Hilfe. Das heißt: Du schirmst die Betroffenen ab und schützt sie vor Schaulustigen und Presse. Du gehst auf Augenhöhe und suchst Blickkontakt. Du stellst dich mit Namen und deiner Aufgabe vor. Und du sprichst den Menschen ruhig mit Namen an. Frau Radtke hört schlecht und ist verwirrt. Deshalb ist wichtig: Sprich deutlich von vorne, damit sie von den Lippen lesen kann. Kündige jede Berührung vorher an. Und gib ihr einfache Orientierung. Das Ziel ist: Sie soll aus der hilflosen Opferrolle herauskommen und wieder ein Stück selbst handeln können.\n\nGleichzeitig kennst du deinen Platz im System. Auskünfte über Betroffene gibst du nicht an Dritte. An die Presse schon gar nicht. Das darf nur die Einsatzleitung. Der Grund sind das Persönlichkeitsrecht, der Datenschutz und die Fürsorge. Für die tiefere psychische Betreuung bist nicht du zuständig. Dafür gibt es speziell ausgebildete Kräfte: das Kriseninterventionsteam (kurz KIT) und die Notfallseelsorge. Sie sind für solche Belastungen geschult. Dein Part ist die erste Zuwendung. Und du leitest die Menschen an die Richtigen weiter.",
         faustregel:
           "Psychische Erste Hilfe: abschirmen, auf Augenhöhe, mit Namen ruhig ansprechen, einfache Orientierung. Keine Auskunft an Dritte/Presse — nur die Einsatzleitung. Für die tiefe Betreuung: KIT/Notfallseelsorge informieren.",
+        faustregelB1:
+          "Psychische Erste Hilfe: abschirmen, auf Augenhöhe gehen, ruhig mit Namen ansprechen, einfache Orientierung geben. Keine Auskunft an Dritte oder Presse — nur die Einsatzleitung. Für die tiefe Betreuung: KIT und Notfallseelsorge informieren.",
         spektrum: [
           {
             patientName: "Der verängstigte Mensch",
@@ -635,18 +679,24 @@ export const CE06_SIT_RADTKE_UEBERGEBEN: SituationsPhase = {
             hauptfaktor: "psychische Erste Hilfe",
             kurzbeschreibung:
               "Abschirmen, auf Augenhöhe gehen, mit Namen ansprechen, Orientierung geben — raus aus der Opferrolle.",
+            kurzbeschreibungB1:
+              "Abschirmen, auf Augenhöhe gehen, mit Namen ansprechen, Orientierung geben. Raus aus der Opferrolle.",
           },
           {
             patientName: "Der Reporter",
             hauptfaktor: "keine Auskunft",
             kurzbeschreibung:
               "Über Betroffene gibt nur die Einsatzleitung Auskunft — die Pflege nicht, erst recht nicht der Presse.",
+            kurzbeschreibungB1:
+              "Über Betroffene gibt nur die Einsatzleitung Auskunft. Die Pflege nicht, und der Presse schon gar nicht.",
           },
           {
             patientName: "Die tiefe Aufarbeitung",
             hauptfaktor: "KIT / Seelsorge",
             kurzbeschreibung:
               "Spezialisierte Kräfte (Kriseninterventionsteam, Notfallseelsorge) übernehmen die weitere psychische Betreuung.",
+            kurzbeschreibungB1:
+              "Speziell geschulte Kräfte (Kriseninterventionsteam, Notfallseelsorge) übernehmen die weitere psychische Betreuung.",
           },
         ],
         karteikarte: {
@@ -654,6 +704,10 @@ export const CE06_SIT_RADTKE_UEBERGEBEN: SituationsPhase = {
             "Frau Radtke in Panik, ein Reporter fragt nach Namen — was tust du, was nicht?",
           rueckseite:
             "Psychische Erste Hilfe: abschirmen (auch vor Presse), auf Augenhöhe, mit Namen ruhig ansprechen, bei Schwerhörigkeit von vorne sprechen (Lippenlesen), einfache Orientierung. KEINE Auskunft an Dritte/Presse — nur die Einsatzleitung. Weitere Betreuung: KIT/Notfallseelsorge informieren.",
+          vorderseiteB1:
+            "Frau Radtke in Panik, ein Reporter fragt nach Namen. Was tust du, was nicht?",
+          rueckseiteB1:
+            "Psychische Erste Hilfe: abschirmen (auch vor der Presse), auf Augenhöhe gehen, ruhig mit Namen ansprechen. Bei Schwerhörigkeit von vorne sprechen (Lippenlesen). Einfache Orientierung geben. KEINE Auskunft an Dritte oder Presse — nur die Einsatzleitung. Weitere Betreuung: KIT und Notfallseelsorge informieren.",
         },
       },
     },

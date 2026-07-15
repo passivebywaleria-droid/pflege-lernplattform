@@ -54,7 +54,7 @@ export const CE06_SIT_YILDIZ_ERKENNEN: SituationsPhase = {
       },
       contentB1: {
         title: "Wirklich nur die Angina?",
-        body: "Frau Yıldız denkt, es ist ihre bekannte Angina. Was ist hier das wichtige Warnzeichen?",
+        body: "Frau Yıldız denkt, es ist ihre bekannte Angina pectoris (Fachbegriff für ihren bekannten Brustschmerz). Was ist hier das wichtige Warnzeichen?",
         glossarBegriffe: ["Angina pectoris", "Nitrospray"],
       },
       question: {
@@ -67,7 +67,7 @@ export const CE06_SIT_YILDIZ_ERKENNEN: SituationsPhase = {
             explanation:
               "Richtig. Eine stabile Angina pectoris bessert sich typischerweise auf Ruhe und Nitratgabe. Bleibt die Besserung aus und sind die Schmerzen heftig, mit kaltem Schweiß und Unruhe, muss ein akutes Koronarsyndrom (Herzinfarkt) angenommen werden. Jeder akute Thoraxschmerz gilt bis zum Beweis des Gegenteils als bedrohlich — 'das kenne ich schon' darf dich nicht in Sicherheit wiegen.",
             explanationB1:
-              "Richtig. Eine normale Angina bessert sich auf Ruhe und Nitrospray. Wenn das diesmal NICHT hilft und die Schmerzen stark sind, muss man an einen Herzinfarkt denken. Jeder akute Brustschmerz ist ernst — 'das kenne ich schon' darf dich nicht beruhigen.",
+              "Richtig. Eine stabile Angina pectoris bessert sich auf Ruhe und Nitrat (der Wirkstoff im Nitrospray). Wenn das diesmal NICHT hilft und die Schmerzen stark sind, muss man an ein akutes Koronarsyndrom denken. Das ist der Fachname für den Herzinfarkt. Jeder akute Brustschmerz ist ernst — 'das kenne ich schon' darf dich nicht beruhigen.",
           },
           {
             text: "Dass sie Diabetikerin ist — Diabetiker bekommen keine echten Herzinfarkte.",
@@ -116,16 +116,24 @@ export const CE06_SIT_YILDIZ_ERKENNEN: SituationsPhase = {
         themenSekundaer: ["notfallassessment"],
         storyAufhaenger:
           "Frau Yıldız ist sich sicher: „Das ist meine Angina, gleich geht es weg.“ Sie hat sich hingelegt, ihr Nitrospray genommen — und trotzdem wird der Schmerz stärker. Genau dieser Satz, „das kenne ich schon“, ist die gefährlichste Falle. Warum?",
+        storyAufhaengerB1:
+          "Frau Yıldız ist sich sicher. Sie sagt: „Das ist meine Angina, gleich geht es weg.“ Sie hat sich hingelegt und ihr Nitrospray genommen. Aber der Schmerz wird trotzdem stärker. Genau dieser Satz, „das kenne ich schon“, ist die gefährlichste Falle. Warum?",
         kerntext:
           "Eine stabile Angina pectoris und ein Herzinfarkt (akutes Koronarsyndrom) fühlen sich am Anfang ähnlich an — und ein Zeichen trennt sie: Die Angina bessert sich auf Ruhe und auf das Nitrospray. Bleibt genau diese Besserung aus, obwohl die Patientin ruht und das Nitro schon genommen hat, ist das ein Warnzeichen für einen Infarkt.\n\nDazu kommen beim Infarkt oft heftigste Schmerzen hinter dem Brustbein — sie strahlen häufig aus, etwa in Arm, Hals oder Oberbauch —, begleitet von Übelkeit, kaltem Schweiß und Todesangst. Aber Vorsicht: Das Bild ist nicht immer typisch. Bei Diabetikern kann ein Herzinfarkt sogar stumm, also schmerzarm, verlaufen, und Frauen zeigen oft weniger typische Beschwerden (etwa nur Übelkeit, Schwindel oder Atemnot). Gerade bei ihnen ist die Lage gefährlicher, nicht harmloser — hier ist erhöhte Wachsamkeit nötig.\n\nDeshalb gilt eine einfache, strenge Grundregel: Jeder akute Thoraxschmerz gilt als bedrohlich, solange keine harmlose Ursache gesichert ist. Ohne EKG und Labor lässt sich die Ursache gar nicht sicher klären — also nimmst du ihn immer ernst und sorgst für Abklärung. Die vertraute Selbsteinschätzung „ist nur meine Angina“ darf dich niemals in Sicherheit wiegen.",
+        kerntextB1:
+          "Eine stabile Angina pectoris und ein Herzinfarkt fühlen sich am Anfang ähnlich an. Angina pectoris heißt: ein Brustschmerz, den Frau Yıldız schon lange kennt. Für den Herzinfarkt gibt es noch einen Fachnamen: akutes Koronarsyndrom. Ein Zeichen trennt die beiden: Die Angina bessert sich auf Ruhe und auf Nitrat. Nitrat ist der Wirkstoff im Nitrospray. Aber diesmal bleibt die Besserung aus. Frau Yıldız ruht und hat das Nitrospray schon genommen. Trotzdem hilft es nicht. Das ist ein Warnzeichen für einen Infarkt.\n\nBei einem Infarkt tut oft die Brust sehr stark weh, mitten hinter dem Brustbein. Diese Schmerzen strahlen häufig aus, zum Beispiel in den Arm, den Hals oder den Oberbauch. Dazu kommen oft Übelkeit, kalter Schweiß und Todesangst. Aber Achtung: Das Bild ist nicht immer typisch. Bei Diabetikern kann ein Infarkt sogar stumm verlaufen, also fast ohne Schmerz. Und Frauen haben oft weniger typische Beschwerden — zum Beispiel nur Übelkeit, Schwindel oder Atemnot. Gerade bei ihnen ist die Lage gefährlicher, nicht harmloser. Hier musst du besonders wachsam sein.\n\nDeshalb gilt eine einfache, strenge Regel. Jeder akute Thoraxschmerz — jeder plötzliche Brustschmerz — ist bedrohlich, solange keine harmlose Ursache sicher ist. Ohne EKG und Labor kann man die Ursache gar nicht sicher klären. Also nimmst du den Schmerz immer ernst und sorgst für eine Abklärung. Der vertraute Satz „ist nur meine Angina“ darf dich niemals beruhigen.",
         faustregel:
           "Bessert sich der Brustschmerz auf Ruhe und Nitrat? Wenn NEIN — an Herzinfarkt denken. Jeder akute Thoraxschmerz ist bedrohlich, solange keine harmlose Ursache gesichert ist; „das kenne ich schon“ darf dich nicht beruhigen.",
+        faustregelB1:
+          "Bessert sich der Brustschmerz auf Ruhe und Nitrat? Wenn NEIN: an Herzinfarkt denken. Jeder akute Thoraxschmerz ist bedrohlich, solange keine harmlose Ursache sicher ist. „Das kenne ich schon“ darf dich nicht beruhigen.",
         spektrum: [
           {
             patientName: "Stabile Angina pectoris",
             hauptfaktor: "bessert sich",
             kurzbeschreibung:
               "Der Schmerz lässt auf Ruhe und Nitrat nach — bekannt, meist kurz. Das ist das gutartige Muster.",
+            kurzbeschreibungB1:
+              "Der Schmerz lässt auf Ruhe und Nitrospray nach. Er ist bekannt und meist kurz. Das ist das gutartige Muster.",
           },
           {
             patientName: "Frau Yıldız",
@@ -133,12 +141,16 @@ export const CE06_SIT_YILDIZ_ERKENNEN: SituationsPhase = {
             hauptfaktor: "keine Besserung",
             kurzbeschreibung:
               "Ruhe und Nitro helfen diesmal NICHT, der Schmerz wird stärker und strahlt aus → Infarktverdacht, sofort handeln.",
+            kurzbeschreibungB1:
+              "Ruhe und Nitro helfen diesmal NICHT. Der Schmerz wird stärker und strahlt aus. Das ist ein Infarktverdacht — sofort handeln.",
           },
           {
             patientName: "Erstmals Thoraxschmerz",
             hauptfaktor: "unklar",
             kurzbeschreibung:
               "Ohne EKG/Labor nicht sicher einzuordnen — deshalb immer ernst nehmen und ärztlich abklären lassen.",
+            kurzbeschreibungB1:
+              "Ohne EKG und Labor kann man das nicht sicher einordnen. Deshalb nimmst du es immer ernst und lässt es ärztlich abklären.",
           },
         ],
         karteikarte: {
@@ -146,6 +158,10 @@ export const CE06_SIT_YILDIZ_ERKENNEN: SituationsPhase = {
             "Woran erkennst du, dass aus „nur meiner Angina“ ein Herzinfarkt geworden sein könnte?",
           rueckseite:
             "Das entscheidende Warnzeichen: KEINE Besserung auf Ruhe und Nitrat (obwohl genommen), oft mit heftigem Schmerz/Ausstrahlung, kaltem Schweiß, Todesangst. Grundregel: jeder akute Thoraxschmerz ist bedrohlich, solange keine harmlose Ursache gesichert ist — „das kenne ich schon“ ist die Falle.",
+          vorderseiteB1:
+            "Woran erkennst du, dass aus „nur meiner Angina“ ein Herzinfarkt geworden sein könnte?",
+          rueckseiteB1:
+            "Das wichtige Warnzeichen: KEINE Besserung auf Ruhe und Nitrat, obwohl sie es genommen hat. Oft dazu: starker Schmerz mit Ausstrahlung, kalter Schweiß, Todesangst. Grundregel: Jeder akute Thoraxschmerz ist bedrohlich, solange keine harmlose Ursache sicher ist. „Das kenne ich schon“ ist die Falle.",
         },
       },
     },
@@ -249,28 +265,40 @@ export const CE06_SIT_YILDIZ_ALARMIEREN: SituationsPhase = {
         themenSekundaer: ["notfallassessment"],
         storyAufhaenger:
           "Der Verdacht steht: Herzinfarkt. Frau Yıldız hat Todesangst, der Schmerz hält an. Was du jetzt in den ersten Sekunden tust, entscheidet mit — und vieles davon tust du nicht allein, sondern im Zusammenspiel mit dem Arzt.",
+        storyAufhaengerB1:
+          "Der Verdacht steht: Herzinfarkt. Frau Yıldız hat Todesangst, der Schmerz hält an. Was du jetzt in den ersten Sekunden tust, ist wichtig. Und vieles davon tust du nicht allein, sondern zusammen mit dem Arzt.",
         kerntext:
           "Beim Infarktverdacht zählt jede Minute — dafür steht der Merksatz „Zeit ist Herzmuskel“: Je schneller die ärztliche Versorgung (und im Krankenhaus die Eröffnung des verschlossenen Gefäßes im Herzkatheter) beginnt, desto mehr Herzmuskel bleibt erhalten. Deshalb ist deine erste Handlung: sofort den Arzt benachrichtigen und eine weitere Pflegefachperson dazuholen. Ihr teilt euch auf — eine bleibt bei der Patientin, überwacht und lagert, die andere organisiert.\n\nDabei kennst du deine Grenze genau: Sauerstoff, Nitrospray und Schmerzmittel werden nur auf ärztliche Anordnung gegeben — nie eigenmächtig. Gerade hier ist das wichtig: Dass Frau Yıldız' eigenes Nitro diesmal nicht half, ist das Warnzeichen; und bei niedrigem Blutdruck kann weiteres Nitro den Kreislauf gefährlich absacken lassen. Deine Aufgabe ist erkennen, alarmieren, lagern, überwachen, dokumentieren und die ärztlichen Anordnungen umsetzen.\n\nUnd mitten darin: ihre Angst. Viele Herzpatienten plagt Todesangst. Du hilfst nicht mit falscher Beruhigung („wird schon wieder“), sondern mit Anteilnahme, ruhigem Auftreten und verständlicher Information. Du bleibst bei ihr, während das Team arbeitet — dieses Dableiben gibt Sicherheit.",
+        kerntextB1:
+          "Bei Verdacht auf Herzinfarkt zählt jede Minute. Dafür gibt es den Merksatz „Zeit ist Herzmuskel“. Er bedeutet: Je schneller die Hilfe beginnt, desto mehr Herzmuskel bleibt gesund. Im Krankenhaus öffnet der Arzt das verschlossene Herzgefäß im Herzkatheter. Ein Herzkatheter ist ein dünner Schlauch, den der Arzt bis zum Herzen schiebt. Deshalb ist deine erste Handlung: sofort den Arzt rufen und eine zweite Pflegekraft dazuholen. Dann teilt ihr euch auf. Eine bleibt bei der Patientin, überwacht und lagert. Die andere organisiert die Hilfe.\n\nDabei kennst du deine Kompetenzgrenze genau. Sie zeigt dir, was du als Pflegekraft allein entscheiden darfst — und was nicht. Sauerstoff, Nitrospray und Schmerzmittel gibt die Pflege nur auf Arztanordnung. Arztanordnung heißt: Nur wenn der Arzt es anordnet, darfst du es geben. Nie allein und von dir aus. Das ist hier besonders wichtig. Denn dass ihr Nitro diesmal nicht half, ist genau das Warnzeichen. Und bei niedrigem Blutdruck kann noch mehr Nitro den Kreislauf gefährlich absacken lassen. Deine Aufgabe ist: erkennen, alarmieren, lagern, überwachen, dokumentieren und die Arztanordnungen umsetzen.\n\nUnd mitten in allem: ihre Angst. Viele Herzpatienten haben Todesangst. Du hilfst ihr nicht mit falscher Beruhigung wie „wird schon wieder“. Du hilfst ihr mit Anteilnahme, mit Ruhe und mit klarer Information. Du bleibst bei ihr, während das Team arbeitet. Dieses Dableiben gibt ihr Sicherheit.",
         faustregel:
           "Zeit ist Herzmuskel: sofort Arzt + zweite Pflegekraft, dann lagern/überwachen. O2/Nitro/Schmerzmittel NUR auf Arztanordnung. Und: bei ihr bleiben, die Angst ernst nehmen — Sicherheit durch Ruhe, nicht durch falsches Beschwichtigen.",
+        faustregelB1:
+          "Zeit ist Herzmuskel: sofort den Arzt und eine zweite Pflegekraft rufen, dann lagern und überwachen. Sauerstoff, Nitro und Schmerzmittel NUR auf Arztanordnung. Und: bei ihr bleiben und die Angst ernst nehmen. Sicherheit gibst du durch Ruhe, nicht durch falsche Beruhigung.",
         spektrum: [
           {
             patientName: "Die ersten Sekunden",
             hauptfaktor: "Arzt + zweite Kraft",
             kurzbeschreibung:
               "Sofort den Arzt benachrichtigen und eine weitere Pflegefachperson holen — ihr arbeitet parallel, einer bleibt bei der Patientin.",
+            kurzbeschreibungB1:
+              "Sofort den Arzt rufen und eine zweite Pflegekraft holen. Ihr arbeitet gleichzeitig. Einer bleibt bei der Patientin.",
           },
           {
             patientName: "Sauerstoff, Nitro, Schmerzmittel",
             hauptfaktor: "Kompetenzgrenze",
             kurzbeschreibung:
               "Nur auf ärztliche Anordnung. Die Pflege erkennt, überwacht, lagert, dokumentiert — sie gibt diese Mittel nicht eigenmächtig.",
+            kurzbeschreibungB1:
+              "Nur auf Arztanordnung. Die Pflege erkennt, überwacht, lagert und dokumentiert. Diese Mittel gibt sie nicht von sich aus.",
           },
           {
             patientName: "Todesangst",
             hauptfaktor: "Sicherheit geben",
             kurzbeschreibung:
               "Ruhige Präsenz, Anteilnahme, ehrliche Information — nicht falsch beruhigen. Dableiben, während das Team versorgt.",
+            kurzbeschreibungB1:
+              "Ruhig da sein, Anteilnahme zeigen, ehrlich informieren — nicht falsch beruhigen. Bleib bei ihr, während das Team versorgt.",
           },
         ],
         karteikarte: {
@@ -278,6 +306,10 @@ export const CE06_SIT_YILDIZ_ALARMIEREN: SituationsPhase = {
             "Verdacht auf Herzinfarkt — was ist deine erste Handlung, wo liegt deine Kompetenzgrenze, und wie gehst du mit der Angst um?",
           rueckseite:
             "Erst: sofort Arzt + zweite Pflegefachperson (Zeit ist Herzmuskel). Grenze: O2/Nitro/Schmerzmittel nur auf Arztanordnung — Pflege erkennt/lagert/überwacht/dokumentiert. Angst: ruhige Präsenz, Anteilnahme, ehrliche Information, dableiben — nicht falsch beschwichtigen.",
+          vorderseiteB1:
+            "Verdacht auf Herzinfarkt: Was ist deine erste Handlung? Wo ist deine Grenze? Und wie gehst du mit der Angst um?",
+          rueckseiteB1:
+            "Erst: sofort den Arzt und eine zweite Pflegekraft rufen (Zeit ist Herzmuskel). Grenze: Sauerstoff, Nitro und Schmerzmittel nur auf Arztanordnung. Die Pflege erkennt, lagert, überwacht und dokumentiert. Angst: ruhig da sein, Anteilnahme, ehrliche Information, dableiben — nicht falsch beruhigen.",
         },
       },
     },
@@ -302,7 +334,7 @@ export const CE06_SIT_YILDIZ_ALARMIEREN: SituationsPhase = {
       },
       contentB1: {
         title: "Wen alarmierst du?",
-        body: "Verdacht auf Herzinfarkt. Wie holst du Hilfe?",
+        body: "Verdacht auf ein akutes Koronarsyndrom (Fachname für den Herzinfarkt). Wie holst du Hilfe?",
         glossarBegriffe: ["Herzkatheter"],
       },
       question: {
@@ -315,7 +347,7 @@ export const CE06_SIT_YILDIZ_ALARMIEREN: SituationsPhase = {
             explanation:
               "Richtig. Beim Verdacht auf ein akutes Koronarsyndrom wird sofort der Arzt informiert und eine weitere Pflegekraft hinzugezogen — es ist zeitkritisch ('Zeit ist Herzmuskel', rasche Reperfusion im Herzkatheter). Du bleibst bei der Patientin, überwachst und beruhigst.",
             explanationB1:
-              "Richtig. Bei Verdacht auf Herzinfarkt informierst du sofort den Arzt und holst eine weitere Pflegekraft. Es ist zeitkritisch. Du bleibst bei Frau Yıldız, überwachst und beruhigst sie.",
+              "Richtig. Bei Verdacht auf ein akutes Koronarsyndrom informierst du sofort den Arzt und holst eine weitere Pflegekraft. Es ist zeitkritisch. Der Merksatz heißt „Zeit ist Herzmuskel“: Je schneller es zum Herzkatheter geht, desto mehr Herzmuskel bleibt gesund. Du bleibst bei Frau Yıldız, überwachst und beruhigst sie.",
           },
           {
             text: "Erst in Ruhe alle Werte fertig dokumentieren, dann den Arzt rufen.",
@@ -379,28 +411,40 @@ export const CE06_SIT_YILDIZ_ERSTMASSNAHMEN: SituationsPhase = {
         themenSekundaer: ["notfallassessment"],
         storyAufhaenger:
           "Frau Yıldız soll es leichter haben, bis der Arzt da ist. Dein Instinkt bei „Kreislauf schlecht“ sagt vielleicht: flach hinlegen, Beine hoch. Beim Herzen ist genau das falsch. Wie lagerst du richtig — und wo ist die Grenze?",
+        storyAufhaengerB1:
+          "Frau Yıldız soll es leichter haben, bis der Arzt da ist. Bei „Kreislauf schlecht“ denkst du vielleicht: flach hinlegen, Beine hoch. Beim Herzen ist genau das falsch. Wie lagerst du richtig — und wo ist die Grenze?",
         kerntext:
           "Bei Herzbeschwerden wird der Oberkörper HOCH gelagert — das erleichtert die Atmung und entlastet das Herz. Die Schocklage (flach, Beine hoch) ist hier falsch: Sie schwemmt zusätzlich Blut zum ohnehin geschwächten Herzen zurück und kann eine Lungenstauung verstärken.\n\nDazu gilt absolute Bettruhe: Jede körperliche Anstrengung erhöht den Sauerstoffbedarf des Herzens und kann die Lage verschlechtern — also kein Aufstehen, kein Gehen, kein Zur-Toilette-Laufen. Parallel überwachst du engmaschig und dokumentierst: Puls (Frequenz, Rhythmus, Qualität), Blutdruck, Hautfarbe, Bewusstsein und die Sauerstoffsättigung per Pulsoximetrie. So bemerkst du eine Verschlechterung sofort.\n\nUnd jetzt die wichtige Grenze, die man leicht übersieht: Die Oberkörperhochlagerung hat einen Haken — bei ihr kann der Blutdruck gefährlich abfallen. Sinkt der Blutdruck unter 90 und steigt der Puls über 100, wird die Hochlagerung abgebrochen und flacher gelagert. Sonst drohen ein kardiogener Schock und eine Minderdurchblutung des Gehirns.",
+        kerntextB1:
+          "Bei Herzbeschwerden lagerst du den Oberkörper HOCH. Diese Lagerung heißt Oberkörperhochlagerung. Sie erleichtert die Atmung und entlastet das Herz. Die Schocklage ist flach mit hohen Beinen. Beim Herzen ist sie falsch. Denn sie schickt zusätzlich Blut zurück zum Herzen. Und das Herz ist schon geschwächt. Dann kann sich auch in der Lunge Blut stauen — das heißt Lungenstauung.\n\nDazu gilt absolute Bettruhe. Jede Anstrengung erhöht den Sauerstoff-Bedarf vom Herzen und kann die Lage verschlechtern. Also: kein Aufstehen, kein Gehen, nicht zur Toilette laufen. Gleichzeitig überwachst du engmaschig und schreibst alles auf. Du misst: Puls (wie schnell, wie regelmäßig, wie kräftig), Blutdruck, Hautfarbe, Bewusstsein und die Sauerstoffsättigung — den Sauerstoff-Wert im Blut. Das misst du mit der Pulsoximetrie, einem kleinen Clip am Finger. So bemerkst du eine Verschlechterung sofort.\n\nUnd jetzt die wichtige Grenze. Die Hochlagerung hat einen Haken: Bei ihr kann der Blutdruck gefährlich abfallen. Fällt der Blutdruck unter 90 und steigt der Puls über 100, dann brichst du die Hochlagerung ab und lagerst flacher. Sonst droht ein kardiogener Schock. Das bedeutet: Das Herz pumpt zu schwach. Und das Gehirn bekommt zu wenig Blut.",
         faustregel:
           "Oberkörper HOCH (nicht Schocklage), absolute Bettruhe, engmaschig überwachen. Aber: bei Blutdruck unter 90 UND Puls über 100 die Hochlagerung abflachen — sonst droht der kardiogene Schock.",
+        faustregelB1:
+          "Oberkörper HOCH (nicht Schocklage), absolute Bettruhe, engmaschig überwachen. Aber: bei Blutdruck unter 90 UND Puls über 100 die Hochlagerung flacher machen. Sonst droht der kardiogene Schock.",
         spektrum: [
           {
             patientName: "Blutdruck (noch) stabil",
             hauptfaktor: "Oberkörper hoch",
             kurzbeschreibung:
               "Hochlagern entlastet das Herz und erleichtert die Atmung; dazu absolute Bettruhe und engmaschige Überwachung.",
+            kurzbeschreibungB1:
+              "Hochlagern entlastet das Herz und erleichtert das Atmen. Dazu: absolute Bettruhe und engmaschige Überwachung.",
           },
           {
             patientName: "RR unter 90, Puls über 100",
             hauptfaktor: "Grenze erreicht",
             kurzbeschreibung:
               "Hochlagerung abbrechen/abflachen und den Arzt informieren — sonst droht der kardiogene Schock.",
+            kurzbeschreibungB1:
+              "Hochlagerung abbrechen und flacher lagern. Und den Arzt informieren. Sonst droht der kardiogene Schock.",
           },
           {
             patientName: "Schocklage-Reflex",
             hauptfaktor: "beim Herz falsch",
             kurzbeschreibung:
               "Flach mit Beinen hoch belastet das geschädigte Herz zusätzlich — beim kardialen Geschehen NICHT anwenden.",
+            kurzbeschreibungB1:
+              "Flach mit hohen Beinen belastet das kranke Herz zusätzlich. Beim Herzen NICHT anwenden.",
           },
         ],
         karteikarte: {
@@ -408,6 +452,10 @@ export const CE06_SIT_YILDIZ_ERSTMASSNAHMEN: SituationsPhase = {
             "Wie lagerst du einen Menschen mit Verdacht auf Herzinfarkt — und wann brichst du die Lagerung ab?",
           rueckseite:
             "Oberkörper HOCH (nicht Schocklage — die belastet das Herz), absolute Bettruhe, engmaschig überwachen (Puls/RR/Hautfarbe/Bewusstsein/SpO2). Grenze: bei RR unter 90 UND Puls über 100 die Hochlagerung abflachen (kardiogener Schock droht).",
+          vorderseiteB1:
+            "Wie lagerst du einen Menschen mit Verdacht auf Herzinfarkt? Und wann brichst du die Lagerung ab?",
+          rueckseiteB1:
+            "Oberkörper HOCH (nicht Schocklage — die belastet das Herz), absolute Bettruhe, engmaschig überwachen (Puls, Blutdruck, Hautfarbe, Bewusstsein, Sauerstoff). Grenze: bei Blutdruck unter 90 UND Puls über 100 die Hochlagerung flacher machen. Sonst droht ein kardiogener Schock.",
         },
       },
     },
@@ -431,7 +479,7 @@ export const CE06_SIT_YILDIZ_ERSTMASSNAHMEN: SituationsPhase = {
       },
       contentB1: {
         title: "Wie lagerst du sie?",
-        body: "Verdacht auf Herzinfarkt, sie ist wach, der Blutdruck noch stabil. Wie lagerst du sie bis der Arzt kommt?",
+        body: "Verdacht auf Herzinfarkt, sie ist bei Bewusstsein (wach und ansprechbar), der Blutdruck noch stabil. Wie lagerst du sie bis der Arzt kommt?",
         glossarBegriffe: ["Oberkörperhochlagerung", "Bettruhe"],
       },
       question: {
@@ -444,7 +492,7 @@ export const CE06_SIT_YILDIZ_ERSTMASSNAHMEN: SituationsPhase = {
             explanation:
               "Richtig. Bei Herzbeschwerden entlastet die Oberkörperhochlagerung das Herz und erleichtert die Atmung; beengende Kleidung wird geöffnet, für frische Luft gesorgt. Absolute Bettruhe ist wichtig, weil körperliche Anstrengung den Sauerstoffbedarf des Herzens erhöht und die Situation verschlechtern kann.",
             explanationB1:
-              "Richtig. Oberkörper hoch entlastet das Herz und erleichtert das Atmen. Enge Kleidung öffnen, frische Luft. Absolute Bettruhe ist wichtig, weil Anstrengung das Herz zusätzlich belastet.",
+              "Richtig. Die Oberkörperhochlagerung entlastet das Herz und erleichtert die Atmung. Enge Kleidung öffnen, frische Luft. Absolute Bettruhe ist wichtig, weil Anstrengung den Sauerstoff-Bedarf des Herzens erhöht und es zusätzlich belastet.",
           },
           {
             text: "Flach hinlegen und die Beine hochlagern (Schocklage), damit das Herz besser durchblutet wird.",
@@ -497,6 +545,8 @@ export const CE06_SIT_YILDIZ_ERSTMASSNAHMEN: SituationsPhase = {
             isTrue: false,
             explanation:
               "Falsch. Sauerstoffgabe und Nitroglyzerin werden nur auf ärztliche Anordnung verabreicht — nicht eigenmächtig. Dass ihr Nitrospray diesmal keine wesentliche Schmerzlinderung gebracht hat, ist gerade das Warnzeichen für einen Infarkt (nicht 'nur die Angina'). Und bei ihrem niedrigen Blutdruck kann eine erneute Nitrogabe den Kreislauf gefährlich weiter absenken. Deine Aufgabe: erkennen, lagern, überwachen, dokumentieren, Arzt informieren — und ärztliche Anordnungen umsetzen.",
+            explanationB1:
+              "Falsch. Sauerstoff und Nitro gibt die Pflege nur auf Anordnung vom Arzt — nicht von sich aus. Dass ihr Nitrospray diesmal nicht richtig geholfen hat, ist genau das Warnzeichen für einen Infarkt (nicht nur ihre Angina). Und bei ihrem niedrigen Blutdruck kann noch mehr Nitro den Blutdruck weiter gefährlich absenken. Deine Aufgabe: erkennen, lagern, überwachen, aufschreiben, den Arzt informieren — und seine Anordnungen umsetzen.",
           },
         ],
       },
@@ -604,7 +654,7 @@ export const CE06_SIT_YILDIZ_UEBERGEBEN: SituationsPhase = {
             explanation:
               "Richtig. Vollständiges SBAR mit dem entscheidenden Background (Nitro half diesmal NICHT → Infarktverdacht) und dem aktuellen kritischen Assessment (Hypotonie/Tachykardie). Der Arzt kann sofort priorisieren (EKG, Herzkatheter). Zeit ist beim Infarkt Herzmuskel.",
             explanationB1:
-              "Richtig. Vollständiges SBAR mit dem wichtigen Punkt (Nitro half diesmal NICHT → Infarktverdacht) und dem kritischen Zustand jetzt (niedriger Blutdruck, schneller Puls). Der Arzt kann sofort handeln.",
+              "Richtig. Vollständiges SBAR mit dem wichtigen Punkt (Nitro half diesmal NICHT → Infarktverdacht) und dem kritischen Zustand jetzt (niedriger Blutdruck, schneller Puls). Der Arzt kann sofort handeln — zum Beispiel EKG schreiben oder für den Herzkatheter anmelden.",
           },
           {
             text: "\"Sie hat wieder ihre Angina, ich habe sie hochgelagert, wird schon wieder.\"",

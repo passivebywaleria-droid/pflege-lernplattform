@@ -57,10 +57,16 @@ export const CE06_SIT_ERLEMANN_ERKENNEN: SituationsPhase = {
         themaPrimaer: "organspende-hirntod",
         storyAufhaenger:
           "Tobias' Mutter sitzt am Bett: „Er ist doch noch warm, sein Herz schlägt doch — wie kann er da tot sein?“ Ihr Satz trifft den Kern des Schwersten an dieser Situation. Um ihn zu verstehen, musst du zwei Dinge auseinanderhalten.",
+        storyAufhaengerB1:
+          "Tobias' Mutter sitzt am Bett. Sie fragt verzweifelt: „Er ist doch noch warm — wie kann er tot sein?“ Ihr Satz trifft den Kern. Er ist das Schwerste an dieser Situation. Um ihn zu verstehen, musst du zwei Dinge auseinanderhalten.",
         kerntext:
           "Der Gesamthirntod — fachsprachlich heute irreversibler Hirnfunktionsausfall (IHA) — bedeutet: Alle Funktionen des Gehirns sind unumkehrbar (irreversibel) ausgefallen — Großhirn, Kleinhirn und Hirnstamm. Das Gehirn steuert nichts mehr, und es wird sich nie wieder erholen. Genau das ist bei Tobias festgestellt.\n\nDer Widerspruch, an dem seine Mutter verzweifelt: Herz und Kreislauf können durch die Intensivmedizin noch eine Weile weiterlaufen — der Körper ist warm, die Brust hebt sich, das Herz schlägt mit Unterstützung. Trotzdem ist der Mensch tot, weil sein Gehirn endgültig erloschen ist. Der warme Körper täuscht ein Leben vor, das nicht mehr da ist.\n\nUnd noch eine wichtige Unterscheidung: Das Transplantationsgesetz legt nicht fest, wann ein Mensch tot ist. Es bestimmt nur, dass vor einer Organentnahme der Gesamthirntod festgestellt sein muss — als Mindestbedingung. Den Tod selbst stellen Ärzte nach genauen Kriterien fest; er wird nicht per Gesetz definiert.",
+        kerntextB1:
+          "Gesamthirntod bedeutet: Alle Funktionen des Gehirns sind ausgefallen. Und zwar für immer. Fachleute sagen dazu: unumkehrbar. Betroffen sind alle Teile des Gehirns: Großhirn, Kleinhirn und Hirnstamm. Das Gehirn steuert nichts mehr. Es erholt sich nie wieder. Genau das ist bei Tobias festgestellt. Fachleute nennen das heute auch irreversiblen Hirnfunktionsausfall — irreversibel heißt unumkehrbar.\n\nDaran verzweifelt seine Mutter: Herz und Kreislauf können mit den Geräten noch eine Weile weiterlaufen. Der Körper ist warm. Die Brust hebt sich. Das Herz schlägt mit Unterstützung. Trotzdem ist der Mensch tot. Denn sein Gehirn ist endgültig erloschen. Der warme Körper täuscht ein Leben vor, das nicht mehr da ist.\n\nNoch ein wichtiger Punkt: Das Transplantationsgesetz legt nicht fest, wann ein Mensch tot ist. Das ist das Gesetz für die Organspende. Es bestimmt nur eins: Vor einer Organentnahme muss der Gesamthirntod festgestellt sein. Das ist die Mindestbedingung. Den Tod selbst stellen Ärzte nach genauen Regeln fest. Kein Gesetz bestimmt den Tod.",
         faustregel:
           "Gesamthirntod = alle Hirnfunktionen unumkehrbar erloschen — auch wenn das Herz mit Geräten schlägt und der Körper warm ist. Das Transplantationsgesetz definiert NICHT den Tod; es verlangt den festgestellten Hirntod nur als Mindestbedingung für eine Entnahme.",
+        faustregelB1:
+          "Gesamthirntod = alle Hirnfunktionen sind für immer erloschen. Das gilt auch, wenn das Herz mit Geräten schlägt und der Körper warm ist. Das Transplantationsgesetz bestimmt NICHT den Tod. Es verlangt den festgestellten Hirntod nur als Mindestbedingung für eine Entnahme.",
         spektrum: [
           {
             patientName: "Der warme, beatmete Körper",
@@ -68,18 +74,24 @@ export const CE06_SIT_ERLEMANN_ERKENNEN: SituationsPhase = {
             hauptfaktor: "täuscht Leben vor",
             kurzbeschreibung:
               "Herz und Kreislauf laufen mit Geräten weiter — für Angehörige der schwerste Widerspruch.",
+            kurzbeschreibungB1:
+              "Herz und Kreislauf laufen mit Geräten weiter. Für die Angehörigen ist das der schwerste Widerspruch.",
           },
           {
             patientName: "Das Gehirn",
             hauptfaktor: "unumkehrbar erloschen",
             kurzbeschreibung:
               "Groß-, Kleinhirn und Hirnstamm sind endgültig ausgefallen — das ist der Tod des Menschen.",
+            kurzbeschreibungB1:
+              "Großhirn, Kleinhirn und Hirnstamm sind endgültig ausgefallen. Das ist der Tod des Menschen.",
           },
           {
             patientName: "Das Transplantationsgesetz",
             hauptfaktor: "definiert nicht den Tod",
             kurzbeschreibung:
               "Es verlangt nur den festgestellten Gesamthirntod als Mindestbedingung für eine Organentnahme.",
+            kurzbeschreibungB1:
+              "Es verlangt nur den festgestellten Gesamthirntod. Das ist die Mindestbedingung für eine Organentnahme.",
           },
         ],
         karteikarte: {
@@ -87,6 +99,10 @@ export const CE06_SIT_ERLEMANN_ERKENNEN: SituationsPhase = {
             "Warum ist Tobias tot, obwohl sein Herz schlägt und er warm ist?",
           rueckseite:
             "Gesamthirntod = alle Hirnfunktionen (Groß-/Kleinhirn, Hirnstamm) sind unumkehrbar erloschen — der Tod des Menschen. Herz/Kreislauf können mit Intensivmedizin noch laufen (der warme Körper täuscht). Das Transplantationsgesetz definiert nicht den Tod, sondern verlangt den festgestellten Hirntod als Mindestbedingung für eine Entnahme.",
+          vorderseiteB1:
+            "Warum ist Tobias tot, obwohl sein Herz schlägt und er warm ist?",
+          rueckseiteB1:
+            "Gesamthirntod = alle Hirnfunktionen (Großhirn, Kleinhirn, Hirnstamm) sind für immer erloschen. Das ist der Tod des Menschen. Herz und Kreislauf können mit Geräten noch laufen — der warme Körper täuscht. Das Transplantationsgesetz bestimmt nicht den Tod. Es verlangt den festgestellten Hirntod als Mindestbedingung für eine Entnahme.",
         },
       },
     },
@@ -140,7 +156,7 @@ export const CE06_SIT_ERLEMANN_ERKENNEN: SituationsPhase = {
             explanation:
               "Falsch. Das Transplantationsgesetz definiert gerade nicht den Tod. Es legt nur ein Mindestkriterium für die Organentnahme fest (den festgestellten Gesamthirntod) und regelt Zulässigkeit und Vergabe von Organen — die Feststellung des Hirntods erfolgt ärztlich nach genauen Kriterien.",
             explanationB1:
-              "Falsch. Das Gesetz sagt nicht, wann ein Mensch tot ist. Es legt nur ein Mindestkriterium für die Organentnahme fest. Den Hirntod stellen Ärzte fest.",
+              "Falsch. Das Gesetz legt nicht fest, wann ein Mensch tot ist. Es bestimmt nur eine Mindestvoraussetzung, damit Organe entnommen werden dürfen. Den Hirntod stellen Ärzte fest.",
           },
         ],
       },
@@ -195,34 +211,48 @@ export const CE06_SIT_ERLEMANN_ALARMIEREN: SituationsPhase = {
         themaPrimaer: "organspende-hirntod",
         storyAufhaenger:
           "Tobias' Vater ist misstrauisch: „Woher wollen die so sicher wissen, dass nichts mehr kommt — nicht dass die sich irren, weil sie an die Organe wollen.“ Eine berechtigte Frage. Wie wird der Hirntod festgestellt, und wer darf über eine Spende überhaupt entscheiden?",
+        storyAufhaengerB1:
+          "Tobias' Vater ist misstrauisch. Er fragt: „Woher wollen die so sicher wissen, dass nichts mehr kommt? Nicht dass die sich irren, weil sie an die Organe wollen.“ Das ist eine berechtigte Frage. Wie wird der Hirntod festgestellt? Und wer darf über eine Spende entscheiden?",
         kerntext:
           "Die Feststellung des Hirntods ist streng geregelt und ärztlich. Zwei qualifizierte Ärzte untersuchen den Patienten unabhängig voneinander nach festen Kriterien; nach der Richtlinie der Bundesärztekammer sind beide seit mehreren Jahren in der Intensivbehandlung schwer hirngeschädigter Menschen erfahren, und mindestens einer ist Facharzt für Neurologie oder Neurochirurgie. Entscheidend: Beide haben nichts mit einer möglichen Transplantation zu tun. Genau das schließt den Interessenkonflikt aus, den der Vater befürchtet. Dazu gehören vorgeschriebene Wartezeiten und technische Untersuchungen. Sorgfalt geht vor Tempo.\n\nDavon getrennt steht die Frage, ob überhaupt Organe entnommen werden dürfen. In Deutschland gilt die Entscheidungslösung: Jeder Mensch entscheidet zu Lebzeiten selbst — er kann zustimmen, einschränken, widersprechen oder eine Vertrauensperson benennen. Niemand ist automatisch Spender. Eine Entnahme ist nur zulässig, wenn eingewilligt wurde und der Hirntod festgestellt ist; bei einem Widerspruch ist sie unzulässig.\n\nFehlt eine eigene Entscheidung — Tobias hat weder einen Ausweis noch einen Eintrag im seit 2024 bestehenden zentralen Organspende-Register —, werden die nächsten Angehörigen einbezogen, und zwar nach dem mutmaßlichen Willen des Verstorbenen, nicht nach ihrem eigenen Wunsch. Und eine Grenze für dich: Die Pflege gibt keine Organentnahme frei; das Aufklärungs- und Entscheidungsgespräch führen der Arzt und die Transplantationsbeauftragte.",
+        kerntextB1:
+          "Die Feststellung des Hirntods ist streng geregelt. Und sie ist Sache der Ärzte. Zwei qualifizierte Ärzte untersuchen den Patienten. Jeder prüft für sich, unabhängig vom anderen. Beide gehen nach festen Regeln vor. Die Richtlinie der Bundesärztekammer schreibt vor: Beide Ärzte sind seit mehreren Jahren erfahren mit schwer hirngeschädigten Menschen auf der Intensivstation. Und mindestens einer ist Facharzt für das Gehirn — also für Neurologie oder Neurochirurgie. Wichtig ist: Beide Ärzte haben nichts mit einer möglichen Organspende zu tun. Genau das verhindert den Interessenkonflikt, den der Vater befürchtet. Dazu kommen vorgeschriebene Wartezeiten und technische Untersuchungen. Sorgfalt geht vor Tempo.\n\nDavon ganz getrennt ist die Frage: Dürfen überhaupt Organe entnommen werden? In Deutschland gilt die Entscheidungslösung. Das heißt: Jeder Mensch entscheidet zu Lebzeiten selbst. Er kann zustimmen. Er kann es einschränken. Er kann widersprechen. Oder er benennt eine Vertrauensperson. Niemand ist automatisch Spender. Eine Entnahme ist nur erlaubt, wenn zwei Dinge zusammenkommen: Der Mensch hat eingewilligt, und der Hirntod ist festgestellt. Bei einem Widerspruch ist eine Entnahme verboten.\n\nUnd wenn keine eigene Entscheidung da ist? Tobias hat keinen Ausweis. Und er hat auch keinen Eintrag im Organspende-Register. Dieses zentrale Register gibt es seit 2024. Dann werden die nächsten Angehörigen gefragt. Aber Achtung: Sie entscheiden nach dem mutmaßlichen Willen. Das heißt: nach dem, was Tobias wohl gewollt hätte. Nicht nach ihrem eigenen Wunsch. Und deine Grenze: Die Pflege gibt keine Organentnahme frei. Das Aufklärungs-Gespräch und die Entscheidung führen der Arzt und die Transplantationsbeauftragte — eine geschulte Fachperson im Krankenhaus für Organspende.",
         faustregel:
           "Hirntod: zwei qualifizierte, unabhängige Ärzte (beide intensiverfahren, mind. einer Neuro, kein Bezug zur Transplantation), feste Kriterien + Wartezeit. Spende: Entscheidungslösung — niemand ist automatisch Spender; nur mit Einwilligung + festgestelltem Hirntod (im Ausweis oder seit 2024 im Organspende-Register). Ohne eigene Entscheidung: Angehörige nach dem mutmaßlichen Willen. Die Pflege gibt nichts frei.",
+        faustregelB1:
+          "Hirntod: zwei qualifizierte, unabhängige Ärzte prüfen getrennt. Beide sind intensiverfahren, mindestens einer für das Gehirn, kein Bezug zur Transplantation. Dazu feste Kriterien und Wartezeit. Spende: Entscheidungslösung — niemand ist automatisch Spender. Nur mit Einwilligung und festgestelltem Hirntod (im Ausweis oder seit 2024 im Organspende-Register). Ohne eigene Entscheidung: Angehörige nach dem mutmaßlichen Willen. Die Pflege gibt nichts frei.",
         spektrum: [
           {
             patientName: "Die Feststellung",
             hauptfaktor: "zwei qualifizierte Ärzte",
             kurzbeschreibung:
               "Beide qualifiziert und intensiverfahren (mind. einer Neuro), unabhängig vom Transplantationsteam, feste Kriterien + Wartezeit — schließt den Interessenkonflikt aus.",
+            kurzbeschreibungB1:
+              "Beide sind qualifiziert und intensiverfahren, mindestens einer für das Gehirn. Sie sind unabhängig vom Transplantationsteam. Feste Kriterien und Wartezeit schließen den Interessenkonflikt aus.",
           },
           {
             patientName: "Die Entscheidungslösung",
             hauptfaktor: "niemand automatisch Spender",
             kurzbeschreibung:
               "Jeder entscheidet zu Lebzeiten selbst; Entnahme nur mit Einwilligung und festgestelltem Hirntod.",
+            kurzbeschreibungB1:
+              "Jeder entscheidet zu Lebzeiten selbst. Eine Entnahme ist nur mit Einwilligung und festgestelltem Hirntod erlaubt.",
           },
           {
             patientName: "Kein Ausweis",
             hauptfaktor: "mutmaßlicher Wille",
             kurzbeschreibung:
               "Die Angehörigen werden gefragt, was der Verstorbene gewollt hätte — nicht nach ihrem eigenen Wunsch.",
+            kurzbeschreibungB1:
+              "Die Angehörigen werden gefragt, was der Verstorbene wohl gewollt hätte. Nicht nach ihrem eigenen Wunsch.",
           },
           {
             patientName: "Die Rolle der Pflege",
             hauptfaktor: "gibt nichts frei",
             kurzbeschreibung:
               "Das Aufklärungs- und Entscheidungsgespräch führen Arzt und Transplantationsbeauftragte.",
+            kurzbeschreibungB1:
+              "Das Aufklärungs-Gespräch und die Entscheidung führen der Arzt und die Transplantationsbeauftragte.",
           },
         ],
         karteikarte: {
@@ -230,6 +260,10 @@ export const CE06_SIT_ERLEMANN_ALARMIEREN: SituationsPhase = {
             "Wie wird der Hirntod festgestellt — und wer entscheidet über eine Spende?",
           rueckseite:
             "Feststellung: zwei qualifizierte, vom Transplantationsteam unabhängige Ärzte (beide intensiverfahren, mind. einer Neurologe/Neurochirurg), unabhängig voneinander, feste Kriterien + Wartezeit/Technik. Spende: Entscheidungslösung — nur mit Einwilligung + festgestelltem Hirntod (Ausweis oder seit 2024 Organspende-Register), niemand automatisch Spender; ohne eigene Entscheidung Angehörige nach dem mutmaßlichen Willen. Die Pflege gibt keine Entnahme frei (Arzt/Transplantationsbeauftragte).",
+          vorderseiteB1:
+            "Wie wird der Hirntod festgestellt? Und wer entscheidet über eine Spende?",
+          rueckseiteB1:
+            "Feststellung: zwei qualifizierte Ärzte, unabhängig vom Transplantationsteam (beide intensiverfahren, mindestens einer für das Gehirn). Sie prüfen getrennt, nach festen Kriterien, mit Wartezeit und Technik. Spende: Entscheidungslösung — nur mit Einwilligung und festgestelltem Hirntod (Ausweis oder seit 2024 Organspende-Register). Niemand ist automatisch Spender. Ohne eigene Entscheidung: Angehörige nach dem mutmaßlichen Willen. Die Pflege gibt keine Entnahme frei — das machen Arzt und Transplantationsbeauftragte.",
         },
       },
     },
@@ -271,7 +305,7 @@ export const CE06_SIT_ERLEMANN_ALARMIEREN: SituationsPhase = {
             explanation:
               "Richtig. Zur Feststellung des Hirntods sind genaue Kriterien festgelegt: Zwei qualifizierte Ärzte, die nichts mit der Transplantation zu tun haben und die nach der Richtlinie der Bundesärztekammer beide über mehrjährige Erfahrung in der Intensivbehandlung schwer hirngeschädigter Patienten verfügen (mindestens einer Facharzt für Neurologie oder Neurochirurgie), müssen unabhängig voneinander den Hirntod feststellen und dokumentieren. Zusätzlich sind Wartezeiten und/oder technische Untersuchungen erforderlich. Die Unabhängigkeit vom Transplantationsteam schließt genau den vom Vater befürchteten Interessenkonflikt aus.",
             explanationB1:
-              "Richtig. Zwei qualifizierte Ärzte prüfen den Hirntod unabhängig voneinander. Sie haben nichts mit der Transplantation zu tun und sind beide erfahren in der Intensivbehandlung (einer aus der Neurologie oder Neurochirurgie). Dazu kommen Wartezeiten und technische Untersuchungen. So ist ein Interessenkonflikt ausgeschlossen.",
+              "Richtig. Zwei qualifizierte Ärzte prüfen den Hirntod unabhängig voneinander. Sie haben keinerlei Verbindung zum Transplantationsteam und sind beide erfahren in der Intensivbehandlung (einer aus der Neurologie oder Neurochirurgie). Dazu kommen Wartezeiten und technische Untersuchungen. So ist ein Interessenkonflikt ausgeschlossen.",
           },
           {
             text: "Der behandelnde Intensivarzt entscheidet allein und möglichst rasch, damit die Organe nicht durch langes Warten geschädigt werden und rechtzeitig zur Verfügung stehen.",
@@ -395,10 +429,16 @@ export const CE06_SIT_ERLEMANN_ERSTMASSNAHMEN: SituationsPhase = {
         themaPrimaer: "organspende-hirntod",
         storyAufhaenger:
           "Tobias liegt beatmet vor dir, seine Eltern sind fassungslos zwischen Hoffen und Abschied. Was ist jetzt deine Aufgabe an diesem jungen Menschen und seiner Familie — und was ausdrücklich nicht?",
+        storyAufhaengerB1:
+          "Tobias liegt beatmet vor dir. Seine Eltern sind fassungslos. Sie schwanken zwischen Hoffnung und Abschied. Was ist jetzt deine Aufgabe bei diesem jungen Menschen und seiner Familie? Und was ausdrücklich nicht?",
         kerntext:
           "Auch ein hirntoter Mensch wird mit Würde behandelt. Tobias' Körper wird intensivmedizinisch weiterversorgt — beatmet, der Kreislauf gestützt. Für die Eltern ist der Anblick zutiefst widersprüchlich: Ihr Sohn wirkt schlafend und warm und ist doch tot. Deine Aufgabe ist die einfühlsame Begleitung: Zeit und Raum zum Abschiednehmen geben, behutsam und ehrlich erklären, nichts überstürzen, den Menschen achten.\n\nDabei kennst du deine Rolle genau. Du drängst nicht in eine Richtung und nimmst den Eltern die Entscheidung nicht ab. Das eigentliche Aufklärungs- und Entscheidungsgespräch zur Organspende führen der Arzt, die Transplantationsbeauftragte oder ein Koordinator der DSO (der bundesweiten Organspende-Stiftung), der den Prozess begleitet — du informierst nur im Rahmen deiner Aufgabe und begleitest.\n\nDas ist eine ethische Grenzsituation: Sie verlangt Fachwissen und Haltung zugleich — Ruhe, Ehrlichkeit, Respekt vor dem, was die Familie glaubt und braucht, und die Fähigkeit, den Widerspruch von warmem Körper und Tod mit auszuhalten, ohne ihn wegzureden.",
+        kerntextB1:
+          "Auch ein hirntoter Mensch wird mit Würde behandelt. Tobias' Körper wird weiter intensivmedizinisch versorgt: Er wird beatmet, und sein Kreislauf wird gestützt. Für die Eltern ist der Anblick voller Widerspruch. Ihr Sohn wirkt, als würde er schlafen. Er ist warm. Und doch ist er tot. Deine Aufgabe ist die einfühlsame Begleitung: Gib den Eltern Zeit und Raum zum Abschiednehmen. Erkläre behutsam und ehrlich. Überstürze nichts. Achte den Menschen.\n\nDabei kennst du deine Rolle genau. Du drängst die Eltern nicht in eine Richtung. Du nimmst ihnen die Entscheidung nicht ab. Das Aufklärungs-Gespräch und die Entscheidung zur Organspende führen andere: der Arzt, die Transplantationsbeauftragte oder ein Koordinator der DSO. Die DSO ist die bundesweite Stiftung für Organspende. Sie begleitet den ganzen Ablauf. Du informierst nur im Rahmen deiner Aufgabe. Und du begleitest.\n\nDas ist eine ethische Grenzsituation — eine Lage, in der es um schwere Werte-Fragen geht. Sie verlangt beides: Fachwissen und Haltung. Bleib ruhig. Sei ehrlich. Achte, was die Familie glaubt und braucht. Und hilf, den Widerspruch auszuhalten: Der Körper ist warm, und der Mensch ist doch tot. Rede diesen Widerspruch nicht weg.",
         faustregel:
           "Auch beim hirntoten Menschen: Würde, Zeit und Raum für den Abschied, behutsame ehrliche Information. Die Pflege begleitet und drängt NICHT — das Aufklärungs- und Entscheidungsgespräch führen Arzt und Transplantationsbeauftragte.",
+        faustregelB1:
+          "Auch beim hirntoten Menschen: Würde wahren, Zeit und Raum für den Abschied geben, behutsam und ehrlich informieren. Die Pflege begleitet und drängt NICHT — das Aufklärungs-Gespräch und die Entscheidung führen Arzt und Transplantationsbeauftragte.",
         spektrum: [
           {
             patientName: "Tobias' Körper",
@@ -406,18 +446,24 @@ export const CE06_SIT_ERLEMANN_ERSTMASSNAHMEN: SituationsPhase = {
             hauptfaktor: "Würde wahren",
             kurzbeschreibung:
               "Wird beatmet und kreislaufgestützt weiterversorgt — mit demselben Respekt wie bei jedem Menschen.",
+            kurzbeschreibungB1:
+              "Er wird weiter beatmet und der Kreislauf gestützt. Mit demselben Respekt wie bei jedem Menschen.",
           },
           {
             patientName: "Die Eltern",
             hauptfaktor: "Abschied ermöglichen",
             kurzbeschreibung:
               "Zeit und Raum geben, ehrlich und behutsam erklären, nichts überstürzen — den Widerspruch mit aushalten helfen.",
+            kurzbeschreibungB1:
+              "Zeit und Raum geben. Ehrlich und behutsam erklären. Nichts überstürzen. Und helfen, den Widerspruch auszuhalten.",
           },
           {
             patientName: "Das Entscheidungsgespräch",
             hauptfaktor: "nicht deine Aufgabe",
             kurzbeschreibung:
               "Arzt und Transplantationsbeauftragte klären auf; die Pflege drängt nicht und übernimmt diese Rolle nicht.",
+            kurzbeschreibungB1:
+              "Arzt und Transplantationsbeauftragte klären auf. Die Pflege drängt nicht. Sie übernimmt diese Rolle nicht.",
           },
         ],
         karteikarte: {
@@ -425,6 +471,10 @@ export const CE06_SIT_ERLEMANN_ERSTMASSNAHMEN: SituationsPhase = {
             "Was ist deine Aufgabe bei Tobias und seinen Eltern — und was nicht?",
           rueckseite:
             "Auch beim hirntoten Menschen die Würde wahren; die Eltern begleiten: Zeit/Raum für Abschied, behutsame ehrliche Information, nichts überstürzen. Die Pflege drängt NICHT zur Spende — das Aufklärungs- und Entscheidungsgespräch führen Arzt und Transplantationsbeauftragte. Ethische Grenzsituation: den Widerspruch warmer Körper/Tod mit aushalten helfen.",
+          vorderseiteB1:
+            "Was ist deine Aufgabe bei Tobias und seinen Eltern? Und was nicht?",
+          rueckseiteB1:
+            "Auch beim hirntoten Menschen die Würde wahren. Die Eltern begleiten: Zeit und Raum für den Abschied, behutsame ehrliche Information, nichts überstürzen. Die Pflege drängt NICHT zur Spende — das Aufklärungs-Gespräch und die Entscheidung führen Arzt und Transplantationsbeauftragte. Ethische Grenzsituation: helfen, den Widerspruch von warmem Körper und Tod auszuhalten.",
         },
       },
     },
@@ -449,7 +499,7 @@ export const CE06_SIT_ERLEMANN_ERSTMASSNAHMEN: SituationsPhase = {
       },
       contentB1: {
         title: "Pflege des hirntoten Menschen",
-        body: "Zwei Aussagen zur Pflege von Tobias und zum Umgang mit den Eltern. Bewerte sie.",
+        body: "Zwei Aussagen zur Pflege von Tobias und zum Verhalten gegenüber den Eltern. Bewerte sie.",
         glossarBegriffe: ["Würde (= den Menschen achten)", "Abschied"],
       },
       question: {
@@ -461,6 +511,8 @@ export const CE06_SIT_ERLEMANN_ERSTMASSNAHMEN: SituationsPhase = {
             isTrue: false,
             explanation:
               "Falsch. Auch beim hirntoten Menschen gelten Würde und ein achtsamer Umgang. Der Körper wird intensivmedizinisch weiterbehandelt (beatmet, Kreislauf erhalten) — für die Eltern ein zutiefst widersprüchlicher Anblick. Die Pflege begleitet die Familie, ermöglicht Abschiednehmen, erklärt behutsam und wahrt die Würde des Menschen. Genau das ist die Herausforderung dieser ethischen Grenzsituation.",
+            explanationB1:
+              "Falsch. Auch beim hirntoten Menschen gilt: Würde und ein achtsamer Umgang. Der Körper wird weiter versorgt — er wird beatmet, und der Kreislauf wird gestützt. Für die Eltern ist das ein zutiefst widersprüchlicher Anblick. Die Pflege begleitet die Familie: Sie ermöglicht den Abschied, erklärt behutsam und wahrt die Würde des Menschen. Genau das ist die Herausforderung in dieser ethischen Grenzsituation.",
           },
           {
             statement:
@@ -468,6 +520,8 @@ export const CE06_SIT_ERLEMANN_ERSTMASSNAHMEN: SituationsPhase = {
             isTrue: true,
             explanation:
               "Richtig. Die pflegerische Aufgabe ist die einfühlsame Begleitung: Zeit und Raum geben, ehrlich und behutsam informieren, Abschied ermöglichen, nichts überstürzen. Das eigentliche Aufklärungs- und Entscheidungsgespräch zur Organspende führen der Arzt und die/der Transplantationsbeauftragte — die Pflege drängt nicht und übernimmt diese Rolle nicht.",
+            explanationB1:
+              "Richtig. Die Pflege übernimmt hier die einfühlsame Begleitung: Zeit und Raum geben, ehrlich und behutsam informieren, den Abschied ermöglichen, nichts überstürzen. Das Aufklärungs-Gespräch und die Entscheidung zur Organspende führen der Arzt und die Transplantationsbeauftragte — eine geschulte Fachperson für Organspende. Die Pflege drängt nicht und übernimmt diese Rolle nicht.",
           },
         ],
       },
@@ -506,7 +560,7 @@ export const CE06_SIT_ERLEMANN_ERSTMASSNAHMEN: SituationsPhase = {
             explanation:
               "Richtig. Es besteht ein Organmangel — es stehen weniger Spenderorgane zur Verfügung, als benötigt werden. Aufgrund des Organmangels und der guten Ergebnisse haben Lebendspenden von Niere und Leberteilen deutlich zugenommen. Niere und Leber zählen zu den häufig transplantierten Organen (2024 wurden in Deutschland 3.701 Organe transplantiert, davon 3.013 nach postmortaler Spende und 688 aus Lebendspenden).",
             explanationB1:
-              "Richtig. Es gibt zu wenige Spenderorgane (Organmangel). Deshalb haben Lebendspenden von Niere und Leberteilen zugenommen. Niere und Leber werden häufig transplantiert.",
+              "Richtig. Es gibt zu wenige Spenderorgane (Organmangel). Deshalb ist die Zahl der Lebendspenden bei Niere und Leberteilen gestiegen. Niere und Leber werden häufig transplantiert.",
           },
           {
             text: "Es gibt in Deutschland deutlich mehr Spenderorgane als Empfänger, deshalb ist Organspende eher ein Randthema und die Wartelisten sind praktisch leer.",
@@ -672,8 +726,8 @@ export const CE06_SIT_ERLEMANN_REFLEKTIEREN: SituationsPhase = {
         glossarBegriffe: ["Lebendspende", "postmortale Spende", "mutmaßlicher Wille"],
       },
       contentB1: {
-        title: "Lebendspende vs. Spende durch einen hirntoten Menschen",
-        body: "Diskutiere, wie sich die psychische Begleitung bei einer Lebendspende und bei einer Spende durch einen hirntoten Menschen unterscheidet. Nenne je ein Pro- und ein Contra-Argument.",
+        title: "Lebendspende vs. postmortale Spende",
+        body: "Diskutiere, wie sich die psychische Begleitung bei einer Lebendspende und bei einer postmortalen Spende unterscheidet. Postmortale Spende heißt: Spende nach dem Tod, bei einem hirntoten Menschen. Nenne je ein Pro- und ein Contra-Argument.",
         glossarBegriffe: ["Lebendspende (= ein lebender Mensch spendet, z. B. eine Niere)"],
       },
       question: {

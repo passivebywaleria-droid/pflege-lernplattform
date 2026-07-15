@@ -95,6 +95,7 @@ export interface TrueFalseCard {
   statement: string;
   isTrue: boolean;
   explanation: string;
+  explanationB1?: string;
 }
 
 export interface TimerQuestion {
@@ -490,6 +491,7 @@ export interface SpektrumEintrag {
   situationsId?: string;        // z.B. "ls-bauer-demenz-sturz" — für Cross-Refs
   hauptfaktor: string;          // z.B. "Demenz + Sundowning"
   kurzbeschreibung: string;     // 1-2 Sätze, was bei diesem Patienten anders ist
+  kurzbeschreibungB1?: string;  // einfache Sprache (B1), gleiche belegte Aussage
 }
 
 /**

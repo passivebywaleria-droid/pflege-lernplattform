@@ -68,7 +68,7 @@ export const CE06_SIT_KORTMANN_ERKENNEN: SituationsPhase = {
             explanation:
               "Richtig. Das „akute Abdomen“ ist ein Sammelbegriff für verschiedene, akut bedrohliche Krankheitsbilder in der Bauchhöhle, die meist mit Schmerzen einhergehen. Es erfordert sofortiges diagnostisches und therapeutisches Handeln; meist ist eine chirurgische Behandlung erforderlich. Ursachen sind z. B. Entzündungen (Appendizitis, Cholezystitis, Pankreatitis) oder — wie hier — eine Perforation eines Hohlorgans (Sigmaperforation bei Divertikulitis).",
             explanationB1:
-              "Richtig. Das akute Abdomen ist ein Oberbegriff für verschiedene gefährliche Erkrankungen im Bauch, die meist wehtun. Man muss sofort handeln, oft ist eine Operation nötig. Bei Herrn Kortmann war eine Darmentzündung geplatzt.",
+              "Richtig. Akutes Abdomen — so nennt man verschiedene gefährliche Erkrankungen im Bauch, die meist wehtun. Man muss sofort handeln, oft ist eine Operation nötig. Bei Herrn Kortmann war eine Darmentzündung geplatzt.",
           },
           {
             text: "Eine chronische, über Wochen langsam entstehende Bauchbeschwerde, die man in Ruhe ambulant abklären kann, weil grundsätzlich keine unmittelbare Gefahr und keine Eile besteht.",
@@ -110,7 +110,7 @@ export const CE06_SIT_KORTMANN_ERKENNEN: SituationsPhase = {
       },
       contentB1: {
         title: "Was für ein Schmerz ist das?",
-        body: "Herr Kortmann hat einen dumpfen, tiefen Bauchschmerz. Er kann nicht genau sagen, wo es wehtut. Welche Schmerzart ist das?",
+        body: "Herr Kortmann hat einen dumpfen, tiefen Bauchschmerz. Er kann die Stelle nicht genau zeigen. Welche Schmerzart ist das?",
         glossarBegriffe: ["viszeraler Schmerz (= Schmerz von inneren Organen)", "Kolik (= krampfartiger Schmerz)"],
       },
       question: {
@@ -173,10 +173,16 @@ export const CE06_SIT_KORTMANN_ERKENNEN: SituationsPhase = {
         themaPrimaer: "abdomen-stoma-drainagen",
         storyAufhaenger:
           "Herr Kortmann hat seit der Not-OP einen künstlichen Darmausgang am linken Unterbauch. Ob er später zurückverlegt werden kann und wie empfindlich die Haut drumherum ist, hängt an einer einzigen Frage: Welcher Darm wird da ausgeleitet?",
+        storyAufhaengerB1:
+          "Herr Kortmann hat seit der Not-OP einen künstlichen Darmausgang am linken Unterbauch. Zwei Fragen hängen daran: Kann man ihn später zurückverlegen? Und wie empfindlich ist die Haut drumherum? Alles hängt an einer Frage: Welcher Darm wird da ausgeleitet?",
         kerntext:
           "Ein Stoma ist ein künstlich angelegter Darmausgang. Entscheidend ist, welcher Darmabschnitt ausgeleitet wird — Dickdarm oder Dünndarm.\n\nBei Herrn Kortmann ist es ein Kolostoma: die Ausleitung des Dickdarms, typischerweise im linken Unterbauch. Der Stuhl ist hier breiig bis fest. Weil bei der Hartmann-Operation nur ein Stück Darm vorübergehend stillgelegt wird, ist dieses endständige Kolostoma meist temporär — es kann später in einer weiteren Operation zurückverlegt werden.\n\nDas Gegenstück ist das Ileostoma: die Ausleitung des Dünndarms, meist im rechten Unterbauch. Sein Inhalt ist dünnflüssig, reichlich (frisch nach der Anlage etwa 1–3 Liter am Tag) und aggressiv — er greift die Haut an und weicht sie bei Kontakt wund auf (Mazeration). Deshalb wird ein Ileostoma vorstehend als kleiner Nippel angelegt und die Hautschutzplatte besonders genau zugeschnitten, damit möglichst wenig Haut mit dem Sekret in Berührung kommt.\n\nMerke dir Seite und Inhalt: links, breiig-fest = Kolostoma (Dickdarm); rechts, dünn und aggressiv = Ileostoma (Dünndarm).",
+        kerntextB1:
+          "Ein Stoma ist ein künstlicher Darmausgang. Wichtig ist: Welcher Darm wird ausgeleitet? Der Dickdarm oder der Dünndarm?\n\nBei Herrn Kortmann ist es ein Kolostoma. Das ist ein Dickdarm-Ausgang, meist am linken Unterbauch. Der Stuhl ist hier breiig bis fest. Sein Stoma ist endständig — das heißt, nur ein Darmende führt nach außen. Bei der Hartmann-OP legt man nur ein Stück Darm vorübergehend still. Deshalb ist dieses endständige Kolostoma meist nur vorübergehend. Später kann man es zurückverlegen. Dafür braucht man eine zweite Operation.\n\nDas Gegenstück ist das Ileostoma. Das ist ein Dünndarm-Ausgang, meist am rechten Unterbauch. Der Inhalt ist dünnflüssig und reichlich. Frisch nach der Anlage sind es etwa 1 bis 3 Liter am Tag. Dieser Inhalt ist aggressiv. Er greift die Haut an und weicht sie wund auf. Das nennt man Mazeration. Deshalb legt man ein Ileostoma vorstehend an, wie einen kleinen Nippel. Und man schneidet die Hautschutzplatte besonders genau zu. Das ist die Platte, die die Haut rund um das Stoma schützt. So kommt möglichst wenig Haut mit dem Inhalt in Kontakt.\n\nMerke dir die Seite und den Inhalt: Links und breiig-fest ist ein Kolostoma (Dickdarm). Rechts, dünn und aggressiv ist ein Ileostoma (Dünndarm).",
         faustregel:
           "Links, breiig-fest, oft nur vorübergehend = Kolostoma (Dickdarm) — so bei Herrn Kortmann. Rechts, dünnflüssig, hautaggressiv = Ileostoma (Dünndarm), Hautschutzplatte besonders exakt zuschneiden.",
+        faustregelB1:
+          "Links, breiig-fest, oft nur vorübergehend: Kolostoma (Dickdarm) — so bei Herrn Kortmann. Rechts, dünnflüssig, greift die Haut an: Ileostoma (Dünndarm). Hier die Hautschutzplatte besonders genau zuschneiden.",
         spektrum: [
           {
             patientName: "Herr Kortmann",
@@ -184,18 +190,24 @@ export const CE06_SIT_KORTMANN_ERKENNEN: SituationsPhase = {
             hauptfaktor: "Kolostoma (Dickdarm)",
             kurzbeschreibung:
               "Links, Stuhl breiig bis fest. Nach der Hartmann-OP meist temporär — später rückverlegbar.",
+            kurzbeschreibungB1:
+              "Links, Stuhl breiig bis fest. Nach der Hartmann-OP meist nur vorübergehend. Man kann es später zurückverlegen.",
           },
           {
             patientName: "Ileostoma (Dünndarm)",
             hauptfaktor: "hautaggressiv",
             kurzbeschreibung:
               "Rechts, dünnflüssig (frisch ~1–3 L/Tag), greift die Haut an → als Nippel angelegt, Hautschutzplatte exakt zugeschnitten.",
+            kurzbeschreibungB1:
+              "Rechts, dünnflüssig (frisch etwa 1–3 Liter am Tag). Greift die Haut an. Man legt es als Nippel an und schneidet die Hautschutzplatte genau zu.",
           },
           {
             patientName: "Die Hautschutzplatte",
             hauptfaktor: "schützt die Haut",
             kurzbeschreibung:
               "Sie deckt die Haut rund ums Stoma ab; je aggressiver der Inhalt, desto genauer muss sie zugeschnitten sein.",
+            kurzbeschreibungB1:
+              "Sie deckt die Haut rund um das Stoma ab. Je aggressiver der Inhalt ist, desto genauer schneidet man sie zu.",
           },
         ],
         karteikarte: {
@@ -203,6 +215,10 @@ export const CE06_SIT_KORTMANN_ERKENNEN: SituationsPhase = {
             "Herr Kortmann hat ein Stoma links im Unterbauch, Stuhl breiig-fest — welches ist es, und was heißt das?",
           rueckseite:
             "Kolostoma (Dickdarm, links, breiig-fest); nach Hartmann meist temporär, später rückverlegbar. Gegenstück Ileostoma (Dünndarm, rechts, dünnflüssig, frisch ~1–3 L/Tag, aggressiv → als Nippel angelegt, Hautschutzplatte exakt zuschneiden gegen Mazeration).",
+          vorderseiteB1:
+            "Herr Kortmann hat ein Stoma links im Unterbauch, Stuhl breiig-fest. Welches ist es? Und was heißt das?",
+          rueckseiteB1:
+            "Kolostoma: Dickdarm, links, breiig-fest. Nach Hartmann meist nur vorübergehend, später rückverlegbar. Gegenstück Ileostoma: Dünndarm, rechts, dünnflüssig (frisch etwa 1–3 Liter am Tag), aggressiv. Man legt es als Nippel an und schneidet die Hautschutzplatte genau zu. Das schützt vor Mazeration, also vor wunder Haut.",
         },
       },
     },
@@ -243,7 +259,7 @@ export const CE06_SIT_KORTMANN_ERKENNEN: SituationsPhase = {
             explanation:
               "Richtig. Ein Kolostoma ist die Ausleitung des Dickdarms, meist im linken Unterbauch; die endständige Kolostomie fördert meist breiigen bis festen Stuhlgang. Nach einer Hartmann-Operation ist das endständige Kolostoma meist ein temporäres Stoma, das operativ zurückverlagert werden kann. Beim Ileostoma (Dünndarm, rechter Unterbauch) ist der austretende Dünndarminhalt (frisch etwa 1–3 Liter/Tag) viel aggressiver — deshalb wird es prominent (Nippel) angelegt und die Hautschutzplatte besonders exakt zugeschnitten.",
             explanationB1:
-              "Richtig. Ein Kolostoma ist ein Dickdarm-Ausgang, meist links. Der Stuhl ist breiig bis fest. Nach der Hartmann-OP ist es meist nur vorübergehend und kann später zurückverlegt werden. Beim Ileostoma (Dünndarm, rechts) ist der Inhalt viel aggressiver für die Haut.",
+              "Richtig. Ein Kolostoma ist ein Dickdarm-Ausgang, meist links. Der Stuhl ist breiig bis fest. Nach der Hartmann-OP ist es meist nur vorübergehend und kann später zurückverlegt werden. Beim Ileostoma (Dünndarm, rechts) ist der Inhalt viel aggressiver für die Haut. Deshalb wird dort die Hautschutzplatte besonders genau zugeschnitten.",
           },
           {
             text: "Es ist ein Ileostoma — weil es im linken Unterbauch liegt und der Dünndarm dort ausgeleitet wird; der Stuhl ist dünnflüssig.",
@@ -297,7 +313,7 @@ export const CE06_SIT_KORTMANN_ERKENNEN: SituationsPhase = {
             feedback:
               "Genau richtig. Eine vitale Stomaschleimhaut ist rosig bis rot und feucht glänzend. Eine dunkelrote bis livide Verfärbung zeigt eine Durchblutungsstörung an, eine grau-schwarze Verfärbung eine Nekrose. Ist der ausgeleitete Darm nicht ausreichend durchblutet, muss der Chirurg oder behandelnde Arzt sofort hinzugezogen werden — die Beurteilung dieser Komplikation ist ärztliche Aufgabe. Der leichte Randsaum-Ödem ist in den ersten postoperativen Tagen dagegen normal.",
             feedbackB1:
-              "Genau richtig. Eine gesunde Stomaschleimhaut ist rosig-rot und glänzt feucht. Bläulich (livide) heißt: die Durchblutung ist gestört. Grau-schwarz heißt: Gewebe stirbt ab. Dann sofort den Arzt rufen. Die leichte Schwellung am Rand ist in den ersten Tagen normal.",
+              "Genau richtig. Eine gesunde Stomaschleimhaut ist rosig-rot und glänzt feucht. Bläulich (livide) heißt: die Durchblutung ist gestört. Grau-schwarz heißt: Gewebe stirbt ab. Dann sofort den Arzt rufen. Die leichte Schwellung am Rand ist direkt nach der Operation normal.",
           },
           {
             text: "Nichts Besonderes — eine dunkle Verfärbung und die Schwellung sind am 2. Tag nach der Operation beide normal, deshalb schaue ich in der nächsten Schicht in Ruhe wieder danach.",
@@ -356,7 +372,7 @@ export const CE06_SIT_KORTMANN_ERKENNEN: SituationsPhase = {
             explanation:
               "Richtig. Postoperative Immobilisation und schmerzbedingte Schonatmung sind Hauptursachen einer postoperativen Pneumonie — die wirksamste Pneumonieprophylaxe ist die Frühmobilisation, die zugleich das Thromboserisiko senkt (venöser Blutstrom). Auf die beginnende Darmtätigkeit achtet man über Darmgeräusche/Darmgase und die Stoma-Ausscheidung. Beim Dauerkatheter gilt: Händehygiene vor/nach jeder Manipulation, geschlossenes System, knickfreier Abfluss und Beutel stets unterhalb des Blasenniveaus.",
             explanationB1:
-              "Richtig. Wer nach der OP liegen bleibt und flach atmet, bekommt leichter eine Lungenentzündung. Darum: früh aufstehen (das schützt auch vor Thrombose). Auf Darmgeräusche und die Stoma-Ausscheidung achten. Beim Katheter: Hände desinfizieren, geschlossenes System, Beutel immer unter der Blase.",
+              "Richtig. Wer nach der OP liegen bleibt und schmerzbedingt flach atmet (Schonatmung), bekommt leichter eine Lungenentzündung. Darum: früh aufstehen (das schützt auch vor Thrombose). Auf Darmgeräusche und die Stoma-Ausscheidung achten. Beim Katheter: Hände desinfizieren, geschlossenes System, Beutel immer unter der Blase.",
           },
           {
             text: "Strikte Bettruhe und Schonung — Herr Kortmann sollte erst mobilisiert werden, wenn er komplett schmerzfrei ist, damit die frische Bauchwunde nicht unter Zug gerät und in Ruhe sicher verheilen kann.",
@@ -372,7 +388,7 @@ export const CE06_SIT_KORTMANN_ERKENNEN: SituationsPhase = {
             explanation:
               "Falsch. Der Auffangbeutel muss stets unterhalb des Blasenniveaus hängen, damit kein Urin in die Blase zurückläuft (Infektionsgefahr) — er darf auch nicht auf den Boden gestellt werden. Die Stundenmenge liest man an der Messkammer ab, nicht durch Hochhängen. Ein hoch gehängter Beutel erhöht das Risiko eines katheterassoziierten Harnwegsinfekts.",
             explanationB1:
-              "Falsch. Der Beutel muss immer unter der Blase hängen, sonst läuft Urin zurück (Infektionsgefahr). Er darf auch nicht auf den Boden. Die Menge liest man an der Kammer ab.",
+              "Falsch. Der Beutel muss immer unter der Blase hängen, sonst läuft Urin zurück (Infektionsgefahr). Auf dem Boden darf er auch nicht liegen. Die Menge liest man an der Kammer ab.",
           },
         ],
       },
@@ -421,16 +437,24 @@ export const CE06_SIT_KORTMANN_ALARMIEREN: SituationsPhase = {
         themaPrimaer: "abdomen-stoma-drainagen",
         storyAufhaenger:
           "Herr Kortmann fragt: „Wofür ist dieser Schlauch?“ Er hat zwei Drainagen — und ausgerechnet die im Bauch folgt einer Regel, die man leicht falsch macht.",
+        storyAufhaengerB1:
+          "Herr Kortmann fragt: „Wofür ist dieser Schlauch?“ Er hat zwei Drainagen. Und die im Bauch folgt einer Regel, die man leicht falsch macht.",
         kerntext:
           "Eine Drainage leitet Wundsekret, Blut oder Eiter aus einer Wunde oder Körperhöhle nach außen ab. So kann sich nichts stauen, und du siehst zugleich, was und wie viel herauskommt — ein wichtiges Frühwarnsystem.\n\nEs gibt Drainagen mit und ohne Sog. Die Redon-Drainage zum Beispiel liegt unter der Haut (subkutan) und saugt aktiv — sie ist die häufigste Weichteil-Saugdrainage. Ganz anders die Drainage in der Bauchhöhle: Sie läuft OHNE Sog. Der Grund ist wichtig: Ein Sog könnte den empfindlichen Darm ansaugen und schädigen (bis hin zu Loch oder Fistel). Deshalb bekommt eine Bauchhöhlendrainage niemals Sog.\n\nZwei Dinge gelten für alle Drainagen: Sie sind an ein geschlossenes Auffanggefäß angeschlossen — das hält Keime draußen. Und der Verbandwechsel erfolgt aseptisch (keimfrei), weil die Drainage eine direkte Verbindung ins Körperinnere ist. So schützt du Herrn Kortmann vor einer Infektion über den Schlauch.",
+        kerntextB1:
+          "Eine Drainage ist ein Schlauch. Sie leitet Wundflüssigkeit, Blut oder Eiter aus einer Wunde nach außen ab. So staut sich nichts. Und du siehst zugleich, was und wie viel herauskommt. Das ist ein wichtiges Frühwarnsystem.\n\nEs gibt Drainagen mit Sog und ohne Sog. Sog heißt: Der Schlauch saugt. Die Redon-Drainage zum Beispiel liegt subkutan, also unter der Haut, und saugt aktiv. Sie ist die häufigste Saug-Drainage. Ganz anders ist die Drainage im Bauch. Sie läuft OHNE Sog. Der Grund ist wichtig. Ein Sog könnte den Darm ansaugen und verletzen. Dann entsteht ein Loch oder ein falscher Gang, eine Fistel. Deshalb bekommt eine Bauch-Drainage nie einen Sog.\n\nZwei Dinge gelten für alle Drainagen. Erstens: Der Schlauch ist an ein geschlossenes Gefäß angeschlossen. Das hält Keime draußen. Zweitens: Der Verbandwechsel ist aseptisch, also keimfrei. Denn die Drainage ist eine direkte Verbindung in den Körper. So schützt du Herrn Kortmann vor einer Infektion über den Schlauch.",
         faustregel:
           "Drainage = leitet Sekret/Blut/Eiter ab und warnt früh. Die Redon (unter der Haut) saugt — die Bauchdrainage läuft OHNE Sog (Sog schädigt den Darm). Immer geschlossenes System, Verbandwechsel immer aseptisch.",
+        faustregelB1:
+          "Eine Drainage leitet Flüssigkeit, Blut oder Eiter ab und warnt früh. Die Redon unter der Haut saugt. Die Bauch-Drainage läuft OHNE Sog, denn Sog verletzt den Darm. Immer geschlossenes System, Verbandwechsel immer keimfrei (aseptisch).",
         spektrum: [
           {
             patientName: "Redon-Drainage",
             hauptfaktor: "mit Sog (subkutan)",
             kurzbeschreibung:
               "Liegt unter der Haut und saugt aktiv — die häufigste Weichteil-Saugdrainage.",
+            kurzbeschreibungB1:
+              "Sie liegt unter der Haut und saugt aktiv. Es ist die häufigste Saug-Drainage.",
           },
           {
             patientName: "Bauchhöhlendrainage",
@@ -438,12 +462,16 @@ export const CE06_SIT_KORTMANN_ALARMIEREN: SituationsPhase = {
             hauptfaktor: "OHNE Sog",
             kurzbeschreibung:
               "Herrn Kortmanns Bauchdrainage — Sog könnte den Darm ansaugen und schädigen (Loch/Fistel), deshalb sogfrei.",
+            kurzbeschreibungB1:
+              "Das ist Herrn Kortmanns Bauch-Drainage. Ein Sog könnte den Darm ansaugen und verletzen. Deshalb läuft sie ohne Sog.",
           },
           {
             patientName: "Jede Drainage",
             hauptfaktor: "keimfrei halten",
             kurzbeschreibung:
               "Geschlossenes Auffanggefäß + aseptischer Verbandwechsel — sonst wandern Keime über den Schlauch nach innen.",
+            kurzbeschreibungB1:
+              "Geschlossenes Gefäß und keimfreier Verbandwechsel. Sonst wandern Keime über den Schlauch nach innen.",
           },
         ],
         karteikarte: {
@@ -451,6 +479,10 @@ export const CE06_SIT_KORTMANN_ALARMIEREN: SituationsPhase = {
             "Warum bekommt Herrn Kortmanns Bauchdrainage keinen Sog — die Redon aber schon?",
           rueckseite:
             "Drainagen leiten Sekret/Blut/Eiter ab und warnen früh. Redon (subkutan) = Saugdrainage. Bauchhöhlendrainage OHNE Sog, weil Sog den Darm ansaugen/schädigen kann (Loch/Fistel). Immer geschlossenes System + aseptischer Verbandwechsel.",
+          vorderseiteB1:
+            "Warum bekommt Herrn Kortmanns Bauch-Drainage keinen Sog? Die Redon aber schon?",
+          rueckseiteB1:
+            "Drainagen leiten Flüssigkeit, Blut oder Eiter ab und warnen früh. Die Redon unter der Haut saugt. Die Bauch-Drainage läuft OHNE Sog, denn Sog kann den Darm ansaugen und verletzen (ein Loch oder eine Fistel). Immer geschlossenes System und immer keimfreier (aseptischer) Verbandwechsel.",
         },
       },
     },
@@ -477,7 +509,7 @@ export const CE06_SIT_KORTMANN_ALARMIEREN: SituationsPhase = {
       },
       contentB1: {
         title: "Wofür sind seine Drainagen?",
-        body: "Herr Kortmann hat eine Drainage im Bauch und eine Redon-Drainage unter der Haut. Welche Aussage stimmt?",
+        body: "Herr Kortmann hat eine Drainage im Bauch und eine Redon-Drainage subkutan, also unter der Haut. Welche Aussage stimmt?",
         glossarBegriffe: ["Sog (= Unterdruck/Saugen)", "Redon-Drainage (= Saug-Drainage)", "aseptisch (= keimfrei)"],
       },
       question: {
@@ -552,7 +584,7 @@ export const CE06_SIT_KORTMANN_ALARMIEREN: SituationsPhase = {
             feedback:
               "Dass du an einen normalen postoperativen Rest denkst, ist verständlich — aber hier gefährlich: Über 200 ml frisches Blut aus der Drainage innerhalb einer Stunde ist kein Wundschmerz-Rest, sondern ein untrügliches Zeichen einer Nachblutung. Hier muss sofort der Arzt verständigt werden; eine Stunde abzuwarten kann zum Volumenmangelschock führen. Frühes Erkennen und sofortiges Alarmieren sind entscheidend — genau darauf kommt es beim nächsten Mal an.",
             feedbackB1:
-              "Der Gedanke ist verständlich — aber gefährlich: Über 200 ml Blut in einer Stunde ist NICHT normal, sondern ein sicheres Zeichen für eine Nachblutung. Sofort den Arzt rufen. Eine Stunde warten kann zum Schock führen.",
+              "Der Gedanke ist verständlich — aber gefährlich: Über 200 ml Blut in einer Stunde ist NICHT normal. Das ist ein sicheres Nachblutungs-Zeichen. Ruf sofort den Arzt. Eine Stunde warten kann zum Schock führen.",
           },
           {
             text: "Die Drainage abklemmen oder selbst ziehen, damit über den Schlauch nicht noch mehr Blut nach außen verloren geht und die Blutung sichtbar gestoppt ist.",
@@ -611,10 +643,16 @@ export const CE06_SIT_KORTMANN_ERSTMASSNAHMEN: SituationsPhase = {
         themenSekundaer: ["notfallassessment"],
         storyAufhaenger:
           "Aus der Bauchdrainage kommt frisches Blut, Herr Kortmann wird blasser. Jetzt entscheidet nicht nur, DASS du reagierst, sondern was dein Part ist — und was ausdrücklich nicht.",
+        storyAufhaengerB1:
+          "Aus der Bauch-Drainage kommt frisches Blut. Herr Kortmann wird blasser. Jetzt zählt nicht nur, DASS du reagierst. Es zählt auch: Was ist dein Part? Und was gehört ausdrücklich nicht dazu?",
         kerntext:
           "In dieser Lage bist du das Frühwarnsystem und die rechte Hand des Chirurgen — aber du behandelst die Blutung nicht selbst. Drei Grenzen sind entscheidend.\n\nErstens die Drainage: Über 200 ml frisches Blut in der ersten Stunde sind ein untrügliches Zeichen einer Nachblutung — dann verständigst du sofort den Arzt. Abklemmen oder Ziehen der Drainage entscheidest du nicht eigenmächtig. Das Blut im Schlauch ist ein Warnhinweis, kein Leck zum Verschließen; die Blutung sitzt im Bauch und wird ärztlich, meist operativ, gestillt.\n\nZweitens das Stoma: Ob eine livide oder graue Verfärbung eine Durchblutungsstörung oder eine Nekrose bedeutet, beurteilt der Arzt. Du erkennst, meldest, dokumentierst und beobachtest — massieren oder eigenmächtig behandeln würde das frische Gewebe nur schädigen.\n\nDrittens die Vorbereitung: Herr Kortmann bleibt nüchtern, weil eine erneute Operation folgen kann (sonst droht in der Narkose eine Aspiration). Volumen, Transfusion und weitere Maßnahmen setzt du um — angeordnet werden sie ärztlich. Dein Part: früh erkennen, sofort melden, überwachen, dokumentieren, vorbereiten.",
+        kerntextB1:
+          "In dieser Lage bist du das Frühwarnsystem. Du bist die rechte Hand des Chirurgen. Aber du behandelst die Blutung nicht selbst. Drei Grenzen sind wichtig.\n\nErstens die Drainage. Über 200 ml frisches Blut in der ersten Stunde ist ein sicheres Zeichen für eine Nachblutung. Dann rufst du sofort den Arzt. Die Drainage darfst du nicht selbst abklemmen oder ziehen. Das Blut im Schlauch ist ein Warnzeichen, kein Leck zum Verschließen. Die Blutung sitzt im Bauch. Der Arzt stillt sie, meist im OP.\n\nZweitens das Stoma. Eine bläuliche (livide) oder graue Verfärbung kann eine Durchblutungsstörung sein. Oder abgestorbenes Gewebe, eine Nekrose. Das beurteilt der Arzt. Du erkennst es, meldest es, schreibst es auf und beobachtest weiter. Massieren oder selbst behandeln würde das frische Gewebe nur verletzen.\n\nDrittens die Vorbereitung. Herr Kortmann bleibt nüchtern, also er darf weder essen noch trinken. Denn vielleicht folgt eine zweite Operation. Sonst kann bei der Narkose Mageninhalt in die Lunge geraten. Das nennt man Aspiration. Flüssigkeit über die Vene, Blutkonserven und weitere Maßnahmen setzt du um. Aber der Arzt ordnet sie an. Dein Part ist: früh erkennen, sofort melden, überwachen, aufschreiben, vorbereiten.",
         faustregel:
           "Über 200 ml frisches Blut/1 h aus der Drainage → sofort Arzt. Drainage NICHT selbst abklemmen/ziehen, Stoma-Verfärbung beurteilt der Arzt, Herr Kortmann bleibt nüchtern (mögliche Re-OP). Du erkennst, meldest, überwachst, bereitest vor.",
+        faustregelB1:
+          "Über 200 ml frisches Blut in 1 Stunde aus der Drainage: sofort Arzt. Die Drainage NICHT selbst abklemmen oder ziehen. Eine Stoma-Verfärbung beurteilt der Arzt. Herr Kortmann bleibt nüchtern, denn vielleicht folgt eine zweite OP. Du erkennst, meldest, überwachst und bereitest vor.",
         spektrum: [
           {
             patientName: "Drainage blutet (>200 ml/1 h)",
@@ -622,12 +660,16 @@ export const CE06_SIT_KORTMANN_ERSTMASSNAHMEN: SituationsPhase = {
             hauptfaktor: "sofort melden",
             kurzbeschreibung:
               "Untrügliches Nachblutungszeichen → sofort Arzt. Aber nicht selbst abklemmen/ziehen — gestillt wird im OP.",
+            kurzbeschreibungB1:
+              "Sicheres Zeichen für eine Nachblutung → sofort Arzt. Aber nicht selbst abklemmen oder ziehen. Gestillt wird die Blutung im OP.",
           },
           {
             patientName: "Stoma livide/grau",
             hauptfaktor: "ärztliche Beurteilung",
             kurzbeschreibung:
               "Durchblutungsstörung/Nekrose beurteilt der Arzt. Du erkennst, meldest, beobachtest — massierst nicht.",
+            kurzbeschreibungB1:
+              "Eine Durchblutungsstörung oder abgestorbenes Gewebe beurteilt der Arzt. Du erkennst, meldest und beobachtest. Du massierst nicht.",
           },
           {
             patientName: "Herr Gruber (obere GI-Blutung)",
@@ -635,6 +677,8 @@ export const CE06_SIT_KORTMANN_ERSTMASSNAHMEN: SituationsPhase = {
             hauptfaktor: "dieselbe Grenze",
             kurzbeschreibung:
               "Auch dort: sofort Arzt, nüchtern, Volumen nur auf Anordnung — die Blutung stillt der Arzt, nicht die Pflege.",
+            kurzbeschreibungB1:
+              "Auch dort gilt: sofort Arzt, nüchtern lassen, Flüssigkeit nur auf Anordnung. Die Blutung stillt der Arzt, nicht die Pflege.",
           },
         ],
         karteikarte: {
@@ -642,6 +686,10 @@ export const CE06_SIT_KORTMANN_ERSTMASSNAHMEN: SituationsPhase = {
             "Bauchdrainage blutet, Stoma verfärbt — was ist dein Part, was ist ärztlich?",
           rueckseite:
             ">200 ml frisches Blut/1 h → sofort Arzt; Drainage NICHT selbst abklemmen/ziehen (die Blutung wird im OP gestillt). Stoma-Verfärbung (livide/grau) beurteilt der Arzt — du erkennst/meldest/beobachtest, massierst nicht. Nüchtern lassen (Re-OP möglich), Volumen/Transfusion nach Anordnung. Pflege: erkennen, melden, überwachen, vorbereiten.",
+          vorderseiteB1:
+            "Die Bauch-Drainage blutet, das Stoma ist verfärbt. Was ist dein Part? Was macht der Arzt?",
+          rueckseiteB1:
+            "Über 200 ml frisches Blut in 1 Stunde → sofort Arzt. Die Drainage NICHT selbst abklemmen oder ziehen. Die Blutung wird im OP gestillt. Eine Stoma-Verfärbung (bläulich oder grau) beurteilt der Arzt. Du erkennst, meldest und beobachtest, aber massierst nicht. Nüchtern lassen, denn vielleicht folgt eine zweite OP. Flüssigkeit und Blutkonserven nur nach Anordnung. Deine Aufgabe: erkennen, melden, überwachen, vorbereiten.",
         },
       },
     },
@@ -681,6 +729,8 @@ export const CE06_SIT_KORTMANN_ERSTMASSNAHMEN: SituationsPhase = {
             isTrue: false,
             explanation:
               "Falsch. Bei Verdacht auf eine Nachblutung mit möglicher erneuter Operation bleibt Herr Kortmann nüchtern (nichts essen/trinken) — schon bei jedem akuten Abdomen gilt: bis zur Klärung des Vorgehens nüchtern bleiben. Essen oder Trinken würde eine baldige Narkose (Betäubung für die OP) und Operation gefährden, weil dabei Aspirationsgefahr besteht (Verschlucken von Mageninhalt in die Lunge). Deshalb ist es tabu.",
+            explanationB1:
+              "Falsch. Herr Kortmann bleibt nüchtern — essen und trinken darf er jetzt nicht. Der Grund: eine mögliche Nachblutung, vielleicht kommt eine zweite Operation. Das gilt bei jedem akuten Abdomen. Wenn er isst oder trinkt, wird die Narkose gefährlich. Mageninhalt kann dann in die Lunge geraten. Das heißt Aspiration. Deshalb ist Essen und Trinken jetzt verboten.",
           },
           {
             statement:
@@ -688,6 +738,8 @@ export const CE06_SIT_KORTMANN_ERSTMASSNAHMEN: SituationsPhase = {
             isTrue: true,
             explanation:
               "Richtig. Bis zur ärztlichen Beurteilung/Re-OP bleibt Herr Kortmann nüchtern (nichts essen/trinken). Bei einer intraabdominellen Nachblutung wird der Flüssigkeits-/Blutverlust unter fortlaufender Kreislauf- und Hb-Kontrolle (Kontrolle des roten Blutfarbstoffs) ersetzt — die Pflege überwacht engmaschig Puls, Blutdruck, Bewusstsein und die Drainagenmenge und bereitet die Weiterversorgung (Zugänge, Kreuzblut, OP-Anmeldung) nach ärztlicher Anordnung vor.",
+            explanationB1:
+              "Richtig. Bis der Arzt entscheidet, bleibt Herr Kortmann nüchtern. Die Pflege überwacht engmaschig Puls, Blutdruck und Bewusstsein. Auch die Menge in der Drainage wird kontrolliert. So erkennt man eine Nachblutung früh. Für eine mögliche Operation bereitest du alles vor: Zugang legen, Kreuzblut abnehmen, im OP anmelden. Kreuzblut ist ein Test, ob das Spenderblut passt. Das machst du nach Anordnung vom Arzt.",
           },
         ],
       },
@@ -716,8 +768,8 @@ export const CE06_SIT_KORTMANN_ERSTMASSNAHMEN: SituationsPhase = {
       },
       contentB1: {
         title: "Material richten",
-        body: "Bis der Chirurg da ist, richtest du das Nötige. Wichtig: Herr Kortmann darf nichts essen/trinken (vielleicht wieder OP). Jetzt zählen Überwachung und Flüssigkeit.",
-        glossarBegriffe: ["Kreuzblut (= Blut für die Blutgruppe)", "Venenverweilkanüle (= Zugang in die Vene)"],
+        body: "Bis der Chirurg da ist, richtest du das Nötige. Wichtig: Herr Kortmann bleibt nüchtern — er darf nichts essen oder trinken (vielleicht kommt eine zweite OP). Jetzt zählen Überwachung und Flüssigkeit.",
+        glossarBegriffe: ["Kreuzblut (= Test, ob das Spenderblut passt)", "Venenverweilkanüle (= Zugang in die Vene)"],
       },
       question: {
         fragetext: "Welches Material gehört jetzt dazu? Tippe ein Material an, dann den passenden Bereich.",
@@ -751,7 +803,7 @@ export const CE06_SIT_KORTMANN_ERSTMASSNAHMEN: SituationsPhase = {
               korrekteZoneId: "richten",
               erklaerung:
                 "Bei drohendem Volumenmangel werden Puls, Blutdruck, Bewusstsein und Sättigung engmaschig überwacht — Manschette und Pulsoxymeter gehören auf den Wagen.",
-              erklaerungB1: "Puls, Blutdruck und Sättigung müssen engmaschig überwacht werden. Das Material gehört dazu.",
+              erklaerungB1: "Puls, Blutdruck, Bewusstsein und Sättigung müssen engmaschig überwacht werden. Das Material gehört dazu.",
             },
             {
               id: "zugang",
@@ -761,7 +813,7 @@ export const CE06_SIT_KORTMANN_ERSTMASSNAHMEN: SituationsPhase = {
               korrekteZoneId: "richten",
               erklaerung:
                 "Bei Nachblutung wird der Volumenverlust über Infusionen (ggf. Transfusionen) ersetzt — ein weiterer sicherer venöser Zugang wird nach ärztlicher Anordnung vorbereitet.",
-              erklaerungB1: "Bei Blutverlust braucht man Flüssigkeit über die Vene. Ein weiterer Zugang wird vorbereitet.",
+              erklaerungB1: "Bei einer Nachblutung braucht man Flüssigkeit über die Vene — eine Infusion. Ein weiterer Zugang wird vorbereitet.",
             },
             {
               id: "kreuzblut",
@@ -771,7 +823,7 @@ export const CE06_SIT_KORTMANN_ERSTMASSNAHMEN: SituationsPhase = {
               korrekteZoneId: "richten",
               erklaerung:
                 "Bei Blutverlust können Erythrozytenkonzentrate nötig werden; dafür braucht es Blutgruppe und Kreuzblut sowie eine Hb-Kontrolle. Röhrchen gleich mitrichten.",
-              erklaerungB1: "Bei Blutverlust braucht man vielleicht Blutkonserven. Dafür bestimmt man die Blutgruppe.",
+              erklaerungB1: "Bei Blutverlust braucht man vielleicht Blutkonserven. Dafür bestimmt man die Blutgruppe und macht Kreuzblut (ein Test, ob das Spenderblut passt).",
             },
             {
               id: "verbandmaterial",
@@ -781,7 +833,7 @@ export const CE06_SIT_KORTMANN_ERSTMASSNAHMEN: SituationsPhase = {
               korrekteZoneId: "richten",
               erklaerung:
                 "Für die ärztliche Inspektion von Wunde und Drainage-Austrittsstelle wird steriles Material bereitgelegt — aseptisches Arbeiten bleibt Pflicht.",
-              erklaerungB1: "Für die Kontrolle durch den Arzt legst du steriles (keimfreies) Material bereit.",
+              erklaerungB1: "Für die Kontrolle von Wunde und Drainage legst du steriles (keimfreies) Material bereit. Du arbeitest aseptisch — also keimfrei.",
             },
             {
               id: "getraenk",
@@ -791,7 +843,7 @@ export const CE06_SIT_KORTMANN_ERSTMASSNAHMEN: SituationsPhase = {
               korrekteZoneId: "weglegen",
               erklaerung:
                 "Falsch. Herr Kortmann bleibt nüchtern — bei Verdacht auf Nachblutung mit möglicher Re-Operation sind Essen und Trinken tabu (Aspirationsgefahr bei Narkose).",
-              erklaerungB1: "Nein. Herr Kortmann darf nichts essen oder trinken (vielleicht wieder OP).",
+              erklaerungB1: "Nein. Herr Kortmann bleibt nüchtern — nichts essen oder trinken. Sonst droht bei einer Narkose eine Aspiration (Verschlucken in die Atemwege).",
             },
             {
               id: "waermflasche",
@@ -858,7 +910,7 @@ export const CE06_SIT_KORTMANN_ERSTMASSNAHMEN: SituationsPhase = {
             explanation:
               "Richtig. Zum akuten Abdomen gehören Kreislaufsymptome bis hin zum Schock. Ein steigender Puls, fallender Blutdruck, blass-kalte Haut und zunehmende Benommenheit sind Zeichen eines beginnenden hypovolämischen Schocks durch den Blutverlust. Der Volumenverlust wird unter fortlaufender Kreislauf- und Hb-Kontrolle durch Infusionen und ggf. Transfusionen ersetzt (ärztlich angeordnet) — du meldest die Verschlechterung sofort, setzt die Anordnungen um und überwachst engmaschig, bis Herr Kortmann versorgt/verlegt ist.",
             explanationB1:
-              "Richtig. Zum akuten Abdomen gehören auch Kreislaufzeichen bis zum Schock. Schneller Puls, fallender Blutdruck, blass-kalte Haut und Benommenheit heißen: beginnender Schock durch Blutverlust. Sofort dem Arzt melden, Flüssigkeit/Blut nach Anordnung, engmaschig überwachen.",
+              "Richtig. Zum akuten Abdomen gehören auch Kreislaufzeichen bis zum Schock. Schneller Puls, fallender Blutdruck, blass-kalte Haut und Benommenheit heißen: beginnender Schock durch Blutverlust. Sofort dem Arzt melden. Er ordnet Infusionen (Flüssigkeit über die Vene) und vielleicht Blut an. Du überwachst engmaschig.",
           },
           {
             text: "Das ist nach einer Operation und mit Schmerzmitteln normal — ich warte ab und kontrolliere die Werte beim nächsten regulären Rundgang in Ruhe erneut.",
@@ -932,7 +984,7 @@ export const CE06_SIT_KORTMANN_UEBERGEBEN: SituationsPhase = {
             explanation:
               "Richtig. Vollständiges SBAR: die aktuelle Situation (Blutung aus der Bauchdrainage), der entscheidende Background (2. Tag nach Not-Hartmann, Kolostoma, Drainage), das kritische Assessment (>200 ml frisches Blut/1 h, Tachykardie, Hypotonie, nüchtern, Zugang) und eine klare Empfehlung (sofortige OP-Übernahme, Kreuzblut). Das Gegenüber kann sofort priorisieren.",
             explanationB1:
-              "Richtig. Vollständiges SBAR: was jetzt ist (Blutung aus der Drainage), der Hintergrund (2. Tag nach Not-OP, Kolostoma, Drainage), der kritische Zustand (über 200 ml Blut in 1 Stunde, schneller Puls, niedriger Blutdruck, nüchtern) und eine klare Bitte (sofort in den OP, Blutgruppe unterwegs).",
+              "Richtig. Vollständiges SBAR: was jetzt ist (Blutung aus der Drainage), der Hintergrund (2. Tag nach Not-OP, Kolostoma, Drainage), der kritische Zustand (über 200 ml Blut in 1 Stunde, schneller Puls, niedriger Blutdruck, nüchtern) und eine klare Bitte (sofort in den OP, Kreuzblut ist unterwegs — das ist der Test, ob das Spenderblut passt).",
           },
           {
             text: "\"Der Patient aus Zimmer 8 blutet aus einer Drainage, ich habe ihn schon frisch gemacht und umgezogen — er kommt gleich zu euch, macht euch bitte bereit für ihn.\"",

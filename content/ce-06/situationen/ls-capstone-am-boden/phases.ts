@@ -58,7 +58,7 @@ export const CE06_SIT_PETROVA_ERKENNEN: SituationsPhase = {
             explanation:
               "Richtig. Jede Ersteinschätzung folgt einer festen Prioritätenliste (Bewusstsein/Atemweg, Atmung, Kreislauf — ABCDE). Erst wenn du weißt, ob sie reagiert und ob sie normal atmet, entscheidet sich der ganze weitere Weg: reanimieren, stabile Seitenlage oder weiter differenzieren. Diagnosen wie 'Schlaganfall' oder 'Kreislauf' kommen später — nie vor dem ersten strukturierten Check.",
             explanationB1:
-              "Richtig. Zuerst das Wichtigste in fester Reihenfolge prüfen: Reagiert sie? Atmet sie normal? Davon hängt alles ab — reanimieren, stabile Seitenlage oder weiter unterscheiden. Die Diagnose kommt später.",
+              "Richtig. Das ist die Ersteinschätzung nach ABCDE (feste Prüf-Reihenfolge). Zuerst das Wichtigste prüfen: Reagiert sie? Atmet sie normal? Davon hängt alles ab — reanimieren, stabile Seitenlage oder weiter unterscheiden. Die Diagnose kommt später.",
           },
           {
             text: "Ich lege sie sofort auf die Seite und hole ein Glas Zuckerwasser — das hilft bei Schwäche eigentlich immer.",
@@ -107,28 +107,40 @@ export const CE06_SIT_PETROVA_ERKENNEN: SituationsPhase = {
         themenSekundaer: ["reanimation-bls"],
         storyAufhaenger:
           "Jemand liegt am Boden — das kann fast alles bedeuten. Und doch beginnt jede richtige Reaktion mit demselben, immer gleichen ersten Blick. Er sortiert in Sekunden, welchen von drei Wegen du gehst.",
+        storyAufhaengerB1:
+          "Jemand liegt am Boden. Das kann fast alles bedeuten. Und doch beginnt jede richtige Reaktion mit dem gleichen ersten Blick. Er zeigt dir in Sekunden, welchen von drei Wegen du gehst.",
         kerntext:
-          "Jede Ersteinschätzung folgt einer festen Reihenfolge nach Prioritäten (dem ABCDE-Gedanken): zuerst das, was am schnellsten tötet. Für den allerersten Blick heißt das zwei Fragen, beide in Sekunden beantwortet: Reagiert der Mensch auf Ansprache und Rütteln? Und hebt sich der Brustkorb ruhig und regelmäßig?\n\nAus den Antworten ergeben sich drei Wege. Reagiert er nicht UND atmet er nicht normal, behandelst du ihn als Herz-Kreislauf-Stillstand: Rettungskette, sofort Herzdruckmassage — genau der Weg, den du bei Herrn Wagner gegangen bist. (Erfahrenes Fachpersonal darf zeitgleich zur Atemkontrolle höchstens 10 Sekunden den Karotispuls tasten — aber ohne Zeit zu verlieren; im Zweifel sofort drücken.) Ist er bewusstlos, atmet aber normal, bringst du ihn in die stabile Seitenlage, damit die Atemwege frei bleiben, und überwachst ihn. Reagiert er dagegen — und sei es nur schwach —, dann läuft sein Kreislauf; jetzt geht es nicht ums Wiederbeleben, sondern ums Unterscheiden, was dahintersteckt.\n\nEin Stolperstein bleibt wichtig: Schnappatmung — einzelne, ruckartige Atemzüge mit langen Pausen — zählt NICHT als normale Atmung. Wer sie dafür hält, verpasst den Stillstand.",
+          "Jede Ersteinschätzung folgt einer festen Reihenfolge nach Prioritäten (dem ABCDE-Gedanken): zuerst das, was am schnellsten tötet. Für den allerersten Blick heißt das zwei Fragen, beide in Sekunden beantwortet: Reagiert der Mensch auf Ansprache und Rütteln? Und hebt sich der Brustkorb ruhig und regelmäßig?\n\nAus den Antworten ergeben sich drei Wege. Reagiert er nicht UND atmet er nicht normal, behandelst du ihn als Herz-Kreislauf-Stillstand: Rettungskette, sofort Herzdruckmassage — genau der Weg, den du bei Herrn Wagner gegangen bist. (Erfahrenes Fachpersonal darf zeitgleich zur Atemkontrolle höchstens 10 Sekunden den Karotispuls tasten — aber ohne Zeit zu verlieren; im Zweifel sofort drücken.) Ist er bewusstlos, atmet aber normal, dann: stabile Seitenlage, damit die Atemwege frei bleiben — und engmaschig überwachen. Reagiert er dagegen — und sei es nur schwach —, dann läuft sein Kreislauf; jetzt geht es nicht ums Wiederbeleben, sondern ums Unterscheiden, was dahintersteckt.\n\nEin Stolperstein bleibt wichtig: Schnappatmung — einzelne, ruckartige Atemzüge mit langen Pausen — zählt NICHT als normale Atmung. Wer sie dafür hält, verpasst den Stillstand.",
+        kerntextB1:
+          "Jede Ersteinschätzung hat eine feste Reihenfolge nach Wichtigkeit. Das ist der ABCDE-Gedanke: Zuerst prüfst du das, was am schnellsten tötet. Für den ersten Blick sind das zwei Fragen. Beide beantwortest du in Sekunden. Erstens: Reagiert der Mensch, wenn du ihn ansprichst und rüttelst? Zweitens: Hebt sich der Brustkorb ruhig und regelmäßig?\n\nAus den Antworten ergeben sich drei Wege. Weg 1: Er reagiert nicht UND atmet nicht normal? Dann ist es ein Herz-Kreislauf-Stillstand. Du startest die Rettungskette und drückst sofort auf den Brustkorb (Herzdruckmassage). Das ist der Weg von Herrn Wagner. (Erfahrenes Fachpersonal darf dabei kurz den Puls am Hals tasten — höchstens 10 Sekunden und nur gleichzeitig zur Atem-Kontrolle. Im Zweifel sofort drücken.) Weg 2: Er ist bewusstlos, aber atmet normal? Dann bringst du ihn vorsichtig in die stabile Seitenlage. So bleiben die Atemwege frei. Und du überwachst ihn genau. Weg 3: Er reagiert — auch wenn nur schwach? Dann läuft sein Kreislauf. Jetzt geht es nicht ums Wiederbeleben, sondern ums Unterscheiden: Was steckt dahinter?\n\nEin Punkt bleibt wichtig: Schnappatmung zählt NICHT als normale Atmung. Das sind einzelne, ruckartige Atemzüge mit langen Pausen. Wer sie für Atmung hält, verpasst den Stillstand.",
         faustregel:
           "Zwei Fragen zuerst: Reagiert er? Atmet er normal? Beides nein = reanimieren. Bewusstlos, aber atmet = stabile Seitenlage. Reagiert = Kreislauf da → jetzt unterscheiden. Schnappen ist kein Atmen.",
+        faustregelB1:
+          "Zwei Fragen zuerst: Reagiert er? Atmet er normal? Beides nein = reanimieren. Bewusstlos, aber atmet = stabile Seitenlage. Reagiert = Kreislauf da, jetzt unterscheiden. Schnappen ist kein Atmen.",
         spektrum: [
           {
             patientName: "Keine Reaktion, keine normale Atmung",
             hauptfaktor: "Herz-Kreislauf-Stillstand",
             kurzbeschreibung:
               "Rettungskette, sofort Herzdruckmassage. Schnappatmung zählt nicht als Atmung.",
+            kurzbeschreibungB1:
+              "Rettungskette starten und sofort drücken (Herzdruckmassage). Schnappatmung zählt nicht als Atmung.",
           },
           {
             patientName: "Bewusstlos, atmet aber normal",
             hauptfaktor: "Atemwege sichern",
             kurzbeschreibung:
               "Stabile Seitenlage, damit nichts in die Atemwege läuft, und engmaschig überwachen.",
+            kurzbeschreibungB1:
+              "Stabile Seitenlage, damit nichts in die Atemwege läuft. Und gut überwachen.",
           },
           {
             patientName: "Reagiert (auch schwach)",
             hauptfaktor: "Kreislauf da",
             kurzbeschreibung:
               "Nicht reanimieren — jetzt differenzieren: erst Blutzucker, dann die Zeichen deuten.",
+            kurzbeschreibungB1:
+              "Nicht reanimieren. Jetzt unterscheiden: zuerst den Blutzucker messen, dann die Zeichen deuten.",
           },
         ],
         wiederbegegnung: {
@@ -142,6 +154,10 @@ export const CE06_SIT_PETROVA_ERKENNEN: SituationsPhase = {
             "Jemand liegt plötzlich am Boden — welche zwei Fragen entscheiden über deinen ersten Weg, und welche drei Wege gibt es?",
           rueckseite:
             "Fragen: Reagiert er? Atmet er normal? → (1) beides nein = Herz-Kreislauf-Stillstand, reanimieren; (2) bewusstlos, atmet = stabile Seitenlage; (3) reagiert = Kreislauf da, differenzieren (erst Blutzucker). Schnappatmung ist keine normale Atmung.",
+          vorderseiteB1:
+            "Jemand liegt plötzlich am Boden. Welche zwei Fragen entscheiden über deinen ersten Weg? Und welche drei Wege gibt es?",
+          rueckseiteB1:
+            "Fragen: Reagiert er? Atmet er normal? (1) Beides nein = Herz-Kreislauf-Stillstand, reanimieren. (2) Bewusstlos, atmet = stabile Seitenlage. (3) Reagiert = Kreislauf da, unterscheiden (zuerst Blutzucker). Schnappatmung ist keine normale Atmung.",
         },
       },
     },
@@ -179,7 +195,7 @@ export const CE06_SIT_PETROVA_ERKENNEN: SituationsPhase = {
             explanation:
               "Richtig. Reaktion und normale Atmung bedeuten: Der Kreislauf läuft — reanimiert wird nicht. Jetzt beginnt das Unterscheiden, und der erste, oft vergessene Handgriff ist die Blutzuckermessung, weil eine Unterzuckerung fast alles imitieren kann. Parallel Lagerung sichern und Bewusstsein/Atmung engmaschig beobachten.",
             explanationB1:
-              "Richtig. Sie reagiert und atmet — also kein Stillstand, keine Reanimation. Jetzt unterscheiden: zuerst den Blutzucker messen (Unterzuckerung sieht aus wie vieles) und sie weiter beobachten.",
+              "Richtig. Sie reagiert und atmet — also kein Stillstand, keine Reanimation. Jetzt unterscheiden: zuerst den Blutzucker messen (Unterzuckerung sieht aus wie vieles). Dann ihr Bewusstsein und ihre Atmung weiter beobachten.",
           },
           {
             text: "Zur Sicherheit beginne ich trotzdem mit der Herzdruckmassage — schaden kann das ja nicht.",
@@ -228,34 +244,48 @@ export const CE06_SIT_PETROVA_ERKENNEN: SituationsPhase = {
         themenSekundaer: ["notfallassessment", "psychische-akutsituationen"],
         storyAufhaenger:
           "Der Kreislauf läuft, du reanimierst nicht — jetzt kommt der schwierigere Teil: Was IST es? Vier Bilder sehen sich zum Verwechseln ähnlich, und jedes braucht eine andere erste Reaktion.",
+        storyAufhaengerB1:
+          "Der Kreislauf läuft, du reanimierst nicht. Jetzt kommt der schwierigere Teil: Was ist es? Vier Bilder sehen sich sehr ähnlich. Aber jedes braucht eine andere erste Reaktion.",
         kerntext:
           "Über allem steht ein Handgriff: Sobald der Kreislauf da ist, misst du zuerst den Blutzucker. Eine Unterzuckerung imitiert fast alles — Verwirrtheit, Ausfälle, sogar einen Schlaganfall — und ist die eine Ursache, die du sofort beheben kannst. Erst danach deutest du die Zeichen.\n\nWar der Mensch nur kurz weg und kommt von allein zurück, ohne bleibende Ausfälle, war es meist eine Synkope, eine kurze Ohnmacht. Du legst ihn hin, lagerst die Beine hoch und klärst die Ursache — denn eine Ohnmacht aus dem Herzen kann gefährlich sein.\n\nZeigt sich ein plötzlicher, einseitiger und bleibender Ausfall — ein hängender Mundwinkel, ein kraftloser Arm, verwaschene Sprache —, dann behandelst du es als Schlaganfall: sofort Arzt, jede Minute zählt.\n\nStürzt jemand und zuckt am ganzen Körper, ist es ein Krampfanfall: Du schützt ihn vor Verletzungen, steckst NICHTS in den Mund und merkst dir die Uhrzeit.\n\nUnd wenn jemand erregt und verwirrt ist, womöglich mit Fieber, denkst du an eine körperliche Ursache (etwa ein Delir) und achtest zuerst auf deine eigene Sicherheit.",
+        kerntextB1:
+          "Ein Handgriff steht über allem: Sobald der Kreislauf da ist, misst du zuerst den Blutzucker. Eine Unterzuckerung sieht aus wie fast alles — Verwirrtheit, Ausfälle, sogar ein Schlaganfall. Und sie ist die eine Ursache, die du sofort beheben kannst. Erst danach deutest du die anderen Zeichen.\n\nWeg 1: War der Mensch nur kurz weg und kommt von allein zurück? Und bleiben keine Ausfälle? Dann war es meist eine Synkope — eine kurze Ohnmacht. Du legst ihn hin, lagerst die Beine hoch und klärst die Ursache. Denn eine Ohnmacht kann auch vom Herzen kommen, und das ist gefährlich.\n\nWeg 2: Zeigt sich ein plötzlicher Ausfall, der einseitig ist und bleibt? Zum Beispiel ein hängender Mundwinkel, ein kraftloser Arm oder eine verwaschene Sprache? Dann behandelst du es als Schlaganfall. Sofort den Arzt rufen, jede Minute zählt.\n\nWeg 3: Stürzt jemand und zuckt am ganzen Körper? Dann ist es ein Krampfanfall. Du schützt ihn vor Verletzungen. Du steckst NICHTS in den Mund. Und du merkst dir die Uhrzeit.\n\nWeg 4: Ist jemand erregt und verwirrt, vielleicht mit Fieber? Dann denkst du an eine körperliche Ursache, zum Beispiel ein Delir — eine plötzliche Verwirrtheit. Und du achtest zuerst auf deine eigene Sicherheit.",
         faustregel:
           "Kreislauf da? Erst Blutzucker. Dann deuten: kurz weg + zurück = Synkope; einseitig + bleibend = Schlaganfall; Zuckungen am ganzen Körper = Krampfanfall; erregt + Fieber = an eine körperliche Ursache denken.",
+        faustregelB1:
+          "Kreislauf da? Erst den Blutzucker messen. Dann deuten: kurz weg und wieder zurück = Synkope (kurze Ohnmacht). Einseitig und bleibend = Schlaganfall. Zuckungen am ganzen Körper = Krampfanfall. Erregt und Fieber = an eine körperliche Ursache denken.",
         spektrum: [
           {
             patientName: "Kurz weg, kommt zurück",
             hauptfaktor: "Synkope",
             kurzbeschreibung:
               "Keine bleibenden Ausfälle. Hinlegen, Beine hoch, Ursache klären (eine kardiale Ohnmacht ist gefährlich).",
+            kurzbeschreibungB1:
+              "Keine bleibenden Ausfälle. Hinlegen, Beine hoch, Ursache klären. Eine Ohnmacht vom Herzen ist gefährlich.",
           },
           {
             patientName: "Einseitig, bleibend",
             hauptfaktor: "Schlaganfall",
             kurzbeschreibung:
               "Mundwinkel/Arm/Sprache, Ausfälle bleiben. Sofort Arzt/Notruf — time is brain.",
+            kurzbeschreibungB1:
+              "Mundwinkel, Arm oder Sprache betroffen, und die Ausfälle bleiben. Sofort Arzt oder Notruf — jede Minute zählt fürs Gehirn.",
           },
           {
             patientName: "Zuckt am ganzen Körper",
             hauptfaktor: "Krampfanfall",
             kurzbeschreibung:
               "Vor Verletzungen schützen, nichts in den Mund, Zeit stoppen, unverzüglich den Arzt rufen (dauert es länger als 5 Minuten: Status epilepticus).",
+            kurzbeschreibungB1:
+              "Vor Verletzungen schützen, nichts in den Mund, Zeit stoppen und sofort den Arzt rufen. Dauert es länger als 5 Minuten, ist es ein Status epilepticus — ein gefährlicher Dauer-Anfall.",
           },
           {
             patientName: "Erregt/verwirrt, evtl. Fieber",
             hauptfaktor: "an Delir denken",
             kurzbeschreibung:
               "Nicht vorschnell 'psychisch' — körperliche Ursache prüfen (Fieber, Sauerstoff, Zucker); erst der Eigenschutz. Das kennst du von Herrn Novak.",
+            kurzbeschreibungB1:
+              "Nicht zu schnell 'psychisch' denken. Prüfe eine körperliche Ursache: Fieber, Sauerstoff, Zucker. Erst der Eigenschutz. Das kennst du von Herrn Novak.",
           },
         ],
         wiederbegegnung: {
@@ -269,6 +299,10 @@ export const CE06_SIT_PETROVA_ERKENNEN: SituationsPhase = {
             "Der Kreislauf läuft — was misst du zuerst, und wie unterscheidest du Synkope, Schlaganfall und Krampfanfall?",
           rueckseite:
             "Zuerst IMMER Blutzucker (Unterzuckerung imitiert alles). Synkope = kurz weg, kommt zurück, keine Ausfälle. Schlaganfall = plötzlich, einseitig, bleibend → sofort Arzt (time is brain). Krampfanfall = Zuckungen am ganzen Körper → schützen, nichts in den Mund, Zeit stoppen.",
+          vorderseiteB1:
+            "Der Kreislauf läuft. Was misst du zuerst? Und wie unterscheidest du Synkope (kurze Ohnmacht), Schlaganfall und Krampfanfall?",
+          rueckseiteB1:
+            "Zuerst IMMER den Blutzucker messen (Unterzuckerung sieht aus wie alles). Synkope (kurze Ohnmacht) = kurz weg, kommt zurück, keine Ausfälle. Schlaganfall = plötzlich, einseitig, bleibend, sofort Arzt (jede Minute zählt fürs Gehirn). Krampfanfall = Zuckungen am ganzen Körper, schützen, nichts in den Mund, Zeit stoppen.",
         },
       },
     },
@@ -391,7 +425,7 @@ export const CE06_SIT_PETROVA_ERSTMASSNAHMEN: SituationsPhase = {
             feedback:
               "Genau richtig — und schnell erkannt. Schnappatmung ist keine normale Atmung; keine Reaktion plus keine normale Atmung bedeutet Herz-Kreislauf-Stillstand. Jetzt zählt die Rettungskette: Team rufen (lassen) und ohne Verzögerung drücken. Genau der Weg von Herrn Wagner — hier war die Antwort auf beide Fragen Nein.",
             feedbackB1:
-              "Genau richtig. Schnappatmung ist keine normale Atmung. Keine Reaktion + keine normale Atmung = Herz-Kreislauf-Stillstand. Team rufen (lassen) und sofort drücken — wie bei Herrn Wagner.",
+              "Genau richtig. Schnappatmung ist keine normale Atmung. Fehlen Reaktion und normale Atmung beide, ist das ein Herz-Kreislauf-Stillstand. Jetzt zählt die Rettungskette: Team rufen (lassen) und sofort drücken — wie bei Herrn Wagner.",
           },
           {
             text: "Er atmet ja noch — ich bringe ihn in die stabile Seitenlage und beobachte ihn erst mal.",
@@ -444,7 +478,7 @@ export const CE06_SIT_PETROVA_ERSTMASSNAHMEN: SituationsPhase = {
             explanation:
               "Richtig. Plötzliche, einseitige, bleibende Ausfälle (hängender Mundwinkel, kraftloser Arm, verwaschene Sprache) bei normalem Blutzucker sind ein Schlaganfall bis zum Beweis des Gegenteils. Er ist ein Notfall — je früher die Therapie beginnt, desto mehr Hirngewebe lässt sich retten (time is brain). Deshalb sofort Arzt/Notruf, überwachen und den Symptombeginn dokumentieren (wichtig fürs Zeitfenster).",
             explanationB1:
-              "Richtig. Plötzliche, einseitige, bleibende Ausfälle bei normalem Blutzucker = Schlaganfall bis zum Beweis des Gegenteils. Notfall: sofort Arzt/Notruf, überwachen, Zeitpunkt notieren. Jede Minute zählt.",
+              "Richtig. Plötzliche, einseitige, bleibende Ausfälle bei normalem Blutzucker gelten sofort als Schlaganfall — solange nichts anderes bewiesen ist. Notfall: sofort Arzt/Notruf, überwachen, Zeitpunkt notieren. Jede Minute zählt.",
           },
           {
             text: "Ich lege sie hin und beobachte erst mal eine Stunde — Halbseitenzeichen bei normalem Zucker sind meist harmlos.",
@@ -567,7 +601,7 @@ export const CE06_SIT_PETROVA_UEBERGEBEN: SituationsPhase = {
             explanation:
               "Richtig. Vollständiges SBAR — und wichtig für diesen Capstone: Das Assessment nennt ausdrücklich, was ausgeschlossen wurde (kein Stillstand, Blutzucker normal, keine Halbseitenzeichen, keine Zuckungen). So sieht der Arzt sofort, dass strukturiert differenziert wurde, und kann gezielt die Synkope (auch kardial) abklären lassen.",
             explanationB1:
-              "Richtig. Vollständiges SBAR — und es sagt klar, was ausgeschlossen wurde (kein Stillstand, Zucker normal, keine Ausfälle, keine Zuckungen). Der Arzt sieht sofort, dass sauber differenziert wurde, und klärt die Ohnmacht ab.",
+              "Richtig. Vollständiges SBAR — und es sagt klar, was ausgeschlossen wurde (kein Stillstand, Zucker normal, keine Ausfälle, keine Zuckungen). Der Arzt sieht sofort, dass sauber differenziert wurde, und klärt die Synkope (die Ohnmacht) weiter ab.",
           },
           {
             text: "\"Die Frau Petrova ist umgekippt, aber es geht ihr schon wieder gut — war bestimmt nur der Kreislauf.\"",

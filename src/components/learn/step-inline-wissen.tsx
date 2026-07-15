@@ -193,7 +193,11 @@ export function StepInlineWissen({
                     <div className="font-semibold">
                       {eintrag.patientName} <span className="font-normal opacity-70">— {eintrag.hauptfaktor}</span>
                     </div>
-                    <div className="text-sm opacity-90">{eintrag.kurzbeschreibung}</div>
+                    <div className="text-sm opacity-90">
+                      {sprachLevel === "b1" && eintrag.kurzbeschreibungB1
+                        ? eintrag.kurzbeschreibungB1
+                        : eintrag.kurzbeschreibung}
+                    </div>
                   </div>
                 ))}
               </div>

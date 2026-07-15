@@ -1,0 +1,38 @@
+{
+  "situationId": "ls-rios-synkope",
+  "ce": "ce-06",
+  "reviewTyp": "b1-re-validierung-5-lens",
+  "datum": "2026-07-15",
+  "datei": "content/ce-06/situationen/ls-rios-synkope/phases.ts",
+  "grounding": "specs/ce-06/kernfakten/neurologische-akutsituationen.md (F-01..F-13)",
+  "referenz": "C1 (bereits PASS) = Wahrheit; nur B1-Felder geprüft",
+  "stepAnzahl": 11,
+  "risikoArealeGeprueft": {
+    "synkopeDefinition": "PASS",
+    "hypoglykaemieIvGlukose": "PASS",
+    "statusEpilepticus5Min": "PASS",
+    "stabileSeitenlage": "PASS"
+  },
+  "findings": [
+    {
+      "id": "F-01",
+      "severity": "NIEDRIG",
+      "step": "ce06-rios-ref-00d-krampfanfall",
+      "feld": "explanationB1 (Option 1)",
+      "zeile": 713,
+      "titel": "Status-epilepticus-Definition in B1 auf eine der zwei Handlungsschwellen verkürzt",
+      "problem": "C1 nennt beide Kriterien (>5 Min ODER Anfallsserie ohne Erholung, F-12); B1 nennt nur die 5-Min-Schwelle.",
+      "standard": "F-12 / ILAE 2015 (Trinka et al.)",
+      "bewertung": "5-Min-Schwelle korrekt und primär; nichts Falsches gelehrt, nur weniger vollständig. Vertretbare B1-Vereinfachung, nicht irreführend.",
+      "empfehlung": "Optional Halbsatz 'oder wenn ein Anfall auf den nächsten folgt' ergänzen."
+    }
+  ],
+  "zusammenfassung": {
+    "hoch": 0,
+    "mittel": 0,
+    "niedrig": 1,
+    "koVerdikt": "PASS",
+    "deployBlocker": false,
+    "beobachtung": "B1-Sanierung fachlich sauber; Fachwörter korrekt geglosst; kein Drift zu C1 in kritischen Arealen; keine falsche/gefährliche Vereinfachung."
+  }
+}

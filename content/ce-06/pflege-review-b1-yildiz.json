@@ -1,0 +1,57 @@
+{
+  "situationId": "ls-yildiz-thoraxschmerz",
+  "file": "content/ce-06/situationen/ls-yildiz-thoraxschmerz/phases.ts",
+  "reviewTyp": "b1-resanierung-relens",
+  "lens": "pflege-validator (5. Lens, semantisch)",
+  "geprueft": "2026-07-15",
+  "kontext": "C1 war bereits PASS. Nur B1-Felder (titelB1, kontextB1, contentB1, explanationB1, storyAufhaengerB1, kerntextB1, faustregelB1, spektrum[].kurzbeschreibungB1, karteikarte[].*B1, feedbackB1) geaendert. Deterministische Gates gruen.",
+  "pruefachsen": [
+    "Angina pectoris vs. akutes Koronarsyndrom",
+    "Nitrat-Wirkung / Kompetenzgrenze",
+    "Oberkoerperhochlagerung statt Schocklage",
+    "Pulsoximetrie",
+    "Zeit ist Herzmuskel",
+    "Anti-Patterns / falsche Beruhigung / du-Anrede"
+  ],
+  "findings": [
+    {
+      "id": "F-B1-01",
+      "severity": "NIEDRIG",
+      "step": "ce06-yildiz-erk-01 (mc)",
+      "stelle": "Zeile 70, explanationB1",
+      "problem": "B1 formuliert 'Eine normale Angina pectoris bessert sich auf Ruhe und Nitrat'. C1 und der Wissens-Tab (Zeile 123) verwenden konsistent den Fachterm 'stabile Angina pectoris'. 'normale' ist eine zulaessige B1-Vereinfachung, erzeugt aber eine leichte Terminologie-Inkonsistenz innerhalb der Situation.",
+      "standard": "Pflege heute Kap. 21.2.1 (stabile vs. instabile Angina)",
+      "empfehlung": "Optional: 'normale' -> 'bekannte/stabile' fuer Konsistenz mit Tab. Kein fachlicher Fehler, nicht blockierend.",
+      "neuDurchB1": true
+    },
+    {
+      "id": "F-B1-02",
+      "severity": "NIEDRIG",
+      "step": "mehrere (erk-01, erk-01b, ala-01)",
+      "stelle": "Zeile 57/70/123/337, contentB1 + explanationB1 + kerntextB1",
+      "problem": "B1 setzt 'akutes Koronarsyndrom = Fachname fuer den Herzinfarkt' gleich. Streng fachlich umfasst das ACS auch die instabile Angina (nicht nur den Infarkt). Die Gleichsetzung ist aber wortgleich zur bereits als PASS bewerteten C1-Parenthese 'akutes Koronarsyndrom (Herzinfarkt)' und im Fallkontext (Infarktverdacht) didaktisch vertretbar. Nicht neu durch die B1-Sanierung eingefuehrt.",
+      "standard": "Pflege heute Kap. 21.2.1",
+      "empfehlung": "Belassen (Konsistenz mit C1). Kein Handlungsbedarf.",
+      "neuDurchB1": false
+    }
+  ],
+  "geprueftPositiv": [
+    "Nitrat korrekt als Wirkstoff im Nitrospray glossiert; Kreislauf-Absacken bei niedrigem RR korrekt erklaert (Zeile 273).",
+    "Oberkoerper HOCH, Schocklage explizit als falsch begruendet (venoeser Rueckstrom/Lungenstauung), B1 sinngemaess korrekt (Zeile 418/502).",
+    "Abbruch-Grenze RR<90 & Puls>100 in B1 verbatim-treu erhalten (Zeile 419/423/458/586).",
+    "Pulsoximetrie korrekt vereinfacht ('Sauerstoff-Wert im Blut, kleiner Clip am Finger').",
+    "'Zeit ist Herzmuskel' in allen B1-Feldern korrekt uebertragen.",
+    "Kompetenzgrenze (O2/Nitro/Schmerzmittel nur auf Arztanordnung) in B1 unveraendert korrekt.",
+    "Keine falsche Beruhigung: B1 warnt aktiv gegen 'wird schon wieder' (Zeile 273/312).",
+    "du-Anrede durchgaengig, kein 'Sie' an Lernende.",
+    "Kein Anti-Pattern (kein indirektes Licht, keine NRS-Bagatellisierung, kein Heben/Ziehen, keine Glueck-vor-Assessment-Aussage, kein Bettgitter-Verstoss)."
+  ],
+  "zusammenfassung": {
+    "hoch": 0,
+    "mittel": 0,
+    "niedrig": 2,
+    "neuDurchB1EingefuehrteFehler": 0,
+    "verdikt": "PASS",
+    "kommentar": "Die reine B1-Sprachsanierung hat KEINE fachlich falsche oder irrefuehrende Vereinfachung eingefuehrt. Alle sicherheitskritischen Kernaussagen (ACS-Warnzeichen, Oberkoerperhochlagerung statt Schocklage, Nitrat/Kompetenzgrenze, Abbruch-Grenze, Zeitkritik, Angst-Coping) sind in B1 fachlich treu erhalten. 2 NIEDRIG-Beobachtungen sind stilistisch/terminologisch, nicht blockierend."
+  }
+}
