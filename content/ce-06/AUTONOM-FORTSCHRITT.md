@@ -411,3 +411,20 @@ Alle 8 icare-Überlappungen umformuliert (Wagner 1 · Ríos 2 · Sander 4; Faust
       Recht/Ethik-Lens bestanden, beide Agenten PASS.
 - [x] **🎉 CE-06 REDESIGN KOMPLETT** — alle 11 Situationen auf Wissens-Tabs + LE-Schwerpunkt-KB. Siehe Block oben.
 - [ ] **Nächste CEs:** dieselbe Redesign-Pipeline auf CE-02 (bereits gebaut, v1-Stil) + neue CEs anwenden. Erst B1/Übersetzungen + Deploy CE-06.
+
+## Arabisch-Demo-Pfad (Sahne-Pilot, 2026-07-15)
+**B1 committet** (`1ae9dd5`, nach Dozentin-Freigabe): 11 phases.ts + Schema + Gates + specs/B1-SPRACHPROFIL.md +
+4 pflege-review-b1-Artefakte. Lint-Nachputz: 4 `any`-Errors in den neuen B1-Scripts durch echte Typen ersetzt.
+
+**Arabisch (Glossar-First, KEINE Voll-Übersetzung):**
+- `content/ce-06/glossar.ts`: **alle 102 `uebersetzungAr` befüllt** — MSA-Fachtermini (wie in arabischsprachiger
+  Medizin-/Pflegeausbildung), kontextgeprüft gegen die deutsche `erklaerung` (z. B. Aspiration = استنشاق/Einatmen,
+  Verbrühung = سَمْط, Hitzschlag = ضربة الحرّ ≠ Sonnenstich). Deutsche Rechtsbegriffe (PsychKG, Betreuungsgericht,
+  Entscheidungslösung) als erklärende Übersetzung mit Klammer-Zusatz. Adversarialer Zweitcheck durch Review-Agent.
+- **Lücke gefunden + geschlossen:** Der Situation-Player (Demo-Pfad!) hatte `sprachLevel="c1"` hartkodiert und
+  KEINEN Muttersprache-Einstieg — B1-Content und AR-Übersetzungen waren dort unerreichbar. Neu:
+  `src/components/learn/sprache-sheet.tsx` (Bottom-Sheet, beide Sprach-Achsen: Niveau C1/B1 + Muttersprache)
+  + Languages-Button im Player-Header + localStorage-Persistenz (`pflege-sprachlevel`) + `useMutterspracheInit()`.
+  Damit greift die AR-Sprachbrücke in ALLEN 11 Situationen (zentrales Glossar), Wagner inklusive.
+- Test: `tests/components/sprache-sheet.test.tsx` (4 Tests, u. a. AR-Auswahl → Store).
+- Geparkt in FRAGEN-GRUENDERIN: 2. Demo-Situation (Vorschlag Ríos) + AR-Muttersprachler-Gegenlese.

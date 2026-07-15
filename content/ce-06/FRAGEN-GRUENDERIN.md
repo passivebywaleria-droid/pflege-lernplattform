@@ -5,6 +5,22 @@
 
 ## Offen
 
+### Arabisch-Demo: welche ZWEITE Situation neben Wagner? (2026-07-15)
+Wagner (Reanimation, Demo-Wow) ist als AR-Demo-Pfad gesetzt. Die AR-Sprachbrücke läuft technisch über
+das zentrale CE-06-Glossar (alle 102 Begriffe DE/AR befüllt) + das neue Sprache-Sheet im Situation-Player —
+sie greift damit in ALLEN 11 CE-06-Situationen. Für die Demo-Kommunikation („diese 2 Situationen zeigen wir")
+braucht es aber eine kuratierte zweite Situation.
+→ **Vorschlag: Ríos (Synkope)** — zeigt die Zwei-Achsen-Adaptivität am schönsten (B1 ↔ C1 direkt umschaltbar
+im neuen Sprache-Sheet), ist fachlich direkt mit Wagner verlinkt (Synkope ↔ Kreislaufstillstand-Abgrenzung)
+und kurz genug für eine Live-Demo. Alternative: Yıldız (Herzinfarkt, größte AR-Fachwort-Dichte im Glossar).
+→ **Entscheidung Waleria** — kein Blocker, da technisch nichts mehr zu bauen ist.
+
+### Arabische Glossar-Termini — Dozentin-/Muttersprachler-Gegenlese (2026-07-15)
+Alle 102 `uebersetzungAr` in `content/ce-06/glossar.ts` befüllt (MSA-Fachtermini, kontextgeprüft gegen die
+deutsche `erklaerung`, adversarialer Zweitcheck durch separaten Review-Agenten). Maschinell nicht
+verifizierbar wie deutsche Verbatim-Belege — vor dem Pilot einmal von einem arabischsprachigen
+Pflege-Profi (oder der Bedarfsgruppe selbst) gegenlesen lassen. Kein Blocker für die Demo.
+
 ### DSO-Transplantationszahlen 2024 (Erlemann erm-03) — Final-Abgleich
 Beim 2025-Re-Grounding wurde die veraltete Beispielzahl „2017 = 821 Lebertransplantationen" auf die aktuellen
 DSO-Zahlen 2024 gehoben: **3.701 Organe transplantiert (3.013 postmortal, 688 Lebendspende)** (Kernfakt F-07 +

@@ -5,7 +5,7 @@ import { useParams, useSearchParams } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, Languages } from "lucide-react";
 import { loadSituation as staticLoadSituation } from "../../../../../../content/content-loader";
 import type {
   Lernsituation,
@@ -18,6 +18,8 @@ import { StepRenderer } from "@/components/learn/step-renderer";
 import { PatientAvatar } from "@/components/learn/patient-avatar";
 import { PlayGate } from "@/components/learn/play-gate";
 import { PaywallGate } from "@/components/learn/paywall-gate";
+import { SpracheSheet } from "@/components/learn/sprache-sheet";
+import { useMutterspracheInit } from "@/hooks/use-muttersprache";
 import { trackFunnel } from "@/lib/funnel/track";
 import { CE02_THEMA_STURZ_PROPHYLAXE_GLOSSAR } from "../../../../../../content/ce-02/themen/sturz-prophylaxe/glossar";
 import { CE06_GLOSSAR } from "../../../../../../content/ce-06/glossar";
@@ -58,6 +60,19 @@ export default function SituationLernenPage() {
   const [completedPhases, setCompletedPhases] = useState<AnyPhase[]>([]);
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
   const [patientModalOpen, setPatientModalOpen] = useState(false);
+  // Zwei Sprach-Achsen im Demo-Pfad: Niveau (C1/B1) + Muttersprache (Glossar-Übersetzung).
+  const [spracheSheetOpen, setSpracheSheetOpen] = useState(false);
+  // Lazy-Init statt Effect: hydrationssicher, weil der Header erst nach dem
+  // asynchronen Situation-Load rendert (SSR/Erst-Render zeigt nur den Loading-State).
+  const [sprachLevel, setSprachLevelState] = useState<"c1" | "b1">(() => {
+    if (typeof window === "undefined") return "c1";
+    return localStorage.getItem("pflege-sprachlevel") === "b1" ? "b1" : "c1";
+  });
+  useMutterspracheInit();
+  const setSprachLevel = useCallback((level: "c1" | "b1") => {
+    localStorage.setItem("pflege-sprachlevel", level);
+    setSprachLevelState(level);
+  }, []);
   // Micro-Narration: erzählerischer Übergang — wird als Intro-Text
   // OBEN im nächsten Step angezeigt (vom vorherigen Step mitgegeben).
   const [transitionText, setTransitionText] = useState<string | null>(null);
@@ -449,7 +464,16 @@ export default function SituationLernenPage() {
                 ? `${phaseLabel} · ${currentStepIndex + 1}/${totalSteps}`
                 : phaseLabel}
             </span>
-            <span className="w-5" aria-hidden />
+            <button
+              onClick={() => setSpracheSheetOpen(true)}
+              aria-label="Sprache wählen"
+              aria-expanded={spracheSheetOpen}
+              className={`relative text-[var(--lern-text-secondary)] hover:text-[var(--lern-text-primary)] ${
+                sprachLevel === "b1" ? "text-[var(--lern-accent)]" : ""
+              }`}
+            >
+              <Languages className="h-5 w-5" />
+            </button>
           </div>
 
           {/* Patient-Row: Avatar · Name · Setting */}
@@ -541,7 +565,7 @@ export default function SituationLernenPage() {
               >
                 <StepRenderer
                   step={currentStep}
-                  sprachLevel="c1"
+                  sprachLevel={sprachLevel}
                   glossar={SITUATION_GLOSSAR[situationId] ?? []}
                   onNext={() => handleNextStep()}
                   onSelfRating={() => handleNextStep()}
@@ -677,6 +701,14 @@ export default function SituationLernenPage() {
           </motion.div>
         </div>
       )}
+
+      {/* Sprache-Sheet — Sprachniveau (C1/B1) + Muttersprache (Glossar-Übersetzung, z. B. Arabisch) */}
+      <SpracheSheet
+        open={spracheSheetOpen}
+        onClose={() => setSpracheSheetOpen(false)}
+        sprachLevel={sprachLevel}
+        onSprachLevelChange={setSprachLevel}
+      />
 
       {/* Play-then-Gate — soft (wegtippbar) bzw. hart (verpflichtend) */}
       {(showSoftGate || showHardGate) && (
