@@ -5,15 +5,11 @@
 
 ## Offen
 
-### Arabisch-Demo: welche ZWEITE Situation neben Wagner? (2026-07-15)
-Wagner (Reanimation, Demo-Wow) ist als AR-Demo-Pfad gesetzt. Die AR-Sprachbrücke läuft technisch über
-das zentrale CE-06-Glossar (alle 102 Begriffe DE/AR befüllt) + das neue Sprache-Sheet im Situation-Player —
-sie greift damit in ALLEN 11 CE-06-Situationen. Für die Demo-Kommunikation („diese 2 Situationen zeigen wir")
-braucht es aber eine kuratierte zweite Situation.
-→ **Vorschlag: Ríos (Synkope)** — zeigt die Zwei-Achsen-Adaptivität am schönsten (B1 ↔ C1 direkt umschaltbar
-im neuen Sprache-Sheet), ist fachlich direkt mit Wagner verlinkt (Synkope ↔ Kreislaufstillstand-Abgrenzung)
-und kurz genug für eine Live-Demo. Alternative: Yıldız (Herzinfarkt, größte AR-Fachwort-Dichte im Glossar).
-→ **Entscheidung Waleria** — kein Blocker, da technisch nichts mehr zu bauen ist.
+### ✅ ENTSCHIEDEN (Waleria, 2026-07-15): Arabisch-Demo-Pfad = Wagner + Ríos
+Wagner (Reanimation, Demo-Wow) + **Ríos (Synkope)** als kuratierte Demo-Situationen — Ríos zeigt die
+Zwei-Achsen-Adaptivität (B1 ↔ C1 im Sprache-Sheet umschaltbar) und ist fachlich mit Wagner verlinkt
+(Synkope ↔ Kreislaufstillstand-Abgrenzung). Technisch greift die AR-Sprachbrücke (zentrales Glossar,
+102 Begriffe DE/AR + Sprache-Sheet) ohnehin in allen 11 Situationen. Push + Deploy carovia.de freigegeben.
 
 ### Arabische Glossar-Termini — Dozentin-/Muttersprachler-Gegenlese (2026-07-15)
 Alle 102 `uebersetzungAr` in `content/ce-06/glossar.ts` befüllt (MSA-Fachtermini, kontextgeprüft gegen die
