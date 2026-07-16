@@ -13,7 +13,6 @@ import type {
   ContentStep,
   GlossarEntry,
 } from "../../../../../../content/_types";
-import { PhasenProgress } from "@/components/learn/phasen-progress";
 import { StepRenderer } from "@/components/learn/step-renderer";
 import { PatientAvatar } from "@/components/learn/patient-avatar";
 import { PlayGate } from "@/components/learn/play-gate";
@@ -328,16 +327,6 @@ export default function SituationLernenPage() {
     : [];
   const currentStep = phaseSteps[currentStepIndex] ?? null;
 
-  const handlePhaseClick = useCallback(
-    (phase: AnyPhase) => {
-      if (completedPhases.includes(phase) || phase === currentPhaseId) {
-        setCurrentPhaseId(phase);
-        setCurrentStepIndex(0);
-      }
-    },
-    [completedPhases, currentPhaseId]
-  );
-
   const advanceStep = useCallback(() => {
     if (isGuest) trackFunnel("step_fertig", { situationId });
     if (currentStepIndex < phaseSteps.length - 1) {
@@ -442,6 +431,18 @@ export default function SituationLernenPage() {
     totalSituationSteps > 0
       ? Math.min(100, Math.round((globalStepIndex / totalSituationSteps) * 100))
       : 0;
+  // Phasengrenzen als Prozent-Positionen auf dem EINEN Balken — so zeigt eine
+  // einzige, step-genaue Leiste zugleich die Phasenstruktur (statt einer zweiten
+  // 5-Segment-Leiste, die zu „1/17" nicht passte — Dozentin 2026-07-16).
+  const phaseBoundaryPcts: number[] = [];
+  {
+    let acc = 0;
+    for (let i = 0; i < stepsProPhase.length - 1; i++) {
+      acc += stepsProPhase[i];
+      if (totalSituationSteps > 0)
+        phaseBoundaryPcts.push((acc / totalSituationSteps) * 100);
+    }
+  }
 
   // Play-then-Gate: greift am 2. ANTWORT-Step der ersten Phase (der 1. ist der
   // Hook mit vollem Reveal). Lese-Bausteine ohne `question` (z.B. inlineWissen)
@@ -468,10 +469,11 @@ export default function SituationLernenPage() {
     <div className="h-dvh bg-[var(--lern-bg)] flex flex-col overflow-hidden">
       {/* Sticky Header — Bundle-Stil (claude-design-bundle/v1-situation-flow.jsx FlowHeader) */}
       <header className="shrink-0 bg-[var(--lern-bg)] border-b border-[var(--lern-border)]">
-        {/* Gesamtfortschritts-Balken — dünn, ganz oben; begrenzt das Gefühl der Länge */}
+        {/* EIN Gesamtfortschritts-Balken — step-genaue Füllung (passt zu „x/17"),
+            mit dezenten Phasen-Markern statt einer zweiten, mismatchenden Leiste. */}
         {totalSituationSteps > 0 && (
           <div
-            className="h-[3px] w-full bg-[var(--lern-border)]"
+            className="relative h-1.5 w-full bg-[var(--lern-border)]"
             role="progressbar"
             aria-valuemin={0}
             aria-valuemax={totalSituationSteps}
@@ -482,6 +484,14 @@ export default function SituationLernenPage() {
               className="h-full bg-[var(--lern-accent)] transition-[width] duration-500"
               style={{ width: `${overallPct}%` }}
             />
+            {phaseBoundaryPcts.map((pct, i) => (
+              <span
+                key={i}
+                className="absolute top-0 h-full w-px bg-[var(--lern-bg)]"
+                style={{ left: `${pct}%` }}
+                aria-hidden="true"
+              />
+            ))}
           </div>
         )}
         <div className="mx-auto max-w-3xl px-4 pt-3 pb-3.5">
@@ -536,14 +546,6 @@ export default function SituationLernenPage() {
               </div>
             </div>
           )}
-
-          {/* Phasen-Bar */}
-          <PhasenProgress
-            currentPhase={currentPhaseId}
-            completedPhases={completedPhases}
-            phasen={phaseOrder}
-            onPhaseClick={handlePhaseClick}
-          />
         </div>
       </header>
 
