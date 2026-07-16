@@ -228,6 +228,13 @@ export const mockLearnModules: LearnModule[] = [
 
 **Wissen-Tab:** stilles Nachschlagewerk — zählt NICHT ins Budget, gleicher Content wie Stufe-3-Bausteine
 
+### PWA/Serwist + Turbopack-Falle (2026-07-16)
+- **Next 16 baut default mit Turbopack — @serwist/next braucht Webpack**: `"build": "next build --webpack"` ist PFLICHT, sonst wird `public/sw.js` nicht regeneriert (stale Manifest → SW-Install schlägt auf jedem Gerät fehl → PWA/Offline komplett tot, ohne Build-Fehler)
+- **Symptom erkennen**: Build-ID in `public/sw.js` (`_next/static/<BUILD_ID>/`) mit `.next/BUILD_ID` vergleichen
+- **runtimeCaching ist first-match-wins**: eigene Routen VOR `...defaultCache` — dahinter sind sie toter Code (defaultCache hat RSC/HTML/Catch-all-Matcher ohne networkTimeoutSeconds)
+- **Offline-Warmup**: `OfflinePilotCache` auf der CE-Seite cached alle Situations-Dokumente (Cache „lektion-pages", URL exakt wie verlinkt inkl. `?ce=`); JS-Chunks kommen aus dem Precache-Manifest
+- **Deploy**: package.json wird mitgersynct (deploy-hetzner.sh) — Build-Script muss auf dem Server identisch sein
+
 ### 6-Rollen-Review (2026-04-14)
 - **Pipeline-Kriterien**: 32 semantisch (8 K.O.) — inkl. Block LS + Block SK (UE-Skalierung)
 - **Code-Regeln**: Keine `text-[10px]` (min text-xs), keine hardcoded Hex-Farben (CSS-Vars), `aria-expanded` auf ALLE Akkordeons
