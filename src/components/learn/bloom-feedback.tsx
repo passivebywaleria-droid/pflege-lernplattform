@@ -99,20 +99,24 @@ export function generiereSandwichFeedback(
   };
 }
 
+// Warm, aber ehrlich: KEINE Formulierung behauptet, die falsche Antwort sei fast
+// richtig gewesen. „du warst nah dran" bei einer sicherheitskritischen Fehlwahl
+// (z. B. stabile Seitenlage bei Nicht-Atmung) untergräbt die Didaktik — die Antwort
+// ist eine Einladung zum genauen Hinschauen, kein Freispruch (Dozentin 2026-07-16).
 function getLobFuerKategorie(kategorie?: FehlerKategorie): string {
   switch (kategorie) {
     case "fluechtig":
-      return "Fast richtig!";
+      return "Kurz drübergerutscht — schauen wir es an.";
     case "raten":
       return "Gut, dass du es versucht hast!";
     case "verwechslung":
-      return "Guter Ansatz — du warst nah dran!";
+      return "Zwei ähnliche Dinge — schauen wir genau hin.";
     case "sprache":
-      return "Du hast das Konzept verstanden!";
+      return "Lass uns das gemeinsam anschauen.";
     case "konzept":
-      return "Guter Versuch!";
+      return "Guter Versuch — lass uns das klären.";
     default:
-      return "Guter Ansatz!";
+      return "Danke fürs Überlegen — schauen wir es an.";
   }
 }
 

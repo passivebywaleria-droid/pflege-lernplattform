@@ -8,6 +8,7 @@ interface AnswerSheetProps {
   open: boolean;
   isCorrect: boolean;
   feedback: SandwichFeedback;
+  /** @deprecated Wird nicht mehr angezeigt (Feedback auf 2 Absätze gestrafft). Callers dürfen es weiter übergeben. */
   fehlerKategorie?: FehlerKategorie;
   onNext: () => void;
 }
@@ -16,7 +17,6 @@ export function AnswerSheet({
   open,
   isCorrect,
   feedback,
-  fehlerKategorie,
   onNext,
 }: AnswerSheetProps) {
   // Falsch = warmes Amber (unterstützend), nicht wertendes Rot (Dozentin-Feedback
@@ -58,6 +58,10 @@ export function AnswerSheet({
               </p>
             </div>
 
+            {/* Zwei klare Absätze statt vier: Musterlösung, dann Ermutigung.
+                Der frühere separate „Tipp:"-Block überlappte inhaltlich mit der
+                Ermutigung und verwies auf UI, die hinter dem Sheet liegt
+                (Dozentin 2026-07-16: „wirkt überladen"). */}
             {feedback.korrektur && (
               <p className="text-sm text-[var(--lern-text-primary)]">
                 {feedback.korrektur}
@@ -67,12 +71,6 @@ export function AnswerSheet({
             <p className="text-sm text-[var(--lern-text-secondary)]">
               {feedback.ermutigung}
             </p>
-
-            {fehlerKategorie && !isCorrect && (
-              <p className="text-xs text-[var(--lern-text-tertiary,#8e8e93)]">
-                {getFehlerHinweis(fehlerKategorie)}
-              </p>
-            )}
 
             <button
               onClick={onNext}
@@ -91,23 +89,3 @@ export function AnswerSheet({
   );
 }
 
-function getFehlerHinweis(kategorie: FehlerKategorie): string {
-  switch (kategorie) {
-    case "raten":
-      return "Tipp: Nimm dir mehr Zeit zum Lesen.";
-    case "fluechtig":
-      return "Tipp: Lies die Optionen nochmal genau.";
-    case "sprache":
-      return "Tipp: Nutze das Glossar für Fachbegriffe.";
-    case "verwechslung":
-      // FIX (walkthrough B-05): Verweis auf konkret sichtbare Option-Erklärungen
-      // statt vager "feine Unterschiede".
-      return "Tipp: Lies die Erklärung unter der richtigen Antwort — dort steht der Unterschied.";
-    case "konzept":
-      // Konkret statt „Erklärtext" — in Situationen gibt es keinen separaten
-      // Erklärtext-Step, der Verweis lief ins Leere (Dozentin-Feedback 2026-07-16).
-      return "Tipp: Schau dir die Erklärung unter der richtigen Antwort in Ruhe an.";
-    default:
-      return "";
-  }
-}
