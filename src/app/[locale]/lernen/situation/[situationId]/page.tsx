@@ -424,6 +424,25 @@ export default function SituationLernenPage() {
   const phaseLabel = t(`phasen.${currentPhaseId}`);
   const totalSteps = phaseSteps.length;
 
+  // Gesamtfortschritt über ALLE Phasen — damit sich die Länge begrenzt anfühlt
+  // (Dozentin-Feedback 2026-07-16: Phasen-Punkte + phasenlokaler Zähler wirkten
+  // unbegrenzt; „1/2" las sich fast fertig, obwohl noch 4 Phasen kommen).
+  const stepsProPhase = situation.phasen.map(
+    (p) => p.kernSteps.length + p.optionaleSteps.length
+  );
+  const totalSituationSteps = stepsProPhase.reduce((a, b) => a + b, 0);
+  const currentPhaseIdx = Math.max(
+    0,
+    situation.phasen.findIndex((p) => p.phase === currentPhaseId)
+  );
+  const globalStepIndex =
+    stepsProPhase.slice(0, currentPhaseIdx).reduce((a, b) => a + b, 0) +
+    currentStepIndex;
+  const overallPct =
+    totalSituationSteps > 0
+      ? Math.min(100, Math.round((globalStepIndex / totalSituationSteps) * 100))
+      : 0;
+
   // Play-then-Gate: greift am 2. ANTWORT-Step der ersten Phase (der 1. ist der
   // Hook mit vollem Reveal). Lese-Bausteine ohne `question` (z.B. inlineWissen)
   // zählen NICHT mit — so lassen sich Wissens-Tabs frei zwischen die Fragen
@@ -449,8 +468,24 @@ export default function SituationLernenPage() {
     <div className="h-dvh bg-[var(--lern-bg)] flex flex-col overflow-hidden">
       {/* Sticky Header — Bundle-Stil (claude-design-bundle/v1-situation-flow.jsx FlowHeader) */}
       <header className="shrink-0 bg-[var(--lern-bg)] border-b border-[var(--lern-border)]">
+        {/* Gesamtfortschritts-Balken — dünn, ganz oben; begrenzt das Gefühl der Länge */}
+        {totalSituationSteps > 0 && (
+          <div
+            className="h-[3px] w-full bg-[var(--lern-border)]"
+            role="progressbar"
+            aria-valuemin={0}
+            aria-valuemax={totalSituationSteps}
+            aria-valuenow={globalStepIndex + 1}
+            aria-label={`Schritt ${globalStepIndex + 1} von ${totalSituationSteps}`}
+          >
+            <div
+              className="h-full bg-[var(--lern-accent)] transition-[width] duration-500"
+              style={{ width: `${overallPct}%` }}
+            />
+          </div>
+        )}
         <div className="mx-auto max-w-3xl px-4 pt-3 pb-3.5">
-          {/* Top-Row: Back · Schritt-Counter · Menü */}
+          {/* Top-Row: Back · Schritt-Counter (GESAMT) · Menü */}
           <div className="flex items-center justify-between mb-2.5">
             <Link
               href={`/${locale}/lernen/ce/${ceId}`}
@@ -460,8 +495,8 @@ export default function SituationLernenPage() {
               <ArrowLeft className="h-5 w-5" />
             </Link>
             <span className="text-[11px] uppercase tracking-wider text-[var(--lern-text-tertiary)] tabular-nums">
-              {totalSteps > 0 && currentStep
-                ? `${phaseLabel} · ${currentStepIndex + 1}/${totalSteps}`
+              {totalSituationSteps > 0 && currentStep
+                ? `${phaseLabel} · ${globalStepIndex + 1}/${totalSituationSteps}`
                 : phaseLabel}
             </span>
             <button
@@ -488,12 +523,14 @@ export default function SituationLernenPage() {
                     : undefined
                 }
               />
+              {/* Entdoppelt (2026-07-16): vorher standen Patientenname UND Setting
+                  doppelt (im Titel + in der Zeile darunter), beide „…"-abgeschnitten.
+                  Jetzt eine klare Zeile: Name · Alter (fett) + Setting (dezent). */}
               <div className="flex-1 min-w-0">
                 <div className="text-sm font-semibold leading-tight text-[var(--lern-text-primary)] truncate">
-                  {situation.titel}
+                  {situation.patient.name} · {situation.patient.alter}
                 </div>
                 <div className="text-[11px] text-[var(--lern-text-tertiary)] truncate mt-0.5">
-                  {situation.patient.name} · {situation.patient.alter} ·{" "}
                   {situation.patient.setting}
                 </div>
               </div>

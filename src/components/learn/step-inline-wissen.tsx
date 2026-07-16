@@ -37,6 +37,9 @@ function leseZeitMinSec(
       : data.faustregel.length);
   const zeichenProSec = sprachLevel === "b1" ? 12 : 17;
   const sekunden = Math.round(zeichen / zeichenProSec) + 5;
+  // Nur kurze Lesezeiten anzeigen — sie beruhigen („geht schnell"). Ab ~1:30
+  // schreckt die Zahl eher ab (Dozentin-Feedback 2026-07-16), dann kein Label.
+  if (sekunden > 90) return "";
   if (sekunden < 60) return `ca. ${sekunden} Sek`;
   const min = Math.floor(sekunden / 60);
   const sec = sekunden % 60;
@@ -106,7 +109,7 @@ export function StepInlineWissen({
             className="text-[10px] font-semibold tracking-wider uppercase"
             style={{ color: "var(--lern-accent, #5A7D60)" }}
           >
-            Pflege-Wissen · {lesezeit}
+            Pflege-Wissen{lesezeit ? ` · ${lesezeit}` : ""}
           </span>
         </div>
 
