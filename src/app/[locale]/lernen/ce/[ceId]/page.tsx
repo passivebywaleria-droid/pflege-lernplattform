@@ -13,6 +13,7 @@ import {
 import { loadSituationen as staticLoadSituationen } from "../../../../../../content/content-loader";
 import type { Lernsituation } from "../../../../../../content/_types";
 import { PatientAvatar } from "@/components/learn/patient-avatar";
+import { OfflinePilotCache } from "@/components/learn/offline-pilot-cache";
 
 type CeTab = "situationen" | "themen";
 
@@ -153,6 +154,13 @@ export default function CeDetailPage() {
 
   return (
     <div className="min-h-screen bg-[var(--lern-bg)] pb-24">
+      {/* Klassenzimmer-Pilot: Situations-Dokumente dieser CE still offline
+          vorcachen (unsichtbar, 1× pro Tag) — Kern-Loop muss ohne Netz laufen. */}
+      <OfflinePilotCache
+        locale={locale}
+        ceId={ceId}
+        situationIds={ceManifest.situationen}
+      />
       {/* Header — Bundle-Stil: kompakt, ohne lange Subtitles */}
       <header className="bg-[var(--lern-bg)] border-b border-[var(--lern-border)]">
         <div className="mx-auto max-w-3xl px-4 pt-3 pb-3.5">

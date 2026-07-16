@@ -1,7 +1,15 @@
 /// <reference lib="webworker" />
 import { defaultCache } from "@serwist/next/worker";
 import type { PrecacheEntry, SerwistGlobalConfig } from "serwist";
-import { Serwist, NetworkFirst, StaleWhileRevalidate, CacheFirst, ExpirationPlugin } from "serwist";
+import {
+  Serwist,
+  NetworkFirst,
+  NetworkOnly,
+  StaleWhileRevalidate,
+  CacheFirst,
+  ExpirationPlugin,
+  BackgroundSyncPlugin,
+} from "serwist";
 
 declare const self: ServiceWorkerGlobalScope &
   typeof globalThis &
@@ -14,30 +22,77 @@ const serwist = new Serwist({
   skipWaiting: true,
   clientsClaim: true,
   navigationPreload: true,
+  // WICHTIG: first-match-wins. Eigene Routen MÜSSEN vor `...defaultCache`
+  // stehen — dessen RSC/HTML/Catch-all-Matcher greifen sonst zuerst (die
+  // früheren Custom-Routen hinter defaultCache waren toter Code).
   runtimeCaching: [
-    ...defaultCache,
-
-    // Lektions-Seiten: NetworkFirst mit Cache-Fallback
+    // Fortschritt-Sync: offline abgeschickte POSTs in eine Queue legen und
+    // automatisch nachsenden, sobald wieder Netz da ist (Klassenzimmer-Szenario:
+    // eingeloggte Schüler verlieren sonst ihren Server-Fortschritt).
     {
-      matcher: ({ url }) => url.pathname.includes("/lernen/"),
+      method: "POST",
+      matcher: ({ url }) => url.pathname === "/api/progress/situation",
+      handler: new NetworkOnly({
+        plugins: [
+          new BackgroundSyncPlugin("progress-sync", {
+            maxRetentionTime: 24 * 60, // Minuten — 1 Schultag reicht
+          }),
+        ],
+      }),
+    },
+
+    // Lern-Seiten, RSC-Navigation (Client-Übergänge CE-Übersicht → Situation):
+    // eigener Cache, weil RSC- und HTML-Antworten getrennt gehören.
+    // networkTimeoutSeconds: im schlechten Schul-WLAN nicht ewig auf das Netz
+    // warten, sondern nach 3 s auf den Cache zurückfallen.
+    {
+      matcher: ({ url, request, sameOrigin }) =>
+        sameOrigin &&
+        url.pathname.includes("/lernen/") &&
+        request.headers.get("RSC") === "1",
       handler: new NetworkFirst({
-        cacheName: "lektion-pages",
+        cacheName: "lektion-rsc",
+        networkTimeoutSeconds: 3,
         plugins: [
           new ExpirationPlugin({
-            maxEntries: 50,
+            maxEntries: 80,
             maxAgeSeconds: 7 * 24 * 60 * 60, // 7 Tage
           }),
         ],
       }),
     },
 
-    // API-Responses (Glossar, etc.): NetworkFirst
+    // Lern-Seiten, volle Dokumente (Erstaufruf, Reload, Offline-Hard-Nav)
     {
-      matcher: ({ url }) =>
+      matcher: ({ url, sameOrigin }) =>
+        sameOrigin && url.pathname.includes("/lernen/"),
+      handler: new NetworkFirst({
+        cacheName: "lektion-pages",
+        networkTimeoutSeconds: 3,
+        plugins: [
+          new ExpirationPlugin({
+            maxEntries: 80,
+            maxAgeSeconds: 7 * 24 * 60 * 60, // 7 Tage
+          }),
+        ],
+      }),
+    },
+
+    // API-Responses (Glossar, etc.): NetworkFirst — KI-Endpoints ausgenommen
+    // (POST wird eh nicht gecached, und deren Offline-Verhalten regeln die
+    // Komponenten selbst mit ehrlichen Hinweisen).
+    {
+      matcher: ({ url, sameOrigin }) =>
+        sameOrigin &&
         url.pathname.startsWith("/api/") &&
-        !url.pathname.includes("/ki-chat"),
+        // Auth nie cachen (defaultCache-NetworkOnly soll greifen) …
+        !url.pathname.startsWith("/api/auth/") &&
+        // … KI-Endpoints regeln ihr Offline-Verhalten selbst.
+        !url.pathname.includes("/ki-chat") &&
+        !url.pathname.includes("/erklaer-anders"),
       handler: new NetworkFirst({
         cacheName: "api-responses",
+        networkTimeoutSeconds: 4,
         plugins: [
           new ExpirationPlugin({
             maxEntries: 30,
@@ -46,6 +101,8 @@ const serwist = new Serwist({
         ],
       }),
     },
+
+    ...defaultCache,
 
     // Statische Assets (Icons, Bilder): CacheFirst
     {
