@@ -22,6 +22,11 @@ rsync -az -e "$RSH" content/ "$HOST:/opt/pflege/content/"
 echo "→ 3/4  src/ hochladen …"
 rsync -az --exclude='.next' --exclude='node_modules' -e "$RSH" src/ "$HOST:/opt/pflege/src/"
 
+# package.json mitschicken — Build-Script/Dependencies müssen auf dem Server
+# identisch sein (2026-07-16: „next build --webpack" für Serwist/PWA — mit
+# Turbopack wird sw.js nicht generiert und Offline ist tot).
+rsync -az -e "$RSH" package.json package-lock.json "$HOST:/opt/pflege/"
+
 echo "→ 4/4  Build + Neustart auf dem Server (dauert ein paar Minuten) …"
 ssh -i "$KEY" "$HOST" 'cd /opt/pflege/deploy && docker compose --env-file .env up -d --build app'
 
