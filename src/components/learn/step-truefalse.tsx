@@ -50,6 +50,16 @@ interface StepTrueFalseProps {
   gateReleased?: boolean;
 }
 
+
+/**
+ * Entfernt ein führendes Verdikt („Falsch.", „Richtig!", „Stimmt nicht,") aus der
+ * Erklärung — das Urteil steht bereits eindeutig in der Ergebnis-Headline und
+ * doppelte „Falsch"-Nennungen waren mehrdeutig (Antwort vs. Aussage).
+ */
+function stripVerdictPrefix(text: string): string {
+  return text.replace(/^\s*(Richtig|Falsch|Wahr|Stimmt(?: nicht)?|Genau)\s*[.!:,—-]\s*/u, "");
+}
+
 export function StepTrueFalse({
   title,
   body,
@@ -185,7 +195,7 @@ export function StepTrueFalse({
               i < results.length
                 ? results[i]
                   ? "bg-[#3E5A6A]"
-                  : "bg-[#C96B5C]"
+                  : "bg-[#D4956A]"
                 : i === cardIdx
                   ? "bg-[var(--lern-accent)] animate-pulse"
                   : "bg-[var(--lern-divider)]"
@@ -256,27 +266,26 @@ export function StepTrueFalse({
             animate={{ opacity: 1, y: 0 }}
             className="space-y-3"
           >
-            {/* Ergebnis */}
+            {/* Ergebnis — Headline sagt eindeutig, WAS falsch/wahr ist (die Aussage,
+                nicht „du"). Kein Rot bei falscher Antwort (wertend), sondern warmes
+                Amber; kein drittes „FALSCH" mehr (Dozentin-Feedback 2026-07-16). */}
             <div
               className={`rounded-2xl border-[1.5px] p-5 ${
                 lastAnswer?.correct
-                  ? "border-[#3E5A6A] bg-[#3E5A6A]/5"
-                  : "border-[#C96B5C] bg-[#C96B5C]/5"
+                  ? "border-[#3E5A6A]/30 bg-[#3E5A6A]/5"
+                  : "border-[#D4956A]/40 bg-[#D4956A]/10"
               }`}
             >
               <p className="font-bold text-base mb-1">
-                {lastAnswer?.correct ? "✓ Richtig!" : "✗ Falsch!"}
+                {lastAnswer?.correct
+                  ? `✓ Richtig erkannt — die Aussage ist ${lastAnswer?.wasTrue ? "wahr" : "falsch"}.`
+                  : `Nicht ganz — die Aussage ist ${lastAnswer?.wasTrue ? "wahr" : "falsch"}.`}
               </p>
               <p className="text-sm leading-relaxed" style={{ color: "var(--lern-text-primary)" }}>
                 <FachbegriffText glossar={glossar ?? []}>
-                  {lastAnswer?.explanation ?? ""}
+                  {stripVerdictPrefix(lastAnswer?.explanation ?? "")}
                 </FachbegriffText>
               </p>
-              {!lastAnswer?.correct && (
-                <p className="text-xs font-semibold mt-2" style={{ color: "#3E5A6A" }}>
-                  Richtige Antwort: {lastAnswer?.wasTrue ? "WAHR" : "FALSCH"}
-                </p>
-              )}
             </div>
 
           </motion.div>

@@ -440,7 +440,21 @@
       "dokumentieren": "التوثيق",
       "wahrnehmen": "الإدراك",
       "einschaetzen": "التقدير",
-      "beraten": "الإرشاد"
+      "beraten": "الإرشاد",
+      "erkennen": "التعرُّف",
+      "alarmieren": "طلب المساعدة",
+      "erstmassnahmen": "الإجراءات الأولية",
+      "uebergeben": "التسليم",
+      "reflektieren": "التأمُّل",
+      "einordnen": "التصنيف",
+      "handeln": "التصرُّف",
+      "einleiten": "بدء الحوار",
+      "gestalten": "إدارة الحوار",
+      "begegnen": "اللقاء",
+      "verstehen": "الفهم",
+      "begleiten": "المرافقة",
+      "entlasten": "التخفيف",
+      "abschiednehmen": "الوداع"
     },
     "phasenBeschreibung": {
       "informieren": "تعرّف على المريض — التاريخ المرضي، التشخيصات، الوضع.",

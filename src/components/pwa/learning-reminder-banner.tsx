@@ -72,24 +72,24 @@ export function LearningReminderBanner() {
 
   return (
     <div
-      className="fixed bottom-4 left-4 right-4 z-50 mx-auto max-w-md rounded-2xl border border-blue-200 bg-blue-50 p-4 shadow-lg dark:border-blue-800 dark:bg-blue-950"
+      className="fixed bottom-4 left-4 right-4 z-50 mx-auto max-w-md rounded-2xl border-[1.5px] border-[var(--lern-border)] bg-[var(--lern-bg-primary)] p-4 shadow-lg"
       role="alert"
     >
       <div className="flex items-start gap-3">
-        <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-blue-100 dark:bg-blue-900">
-          <BookOpen className="h-5 w-5 text-blue-600 dark:text-blue-400" />
+        <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[var(--lern-accent-bg)]">
+          <BookOpen className="h-5 w-5 text-[var(--lern-accent)]" />
         </div>
         <div className="flex-1">
-          <p className="text-sm font-semibold text-blue-900 dark:text-blue-100">
+          <p className="text-sm font-semibold text-[var(--lern-text-primary)]">
             Heute noch nicht gelernt
           </p>
-          <p className="mt-0.5 text-sm text-blue-700 dark:text-blue-300">
+          <p className="mt-0.5 text-sm text-[var(--lern-text-secondary)]">
             Schon 5 Minuten reichen, um deinen Streak zu halten!
           </p>
         </div>
         <button
           onClick={dismiss}
-          className="shrink-0 rounded-lg p-1 text-blue-400 hover:bg-blue-100 hover:text-blue-600 dark:hover:bg-blue-900"
+          className="shrink-0 rounded-lg p-1 text-[var(--lern-text-tertiary)] hover:bg-[var(--lern-accent-bg)] hover:text-[var(--lern-text-primary)]"
           aria-label="Schließen"
         >
           <X className="h-4 w-4" />

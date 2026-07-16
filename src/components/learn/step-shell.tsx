@@ -49,7 +49,9 @@ export function StepShell({
   tip,
   children,
 }: StepShellProps) {
-  const longBody = !!body && body.trim().length > 80;
+  // Einklappen lohnt erst bei wirklich langen Kontexten — bei 80 Zeichen wurde
+  // fast jeder Szenen-Text mitten im Satz abgeschnitten (Dozentin-Feedback 2026-07-16).
+  const longBody = !!body && body.trim().length > 280;
   const [bodyOpen, setBodyOpen] = useState(!longBody);
 
   return (

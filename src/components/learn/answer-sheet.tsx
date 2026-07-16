@@ -100,7 +100,9 @@ function getFehlerHinweis(kategorie: FehlerKategorie): string {
       // statt vager "feine Unterschiede".
       return "Tipp: Lies die Erklärung unter der richtigen Antwort — dort steht der Unterschied.";
     case "konzept":
-      return "Tipp: Lies den Erklärtext nochmal durch.";
+      // Konkret statt „Erklärtext" — in Situationen gibt es keinen separaten
+      // Erklärtext-Step, der Verweis lief ins Leere (Dozentin-Feedback 2026-07-16).
+      return "Tipp: Schau dir die Erklärung unter der richtigen Antwort in Ruhe an.";
     default:
       return "";
   }

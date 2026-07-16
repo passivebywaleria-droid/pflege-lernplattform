@@ -18,6 +18,40 @@ interface MCOption {
   explanationB1?: string;
 }
 
+/** Wörter eines Satzes, normalisiert (Kleinbuchstaben, ohne Satzzeichen, ab 4 Zeichen). */
+function contentWords(s: string): Set<string> {
+  return new Set(
+    s
+      .toLowerCase()
+      .replace(/[^\p{L}\p{N}\s]/gu, " ")
+      .split(/\s+/)
+      .filter((w) => w.length >= 4)
+  );
+}
+
+/**
+ * Entfernt den letzten Satz des Bodys aus der ANZEIGE, wenn er eine Frage ist
+ * und sinngleich mit dem Fragetext (≥60% Wortüberlappung). Reine Präsentation —
+ * der Content bleibt unverändert.
+ */
+export function dedupeTrailingQuestion(body: string | undefined, fragetext: string): string | undefined {
+  if (!body || !fragetext) return body;
+  const trimmed = body.trimEnd();
+  if (!trimmed.endsWith("?")) return body;
+  // Letzten Satz isolieren (nach letztem Satzende-Zeichen vor der Schlussfrage)
+  const m = trimmed.match(/(?:^|[.!?…])\s*([^.!?…]+\?)$/);
+  if (!m) return body;
+  const lastSentence = m[1].trim();
+  const rest = trimmed.slice(0, trimmed.length - lastSentence.length).trimEnd();
+  if (!rest) return body; // Body besteht NUR aus der Frage → stehen lassen
+  const qWords = contentWords(lastSentence);
+  if (qWords.size === 0) return body;
+  const fWords = contentWords(fragetext);
+  let overlap = 0;
+  qWords.forEach((w) => { if (fWords.has(w)) overlap++; });
+  return overlap / qWords.size >= 0.6 ? rest : body;
+}
+
 interface StepMCProps {
   title: string;
   body?: string;
@@ -146,12 +180,18 @@ export function StepMC({
     ? safeFragetext
     : safeTitle || safeFragetext;
 
+  // Frage-Dopplung vermeiden (Dozentin-Feedback 2026-07-16): Viele Bodies enden
+  // mit derselben Frage, die der Fragetext darunter wiederholt. Ist der letzte
+  // Body-Satz eine Frage und sinngleich mit dem Fragetext (Wortüberlappung),
+  // wird er in der Anzeige weggelassen — der Fragetext IST die Frage.
+  const displayBody = dedupeTrailingQuestion(body, safeFragetext);
+
   return (
     <div style={{ color: "var(--lern-text-primary)" }}>
       <StepShell
         kindLabel={isAnticipation ? "Vermutung" : "Multiple Choice"}
         question={question}
-        body={body}
+        body={displayBody}
         glossar={glossar}
         tip={
           multiSelect && !submitted ? "Mehrere Antworten möglich" : undefined
