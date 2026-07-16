@@ -133,10 +133,13 @@ export function FachbegriffText({ glossar, children, sprachLevel }: FachbegriffT
                   onKeyDown={(e) => {
                     if (e.key === "Enter" || e.key === " ") handleActivate(e);
                   }}
-                  className={`inline cursor-pointer underline-offset-2 ${isBold ? "font-bold" : "font-medium"} ${
+                  // Ruhige Optik (KERN-LOOP-STANDARD): Textfarbe bleibt, nur eine
+                  // gepunktete Linie markiert Antippbarkeit — kein Farb-Link-Rauschen.
+                  // B1 behält den dezenten Hintergrund als stärkere Einladung.
+                  className={`inline cursor-pointer underline-offset-[3px] ${isBold ? "font-bold" : ""} ${
                     isB1
-                      ? "bg-[#BFA48E]/20 text-[var(--lern-accent)] underline decoration-[var(--lern-accent)]/30 rounded px-0.5 -mx-0.5"
-                      : "text-[var(--lern-accent)] underline decoration-[var(--lern-accent)]/30"
+                      ? "bg-[#BFA48E]/15 underline decoration-dotted decoration-[var(--lern-accent)]/70 rounded px-0.5 -mx-0.5"
+                      : "underline decoration-dotted decoration-[var(--lern-accent)]/70"
                   }`}
                 >
                   {part.text}

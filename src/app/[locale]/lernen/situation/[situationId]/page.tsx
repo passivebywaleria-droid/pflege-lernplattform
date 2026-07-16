@@ -467,21 +467,29 @@ export default function SituationLernenPage() {
 
   return (
     <div className="h-dvh bg-[var(--lern-bg)] flex flex-col overflow-hidden">
-      {/* Sticky Header — Bundle-Stil (claude-design-bundle/v1-situation-flow.jsx FlowHeader) */}
+      {/* Sticky Header — KERN-LOOP-STANDARD (2026-07-16): EINE Meta-Zeile.
+          Pfeil · step-genauer Balken (mit Phasen-Markern) · Zähler · Patient-Avatar
+          (Tap → Modal mit Name/Setting/Lebensgeschichte) · Sprache. Kein Phasen-Text,
+          keine Patientenzeile — der größte Text auf dem Screen ist der Inhalt. */}
       <header className="shrink-0 bg-[var(--lern-bg)] border-b border-[var(--lern-border)]">
-        {/* EIN Gesamtfortschritts-Balken — step-genaue Füllung (passt zu „x/17"),
-            mit dezenten Phasen-Markern statt einer zweiten, mismatchenden Leiste. */}
-        {totalSituationSteps > 0 && (
+        <div className="mx-auto max-w-3xl px-4 py-2.5 flex items-center gap-3">
+          <Link
+            href={`/${locale}/lernen/ce/${ceId}`}
+            aria-label={t("zurueckZurUebersicht")}
+            className="shrink-0 text-[var(--lern-text-secondary)] hover:text-[var(--lern-text-primary)]"
+          >
+            <ArrowLeft className="h-5 w-5" />
+          </Link>
           <div
-            className="relative h-1.5 w-full bg-[var(--lern-border)]"
+            className="relative h-1.5 flex-1 overflow-hidden rounded-full bg-[var(--lern-border)]"
             role="progressbar"
             aria-valuemin={0}
             aria-valuemax={totalSituationSteps}
             aria-valuenow={globalStepIndex + 1}
-            aria-label={`Schritt ${globalStepIndex + 1} von ${totalSituationSteps}`}
+            aria-label={`${phaseLabel} — Schritt ${globalStepIndex + 1} von ${totalSituationSteps}`}
           >
             <div
-              className="h-full bg-[var(--lern-accent)] transition-[width] duration-500"
+              className="h-full rounded-full bg-[var(--lern-accent)] transition-[width] duration-500"
               style={{ width: `${overallPct}%` }}
             />
             {phaseBoundaryPcts.map((pct, i) => (
@@ -493,59 +501,28 @@ export default function SituationLernenPage() {
               />
             ))}
           </div>
-        )}
-        <div className="mx-auto max-w-3xl px-4 pt-3 pb-3.5">
-          {/* Top-Row: Back · Schritt-Counter (GESAMT) · Menü */}
-          <div className="flex items-center justify-between mb-2.5">
-            <Link
-              href={`/${locale}/lernen/ce/${ceId}`}
-              aria-label={t("zurueckZurUebersicht")}
-              className="text-[var(--lern-text-secondary)] hover:text-[var(--lern-text-primary)]"
-            >
-              <ArrowLeft className="h-5 w-5" />
-            </Link>
-            <span className="text-[11px] uppercase tracking-wider text-[var(--lern-text-tertiary)] tabular-nums">
-              {totalSituationSteps > 0 && currentStep
-                ? `${phaseLabel} · ${globalStepIndex + 1}/${totalSituationSteps}`
-                : phaseLabel}
+          {totalSituationSteps > 0 && (
+            <span className="shrink-0 text-[11px] text-[var(--lern-text-tertiary)] tabular-nums">
+              {globalStepIndex + 1}/{totalSituationSteps}
             </span>
-            <button
-              onClick={() => setSpracheSheetOpen(true)}
-              aria-label="Sprache wählen"
-              aria-expanded={spracheSheetOpen}
-              className={`relative text-[var(--lern-text-secondary)] hover:text-[var(--lern-text-primary)] ${
-                sprachLevel === "b1" ? "text-[var(--lern-accent)]" : ""
-              }`}
-            >
-              <Languages className="h-5 w-5" />
-            </button>
-          </div>
-
-          {/* Patient-Row: Avatar · Name · Setting */}
-          {situation.patient && (
-            <div className="flex items-center gap-2.5 mb-3">
-              <PatientAvatar
-                name={situation.patient.name}
-                size={40}
-                onClick={
-                  situation.patient.hintergrund
-                    ? () => setPatientModalOpen(true)
-                    : undefined
-                }
-              />
-              {/* Entdoppelt (2026-07-16): vorher standen Patientenname UND Setting
-                  doppelt (im Titel + in der Zeile darunter), beide „…"-abgeschnitten.
-                  Jetzt eine klare Zeile: Name · Alter (fett) + Setting (dezent). */}
-              <div className="flex-1 min-w-0">
-                <div className="text-sm font-semibold leading-tight text-[var(--lern-text-primary)] truncate">
-                  {situation.patient.name} · {situation.patient.alter}
-                </div>
-                <div className="text-[11px] text-[var(--lern-text-tertiary)] truncate mt-0.5">
-                  {situation.patient.setting}
-                </div>
-              </div>
-            </div>
           )}
+          {situation.patient && (
+            <PatientAvatar
+              name={situation.patient.name}
+              size={28}
+              onClick={() => setPatientModalOpen(true)}
+            />
+          )}
+          <button
+            onClick={() => setSpracheSheetOpen(true)}
+            aria-label="Sprache wählen"
+            aria-expanded={spracheSheetOpen}
+            className={`shrink-0 text-[var(--lern-text-secondary)] hover:text-[var(--lern-text-primary)] ${
+              sprachLevel === "b1" ? "text-[var(--lern-accent)]" : ""
+            }`}
+          >
+            <Languages className="h-5 w-5" />
+          </button>
         </div>
       </header>
 

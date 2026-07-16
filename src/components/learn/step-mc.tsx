@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback, useRef } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import type { GlossarEntry } from "../../../content/_types";
 import { FachbegriffText } from "./fachbegriff-tooltip";
 import { analysiereFehler } from "@/lib/adaptive/fehler-analyse";
@@ -130,6 +130,26 @@ export function StepMC({
     .map((o) => o.text)
     .join(", ");
   const richtigeErklaerung = optionen.find((o) => o.isCorrect)?.explanation;
+
+  // Feedback-Anatomie (KERN-LOOP-STANDARD): Das Sheet erklärt die EIGENE
+  // (falsche) Wahl + die richtige Antwort; die übrigen Optionen wandern
+  // eingeklappt in „Warum die anderen nicht?".
+  const erklaerungFuer = (o: MCOption) =>
+    (sprachLevel === "b1" && o.explanationB1) || o.explanation;
+  const gewaehlteFalsche = selected
+    .map((i) => optionen[i])
+    .find((o) => !o.isCorrect);
+  const warumWahl =
+    submitted && !isCorrect && gewaehlteFalsche
+      ? erklaerungFuer(gewaehlteFalsche)
+      : undefined;
+  const andereErklaerungen = submitted
+    ? optionen
+        .filter(
+          (o, i) => !o.isCorrect && o !== gewaehlteFalsche && !!o.explanation && !selected.includes(i)
+        )
+        .map((o) => ({ text: o.text, erklaerung: erklaerungFuer(o) }))
+    : [];
   const sandwich =
     submitted && !isAnticipation
       ? generiereSandwichFeedback(
@@ -158,20 +178,20 @@ export function StepMC({
 
   return (
     <div style={{ color: "var(--lern-text-primary)" }}>
-      <StepShell
-        kindLabel={isAnticipation ? "Vermutung" : "Multiple Choice"}
-        question={question}
-        body={displayBody}
-        glossar={glossar}
-        tip={
-          multiSelect && !submitted ? "Mehrere Antworten möglich" : undefined
-        }
-      >
+      <StepShell question={question} body={displayBody} glossar={glossar}>
         {/* Falls Titel + Fragetext beide existieren und unterschiedlich sind:
             Frage darunter als Sub-Frage. */}
         {!titleEqualsQuestion && title && (
           <p className="-mt-2 mb-3 text-sm font-medium text-[var(--lern-text-primary)]">
             <FachbegriffText glossar={glossar ?? []}>{fragetext}</FachbegriffText>
+          </p>
+        )}
+
+        {/* Mehrfachauswahl-Hinweis in der Optionen-Ecke statt Streu-Tipp unten
+            (KERN-LOOP-STANDARD 2026-07-16) */}
+        {multiSelect && !submitted && (
+          <p className="mb-1.5 text-right text-[11px] text-[var(--lern-text-tertiary)]">
+            Mehrere Antworten möglich
           </p>
         )}
 
@@ -273,43 +293,15 @@ export function StepMC({
                       />
                     )}
                   </span>
+                  {/* KERN-LOOP-STANDARD (2026-07-16): Nach dem Prüfen werden die
+                      Optionen nur noch MARKIERT — erklärt wird an genau einem Ort,
+                      im AnswerSheet (Verdikt → Warum → „Warum die anderen nicht?"). */}
                   <div className="flex-1 min-w-0">
                     <p className="text-sm leading-snug text-[var(--lern-text-primary)]">
                       <FachbegriffText glossar={glossar ?? []}>
                         {option.text}
                       </FachbegriffText>
                     </p>
-                    <AnimatePresence>
-                      {showResult && !isAnticipation && option.explanation && (
-                        <motion.div
-                          initial={{ opacity: 0, height: 0 }}
-                          animate={{ opacity: 1, height: "auto" }}
-                          className="mt-1.5"
-                        >
-                          {!isSelected && optionCorrect && (
-                            <p className="text-[11px] font-semibold uppercase tracking-wider text-[var(--lern-success)] mb-0.5">
-                              Richtige Antwort
-                            </p>
-                          )}
-                          {isSelected && !optionCorrect && (
-                            <p className="text-[11px] font-semibold uppercase tracking-wider text-[var(--lern-error)] mb-0.5">
-                              Deshalb nicht richtig
-                            </p>
-                          )}
-                          {!isSelected && !optionCorrect && (
-                            <p className="text-[11px] font-semibold uppercase tracking-wider text-[var(--lern-text-tertiary)] mb-0.5">
-                              Warum nicht
-                            </p>
-                          )}
-                          <p className="text-xs leading-relaxed text-[var(--lern-text-secondary)]">
-                            <FachbegriffText glossar={glossar ?? []}>
-                              {(sprachLevel === "b1" && option.explanationB1) ||
-                                option.explanation}
-                            </FachbegriffText>
-                          </p>
-                        </motion.div>
-                      )}
-                    </AnimatePresence>
                   </div>
                 </div>
               </motion.button>
@@ -379,6 +371,8 @@ export function StepMC({
           isCorrect={isCorrect}
           feedback={sandwich}
           fehlerKategorie={fehlerAnalyse?.kategorie}
+          warumWahl={warumWahl}
+          andereErklaerungen={andereErklaerungen}
           erklaerAnders={
             !isCorrect && erklaerKontext
               ? {

@@ -7,7 +7,11 @@ import { renderBold, FachbegriffText } from "./fachbegriff-tooltip";
 import type { GlossarEntry } from "../../../content/_types";
 
 interface StepShellProps {
-  /** Kind-Label oben (Caps, Teal, 10px). Beispiel: "Entscheiden · Multiple Choice" */
+  /**
+   * @deprecated Wird nicht mehr gerendert (KERN-LOOP-STANDARD 2026-07-16:
+   * „Die Interaktion erklärt sich selbst" — der größte Text auf dem Screen
+   * ist der Inhalt, nie ein Label). Callers dürfen es weiter übergeben.
+   */
   kindLabel?: string;
   /** Hauptfrage oder Titel des Steps (18-20px, font-semibold) */
   question: string;
@@ -25,12 +29,11 @@ interface StepShellProps {
  * StepShell — gemeinsamer Wrapper für alle Step-Renderer im Bundle-Stil
  * (claude-design-bundle/v1-situation-flow.jsx Step-Layout).
  *
- * Strukturiert Steps in:
- *   1. Kind-Label (Caps Teal 10px)
- *   2. Frage (18-20px / 600)
- *   3. Body (collapsed wenn länger, sonst inline)
- *   4. Content-Slot
- *   5. Tipp unten
+ * Strukturiert Steps in (KERN-LOOP-STANDARD: kein Typ-Label mehr):
+ *   1. Frage (18-20px / 600)
+ *   2. Body (collapsed wenn länger, sonst inline)
+ *   3. Content-Slot
+ *   4. Tipp unten
  *
  * Action-Buttons werden NICHT hier gerendert — die kommen in <StepActionBar>
  * vom Renderer selbst (sticky bottom).
@@ -42,7 +45,6 @@ interface StepShellProps {
  * - content → tip: 14px
  */
 export function StepShell({
-  kindLabel,
   question,
   body,
   glossar,
@@ -59,13 +61,6 @@ export function StepShell({
       className="flex flex-col gap-3.5"
       style={{ color: "var(--lern-text-primary)" }}
     >
-      {/* Kind-Label */}
-      {kindLabel && (
-        <div className="text-[10px] font-semibold uppercase tracking-wider text-[var(--lern-accent)]">
-          {kindLabel}
-        </div>
-      )}
-
       {/* Frage */}
       <h2 className="text-[19px] leading-[1.3] font-semibold text-[var(--lern-text-primary)]">
         {renderBold(question)}

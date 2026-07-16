@@ -17,6 +17,10 @@ interface AnswerSheetProps {
    * (RAG-gebunden an den Lernstoff der Situation).
    */
   erklaerAnders?: ErklaerAndersKontext;
+  /** Warum die GEWÄHLTE (falsche) Antwort nicht stimmt — kommt vor der Musterlösung. */
+  warumWahl?: string;
+  /** Erklärungen der übrigen Optionen — eingeklappt („Warum die anderen nicht?"). */
+  andereErklaerungen?: { text: string; erklaerung: string }[];
   onNext: () => void;
 }
 
@@ -25,6 +29,8 @@ export function AnswerSheet({
   isCorrect,
   feedback,
   erklaerAnders,
+  warumWahl,
+  andereErklaerungen,
   onNext,
 }: AnswerSheetProps) {
   // Falsch = warmes Amber (unterstützend), nicht wertendes Rot (Dozentin-Feedback
@@ -68,10 +74,16 @@ export function AnswerSheet({
               </p>
             </div>
 
-            {/* Zwei klare Absätze statt vier: Musterlösung, dann Ermutigung.
-                Der frühere separate „Tipp:"-Block überlappte inhaltlich mit der
-                Ermutigung und verwies auf UI, die hinter dem Sheet liegt
-                (Dozentin 2026-07-16: „wirkt überladen"). */}
+            {/* Feedback-Anatomie (KERN-LOOP-STANDARD 2026-07-16): Verdikt →
+                Warum (eigene Wahl + Musterlösung) → Tiefe on-demand. Die
+                Erklärungen der Optionen stehen NUR noch hier, nicht mehr
+                unter den Optionen selbst. */}
+            {warumWahl && (
+              <p className="text-sm text-[var(--lern-text-primary)]">
+                {warumWahl}
+              </p>
+            )}
+
             {feedback.korrektur && (
               <p className="text-sm text-[var(--lern-text-primary)]">
                 {feedback.korrektur}
@@ -86,6 +98,32 @@ export function AnswerSheet({
                 braucht keine zweite Erklärung. */}
             {!isCorrect && erklaerAnders && (
               <ErklaerAnders kontext={erklaerAnders} />
+            )}
+
+            {/* Übrige Optionen: eingeklappt, on-demand */}
+            {andereErklaerungen && andereErklaerungen.length > 0 && (
+              <details className="group">
+                <summary
+                  className="cursor-pointer list-none text-sm font-medium text-[var(--lern-text-secondary)]"
+                  aria-label="Warum die anderen Antworten nicht richtig sind"
+                >
+                  Warum die anderen nicht?{" "}
+                  <span className="inline-block transition-transform group-open:rotate-180">
+                    ⌄
+                  </span>
+                </summary>
+                <div className="mt-2 space-y-2">
+                  {andereErklaerungen.map((a, i) => (
+                    <p
+                      key={i}
+                      className="text-xs leading-relaxed text-[var(--lern-text-secondary)]"
+                    >
+                      <span className="font-semibold">„{a.text}"</span> —{" "}
+                      {a.erklaerung}
+                    </p>
+                  ))}
+                </div>
+              </details>
             )}
 
             <button
