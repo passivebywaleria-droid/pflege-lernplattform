@@ -5,7 +5,7 @@
  */
 
 import { describe, it, expect } from "vitest";
-import { dedupeTrailingQuestion } from "@/components/learn/step-mc";
+import { dedupeTrailingQuestion } from "@/lib/learn/dedupe-question";
 
 describe("dedupeTrailingQuestion", () => {
   it("entfernt die sinngleiche Schlussfrage (Wagner-Fall)", () => {

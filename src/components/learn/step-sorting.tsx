@@ -22,6 +22,7 @@ import type { GlossarEntry } from "../../../content/_types";
 import { FachbegriffText, renderBold } from "./fachbegriff-tooltip";
 import { GripVertical } from "lucide-react";
 import { StepShell } from "./step-shell";
+import { dedupeTrailingQuestion } from "@/lib/learn/dedupe-question";
 import { StepActionBar } from "./step-action-bar";
 
 interface StepSortingProps {
@@ -58,16 +59,17 @@ function SortableItem({
     opacity: isDragging ? 0.85 : 1,
   };
 
+  // Falsche Position: warmes Amber statt wertendem Rot (Dozentin-Feedback 2026-07-16).
   const borderColor = submitted
-    ? isCorrect ? "border-[#3E5A6A]" : "border-[#C96B5C]"
+    ? isCorrect ? "border-[#3E5A6A]" : "border-[#D4956A]"
     : isDragging ? "border-[#5A7D60]" : "border-[var(--lern-border)]";
 
   const bgColor = submitted
-    ? isCorrect ? "bg-[#3E5A6A]/5" : "bg-[#C96B5C]/5"
+    ? isCorrect ? "bg-[#3E5A6A]/5" : "bg-[#D4956A]/10"
     : isDragging ? "bg-[#5A7D60]/5" : "bg-[var(--lern-bg-primary)]";
 
   const numBg = submitted
-    ? isCorrect ? "bg-[#3E5A6A] text-white" : "bg-[#C96B5C] text-white"
+    ? isCorrect ? "bg-[#3E5A6A] text-white" : "bg-[#D4956A] text-white"
     : "bg-[var(--lern-card-bg,#f5f5f7)] text-[var(--lern-text-secondary)]";
 
   return (
@@ -149,7 +151,7 @@ export function StepSorting({
       <StepShell
         kindLabel="Reihenfolge"
         question={question}
-        body={body}
+        body={dedupeTrailingQuestion(body, safeFragetext)}
         glossar={glossar}
         tip={!submitted ? "Halte und ziehe zum Sortieren" : undefined}
       >

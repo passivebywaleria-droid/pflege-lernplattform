@@ -19,8 +19,12 @@ export function AnswerSheet({
   fehlerKategorie,
   onNext,
 }: AnswerSheetProps) {
-  const color = isCorrect ? "#3E5A6A" : "#C96B5C";
-  const hoverColor = isCorrect ? "#2F4654" : "#b05e50";
+  // Falsch = warmes Amber (unterstützend), nicht wertendes Rot (Dozentin-Feedback
+  // 2026-07-16: „das Rot wirkt wertend"). Der Weiter-Button bleibt IMMER der neutrale
+  // Sage-Akzent — „weiter" ist eine Handlung, kein Urteil (Verdikt von Aktion entkoppelt).
+  const color = isCorrect ? "#3E5A6A" : "#D4956A";
+  const ctaColor = "var(--lern-accent)";
+  const ctaHover = "#4C6A52";
 
   return (
     <AnimatePresence>
@@ -73,9 +77,9 @@ export function AnswerSheet({
             <button
               onClick={onNext}
               className="w-full rounded-2xl px-6 py-4 text-base font-semibold text-white transition-all active:scale-[0.98] focus:outline-2 focus:outline-offset-2 mt-1"
-              style={{ backgroundColor: color, outlineColor: color }}
-              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = hoverColor)}
-              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = color)}
+              style={{ backgroundColor: ctaColor, outlineColor: ctaColor }}
+              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = ctaHover)}
+              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = ctaColor)}
               aria-label="Weiter zum nächsten Schritt"
             >
               Weiter

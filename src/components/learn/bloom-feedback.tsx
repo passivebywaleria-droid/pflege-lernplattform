@@ -84,8 +84,11 @@ export function generiereSandwichFeedback(
 
   // Sandwich bei falscher Antwort — Lob basierend auf Fehlerkategorie
   const lob = getLobFuerKategorie(fehlerAnalyse?.kategorie);
+  // Doppel-Satzzeichen vermeiden: die Options-Antwort endet oft schon auf „.“/„!“,
+  // dann darf nicht nochmal „. " davor (Bug „…sofort.. Richtig.", 2026-07-16).
+  const antwort = richtigeAntwort.trim().replace(/[.!?…]+$/, "");
   const korrekturText = richtigeAntwort
-    ? `Die richtige Antwort ist: ${richtigeAntwort}${erklaerung ? `. ${erklaerung}` : ""}`
+    ? `Die richtige Antwort ist: ${antwort}${erklaerung ? `. ${erklaerung}` : "."}`
     : erklaerung || "";
   const ermutigungText = fehlerAnalyse?.erklaerung || "Beim nächsten Mal klappt es bestimmt!";
 
