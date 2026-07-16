@@ -68,6 +68,11 @@ export interface StepRendererProps {
   onGatedAnswer?: () => void;
   /** Play-then-Gate: gibt die abgefangene Antwort frei (Gate weggetippt). */
   gateReleased?: boolean;
+  /**
+   * „Erklär mir das anders": Situations-Adresse für die RAG-gebundene
+   * Alternativ-Erklärung nach falscher Antwort (nur Situation-Player).
+   */
+  erklaerKontext?: { ceId: string; situationId: string };
 }
 
 export function StepRenderer({
@@ -82,6 +87,7 @@ export function StepRenderer({
   totalQuestions,
   onGatedAnswer,
   gateReleased,
+  erklaerKontext,
 }: StepRendererProps) {
   const content = sprachLevel === "b1" && step.contentB1 ? step.contentB1 : step.contentC1;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any -- v2 Steps nutzen kürzere Feldnamen, Fallback per runtime-check
@@ -276,6 +282,11 @@ export function StepRenderer({
           optionen={mcOptions}
           multiSelect={q.multiSelect}
           isAnticipation={step.stepId.endsWith("-anticipation")}
+          erklaerKontext={
+            erklaerKontext
+              ? { ...erklaerKontext, stepId: step.stepId }
+              : undefined
+          }
           onNext={(correct, gewaehlteAntwort) => onNext(correct, gewaehlteAntwort)}
         />
       );

@@ -3,6 +3,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import type { SandwichFeedback } from "./bloom-feedback";
 import type { FehlerKategorie } from "@/lib/adaptive/fehler-analyse";
+import { ErklaerAnders, type ErklaerAndersKontext } from "./erklaer-anders";
 
 interface AnswerSheetProps {
   open: boolean;
@@ -10,6 +11,12 @@ interface AnswerSheetProps {
   feedback: SandwichFeedback;
   /** @deprecated Wird nicht mehr angezeigt (Feedback auf 2 Absätze gestrafft). Callers dürfen es weiter übergeben. */
   fehlerKategorie?: FehlerKategorie;
+  /**
+   * „Erklär mir das anders" (VISION-Strategiewechsel): Wenn gesetzt und die
+   * Antwort falsch war, kann der Schüler eine KI-Alternativ-Erklärung anfordern
+   * (RAG-gebunden an den Lernstoff der Situation).
+   */
+  erklaerAnders?: ErklaerAndersKontext;
   onNext: () => void;
 }
 
@@ -17,6 +24,7 @@ export function AnswerSheet({
   open,
   isCorrect,
   feedback,
+  erklaerAnders,
   onNext,
 }: AnswerSheetProps) {
   // Falsch = warmes Amber (unterstützend), nicht wertendes Rot (Dozentin-Feedback
@@ -42,8 +50,10 @@ export function AnswerSheet({
           role="alert"
           aria-live="polite"
         >
+          {/* max-h + Scroll: mit Alternativ-Erklärung(en) kann das Sheet wachsen —
+              es darf den Screen nie sprengen (iPhone-Pilot). */}
           <div
-            className="px-5 pt-5 space-y-3 max-w-lg mx-auto"
+            className="px-5 pt-5 space-y-3 max-w-lg mx-auto max-h-[80dvh] overflow-y-auto"
             style={{ paddingBottom: "calc(1.25rem + env(safe-area-inset-bottom))" }}
           >
             <div className="flex items-center gap-2">
@@ -71,6 +81,12 @@ export function AnswerSheet({
             <p className="text-sm text-[var(--lern-text-secondary)]">
               {feedback.ermutigung}
             </p>
+
+            {/* Strategiewechsel nur bei falscher Antwort — wer richtig lag,
+                braucht keine zweite Erklärung. */}
+            {!isCorrect && erklaerAnders && (
+              <ErklaerAnders kontext={erklaerAnders} />
+            )}
 
             <button
               onClick={onNext}

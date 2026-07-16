@@ -29,6 +29,8 @@ interface StepMCProps {
   sprachLevel?: "c1" | "b1";
   bloomLevel?: number;
   isAnticipation?: boolean;
+  /** „Erklär mir das anders": Step-Adresse für die RAG-gebundene Alternativ-Erklärung. */
+  erklaerKontext?: { ceId: string; situationId: string; stepId: string };
   onNext: (correct: boolean, gewaehlteAntwort?: string) => void;
 }
 
@@ -42,6 +44,7 @@ export function StepMC({
   sprachLevel = "c1",
   bloomLevel,
   isAnticipation = false,
+  erklaerKontext,
   onNext,
 }: StepMCProps) {
   const [selected, setSelected] = useState<number[]>([]);
@@ -376,6 +379,19 @@ export function StepMC({
           isCorrect={isCorrect}
           feedback={sandwich}
           fehlerKategorie={fehlerAnalyse?.kategorie}
+          erklaerAnders={
+            !isCorrect && erklaerKontext
+              ? {
+                  ...erklaerKontext,
+                  frage: fragetext,
+                  gewaehlteAntwort: selected
+                    .map((i) => optionen[i].text)
+                    .join(", "),
+                  richtigeAntwort,
+                  sprachLevel,
+                }
+              : undefined
+          }
           onNext={() =>
             onNext(
               isCorrect,

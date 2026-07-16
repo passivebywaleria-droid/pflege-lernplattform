@@ -606,6 +606,7 @@ export default function SituationLernenPage() {
                   step={currentStep}
                   sprachLevel={sprachLevel}
                   glossar={SITUATION_GLOSSAR[situationId] ?? []}
+                  erklaerKontext={{ ceId, situationId }}
                   onNext={() => handleNextStep()}
                   onSelfRating={() => handleNextStep()}
                   onReflection={() => handleNextStep()}
