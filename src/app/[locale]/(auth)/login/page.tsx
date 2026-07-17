@@ -1,25 +1,22 @@
-import { useTranslations } from "next-intl"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { LoginForm } from "@/components/auth/login-form"
+import { Suspense } from "react"
 import Link from "next/link"
+import { MagicSignupForm } from "@/components/auth/magic-signup-form"
 
+// Login = passwortlos per E-Mail-Code (wie /mitmachen, nur im Rückkehrer-Modus).
+// Lern-Design statt shadcn/Glass-Card — gleiche Optik wie der Situation-Player
+// (Waleria 2026-07-17: Anmeldeseite wirkte fremd zum Rest der App).
 export default function LoginPage() {
-  const t = useTranslations("auth")
-
   return (
-    <Card>
-      <CardHeader>
-        <CardTitle className="text-center text-2xl">{t("login")}</CardTitle>
-      </CardHeader>
-      <CardContent>
-        <LoginForm />
-        <p className="mt-4 text-center text-sm text-muted-foreground">
-          {t("noAccount")}{" "}
-          <Link href="/register" className="font-medium text-primary hover:underline">
-            {t("register")}
-          </Link>
-        </p>
-      </CardContent>
-    </Card>
+    <div className="rounded-2xl border-[1.5px] border-[var(--lern-border)] bg-[var(--lern-bg-primary)] p-6 shadow-sm">
+      <h1 className="text-center text-xl font-bold text-[var(--lern-text-primary)]">
+        Willkommen zurück!
+      </h1>
+      <p className="mt-1.5 mb-6 text-center text-sm text-[var(--lern-text-secondary)]">
+        E-Mail eingeben — wir schicken dir deinen Login-Code.
+      </p>
+      <Suspense fallback={<div className="h-40" />}>
+        <MagicSignupForm startMode="login" />
+      </Suspense>
+    </div>
   )
 }

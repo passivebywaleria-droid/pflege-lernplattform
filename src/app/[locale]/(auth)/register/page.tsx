@@ -1,25 +1,13 @@
-import { useTranslations } from "next-intl"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { RegisterForm } from "@/components/auth/register-form"
-import Link from "next/link"
+import { redirect } from "next/navigation"
 
-export default function RegisterPage() {
-  const t = useTranslations("auth")
-
-  return (
-    <Card>
-      <CardHeader>
-        <CardTitle className="text-center text-2xl">{t("register")}</CardTitle>
-      </CardHeader>
-      <CardContent>
-        <RegisterForm />
-        <p className="mt-4 text-center text-sm text-muted-foreground">
-          {t("hasAccount")}{" "}
-          <Link href="/login" className="font-medium text-primary hover:underline">
-            {t("login")}
-          </Link>
-        </p>
-      </CardContent>
-    </Card>
-  )
+// Registrierung läuft passwortlos über /mitmachen (Pilot-Flow, ein Weg statt
+// zwei). Die alte Passwort-Registrierung ist abgeschaltet — bestehende Links
+// auf /register laufen hier sanft weiter.
+export default async function RegisterPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { locale } = await params
+  redirect(`/${locale}/mitmachen`)
 }

@@ -16,8 +16,10 @@ import { trackFunnel } from "@/lib/funnel/track"
 // Lern-Design statt shadcn/Glass-UI: Die ui/-Buttons und -Inputs rendern auf
 // dieser Seite transparent (Glass-Kit) und passen nicht zum App-Look der Steps
 // (Dozentin-Feedback 2026-07-16). Gleiche Optik wie der Situation-Player.
+// Felder wie die Antwort-Optionen im Player: Linen-Fläche auf weißer Karte
+// (sichtbarer Kasten statt weiß-auf-weiß, Waleria 2026-07-17) + Sage-Focus-Ring.
 const inputCls =
-  "w-full rounded-xl border-[1.5px] border-[var(--lern-border)] bg-[var(--lern-bg-primary)] px-3.5 py-3 text-base text-[var(--lern-text-primary)] placeholder:text-[var(--lern-text-tertiary)] outline-none transition-colors focus:border-[var(--lern-accent)]"
+  "w-full rounded-xl border-[1.5px] border-[var(--lern-border)] bg-[var(--lern-bg)] px-3.5 py-3 text-base text-[var(--lern-text-primary)] placeholder:text-[var(--lern-text-tertiary)] outline-none transition-all focus:border-[var(--lern-accent)] focus:shadow-[0_0_0_3px_color-mix(in_srgb,var(--lern-accent)_20%,transparent)]"
 const btnCls =
   "w-full rounded-xl bg-[var(--lern-accent)] px-6 py-3.5 text-sm font-semibold text-white transition-all hover:bg-[#4C6A52] active:scale-[0.98] disabled:opacity-40 disabled:cursor-not-allowed"
 const labelCls = "block text-sm font-medium text-[var(--lern-text-primary)]"
@@ -37,12 +39,17 @@ interface PendingSend {
   isSignup: boolean
 }
 
-export function MagicSignupForm() {
+export function MagicSignupForm({
+  startMode = "signup",
+}: {
+  /** "login": startet im Rückkehrer-Modus (nur E-Mail) — für die /login-Seite. */
+  startMode?: "signup" | "login"
+}) {
   const locale = useLocale()
   const searchParams = useSearchParams()
   const next = searchParams.get("next") ?? undefined
 
-  const [mode, setMode] = useState<"signup" | "login">("signup")
+  const [mode, setMode] = useState<"signup" | "login">(startMode)
   const [pending, setPending] = useState<PendingSend | null>(null)
 
   // Code-Eingabe-Schritt
