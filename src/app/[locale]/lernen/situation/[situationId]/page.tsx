@@ -20,6 +20,8 @@ import { PaywallGate } from "@/components/learn/paywall-gate";
 import { SpracheSheet } from "@/components/learn/sprache-sheet";
 import { useMutterspracheInit } from "@/hooks/use-muttersprache";
 import { trackFunnel } from "@/lib/funnel/track";
+import { verteileSpickzettel } from "@/lib/learn/spickzettel-verteilung";
+import { Spickzettel } from "@/components/learn/spickzettel";
 import { CE02_THEMA_STURZ_PROPHYLAXE_GLOSSAR } from "../../../../../../content/ce-02/themen/sturz-prophylaxe/glossar";
 import { CE06_GLOSSAR } from "../../../../../../content/ce-06/glossar";
 
@@ -55,6 +57,11 @@ export default function SituationLernenPage() {
 
   const [situation, setSituation] = useState<Lernsituation | null>(null);
   const [loading, setLoading] = useState(true);
+  // Cross-Link-Rückweg (Spickzettel „Kennst du schon?"): ?von=<situationId>
+  // → Rückkehr-Chip zur Quell-Situation, die dort am gespeicherten Schritt
+  // weitermacht (Fortschritt wird pro Situation persistiert).
+  const vonSituationId = searchParams.get("von");
+  const [vonPatientName, setVonPatientName] = useState<string | null>(null);
   const [currentPhaseId, setCurrentPhaseId] = useState<AnyPhase>("informieren");
   const [completedPhases, setCompletedPhases] = useState<AnyPhase[]>([]);
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
@@ -109,6 +116,25 @@ export default function SituationLernenPage() {
       })
       .finally(() => setLoading(false));
   }, [ceId, situationId]);
+
+  // Quell-Situation des Cross-Links laden (nur Patient-Name für den Chip).
+  useEffect(() => {
+    if (!vonSituationId || vonSituationId === situationId) {
+      setVonPatientName(null);
+      return;
+    }
+    let cancelled = false;
+    staticLoadSituation(ceId, vonSituationId)
+      .then((s) => {
+        if (!cancelled) setVonPatientName(s?.patient?.name ?? s?.titel ?? null);
+      })
+      .catch(() => {
+        if (!cancelled) setVonPatientName(null);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [vonSituationId, situationId, ceId]);
 
   // Gast-Status ermitteln (Session-Cookie ist httpOnly → nur via API lesbar).
   useEffect(() => {
@@ -322,10 +348,15 @@ export default function SituationLernenPage() {
   const currentPhase =
     situation?.phasen.find((p) => p.phase === currentPhaseId) ??
     situation?.phasen[0];
-  const phaseSteps: ContentStep[] = currentPhase
-    ? [...currentPhase.kernSteps, ...currentPhase.optionaleSteps]
-    : [];
+  // Option A (KERN-LOOP-STANDARD): verlagerte Wissens-Steps sind KEINE eigenen
+  // Screens mehr — sie hängen als Spickzettel am nächsten Antwort-Step.
+  const { sichtbareSteps: phaseSteps, spickzettel } = verteileSpickzettel(
+    currentPhase ? [...currentPhase.kernSteps, ...currentPhase.optionaleSteps] : []
+  );
   const currentStep = phaseSteps[currentStepIndex] ?? null;
+  const currentSpickzettel = currentStep
+    ? (spickzettel.get(currentStep.stepId) ?? [])
+    : [];
 
   const advanceStep = useCallback(() => {
     if (isGuest) trackFunnel("step_fertig", { situationId });
@@ -416,8 +447,12 @@ export default function SituationLernenPage() {
   // Gesamtfortschritt über ALLE Phasen — damit sich die Länge begrenzt anfühlt
   // (Dozentin-Feedback 2026-07-16: Phasen-Punkte + phasenlokaler Zähler wirkten
   // unbegrenzt; „1/2" las sich fast fertig, obwohl noch 4 Phasen kommen).
+  // Nur SICHTBARE Steps zählen (verlagerte Spickzettel-Bausteine sind keine
+  // Screens) — sonst zeigt der Zähler 17, obwohl 12 gespielt werden.
   const stepsProPhase = situation.phasen.map(
-    (p) => p.kernSteps.length + p.optionaleSteps.length
+    (p) =>
+      verteileSpickzettel([...p.kernSteps, ...p.optionaleSteps]).sichtbareSteps
+        .length
   );
   const totalSituationSteps = stepsProPhase.reduce((a, b) => a + b, 0);
   const currentPhaseIdx = Math.max(
@@ -529,6 +564,19 @@ export default function SituationLernenPage() {
       {/* Content */}
       <main className="flex-1 min-h-0 overflow-y-auto">
         <div className="mx-auto max-w-3xl px-4 py-5 pb-24">
+          {/* Rückkehr-Chip nach Spickzettel-Ausflug: ein Tap zurück zur
+              Quell-Situation, die am gespeicherten Schritt weitermacht. */}
+          {vonSituationId && vonSituationId !== situationId && vonPatientName && (
+            <Link
+              href={`/${locale}/lernen/situation/${vonSituationId}?ce=${ceId}`}
+              className="mb-4 flex items-center gap-2 rounded-2xl border-[1.5px] border-[var(--lern-accent)]/35 bg-[var(--lern-accent-bg)] px-3.5 py-2.5 text-sm font-medium text-[var(--lern-accent)] transition-transform active:scale-[0.98]"
+            >
+              <ArrowLeft className="h-4 w-4 shrink-0" aria-hidden="true" />
+              <span className="min-w-0 truncate">
+                Zurück zu {vonPatientName} — dort weitermachen
+              </span>
+            </Link>
+          )}
           {allPhasesCompleted ? (
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
@@ -600,6 +648,18 @@ export default function SituationLernenPage() {
                   }
                   gateReleased={gateStatus === "dismissed"}
                 />
+                {/* Option A: vollständige Wissens-Bausteine als Spickzettel
+                    am Anwendungs-Step (Chip unter der Interaktion) */}
+                {currentSpickzettel.length > 0 && (
+                  <Spickzettel
+                    bausteine={currentSpickzettel}
+                    situationId={situationId}
+                    ceId={ceId}
+                    locale={locale}
+                    sprachLevel={sprachLevel}
+                    glossar={SITUATION_GLOSSAR[situationId] ?? []}
+                  />
+                )}
               </motion.div>
             </AnimatePresence>
           ) : (

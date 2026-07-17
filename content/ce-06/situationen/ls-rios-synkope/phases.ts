@@ -84,6 +84,8 @@ export const CE06_SIT_RIOS_ERKENNEN: SituationsPhase = {
       stepId: "ce06-rios-erk-01b-hypoglykaemie",
       phase: 1,
       stepType: "inlineWissen",
+      // Option A (Waleria 2026-07-17): kein eigener Screen — vollständiger Baustein als Spickzettel am nächsten Antwort-Step
+      praesentation: "amAnwendungsStep",
       bloomLevel: 2,
       kompetenzbereich: "I.4",
       quellen: ["I care Pflege 2025, Kap. Hypoglykämie (Definition < 50 mg/dl; Symptome/Behandlung schon < 70 mg/dl)", "Pflege heute 2019, Kap. 26.6.5"],
@@ -549,6 +551,8 @@ export const CE06_SIT_RIOS_REFLEKTIEREN: SituationsPhase = {
       stepId: "ce06-rios-ref-00b-neuro-differenzial",
       phase: 5,
       stepType: "inlineWissen",
+      // Option A (Waleria 2026-07-17): kein eigener Screen — vollständiger Baustein als Spickzettel am nächsten Antwort-Step
+      praesentation: "amAnwendungsStep",
       bloomLevel: 2,
       kompetenzbereich: "I.4",
       quellen: ["Pflege heute 2019, Kap. 21.2.3 / 26.6.5 / 37.6 / 37.8"],

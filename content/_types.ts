@@ -789,6 +789,15 @@ export interface ContentStep {
   // visuell abgesetzte "Pflege-Wissen"-Karte (kein Quiz, kein Score).
   inlineWissen?: InlineWissenData;
 
+  // Präsentations-Modus für inlineWissen-Steps (KERN-LOOP-STANDARD, Option A,
+  // Waleria-Entscheidung 2026-07-16):
+  //   - "eigenerStep" (Default): eigener Lese-Screen im Flow — heutiges Verhalten.
+  //   - "amAnwendungsStep": KEIN eigener Screen; der VOLLSTÄNDIGE Baustein hängt
+  //     als Spickzettel-Chip am nächsten Antwort-Step derselben Phase.
+  // Datenmodell bleibt unangetastet — nur die Darstellung im Player ändert sich
+  // (Grounding/kernfaktId/Karteikarte/Wiederbegegnung unverändert).
+  praesentation?: "eigenerStep" | "amAnwendungsStep";
+
   // Themen-Zuordnung pro Step — für Curriculum-Coverage-Validator + Schüler-Tracking.
   // Jeder Step kann ein Hauptthema (themaPrimaer) und weitere tangierte Themen haben.
   // Wird vom Curriculum-Coverage-Audit-Skript ausgewertet.

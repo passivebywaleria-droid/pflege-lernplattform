@@ -25,6 +25,8 @@ export type FunnelEvent =
   // Monetarisierung (B2C-Paywall):
   | "paywall_gezeigt"
   | "paywall_konvertiert"
+  // Kern-Loop (Option A + Adaptivitäts-Signal):
+  | "spickzettel_offen"
 
 const LS_KEY = "pflege:funnel"
 

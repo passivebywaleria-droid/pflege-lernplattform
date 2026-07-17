@@ -80,6 +80,8 @@ export const CE06_SIT_WAGNER_ERKENNEN: SituationsPhase = {
       stepId: "ce06-wagner-erk-01b-hks-erkennen",
       phase: 1,
       stepType: "inlineWissen",
+      // Option A (Waleria 2026-07-17): kein eigener Screen — vollständiger Baustein als Spickzettel am nächsten Antwort-Step
+      praesentation: "amAnwendungsStep",
       bloomLevel: 2,
       // Kompetenzbereich aus dem Rahmenlehrplan (CE-06-LE1 = Schwerpunkt I.4),
       // NICHT fachlich geraten. Grundlage für den Kompetenznachweis.
@@ -218,6 +220,8 @@ export const CE06_SIT_WAGNER_ALARMIEREN: SituationsPhase = {
       stepId: "ce06-wagner-ala-00b-rettungskette",
       phase: 2,
       stepType: "inlineWissen",
+      // Option A (Waleria 2026-07-17): kein eigener Screen — vollständiger Baustein als Spickzettel am nächsten Antwort-Step
+      praesentation: "amAnwendungsStep",
       bloomLevel: 2,
       // LE1-Primär-Schwerpunkt (Rahmenlehrplan), Kernhandlung — nicht geraten.
       kompetenzbereich: "I.4",
@@ -373,6 +377,8 @@ export const CE06_SIT_WAGNER_ERSTMASSNAHMEN: SituationsPhase = {
       stepId: "ce06-wagner-erm-00b-no-flow",
       phase: 3,
       stepType: "inlineWissen",
+      // Option A (Waleria 2026-07-17): kein eigener Screen — vollständiger Baustein als Spickzettel am nächsten Antwort-Step
+      praesentation: "amAnwendungsStep",
       bloomLevel: 2,
       // LE1-Primär-Schwerpunkt (Rahmenlehrplan), Kernhandlung — nicht geraten.
       kompetenzbereich: "I.4",
@@ -680,6 +686,8 @@ export const CE06_SIT_WAGNER_UEBERGEBEN: SituationsPhase = {
       stepId: "ce06-wagner-ueb-01b-als",
       phase: 4,
       stepType: "inlineWissen",
+      // Option A (Waleria 2026-07-17): kein eigener Screen — vollständiger Baustein als Spickzettel am nächsten Antwort-Step
+      praesentation: "amAnwendungsStep",
       bloomLevel: 2,
       // I.4 (Akut-Handlungswissen, LE1-Primär) — die pflegerische Rolle im ALS.
       kompetenzbereich: "I.4",
@@ -832,6 +840,8 @@ export const CE06_SIT_WAGNER_REFLEKTIEREN: SituationsPhase = {
       stepId: "ce06-wagner-ref-00b-kpr-recht",
       phase: 5,
       stepType: "inlineWissen",
+      // Option A (Waleria 2026-07-17): kein eigener Screen — vollständiger Baustein als Spickzettel am nächsten Antwort-Step
+      praesentation: "amAnwendungsStep",
       bloomLevel: 2,
       // V.2 (eigenes Handeln auf rechtlich-ethischer Grundlage begründen) — ein
       // LE1-Set-Schwerpunkt. Dieser Tab lehrt genuin Recht/Ethik, NICHT die
