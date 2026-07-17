@@ -31,6 +31,11 @@ const HIDDEN_ON_PATHS = [
   "/lernen/ce/",
   "/pruefung/",
   "/karteikarten",
+  // Anmelde-Flow: kein Lern-Nudge — volle Konzentration aufs Formular
+  // (Waleria 2026-07-17).
+  "/mitmachen",
+  "/login",
+  "/register",
 ]
 
 export function LearningReminderBanner() {

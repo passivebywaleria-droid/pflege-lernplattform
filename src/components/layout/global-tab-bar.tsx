@@ -21,6 +21,7 @@ export function GlobalTabBar() {
   const hidePatterns = [
     "/login",
     "/register",
+    "/mitmachen",
     "/forgot-password",
     "/reset-password",
     "/admin",
