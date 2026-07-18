@@ -129,7 +129,13 @@ export function StepMC({
     .filter((o) => o.isCorrect)
     .map((o) => o.text)
     .join(", ");
-  const richtigeErklaerung = optionen.find((o) => o.isCorrect)?.explanation;
+  // B1-Fix (Didaktik-Audit 2026-07-18, Lücke 4): Die Musterlösung im Sheet muss
+  // die B1-Erklärung nutzen, wenn vorhanden — vorher bekamen B1-Schüler C1-Text.
+  const korrekteOption = optionen.find((o) => o.isCorrect);
+  const richtigeErklaerung = korrekteOption
+    ? (sprachLevel === "b1" && korrekteOption.explanationB1) ||
+      korrekteOption.explanation
+    : undefined;
 
   // Feedback-Anatomie (KERN-LOOP-STANDARD): Das Sheet erklärt die EIGENE
   // (falsche) Wahl + die richtige Antwort; die übrigen Optionen wandern
