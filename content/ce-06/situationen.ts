@@ -121,6 +121,12 @@ export const CE06_SITUATIONEN: Lernsituation[] = [
     ],
     komplikationen: [],
     bausteinTrigger: [],
+    // Abschluss-Screen: Outcome wortgetreu aus Phase 5 („Danach"): Verlegung
+    // auf die Intensivstation mit wiederkehrendem Kreislauf.
+    abschlussText:
+      "Herr Wagner ist auf der Intensivstation, sein Kreislauf ist zurück. Die Rettungskette hat gehalten — weil du sie sofort in Gang gesetzt hast.",
+    abschlussTextB1:
+      "Herr Wagner ist auf der Intensivstation. Sein Kreislauf ist zurück. Die Rettungskette hat gehalten — weil du sofort gehandelt hast.",
   },
   {
     situationId: "ls-rios-synkope",
@@ -141,6 +147,18 @@ export const CE06_SITUATIONEN: Lernsituation[] = [
     ],
     komplikationen: [],
     bausteinTrigger: [],
+    // Teaser erscheint auf dem Wagner-Abschluss; Fakten aus der Situation
+    // (Synkope während der Dialyse, kommt von allein zurück, BZ-Stich).
+    teaser:
+      "Herr Ríos sackt während der Dialyse weg — und kommt von allein wieder zu sich. Kein zweiter Wagner. Aber was dann? Ein einziger Handgriff entscheidet.",
+    teaserB1:
+      "Herr Ríos wird bei der Dialyse plötzlich ohnmächtig — und wacht von allein wieder auf. Kein zweiter Wagner. Aber was jetzt? Ein einziger Handgriff entscheidet.",
+    // Outcome wortgetreu aus der Übergeben-Phase: Glukose vom Arzt,
+    // Kontroll-BZ 120 mg/dl, Verlegung zur Überwachung.
+    abschlussText:
+      "Herr Ríos ist wach, der Kontroll-Blutzucker liegt bei 120 — er wird zur Überwachung verlegt. Gemessen statt geraten: Das hat den Unterschied gemacht.",
+    abschlussTextB1:
+      "Herr Ríos ist wach. Der Blutzucker ist wieder 120. Er kommt zur Überwachung auf die Station. Du hast gemessen statt geraten — das war der Unterschied.",
   },
   {
     situationId: "ls-lehmann-sturz-sht",
@@ -161,6 +179,12 @@ export const CE06_SITUATIONEN: Lernsituation[] = [
     ],
     komplikationen: [],
     bausteinTrigger: [],
+    // Teaser erscheint auf dem Ríos-Abschluss; Fakten aus patient.ts
+    // (86, nachts im Pflegeheim, Kopfplatzwunde, V. a. SHT).
+    teaser:
+      "Nachtdienst im Pflegeheim: Frau Lehmann, 86, liegt neben ihrem Bett — eine Platzwunde am Kopf. Wie ernst das ist, entscheidet sich in den nächsten Minuten. Mit dir.",
+    teaserB1:
+      "Nachtdienst im Pflegeheim: Frau Lehmann (86) liegt neben ihrem Bett. Sie hat eine Wunde am Kopf. Wie ernst ist das? Das entscheidet sich jetzt — mit dir.",
   },
   {
     situationId: "ls-novak-erregung",

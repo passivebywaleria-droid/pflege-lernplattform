@@ -483,7 +483,21 @@
     "phaseAbgeschlossen": "Phase abgeschlossen",
     "komplikation": "Komplikation aufgetreten!",
     "noSituationen": "Noch keine Lernsituationen verfügbar.",
-    "zurueckZurUebersicht": "Zurück zur Übersicht"
+    "zurueckZurUebersicht": "Zurück zur Übersicht",
+    "abschluss": {
+      "leistung": "{schritte} Schritte · alle Phasen abgeschlossen",
+      "mitnehmen": "Das nimmst du mit",
+      "aufdecken": "Antippen zum Aufdecken",
+      "nochmalAnsehen": "Nochmal ansehen",
+      "abrufFallback": "Was gilt bei „{titel}“?",
+      "ehrlich": "Ehrlich gesagt",
+      "alleRichtig": "Alle Antworten beim ersten Versuch — wirklich stark.",
+      "schwaechen": "Daneben lagst du bei: {liste}. Die markierten Faustregeln oben sind deine Baustellen — lies sie noch einmal, bevor du gehst.",
+      "schwaechenOhneNamen": "Nicht alles saß beim ersten Versuch. Geh die Faustregeln oben noch einmal durch, bevor du gehst.",
+      "naechstes": "Als Nächstes",
+      "naechsteFallback": "Als Nächstes wartet: {titel}",
+      "gastZeile": "Kostenloses Konto sichern — dein Fortschritt bleibt erhalten, auf jedem Gerät."
+    }
   },
   "themaNav": {
     "title": "Themen",

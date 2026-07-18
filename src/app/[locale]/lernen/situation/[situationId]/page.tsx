@@ -6,7 +6,10 @@ import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowLeft, Languages } from "lucide-react";
-import { loadSituation as staticLoadSituation } from "../../../../../../content/content-loader";
+import {
+  loadSituation as staticLoadSituation,
+  loadSituationen as staticLoadSituationen,
+} from "../../../../../../content/content-loader";
 import type {
   Lernsituation,
   AnyPhase,
@@ -22,6 +25,8 @@ import { useMutterspracheInit } from "@/hooks/use-muttersprache";
 import { trackFunnel } from "@/lib/funnel/track";
 import { verteileSpickzettel } from "@/lib/learn/spickzettel-verteilung";
 import { Spickzettel } from "@/components/learn/spickzettel";
+import { AbschlussScreen } from "@/components/learn/abschluss-screen";
+import { sammleAbschlussDaten } from "@/lib/learn/abschluss-daten";
 import { CE02_THEMA_STURZ_PROPHYLAXE_GLOSSAR } from "../../../../../../content/ce-02/themen/sturz-prophylaxe/glossar";
 import { CE06_GLOSSAR } from "../../../../../../content/ce-06/glossar";
 
@@ -94,6 +99,17 @@ export default function SituationLernenPage() {
   const hydratedRef = useRef(false);
   const gastStartFiredRef = useRef(false);
 
+  // Abschluss-Screen: Antwort-Ergebnisse dieser Session (stepId → erster
+  // Versuch korrekt?). Session-only — bei Resume mitten in der Situation
+  // fehlen frühere Antworten, dann bleibt die Schwächen-Zeile ehrlich weg.
+  const [antworten, setAntworten] = useState<ReadonlyMap<string, boolean>>(
+    () => new Map()
+  );
+  const [sessionVonAnfang, setSessionVonAnfang] = useState(true);
+  // Nächste Situation der CE (für den „Als Nächstes"-Ausblick).
+  const [naechsteSituation, setNaechsteSituation] =
+    useState<Lernsituation | null>(null);
+
   // Freemium-Paywall (nur eingeloggt): gesetzt, wenn diese Situation über der
   // freien Grenze liegt und kein aktiver Zugang besteht.
   const [paywall, setPaywall] = useState<{
@@ -115,6 +131,24 @@ export default function SituationLernenPage() {
         }
       })
       .finally(() => setLoading(false));
+  }, [ceId, situationId]);
+
+  // Nächste Situation der CE laden — für den „Als Nächstes"-Teaser
+  // auf dem Abschluss-Screen (statisch aus dem Bundle, offline-fähig).
+  useEffect(() => {
+    let cancelled = false;
+    staticLoadSituationen(ceId)
+      .then((liste) => {
+        if (cancelled) return;
+        const idx = liste.findIndex((s) => s.situationId === situationId);
+        setNaechsteSituation(idx >= 0 ? (liste[idx + 1] ?? null) : null);
+      })
+      .catch(() => {
+        if (!cancelled) setNaechsteSituation(null);
+      });
+    return () => {
+      cancelled = true;
+    };
   }, [ceId, situationId]);
 
   // Quell-Situation des Cross-Links laden (nur Patient-Name für den Chip).
@@ -180,6 +214,15 @@ export default function SituationLernenPage() {
         (saved.completedPhases ?? []).filter((p) => validPhases.includes(p))
       );
       setCurrentStepIndex(saved.currentStepIndex ?? 0);
+      // Wiedereinstieg mitten in der Situation → Antwort-Daten dieser Session
+      // sind unvollständig; der Abschluss-Screen lässt die Schwächen-Zeile weg.
+      if (
+        saved.currentPhaseId !== validPhases[0] ||
+        (saved.currentStepIndex ?? 0) > 0 ||
+        (saved.completedPhases ?? []).length > 0
+      ) {
+        setSessionVonAnfang(false);
+      }
       if (isGuest && saved.gateStatus === "dismissed") {
         setGateStatus("dismissed");
       }
@@ -578,27 +621,20 @@ export default function SituationLernenPage() {
             </Link>
           )}
           {allPhasesCompleted ? (
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              className="rounded-2xl bg-[var(--lern-accent-bg)] border-[1.5px] border-[var(--lern-accent)]/30 p-8 text-center"
-            >
-              <span className="text-4xl mb-4 block">🎉</span>
-              <h2 className="text-lg font-bold text-[var(--lern-text-primary)] mb-2">
-                {t("alleAbgeschlossen")}
-              </h2>
-              <p className="text-sm text-[var(--lern-text-secondary)] mb-4">
-                {situation.titel}
-              </p>
-              {/* Post-Situation-Sog (Kante D3): nach vorn („Weiter lernen" →
-                  nächster Fall / ggf. Paywall) statt Sackgassen-„zurück". */}
-              <Link
-                href={`/${locale}/lernen/ce/${ceId}`}
-                className="inline-block rounded-xl bg-[var(--lern-accent)] px-6 py-2.5 text-sm font-semibold text-white transition-all hover:bg-[#4C6A52]"
-              >
-                {t("continueSituation")}
-              </Link>
-            </motion.div>
+            /* Abschluss-Screen (Audit-Lücke 2): Faustregeln-Abruf wortgleich,
+               ehrliche Schwächen-Zeile (C1 Coach), „Als Nächstes"-Teaser.
+               CTA bleibt der Post-Situation-Sog nach vorn (Kante D3). */
+            <AbschlussScreen
+              situation={situation}
+              daten={sammleAbschlussDaten(situation, antworten)}
+              antwortDatenVollstaendig={sessionVonAnfang}
+              sprachLevel={sprachLevel}
+              isGuest={isGuest === true}
+              naechsteSituation={naechsteSituation}
+              gesamtSteps={totalSituationSteps}
+              locale={locale}
+              ceId={ceId}
+            />
           ) : transitionText ? (
             /* Micro-Narration — Zwischenscreen, länger sichtbar (4.5-7s je nach Textlänge) */
             <AnimatePresence mode="wait">
@@ -632,7 +668,19 @@ export default function SituationLernenPage() {
                   sprachLevel={sprachLevel}
                   glossar={SITUATION_GLOSSAR[situationId] ?? []}
                   erklaerKontext={{ ceId, situationId }}
-                  onNext={() => handleNextStep()}
+                  onNext={(correct) => {
+                    // Erster Versuch zählt — für die ehrliche Schwächen-Zeile
+                    // des Abschluss-Screens (Info-Steps liefern kein correct).
+                    if (correct !== undefined) {
+                      const stepId = currentStep.stepId;
+                      setAntworten((prev) =>
+                        prev.has(stepId)
+                          ? prev
+                          : new Map(prev).set(stepId, correct)
+                      );
+                    }
+                    handleNextStep();
+                  }}
                   onSelfRating={() => handleNextStep()}
                   onReflection={() => handleNextStep()}
                   reflexionText={null}

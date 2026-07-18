@@ -27,9 +27,9 @@
 
 ## Nächste Schritte (Audit-Reihenfolge, von Waleria bestätigt)
 
-1. **Abschluss-Screen** der Situation: Faustregeln-Recap (wortgleich aus besuchten
-   Bausteinen), ehrliche Schwächen-Zeile, „morgen"-Ausblick. ENTWURF ZUERST
-   (Ton-Entscheidungen gehören Waleria), dann bauen.
+1. ✅ **Abschluss-Screen** GEBAUT (2026-07-18, Waleria: B-Abruf + C1 Coach +
+   Gast-Zeile dezent; specs/ENTWURF-ABSCHLUSS-SCREEN.md). Walkthrough verifiziert,
+   Screenshots an Waleria. **Deploy-Freigabe offen.**
 2. **Auftakt-Screen**: Lernziel in Schülersprache + Patient + Los.
 3. **Adaptiv-v1** nach PLAN-ADAPTIV-V1 inkl. Frust-Bremse (3× falsch → Eskalation).
    Merken: Nachhaken = Spektrum-Kontrastfall (NIE wortgleich), Karteikarten sind

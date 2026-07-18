@@ -483,7 +483,21 @@
     "phaseAbgeschlossen": "المرحلة مكتملة",
     "komplikation": "حدث تعقيد!",
     "noSituationen": "لا توجد مواقف تعليمية متاحة بعد.",
-    "zurueckZurUebersicht": "العودة إلى النظرة العامة"
+    "zurueckZurUebersicht": "العودة إلى النظرة العامة",
+    "abschluss": {
+      "leistung": "{schritte} خطوة · اكتملت كل المراحل",
+      "mitnehmen": "هذا ما تأخذه معك",
+      "aufdecken": "اضغط للكشف",
+      "nochmalAnsehen": "راجعها مرة أخرى",
+      "abrufFallback": "ما الذي ينطبق على «{titel}»؟",
+      "ehrlich": "بصراحة",
+      "alleRichtig": "كل الإجابات صحيحة من المحاولة الأولى — أداء قوي حقًا.",
+      "schwaechen": "أخطأت في: {liste}. القواعد المميّزة في الأعلى هي نقاط ضعفك — اقرأها مرة أخرى قبل أن تغادر.",
+      "schwaechenOhneNamen": "لم تنجح كل الإجابات من المحاولة الأولى. راجع القواعد في الأعلى مرة أخرى قبل أن تغادر.",
+      "naechstes": "الخطوة التالية",
+      "naechsteFallback": "التالي: {titel}",
+      "gastZeile": "أنشئ حسابًا مجانيًا — يبقى تقدّمك محفوظًا على كل الأجهزة."
+    }
   },
   "themaNav": {
     "title": "المواضيع",

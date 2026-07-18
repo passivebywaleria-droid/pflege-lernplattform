@@ -120,6 +120,10 @@ export const CE06_SIT_WAGNER_ERKENNEN: SituationsPhase = {
           "Keine Reaktion und kein ruhiges, gleichmäßiges Atmen — mehr brauchst du nicht, um zu handeln. Schnappen ist kein Atmen.",
         faustregelB1:
           "Keine Reaktion und kein ruhiges, gleichmäßiges Atmen? Dann handelst du. Schnappen ist kein Atmen.",
+        faustregelAbruf:
+          "Woran erkennst du den Kreislauf-Stillstand — und was gilt bei Schnappatmung?",
+        faustregelAbrufB1:
+          "Woran erkennst du den Kreislauf-Stillstand? Und was gilt bei Schnappatmung?",
         spektrum: [
           {
             patientName: "Frau Ríos",
@@ -259,6 +263,10 @@ export const CE06_SIT_WAGNER_ALARMIEREN: SituationsPhase = {
           "Erst das Team rufen (lassen), dann sofort drücken — und nie den Patienten allein lassen, nur um ein Gerät zu holen.",
         faustregelB1:
           "Erst das Team rufen (lassen), dann sofort drücken. Und nie den Patienten allein lassen, nur um ein Gerät zu holen.",
+        faustregelAbruf:
+          "Du bist allein bei Herrn Wagner: Was kommt zuerst — und darfst du zum Defi laufen?",
+        faustregelAbrufB1:
+          "Du bist allein: Was machst du zuerst? Und darfst du zum Defi laufen?",
         spektrum: [
           {
             patientName: "Allein bei Herrn Wagner",
@@ -411,6 +419,10 @@ export const CE06_SIT_WAGNER_ERSTMASSNAHMEN: SituationsPhase = {
           "Drücke tief, drücke schnell, lass vollständig los — und hör so gut wie nie auf. Jede Pause ist No-Flow-Zeit.",
         faustregelB1:
           "Drücke tief, drücke schnell, lass ganz los — und höre fast nie auf. Jede Pause ist No-Flow-Zeit.",
+        faustregelAbruf:
+          "Wie drückst du richtig — und warum ist jede Pause gefährlich?",
+        faustregelAbrufB1:
+          "Wie drückst du richtig? Und warum ist jede Pause gefährlich?",
         spektrum: [
           {
             patientName: "Zu flach, zu langsam",
@@ -720,6 +732,10 @@ export const CE06_SIT_WAGNER_UEBERGEBEN: SituationsPhase = {
           "ALS ersetzt BLS nicht — es baut darauf auf. Gute Herzdruckmassage bleibt das Fundament; Medikamente wirken nur, wenn das Blut fließt.",
         faustregelB1:
           "ALS ersetzt BLS nicht — es baut darauf auf. Gute Herzdruckmassage bleibt das Fundament. Medikamente wirken nur, wenn das Blut fließt.",
+        faustregelAbruf:
+          "Das Notfallteam übernimmt — was bleibt deine Aufgabe?",
+        faustregelAbrufB1:
+          "Das Notfallteam ist da — was bleibt deine Aufgabe?",
         spektrum: [
           {
             patientName: "Defibrillierbarer Rhythmus",
@@ -881,6 +897,10 @@ export const CE06_SIT_WAGNER_REFLEKTIEREN: SituationsPhase = {
           "Im Zweifel immer reanimieren. Nur ein ärztlich angeordneter Verzicht — meist auf Basis einer gültigen Patientenverfügung — hält dich zurück. Nichtstun ist bei einem Notfall strafbar.",
         faustregelB1:
           "Im Zweifel immer reanimieren. Nur wenn der Arzt den Verzicht angeordnet hat (meist wegen einer gültigen Patientenverfügung), reanimierst du nicht. Nichts tun ist bei einem Notfall strafbar.",
+        faustregelAbruf:
+          "Wann darfst du nicht reanimieren — und was gilt im Zweifel?",
+        faustregelAbrufB1:
+          "Wann reanimierst du nicht? Und was gilt im Zweifel?",
         spektrum: [
           {
             patientName: "Herr Wagner",

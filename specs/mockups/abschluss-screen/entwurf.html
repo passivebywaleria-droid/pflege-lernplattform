@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Entwurf — Abschluss-Screen (Wagner)</title>
+<style>
+  :root {
+    --rose: #C4877F; --rose-bg: #C4877F14; --sage: #6B8F71; --sage-bg: #6B8F7114;
+    --amber: #D4956A; --amber-bg: #D4956A1A;
+    --text-1: #2E2A28; --text-2: #6E635D; --bone: #C4877F08; --card: #FFFFFF;
+    --border: #E5DAD2;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, "Segoe UI", Roboto, sans-serif; background: #F3EDE7; color: var(--text-1); padding: 24px 12px 60px; }
+  h1 { font-size: 16px; font-weight: 600; text-align: center; margin-bottom: 4px; }
+  .sub { font-size: 12px; color: var(--text-2); text-align: center; margin-bottom: 20px; }
+  .controls { max-width: 390px; margin: 0 auto 16px; display: flex; flex-direction: column; gap: 8px; }
+  .ctl-row { display: flex; align-items: center; gap: 6px; }
+  .ctl-label { font-size: 11px; font-weight: 600; color: var(--text-2); width: 88px; flex-shrink: 0; text-transform: uppercase; letter-spacing: .04em; }
+  .ctl-row button { flex: 1; font-size: 12px; padding: 7px 4px; border-radius: 10px; border: 1.5px solid var(--border); background: #fff; color: var(--text-2); cursor: pointer; }
+  .ctl-row button.on { border-color: var(--rose); background: var(--rose-bg); color: var(--rose); font-weight: 600; }
+  .phone { max-width: 390px; margin: 0 auto; background: #FDFBF9; border: 1.5px solid var(--border); border-radius: 28px; overflow: hidden; box-shadow: 0 8px 32px rgba(0,0,0,.08); }
+  .screen { padding: 20px 18px 24px; }
+
+  .kopf { text-align: center; margin-bottom: 22px; }
+  .check { width: 44px; height: 44px; border-radius: 50%; background: var(--sage-bg); border: 1.5px solid #6B8F7150; color: var(--sage); font-size: 22px; line-height: 42px; margin: 0 auto 10px; }
+  .story { font-size: 15px; font-weight: 700; line-height: 1.45; margin-bottom: 6px; }
+  .leistung { font-size: 12px; color: var(--text-2); }
+
+  .sect { font-size: 11px; font-weight: 700; letter-spacing: .06em; color: var(--text-2); margin: 18px 0 8px; }
+  .fr { border: 1.5px solid var(--border); border-radius: 14px; background: var(--card); padding: 11px 12px; margin-bottom: 8px; font-size: 13px; line-height: 1.5; }
+  .fr.wacklig { border-color: #D4956A66; background: var(--amber-bg); }
+  .fr .tag { display: inline-block; font-size: 10px; font-weight: 700; color: var(--amber); letter-spacing: .05em; margin-bottom: 3px; }
+  .fr .frage { color: var(--text-1); font-weight: 600; cursor: pointer; }
+  .fr .frage::after { content: " — antippen zum Aufdecken"; font-weight: 400; font-size: 11px; color: var(--text-2); }
+  .fr .antwort { display: none; margin-top: 7px; padding-top: 7px; border-top: 1px dashed var(--border); }
+  .fr.auf .antwort { display: block; }
+  .fr.auf .frage::after { content: ""; }
+
+  .schwaeche { border-radius: 14px; padding: 12px 13px; font-size: 13px; line-height: 1.55; background: var(--bone); border: 1.5px solid var(--border); }
+  .morgen { border-radius: 14px; padding: 12px 13px; font-size: 13px; line-height: 1.55; background: var(--sage-bg); border: 1.5px solid #6B8F7140; }
+  .morgen b { color: var(--sage); }
+  .cta { display: block; width: 100%; margin-top: 20px; padding: 13px; border: none; border-radius: 14px; background: var(--rose); color: #fff; font-size: 14px; font-weight: 600; cursor: pointer; }
+  .hidden { display: none !important; }
+  .hinweis { max-width: 390px; margin: 14px auto 0; font-size: 11px; color: var(--text-2); line-height: 1.5; }
+</style>
+</head>
+<body>
+<h1>Abschluss-Screen — Entwurf (Herr Wagner, 2 Fehler angenommen)</h1>
+<p class="sub">Faustregeln wortgleich aus den 5 Wagner-Bausteinen · Schwächen: Schnappatmung + Defi</p>
+
+<div class="controls">
+  <div class="ctl-row"><span class="ctl-label">Recap-Form</span>
+    <button data-g="recap" data-v="liste" class="on">B-Liste</button>
+    <button data-g="recap" data-v="abruf">B-Abruf (antippen)</button>
+  </div>
+  <div class="ctl-row"><span class="ctl-label">Ton Schwäche</span>
+    <button data-g="ton" data-v="c1" class="on">C1 Coach</button>
+    <button data-g="ton" data-v="c2">C2 Befund</button>
+    <button data-g="ton" data-v="c3">C3 Sandwich</button>
+  </div>
+</div>
+
+<div class="phone"><div class="screen">
+  <div class="kopf">
+    <div class="check">✓</div>
+    <p class="story">Das Notfallteam übernimmt. Herr Wagner hat eine Chance bekommen — weil du sofort gehandelt hast.</p>
+    <p class="leistung">Reanimation · 12 Schritte · alle Phasen abgeschlossen</p>
+  </div>
+
+  <p class="sect">DAS NIMMST DU MIT</p>
+
+  <div class="fr wacklig" data-frage="Woran erkennst du den Kreislauf-Stillstand?">
+    <span class="tag">NOCHMAL ANSEHEN</span><br>
+    <span class="frage-slot">Keine Reaktion und kein ruhiges, gleichmäßiges Atmen — mehr brauchst du nicht, um zu handeln. Schnappen ist kein Atmen.</span>
+  </div>
+  <div class="fr wacklig" data-frage="Darfst du zum Defi laufen, wenn du allein bist?">
+    <span class="tag">NOCHMAL ANSEHEN</span><br>
+    <span class="frage-slot">Erst das Team rufen (lassen), dann sofort drücken — und nie den Patienten allein lassen, nur um ein Gerät zu holen.</span>
+  </div>
+  <div class="fr" data-frage="Wie drückst du richtig?">
+    <span class="frage-slot">Drücke tief, drücke schnell, lass vollständig los — und hör so gut wie nie auf. Jede Pause ist No-Flow-Zeit.</span>
+  </div>
+  <div class="fr" data-frage="Was bleibt dein Job, wenn das ALS-Team da ist?">
+    <span class="frage-slot">ALS ersetzt BLS nicht — es baut darauf auf. Gute Herzdruckmassage bleibt das Fundament; Medikamente wirken nur, wenn das Blut fließt.</span>
+  </div>
+  <div class="fr" data-frage="Wann darfst du NICHT reanimieren?">
+    <span class="frage-slot">Im Zweifel immer reanimieren. Nur ein ärztlich angeordneter Verzicht — meist auf Basis einer gültigen Patientenverfügung — hält dich zurück. Nichtstun ist bei einem Notfall strafbar.</span>
+  </div>
+
+  <p class="sect">EHRLICH GESAGT</p>
+  <div class="schwaeche ton-c1">Zweimal daneben: Schnappatmung und Defi holen. Die beiden markierten Faustregeln oben sind deine Baustellen — lies sie nochmal, bevor du gehst.</div>
+  <div class="schwaeche ton-c2 hidden">9 von 11 beim ersten Versuch. Zwei Faustregeln saßen noch nicht sicher — sie sind oben markiert.</div>
+  <div class="schwaeche ton-c3 hidden">Das meiste saß beim ersten Versuch. Bei „Schnappatmung" und „Defi holen" lohnt ein zweiter Blick — die beiden sind oben markiert.</div>
+
+  <p class="sect">ALS NÄCHSTES</p>
+  <div class="morgen"><b>Frau Ríos</b> kippt beim Frühstück vom Stuhl — und ist gleich wieder wach. Was der Unterschied zu Herrn Wagner ist, entscheidest du.</div>
+
+  <button class="cta">Weiter</button>
+</div></div>
+
+<p class="hinweis">
+  <b>Regeln im Entwurf:</b> Wacklige Faustregeln stehen oben und sind amber markiert (Schwäche = falsche Antwort am Anker-Step des Bausteins).
+  0 Fehler → „Ehrlich gesagt" wird zu ehrlichem Lob („Alle Antworten beim ersten Versuch — wirklich stark").
+  Keine Antwortdaten (App zwischendurch geschlossen) → Block entfällt komplett, statt zu raten.
+  Kein Karten-Versprechen, solange der Karten-Upsert (Adaptiv-v1) nicht existiert.
+  B-Abruf: Faustregel erscheint erst als Frage, Tap deckt sie wortgleich auf (aktiver Abruf statt Lese-Wand).
+</p>
+
+<script>
+  document.querySelectorAll('.controls button').forEach(b => b.addEventListener('click', () => {
+    document.querySelectorAll(`[data-g="${b.dataset.g}"]`).forEach(x => x.classList.remove('on'));
+    b.classList.add('on');
+    if (b.dataset.g === 'ton') {
+      document.querySelectorAll('.schwaeche').forEach(s => s.classList.add('hidden'));
+      document.querySelector('.ton-' + b.dataset.v).classList.remove('hidden');
+    }
+    if (b.dataset.g === 'recap') applyRecap(b.dataset.v);
+  }));
+  function applyRecap(mode) {
+    document.querySelectorAll('.fr').forEach(fr => {
+      const slot = fr.querySelector('.frage-slot');
+      if (!fr.dataset.regel) fr.dataset.regel = slot.textContent;
+      if (mode === 'liste') {
+        fr.classList.remove('auf');
+        slot.className = 'frage-slot';
+        slot.textContent = fr.dataset.regel;
+        slot.onclick = null;
+      } else {
+        fr.classList.remove('auf');
+        slot.className = 'frage-slot frage';
+        slot.textContent = fr.dataset.frage;
+        slot.onclick = () => {
+          fr.classList.add('auf');
+          slot.className = 'frage-slot';
+          slot.innerHTML = '<span style="font-size:11px;color:var(--text-2)">' + fr.dataset.frage + '</span><div class="antwort" style="display:block">' + fr.dataset.regel + '</div>';
+        };
+      }
+    });
+  }
+</script>
+</body>
+</html>

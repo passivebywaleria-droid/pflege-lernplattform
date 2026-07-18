@@ -117,6 +117,10 @@ export const CE06_SIT_RIOS_ERKENNEN: SituationsPhase = {
           "Insulin plus zu wenig gegessen = Unterzucker im Verdacht. Erst Blutzucker messen. Wach → etwas Süßes; benommen → nichts oral, Glukose i.v. durch den Arzt.",
         faustregelB1:
           "Insulin und zu wenig gegessen? Dann denk an Unterzucker. Erst Blutzucker messen. Wach → etwas Süßes. Benommen → nichts in den Mund, Zucker i.v. (über die Vene) durch den Arzt.",
+        faustregelAbruf:
+          "Wann denkst du an Unterzucker — und was darf ein benommener Patient auf keinen Fall bekommen?",
+        faustregelAbrufB1:
+          "Wann denkst du an Unterzucker? Und was darf ein benommener Patient nicht bekommen?",
         spektrum: [
           {
             patientName: "Wacher Patient",
@@ -584,6 +588,10 @@ export const CE06_SIT_RIOS_REFLEKTIEREN: SituationsPhase = {
           "Erst Blutzucker, dann weiterdenken. Einseitig + bleibend = Schlaganfall, solange nichts anderes gesichert ist; Zuckungen am ganzen Körper = Krampfanfall.",
         faustregelB1:
           "Erst Blutzucker, dann weiterdenken. Einseitig und bleibend = Schlaganfall, solange nichts anderes sicher ist. Zuckungen am ganzen Körper = Krampfanfall.",
+        faustregelAbruf:
+          "Vier Ursachen sehen fast gleich aus — was misst du bei jeder unklaren neurologischen Akutsituation zuerst?",
+        faustregelAbrufB1:
+          "Was misst du bei jedem unklaren Notfall mit dem Bewusstsein zuerst?",
         spektrum: [
           {
             patientName: "Synkope",

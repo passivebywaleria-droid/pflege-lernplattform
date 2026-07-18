@@ -527,6 +527,12 @@ export interface InlineWissenData {
   faustregel: string;
   faustregelB1?: string;
 
+  // Abruf-Frage für den Abschluss-Screen (aktiver Abruf statt Lese-Wand):
+  // die Faustregel erscheint erst als Frage, Tap deckt sie wortgleich auf.
+  // Optional — Fallback: generische Frage aus dem Baustein-Titel.
+  faustregelAbruf?: string;
+  faustregelAbrufB1?: string;
+
   // Spektrum — andere Patient(innen) als Vergleichs-Anker (3-5 Einträge)
   spektrum?: SpektrumEintrag[];
 
@@ -1382,6 +1388,15 @@ export interface Lernsituation {
   phasen: SituationsPhase[];
   komplikationen: Komplikation[];
   bausteinTrigger: BausteinTrigger[];
+
+  // Abschluss-Screen (specs/ENTWURF-ABSCHLUSS-SCREEN.md) — beide optional mit
+  // generischem Fallback, keine Zwangsmigration.
+  /** Story-Abschluss: 1-2 Sätze Patient-Outcome, NUR aus belegtem Content der Situation. */
+  abschlussText?: string;
+  abschlussTextB1?: string;
+  /** Teaser über DIESE Situation — wird auf dem Abschluss-Screen der VORHERIGEN gezeigt. */
+  teaser?: string;
+  teaserB1?: string;
 }
 
 // --- CE-Manifest ---

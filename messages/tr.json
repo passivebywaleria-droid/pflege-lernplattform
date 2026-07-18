@@ -483,7 +483,21 @@
     "phaseAbgeschlossen": "Aşama tamamlandı",
     "komplikation": "Komplikasyon oluştu!",
     "noSituationen": "Henüz öğrenme durumu mevcut değil.",
-    "zurueckZurUebersicht": "Genel bakışa dön"
+    "zurueckZurUebersicht": "Genel bakışa dön",
+    "abschluss": {
+      "leistung": "{schritte} adım · tüm aşamalar tamamlandı",
+      "mitnehmen": "Bunları yanına al",
+      "aufdecken": "Görmek için dokun",
+      "nochmalAnsehen": "Tekrar bak",
+      "abrufFallback": "„{titel}“ konusunda ne geçerli?",
+      "ehrlich": "Açık konuşalım",
+      "alleRichtig": "Tüm cevaplar ilk denemede doğru — gerçekten güçlü.",
+      "schwaechen": "Şurada yanıldın: {liste}. Yukarıda işaretli kurallar senin eksiklerin — gitmeden önce bir kez daha oku.",
+      "schwaechenOhneNamen": "Her cevap ilk denemede oturmadı. Gitmeden önce yukarıdaki kuralları bir kez daha gözden geçir.",
+      "naechstes": "Sırada ne var",
+      "naechsteFallback": "Sırada: {titel}",
+      "gastZeile": "Ücretsiz hesap oluştur — ilerlemen her cihazda kayıtlı kalır."
+    }
   },
   "themaNav": {
     "title": "Konular",
