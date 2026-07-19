@@ -4,7 +4,7 @@ Mindeststufe: „geübt" (Bloom ≥ 3). PASS 28 · FAIL 0 · by-design 7 · tota
 
 | LE | Typ | Bloom-Soll | Steps | Tiefe | Status |
 |----|-----|-----------|-------|-------|--------|
-| CE06-LE1-W1 | wissen | 2 | 7 | geprüft | PASS |
+| CE06-LE1-W1 | wissen | 2 | 8 | geprüft | PASS |
 | CE06-LE1-K1 | koennen | 2 | 3 | geprüft | PASS |
 | CE06-LE1-K2 | koennen | 2 | 4 | geprüft | PASS |
 | CE06-LE1-K3 | koennen | 2 | 6 | geprüft | PASS |

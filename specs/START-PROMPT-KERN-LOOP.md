@@ -33,10 +33,10 @@
 2. ✅ **Auftakt-Screen** GEBAUT (2026-07-19, Waleria: Lernziele aus dem
    Rahmenlehrplan pro Situation + Szene + nur Schrittzahl;
    specs/ENTWURF-AUFTAKT-SCREEN.md). **Deploy-Freigabe offen.**
-3. **Adaptiv-v1** nach PLAN-ADAPTIV-V1 inkl. Frust-Bremse (3× falsch → Eskalation).
+3. ✅ Adaptiv-v1 GEBAUT+DEPLOYED 2026-07-19 (Register, Intermezzo, Sheet-Angebote, Sprach-Angebot; Status in PLAN-ADAPTIV-V1). Alt: nach PLAN-ADAPTIV-V1 inkl. Frust-Bremse (3× falsch → Eskalation).
    Merken: Nachhaken = Spektrum-Kontrastfall (NIE wortgleich), Karteikarten sind
    WISSENS-Karten (Upsert, keine Duplikate), Skip bewusst nicht in v1.
-4. **Sprech-/Hör-Moment** Wagner „Übergeben" (SBAR, TTS existiert).
+4. 🔶 GEBAUT, NICHT deployed (E2E: Recorder „Kein Mikrofon", Whisper unverifiziert → Azure-EU-STT + Gratis-Programme, specs/STARTUP-CREDITS-RECHERCHE.md; Bewerbungen offen). **Sprech-/Hör-Moment** Wagner „Übergeben" (SBAR, TTS existiert).
 5. Danach: Rechtstexte-Status (Task #11 — evtl. Parallel-Chat), Mastery-Definition.
 
 ## Offen / nicht vergessen

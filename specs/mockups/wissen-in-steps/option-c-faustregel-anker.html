@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Option C — Faustregel-Anker</title>
+<style>
+  :root{
+    --accent:#5A7D60; --accent-dark:#4A6950;
+    --rose:#C4877F; --rose-hover:#B07A72;
+    --wissen-bg:#EAF4F0; --faust-bg:#F8F5F0;
+    --amber:#D4956A; --amber-bg:#FBF3EC;
+    --text:#3D3733; --text-2:#6E6660;
+    --border:#E3DAD2; --bg:#FAF7F4; --card:#FFFFFF;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:#EFEAE4;color:var(--text);display:flex;flex-direction:column;align-items:center;min-height:100vh}
+  .caption{max-width:390px;padding:16px 20px 8px;font-size:13px;line-height:1.5;color:var(--text-2)}
+  .caption strong{color:var(--text)}
+  .phone{width:390px;height:780px;background:var(--bg);border:1px solid var(--border);border-radius:36px;overflow:hidden;display:flex;flex-direction:column;position:relative;margin:8px 0 24px;box-shadow:0 12px 40px rgba(61,55,51,.12)}
+  @media (max-width:430px){
+    body{background:var(--bg)}
+    .phone{width:100%;height:100dvh;border:none;border-radius:0;margin:0;box-shadow:none}
+    .caption{padding-top:12px}
+  }
+  .hdr{padding:14px 16px 10px;background:var(--card);border-bottom:1.5px solid var(--border);flex-shrink:0}
+  .hdr-row{display:flex;align-items:center;gap:10px}
+  .back{font-size:20px;color:var(--text-2);line-height:1}
+  .hdr-name{font-size:14px;font-weight:700}
+  .hdr-name span{font-weight:400;color:var(--text-2);font-size:12px}
+  .hdr-count{margin-left:auto;font-size:12px;color:var(--text-2);font-variant-numeric:tabular-nums}
+  .progress{margin-top:10px;height:4px;background:var(--border);border-radius:2px;position:relative;overflow:hidden}
+  .progress-fill{position:absolute;left:0;top:0;bottom:0;width:25%;background:var(--rose);border-radius:2px}
+  .progress .marker{position:absolute;top:0;bottom:0;width:1.5px;background:var(--bg)}
+  .content{flex:1;min-height:0;overflow-y:auto;padding:14px 14px 96px}
+  .phase-label{font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--rose);margin-bottom:8px}
+  /* Faustregel-Anker */
+  .anker{background:var(--wissen-bg);border:1.5px solid var(--accent);border-radius:16px;margin-bottom:12px;overflow:hidden}
+  .anker-head{width:100%;display:flex;align-items:center;gap:8px;padding:12px 14px;background:none;border:none;font-family:inherit;cursor:pointer;text-align:left}
+  .anker-head .al{font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);flex:1}
+  .anker-head .chev{color:var(--accent);transition:transform .2s;font-size:14px}
+  .anker.on .chev{transform:rotate(180deg)}
+  .anker-body{display:none;padding:0 14px 12px}
+  .anker.on .anker-body{display:block}
+  .anker-body .ftext{font-size:14px;font-weight:500;line-height:1.55;margin-bottom:10px}
+  .sheet-link{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:var(--accent-dark);background:var(--card);border:1.5px solid var(--accent);border-radius:999px;padding:7px 12px;cursor:pointer;font-family:inherit}
+  /* Step card */
+  .card{background:var(--card);border:1.5px solid var(--border);border-radius:16px;padding:14px;margin-bottom:12px}
+  .step-title{font-size:16px;font-weight:700;line-height:1.3;margin-bottom:8px}
+  .step-body{font-size:14px;line-height:1.55}
+  .q{font-size:14px;font-weight:600;margin:14px 2px 10px}
+  .opt{width:100%;text-align:left;background:var(--card);border:1.5px solid var(--border);border-radius:16px;padding:12px 14px;font-size:14px;line-height:1.5;color:var(--text);margin-bottom:10px;cursor:pointer;font-family:inherit}
+  .opt.sel{border-color:var(--rose);background:#C4877F14}
+  .opt.correct{border-color:var(--accent);background:var(--wissen-bg)}
+  .opt.wrong{border-color:var(--amber);background:var(--amber-bg)}
+  .bar{position:absolute;left:0;right:0;bottom:0;padding:12px 14px calc(12px + env(safe-area-inset-bottom));background:var(--bg);border-top:1.5px solid var(--border);display:flex;gap:10px}
+  .btn{flex:1;border:none;border-radius:12px;padding:13px;font-size:14px;font-weight:600;color:#fff;background:var(--accent);cursor:pointer;font-family:inherit}
+  .btn:disabled{opacity:.4;cursor:default}
+  /* Sheets */
+  .scrim{position:absolute;inset:0;background:rgba(61,55,51,.35);opacity:0;pointer-events:none;transition:opacity .25s}
+  .sheet{position:absolute;left:0;right:0;bottom:0;background:var(--card);border-radius:20px 20px 0 0;transform:translateY(105%);transition:transform .3s cubic-bezier(.3,.9,.3,1);max-height:82%;display:flex;flex-direction:column;box-shadow:0 -8px 30px rgba(61,55,51,.15)}
+  .sheet-grip{width:36px;height:4px;border-radius:2px;background:var(--border);margin:10px auto 0;flex-shrink:0}
+  .sheet-scroll{overflow-y:auto;padding:12px 18px calc(20px + env(safe-area-inset-bottom))}
+  .w-label{display:flex;align-items:center;gap:6px;font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
+  .w-title{font-size:16px;font-weight:700;margin-bottom:10px}
+  .w-text p{font-size:14px;line-height:1.6;margin-bottom:10px}
+  .faust{background:var(--faust-bg);border:1.5px solid var(--accent);border-radius:12px;padding:12px;margin:12px 0}
+  .faust .fl{font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:4px}
+  .faust p{font-size:14px;font-weight:500;line-height:1.5}
+  .spektrum-item{margin-bottom:10px;font-size:14px;line-height:1.5}
+  .spektrum-item b{font-weight:600}
+  .spektrum-item .hf{color:var(--text-2)}
+  .fb-verdict{font-size:14px;font-weight:700;margin-bottom:8px}
+  .fb-sheet.wrong .fb-verdict{color:#B0713F}
+  .fb-sheet.right .fb-verdict{color:var(--accent-dark)}
+  .fb-text{font-size:14px;line-height:1.6;margin-bottom:12px}
+  .fb-vertiefung{background:var(--wissen-bg);border:1.5px solid var(--accent);border-radius:12px;padding:12px;margin-bottom:14px}
+  .fb-vertiefung .vl{font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:4px}
+  .fb-vertiefung p{font-size:14px;line-height:1.55}
+  .fb-vertiefung .more{background:none;border:none;font-family:inherit;font-size:12px;font-weight:600;color:var(--accent-dark);text-decoration:underline;text-underline-offset:3px;cursor:pointer;padding:8px 0 0}
+  .hint{font-size:11px;color:var(--text-2);text-align:center;padding:10px 20px 0}
+</style>
+</head>
+<body>
+<div class="caption">
+  <strong>Option C — „Faustregel-Anker + Spickzettel" (Hybrid, Empfehlung).</strong>
+  Kein eigener Lese-Step. Die Faustregel (~21 Wörter) sitzt als aufgeklappter Anker ÜBER der Frage —
+  Wissen kommt weiterhin VOR der Anwendung, aber als Happen. Der volle Baustein liegt im Spickzettel-Sheet;
+  nach einer falschen Antwort erscheint die passende Vertiefung direkt im Feedback.
+  <em>Antworte absichtlich falsch, um die Feedback-Vertiefung zu sehen.</em>
+</div>
+
+<div class="phone">
+  <div class="hdr">
+    <div class="hdr-row">
+      <span class="back">‹</span>
+      <div class="hdr-name">Klaus Wagner · 67<br><span>Normalstation, Frühdienst</span></div>
+      <span class="hdr-count">3/12</span>
+    </div>
+    <div class="progress">
+      <div class="progress-fill"></div>
+      <div class="marker" style="left:16.7%"></div>
+      <div class="marker" style="left:25%"></div>
+      <div class="marker" style="left:58.3%"></div>
+      <div class="marker" style="left:75%"></div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="phase-label">Phase 2 · Alarmieren</div>
+
+    <!-- Faustregel-Anker: beim ersten Kontakt aufgeklappt, danach eingeklappt -->
+    <div class="anker on" id="anker">
+      <button class="anker-head" type="button" aria-expanded="true">
+        <span class="al">💡 Merk dir · Die Rettungskette</span>
+        <span class="chev">▾</span>
+      </button>
+      <div class="anker-body">
+        <div class="ftext">Erst das Team rufen (lassen), dann sofort drücken — und nie den Patienten allein lassen, nur um ein Gerät zu holen.</div>
+        <button class="sheet-link" id="openw" type="button">📖 Ganzer Spickzettel · ca. 1 Min</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="step-title">Wer macht was — und wer bleibt?</div>
+      <div class="step-body">Du bist bei Herrn Wagner, zwei Personen sind in Rufweite, der Defi ist 30&nbsp;m weg. Wie organisierst du die nächsten Sekunden am sinnvollsten?</div>
+    </div>
+
+    <div class="q">Wie handelst du in den ersten Sekunden am sinnvollsten?</div>
+    <button class="opt" data-k="wrong1" type="button">Ich laufe selbst schnell zum Stützpunkt, hole den Defi und das Notfalltelefon — das geht am schnellsten.</button>
+    <button class="opt" data-k="right" type="button">Ich spreche beide gezielt an: „Sie rufen das Notfallteam — Zimmer 7, Reanimation!" und „Sie holen den Defibrillator vom Stützpunkt!" — und bleibe selbst bei Herrn Wagner.</button>
+    <button class="opt" data-k="wrong2" type="button">Ich rufe laut „Hilfe!" in den Flur und warte, bis jemand von selbst reagiert und das Team ruft.</button>
+    <div class="hint">Mockup: Der Anker klappt nach der Antwort automatisch zu — beim nächsten Step mit demselben Baustein startet er eingeklappt.</div>
+  </div>
+
+  <div class="bar"><button class="btn" id="check" disabled type="button">Antwort prüfen</button></div>
+
+  <!-- Spickzettel-Sheet -->
+  <div class="scrim" id="scrim"></div>
+  <div class="sheet" id="wsheet" role="dialog" aria-label="Pflege-Wissen">
+    <div class="sheet-grip"></div>
+    <div class="sheet-scroll">
+      <div class="w-label">📖 Pflege-Wissen · Spickzettel</div>
+      <div class="w-title">Die Rettungskette in der Hand</div>
+      <div class="w-text">
+        <p>Vier Schritte, immer in derselben Ordnung — das ist die Rettungskette (bei der Reanimation auch Überlebenskette genannt): erkennen, alarmieren, drücken, mit dem Defibrillator schocken. Glied 1 hast du hinter dir. Jetzt zählt Glied 2, und es geht allem anderen vor: Das Notfallteam muss sofort unterwegs sein — im Krankenhaus über den Reanimationsruf, draußen über die 112.</p>
+        <p>Der erste Reflex ist oft, selbst loszurennen — zum Telefon, zum Defi. Doch bist du allein, gilt: Notruf absetzen, dann ohne Zögern die Herzdruckmassage aufnehmen und beim Patienten bleiben. Der Grund ist die No-Flow-Zeit: Jede Sekunde ohne Drücken fließt kein Blut zum Gehirn.</p>
+        <p>Bist du zu zweit, teilst du auf: Eine Person beginnt sofort mit dem Drücken, die andere ruft das Team und bringt das Gerät. Und du sprichst die Menschen einzeln und mit klarem Auftrag an — ein allgemeines Hilferufen lässt oft jeden auf den anderen warten.</p>
+        <p>Warum die Eile mit dem Defibrillator? Der häufigste Rhythmus beim plötzlichen Stillstand des Erwachsenen ist das Kammerflimmern — nur der frühe Stromstoß kann es durchbrechen.</p>
+      </div>
+      <div class="faust">
+        <span class="fl">💡 Faustregel</span>
+        <p>Erst das Team rufen (lassen), dann sofort drücken — und nie den Patienten allein lassen, nur um ein Gerät zu holen.</p>
+      </div>
+      <div class="spektrum-item"><b>Allein bei Herrn Wagner</b> <span class="hf">— Einzelhelfer</span><br>Erst den Notruf absetzen, dann sofort drücken — und bei ihm bleiben.</div>
+      <div class="spektrum-item"><b>Zwei Helfer im Flur</b> <span class="hf">— Delegation</span><br>Einer drückt sofort, einer ruft das Team und bringt den Defi.</div>
+      <div class="spektrum-item"><b>Kollaps direkt beobachtet</b> <span class="hf">— früher Schock</span><br>Beim Kammerflimmern entscheidet der frühe Stromstoß.</div>
+      <div style="height:12px"></div>
+      <button class="btn" id="wclose" type="button" style="width:100%">Zurück zur Aufgabe</button>
+    </div>
+  </div>
+
+  <!-- Feedback-Sheet -->
+  <div class="scrim" id="fscrim"></div>
+  <div class="sheet fb-sheet" id="fsheet" role="dialog" aria-label="Feedback">
+    <div class="sheet-grip"></div>
+    <div class="sheet-scroll">
+      <div class="fb-verdict" id="fverdict"></div>
+      <div class="fb-text" id="ftext"></div>
+      <div class="fb-vertiefung" id="fvert" style="display:none">
+        <span class="vl">📖 Aus dem Pflege-Wissen</span>
+        <p id="fvtext"></p>
+        <button class="more" id="fmore" type="button">Ganzen Spickzettel öffnen</button>
+      </div>
+      <button class="btn" id="fnext" type="button" style="width:100%">Weiter</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var anker=document.getElementById('anker');
+  var scrim=document.getElementById('scrim'), wsheet=document.getElementById('wsheet');
+  var fscrim=document.getElementById('fscrim'), fsheet=document.getElementById('fsheet');
+  var check=document.getElementById('check');
+  var sel=null;
+
+  anker.querySelector('.anker-head').addEventListener('click',function(){
+    anker.classList.toggle('on');
+    anker.querySelector('.anker-head').setAttribute('aria-expanded',anker.classList.contains('on'));
+  });
+  function openW(){ scrim.style.opacity=1; scrim.style.pointerEvents='auto'; wsheet.style.transform='translateY(0)'; }
+  function closeW(){ scrim.style.opacity=0; scrim.style.pointerEvents='none'; wsheet.style.transform='translateY(105%)'; }
+  document.getElementById('openw').addEventListener('click',openW);
+  scrim.addEventListener('click',closeW);
+  document.getElementById('wclose').addEventListener('click',closeW);
+
+  document.querySelectorAll('.opt').forEach(function(o){
+    o.addEventListener('click',function(){
+      if(check.dataset.done)return;
+      document.querySelectorAll('.opt').forEach(function(x){x.classList.remove('sel')});
+      o.classList.add('sel'); sel=o; check.disabled=false;
+    });
+  });
+
+  var FB={
+    right:{v:'Richtig.',t:'Du delegierst klar und namentlich, bleibst beim Patienten und beginnst die Herzdruckmassage — genau die Reihenfolge der Rettungskette.',vert:null},
+    wrong1:{v:'Nicht ganz — schauen wir genau hin.',t:'Du hast zwei Helfer — dann schickst du sie, statt selbst wegzulaufen. Jede Sekunde ohne Kompression ist No-Flow-Zeit fürs Gehirn.',
+      vert:'Bist du allein, gilt: Notruf absetzen, dann ohne Zögern die Herzdruckmassage aufnehmen und beim Patienten bleiben. Du läufst nicht weg, nur um ein Gerät zu holen — ein Defi dreißig Meter entfernt ist die Pause nicht wert.'},
+    wrong2:{v:'Nicht ganz — schauen wir genau hin.',t:'Ein ungerichtetes „Hilfe!" führt oft dazu, dass sich niemand zuständig fühlt. Sprich konkrete Personen an und gib konkrete Aufträge.',
+      vert:'Du sprichst die Menschen einzeln und mit klarem Auftrag an — „Sie rufen das Team", „Sie holen den Defi" —, denn ein allgemeines Hilferufen lässt oft jeden auf den anderen warten.'}
+  };
+
+  check.addEventListener('click',function(){
+    if(!sel)return;
+    var k=sel.dataset.k, right=(k==='right');
+    check.dataset.done='1'; check.disabled=true;
+    sel.classList.remove('sel'); sel.classList.add(right?'correct':'wrong');
+    anker.classList.remove('on');
+    document.getElementById('fverdict').textContent=FB[k].v;
+    document.getElementById('ftext').textContent=FB[k].t;
+    var fv=document.getElementById('fvert');
+    if(FB[k].vert){ fv.style.display='block'; document.getElementById('fvtext').textContent=FB[k].vert; }
+    else fv.style.display='none';
+    fsheet.classList.remove('right','wrong'); fsheet.classList.add(right?'right':'wrong');
+    fscrim.style.opacity=1; fscrim.style.pointerEvents='auto'; fsheet.style.transform='translateY(0)';
+  });
+  function closeF(){ fscrim.style.opacity=0; fscrim.style.pointerEvents='none'; fsheet.style.transform='translateY(105%)'; }
+  fscrim.addEventListener('click',closeF);
+  document.getElementById('fnext').addEventListener('click',closeF);
+  document.getElementById('fmore').addEventListener('click',function(){ closeF(); setTimeout(openW,250); });
+})();
+</script>
+</body>
+</html>
