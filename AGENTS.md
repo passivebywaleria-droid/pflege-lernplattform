@@ -228,6 +228,15 @@ export const mockLearnModules: LearnModule[] = [
 
 **Wissen-Tab:** stilles Nachschlagewerk — zählt NICHT ins Budget, gleicher Content wie Stufe-3-Bausteine
 
+### On-Device-Whisper + Cross-Origin-Isolation (2026-07-19)
+- **App-weite COOP/COEP-Header** (`next.config.ts headers()`) sind Pflicht für SharedArrayBuffer/pthread-WASM — `crossOriginIsolated` MUSS true sein, sonst stirbt der Worker-Spawn (checkWasmSupport des Pakets prüft NUR SIMD, nicht SAB!)
+- **HARTES GESETZ dadurch:** Künftige OAuth-Logins (Google!) MÜSSEN Redirect-Flow nutzen (Popups verlieren window.opener unter COOP same-origin); externe Embeds/Bilder brauchen CORP-Header; eingebettetes Stripe.js wäre tot (Hosted-Checkout-Redirect bleibt ok)
+- **Whisper-Assets self-hosted**: `public/whisper/` (Modul committet, 57-MB-Modell via `npx tsx scripts/fetch-whisper-model.ts`, gitignored); Import per URL `Function("u","return import(u)")("/whisper/index.es.js")` — NIE Bare-Specifier (Browser kann nicht auflösen), NIE bundeln (zerbricht selbst-referenzierenden pthread-Worker)
+- **transcribe() liefert `{segments, transcribeDurationMs}`**, kein Array
+- **Modellwahl base-q5_1** (Benchmark 2026-07-19): beste dt. Fachsprache ≤ 60 MB, ~0,5× Echtzeit; tiny zerstört Fachbegriffe, small 2,5× Echtzeit = zu langsam
+- **Fachbegriff-Postkorrektur**: `src/lib/learn/transkript-korrektur.ts` (Fuzzy ≥ 0,72 gegen Glossar+Zielwort, Beitrag-Guard gegen Füllwort-Fresser) — Alltagssprache-Fehler fängt der KI-Prompt ab
+- **deploy-hetzner.sh rsynct jetzt auch next.config.ts + public/** — vorher wären Header + Modell nie am Server angekommen
+
 ### PWA/Serwist + Turbopack-Falle (2026-07-16)
 - **Next 16 baut default mit Turbopack — @serwist/next braucht Webpack**: `"build": "next build --webpack"` ist PFLICHT, sonst wird `public/sw.js` nicht regeneriert (stale Manifest → SW-Install schlägt auf jedem Gerät fehl → PWA/Offline komplett tot, ohne Build-Fehler)
 - **Symptom erkennen**: Build-ID in `public/sw.js` (`_next/static/<BUILD_ID>/`) mit `.next/BUILD_ID` vergleichen

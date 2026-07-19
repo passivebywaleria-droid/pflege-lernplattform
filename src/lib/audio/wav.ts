@@ -8,6 +8,30 @@
  * aufgenommen hat → ein Pfad für alle Geräte.
  */
 
+/**
+ * Lineares Resampling auf eine Ziel-Rate (mono). Nötig, weil iOS Safari
+ * AudioContext({sampleRate: 16000}) nicht überall respektiert (Kontext läuft
+ * dann auf 44,1/48 kHz) — Whisper braucht zwingend 16 kHz.
+ */
+export function resampleLinear(
+  samples: Float32Array,
+  fromRate: number,
+  toRate: number
+): Float32Array {
+  if (fromRate === toRate) return samples;
+  const outLength = Math.max(1, Math.round((samples.length * toRate) / fromRate));
+  const out = new Float32Array(outLength);
+  const step = (samples.length - 1) / Math.max(1, outLength - 1);
+  for (let i = 0; i < outLength; i++) {
+    const pos = i * step;
+    const i0 = Math.floor(pos);
+    const i1 = Math.min(i0 + 1, samples.length - 1);
+    const frac = pos - i0;
+    out[i] = samples[i0] * (1 - frac) + samples[i1] * frac;
+  }
+  return out;
+}
+
 /** Samples auf [-1, 1] klemmen und als 16-bit signed PCM schreiben. */
 export function encodeWavPcm16(
   samples: Float32Array,

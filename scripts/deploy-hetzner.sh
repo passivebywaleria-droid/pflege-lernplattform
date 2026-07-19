@@ -27,6 +27,16 @@ rsync -az --exclude='.next' --exclude='node_modules' -e "$RSH" src/ "$HOST:/opt/
 # Turbopack wird sw.js nicht generiert und Offline ist tot).
 rsync -az -e "$RSH" package.json package-lock.json "$HOST:/opt/pflege/"
 
+# next.config.ts + public/ mitschicken (2026-07-19): COOP/COEP-Header für
+# On-Device-Whisper leben in next.config.ts; public/whisper/ enthält das
+# WASM-Modul + 57-MB-Modell (gitignored, via scripts/fetch-whisper-model.ts).
+if [ ! -f public/whisper/models/ggml-base-q5_1.bin ]; then
+  echo "⚠️  Whisper-Modell fehlt lokal — hole es …"
+  npx tsx scripts/fetch-whisper-model.ts
+fi
+rsync -az -e "$RSH" next.config.ts "$HOST:/opt/pflege/"
+rsync -az -e "$RSH" public/ "$HOST:/opt/pflege/public/"
+
 echo "→ 4/4  Build + Neustart auf dem Server (dauert ein paar Minuten) …"
 ssh -i "$KEY" "$HOST" 'cd /opt/pflege/deploy && docker compose --env-file .env up -d --build app'
 

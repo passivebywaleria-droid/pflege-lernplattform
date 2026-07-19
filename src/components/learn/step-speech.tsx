@@ -5,6 +5,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useTts } from "@/hooks/use-tts";
 import { useRecorder } from "@/hooks/use-recorder";
 import { useStt } from "@/hooks/use-stt";
+import { useWhisper, WHISPER_UNSUPPORTED } from "@/hooks/use-whisper";
+import { korrigiereTranskript } from "@/lib/learn/transkript-korrektur";
 import type { GlossarEntry } from "../../../content/_types";
 import type { SpeechData } from "../../../content/_types";
 import { FachbegriffText } from "./fachbegriff-tooltip";
@@ -72,24 +74,51 @@ export function StepSpeech({
 }: StepSpeechProps) {
   const { speak: ttsSpeak, playing: ttsPlaying } = useTts();
   const { startRecording, stopRecording, recording, audioBlob, error: recorderError } = useRecorder();
-  const { transcribe, transcript, loading: sttLoading, error: sttError } = useStt();
+  const whisper = useWhisper();
+  const serverStt = useStt();
 
   const [bewertung, setBewertung] = useState<Bewertung | null>(null);
   const [similarity, setSimilarity] = useState<number | null>(null);
+  const [transkriptText, setTranskriptText] = useState<string | null>(null);
   const [kiFeedback, setKiFeedback] = useState<string | null>(null);
   const [kiFeedbackLoading, setKiFeedbackLoading] = useState(false);
   const [versuch, setVersuch] = useState(0);
+  // On-Device zuerst (DSGVO-USP); kann das Gerät kein Whisper (kein COI/SIMD),
+  // fällt die Session still auf Server-STT zurück (503 ohne Azure-Config →
+  // ehrlicher Überspringen-Ausweg unten).
+  const [engine, setEngine] = useState<"whisper" | "server">("whisper");
 
   const isNachsprechen = speech.speechType === "nachsprechen";
   const aufgabe = sprachLevel === "b1" && speech.aufgabeB1 ? speech.aufgabeB1 : speech.aufgabe;
 
-  // Wenn audioBlob fertig → transkribieren
+  // Wenn audioBlob fertig → transkribieren (+ Fachbegriff-Postkorrektur)
   useEffect(() => {
     if (!audioBlob) return;
 
     (async () => {
-      const text = await transcribe(audioBlob);
+      let text = "";
+      if (engine === "whisper") {
+        try {
+          text = await whisper.transcribe(audioBlob);
+        } catch (err) {
+          if (err instanceof Error && err.message === WHISPER_UNSUPPORTED) {
+            setEngine("server");
+            text = await serverStt.transcribe(audioBlob);
+          }
+        }
+      } else {
+        text = await serverStt.transcribe(audioBlob);
+      }
       if (!text) return;
+
+      // Whisper verstümmelt Fachbegriffe systematisch — die Situation kennt
+      // ihre Begriffe (Glossar + Zielwort) und repariert genau diese Klasse.
+      const lexikon = [
+        ...glossar.map((g) => g.begriff),
+        ...(speech.zielwort ? [speech.zielwort] : []),
+      ];
+      text = korrigiereTranskript(text, lexikon).text;
+      setTranskriptText(text);
 
       if (isNachsprechen && speech.zielwort) {
         // Typ A: Vergleich mit Zielwort
@@ -144,13 +173,18 @@ export function StepSpeech({
     setBewertung(null);
     setSimilarity(null);
     setKiFeedback(null);
+    setTranskriptText(null);
   }, []);
 
   const handleWeiter = useCallback(() => {
     onNext(bewertung === "perfekt" || bewertung === "gut");
   }, [onNext, bewertung]);
 
-  const error = recorderError || sttError;
+  const sttLoading = engine === "whisper" ? whisper.loading : serverStt.loading;
+  const error =
+    recorderError || (engine === "whisper" ? whisper.error : serverStt.error);
+  const modelLaedt =
+    engine === "whisper" && whisper.loading && !whisper.modelReady;
 
   return (
     <div className="space-y-5" style={{ color: "var(--lern-text-primary)" }}>
@@ -197,6 +231,25 @@ export function StepSpeech({
           <p className="text-xs text-[#9B7EA6] font-medium mb-1">Deine Aufgabe:</p>
           <p className="text-sm text-[var(--lern-text-primary)] leading-relaxed">
             <FachbegriffText glossar={glossar}>{aufgabe}</FachbegriffText>
+          </p>
+        </div>
+      )}
+
+      {/* Modell-Download (einmalig pro Gerät): ehrlicher Fortschritt + Größe */}
+      {modelLaedt && (
+        <div className="text-center p-4">
+          <div className="w-full h-2 bg-[var(--lern-divider)] rounded-full overflow-hidden mb-2">
+            <motion.div
+              className="h-full bg-[var(--lern-accent)] rounded-full"
+              initial={{ width: 0 }}
+              animate={{ width: `${whisper.modelProgress}%` }}
+            />
+          </div>
+          <p className="text-xs text-[var(--lern-text-tertiary)]">
+            Spracherkennung wird geladen … {whisper.modelProgress} %
+          </p>
+          <p className="text-xs text-[var(--lern-text-tertiary)] mt-0.5">
+            57 MB, nur beim ersten Mal — bleibt auf deinem Gerät.
           </p>
         </div>
       )}
@@ -271,7 +324,7 @@ export function StepSpeech({
 
       {/* Ergebnis */}
       <AnimatePresence>
-        {bewertung && transcript && (
+        {bewertung && transkriptText && (
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -281,7 +334,7 @@ export function StepSpeech({
             <div className="p-4 rounded-2xl bg-[var(--lern-card-bg)] border-[1.5px] border-[var(--lern-border)]">
               <p className="text-xs text-[var(--lern-text-tertiary)] mb-1">Du hast gesagt:</p>
               <p className="text-base font-medium text-[var(--lern-text-primary)]">
-                &ldquo;{transcript}&rdquo;
+                &ldquo;{transkriptText}&rdquo;
               </p>
             </div>
 

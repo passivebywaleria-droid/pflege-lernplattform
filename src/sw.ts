@@ -102,6 +102,23 @@ const serwist = new Serwist({
       }),
     },
 
+    // On-Device-Whisper (Modul + 57-MB-Modell): CacheFirst — unveränderlich
+    // versioniert, soll pro Gerät genau 1× fließen und offline verfügbar sein
+    // (Sprechübung im Klassenzimmer ohne Netz).
+    {
+      matcher: ({ url, sameOrigin }) =>
+        sameOrigin && url.pathname.startsWith("/whisper/"),
+      handler: new CacheFirst({
+        cacheName: "whisper-assets",
+        plugins: [
+          new ExpirationPlugin({
+            maxEntries: 6,
+            maxAgeSeconds: 180 * 24 * 60 * 60, // 180 Tage
+          }),
+        ],
+      }),
+    },
+
     ...defaultCache,
 
     // Statische Assets (Icons, Bilder): CacheFirst

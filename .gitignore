@@ -86,3 +86,6 @@ rec
 recherche/_neu/
 recherche/*-volltext/
 *.epub
+
+# Whisper-Modell (57 MB) — via scripts/fetch-whisper-model.ts beschaffen
+public/whisper/models/

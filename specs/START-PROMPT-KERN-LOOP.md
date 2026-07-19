@@ -36,15 +36,16 @@
 3. ✅ Adaptiv-v1 GEBAUT+DEPLOYED 2026-07-19 (Register, Intermezzo, Sheet-Angebote, Sprach-Angebot; Status in PLAN-ADAPTIV-V1). Alt: nach PLAN-ADAPTIV-V1 inkl. Frust-Bremse (3× falsch → Eskalation).
    Merken: Nachhaken = Spektrum-Kontrastfall (NIE wortgleich), Karteikarten sind
    WISSENS-Karten (Upsert, keine Duplikate), Skip bewusst nicht in v1.
-4. ✅ **Sprech-Moment** Wagner „Übergeben" (SBAR) auf **Azure STT EU umgebaut**
-   (Waleria-Entscheidung 2026-07-19, Commit `6ae4c04`, gepusht, NICHT deployed).
-   On-Device-Whisper war nachweislich tot (Bare-Import + COI-Pflicht) und ist
-   entfernt; E2E der neuen Kette grün (Fake-Mikro → WAV → /api/stt-Mock →
-   echtes Nebius-Feedback erkennt fehlende SBAR-Elemente). **Blocker: Azure-
-   Speech-Resource existiert nicht — AZURE_SPEECH_KEY/REGION überall leer,
-   dadurch lief auch TTS immer nur als Browser-Stimme.** Waleria: Resource
-   anlegen (Empfehlung germanywestcentral), Keys lokal + /opt/pflege/deploy/.env,
-   dann Deploy-Freigabe. Details: Memory pilot-ux-haertung.
+4. ✅ **Sprech-Moment** Wagner „Übergeben" (SBAR) = **On-Device-Whisper v2**
+   (Waleria: „Kein v1. Direkt v2.", 2026-07-19). Gebaut + E2E im echten Player
+   grün (crossOriginIsolated, Modell von carovia.de, kein HuggingFace-/
+   Azure-Request, KI-Feedback fachlich präzise). Kern: COOP/COEP app-weit
+   (AGENTS.md-Learning: OAuth künftig NUR Redirect-Flow!), base-q5_1 57 MB
+   (Benchmark, tiny zerstört Fachsprache), Glossar-Fuzzy-Postkorrektur,
+   /api/stt bleibt schlafender Fallback (ohne Azure-Key → 503 → ehrliches
+   Überspringen). Vor Deploy: `npx tsx scripts/fetch-whisper-model.ts` lokal
+   (Deploy-Script prüft's selbst). **Deploy-Freigabe + iPhone-Mikro-UX-Test
+   (Waleria) offen; echtes iPhone = einzige ungetestete Stufe.**
 5. Danach: Rechtstexte-Status (Task #11 — evtl. Parallel-Chat), Mastery-Definition.
 
 ## Offen / nicht vergessen
