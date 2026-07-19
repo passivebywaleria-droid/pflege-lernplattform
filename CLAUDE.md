@@ -59,6 +59,15 @@ Produktentscheidung muss erkennbar auf einen dieser Pfade einzahlen).
    benannt und terminiert — nie stillschweigend eingebaut.
 7. **Analysen überleben die Session:** stabile Erkenntnisse nach specs/ bzw. Memory,
    damit der nächste Kontext auf demselben Stand sparrt.
+8. **Rangfolge bei jedem Zielkonflikt (Waleria 2026-07-19):**
+   (1) **Pflegefachlichkeit** — kein Satz ohne wortwörtlich gelesene Quelle,
+   kein Halbwissen, Frage-Scope = Antwort-Scope, ein Destillat ist nie Endpunkt.
+   (2) **Design + App-Gefühl** — Kern-Loop-Standard, mobile-first, das neueste,
+   schönste ruhige Design; jede Fläche muss sich anfühlen wie die beste
+   Lern-App am Markt (Referenz-Anspruch, keine Floskel).
+   (3) **Geschwindigkeit** — verliert immer gegen (1) und (2).
+   Gründlich UND ideenreich: zu jeder Aufgabe mindestens eine unbestellte
+   Idee mitliefern — aber nie auf Kosten von (1).
 
 ## Kommunikation
 
