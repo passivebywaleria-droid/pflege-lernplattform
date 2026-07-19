@@ -44,8 +44,13 @@
    (Benchmark, tiny zerstört Fachsprache), Glossar-Fuzzy-Postkorrektur,
    /api/stt bleibt schlafender Fallback (ohne Azure-Key → 503 → ehrliches
    Überspringen). Vor Deploy: `npx tsx scripts/fetch-whisper-model.ts` lokal
-   (Deploy-Script prüft's selbst). **Deploy-Freigabe + iPhone-Mikro-UX-Test
-   (Waleria) offen; echtes iPhone = einzige ungetestete Stufe.**
+   (Deploy-Script prüft's selbst). **DEPLOYED carovia.de (2026-07-19,
+   Waleria „Deploy"): COI-Header live, Modell 59,7 MB served (Range-Requests
+   ok), Live-Stack-Check auf der Wagner-Seite grün (crossOriginIsolated +
+   Import + SIMD + SAB-Worker-Transfer), Smoke aller Kernseiten 200,
+   SW-Build-ID == Server. Voller Flow auf identischem Build lokal bewiesen
+   (Live-Gast endet gewollt am harten Play-Gate vor Step 8).
+   Offen NUR: echtes iPhone (Mikro-UX + WASM-Tempo) — testet Waleria.**
 5. Danach: Rechtstexte-Status (Task #11 — evtl. Parallel-Chat), Mastery-Definition.
 
 ## Offen / nicht vergessen
