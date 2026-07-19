@@ -66,7 +66,7 @@ export const CE06_SIT_LEHMANN_ERKENNEN: SituationsPhase = {
         mcVariant: "standard",
         optionen: [
           {
-            text: "Hingehen, sie ansprechen UND leicht an der Schulter berühren; dabei belasse ich sie erst einmal in ihrer Lage.",
+            text: "Hingehen, sie ansprechen UND leicht an den Schultern rütteln; dabei belasse ich sie erst einmal in ihrer Lage.",
             isCorrect: true,
             explanation:
               "Richtig. Zur Bewusstseinsprüfung wird angesprochen UND angefasst — gerade bei einer alten, möglicherweise schwerhörigen Frau kann eine fehlende Antwort eine Bewusstseinsstörung nur vortäuschen. Und weil nach einem Sturz eine Wirbelsäulenverletzung nicht ausgeschlossen ist, wird ein reagierender Mensch zunächst in der vorgefundenen Lage belassen — nicht sofort hochgezogen.",
@@ -436,9 +436,9 @@ export const CE06_SIT_LEHMANN_ERSTMASSNAHMEN: SituationsPhase = {
             text: "Licht voll einschalten, sterile Kompresse mit leichtem Druck auf die Wunde, zudecken — nicht umlagern.",
             isCorrect: true,
             explanation:
-              "Richtig. Zur sicheren Verletzungs-Inspektion braucht es volles Licht (nicht das gedämpfte Nachtlicht). Die blutende Platzwunde wird mit steriler Kompresse und leichtem Druck versorgt; ein kräftiger Druckverband ist für starke Blutungen gedacht (z.B. an Extremitäten). Wärmeerhalt durch Zudecken. Die Lage bleibt unverändert (Wirbelsäulenverdacht).",
+              "Richtig. Zur sicheren Verletzungs-Inspektion braucht es volles Licht (nicht das gedämpfte Nachtlicht). Die blutende Platzwunde wird mit steriler Kompresse und leichtem Druck versorgt; ein kräftiger Druckverband ist für starke Blutungen gedacht (z.B. an Extremitäten). Wärmeerhalt durch Zudecken. Die Lage bleibt unverändert (Wirbelsäulenverdacht). Und bis der Rettungsdienst da ist, kontrollierst du engmaschig Bewusstsein und Atmung — gerade unter dem Antikoagulans ist eine Verschlechterung des Bewusstseins DAS Warnzeichen, jede Veränderung wird dokumentiert und dem Rettungsdienst gemeldet.",
             explanationB1:
-              "Richtig. Für die Inspektion brauchst du volles Licht — nicht das schwache Nachtlicht. Die Wunde versorgst du mit steriler Kompresse und leichtem Druck. Bei starker Blutung wäre stattdessen ein Druckverband nötig. Du deckst sie zu für den Wärmeerhalt. Nicht umlagern — der Wirbelsäulenverdacht bleibt bestehen.",
+              "Richtig. Für die Inspektion brauchst du volles Licht — nicht das schwache Nachtlicht. Die Wunde versorgst du mit steriler Kompresse und leichtem Druck. Bei starker Blutung wäre stattdessen ein Druckverband nötig. Du deckst sie zu für den Wärmeerhalt. Nicht umlagern — der Wirbelsäulenverdacht bleibt bestehen. Und bis der Rettungsdienst kommt: Kontrolliere immer wieder Bewusstsein und Atmung. Mit dem Blutverdünner ist ein schlechter werdendes Bewusstsein DAS Warnzeichen. Jede Veränderung schreibst du auf und meldest sie dem Rettungsdienst.",
           },
           {
             text: "Das gedämpfte Nachtlicht anlassen, damit sie nicht erschrickt, und die Wunde erst mal mit einem Taschentuch abtupfen.",

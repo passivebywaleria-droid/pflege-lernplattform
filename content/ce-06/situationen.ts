@@ -147,12 +147,13 @@ export const CE06_SITUATIONEN: Lernsituation[] = [
     ],
     komplikationen: [],
     bausteinTrigger: [],
-    // Teaser erscheint auf dem Wagner-Abschluss; Fakten aus der Situation
-    // (Synkope während der Dialyse, kommt von allein zurück, BZ-Stich).
+    // Teaser erscheint auf dem Wagner-Abschluss. Text-Audit F-01 (2026-07-19):
+    // Ríos kommt NICHT von allein zurück — er bleibt bewusstseinsgetrübt und
+    // klart erst nach ärztlicher Glukose auf (Phase-4-kontext wörtlich).
     teaser:
-      "Herr Ríos sackt während der Dialyse weg — und kommt von allein wieder zu sich. Kein zweiter Wagner. Aber was dann? Ein einziger Handgriff entscheidet.",
+      "Herr Ríos sackt während der Dialyse weg — kein zweiter Wagner, sein Kreislauf läuft. Aber er wacht nicht von allein auf. Ein einziger Handgriff entscheidet, was jetzt zu tun ist.",
     teaserB1:
-      "Herr Ríos wird bei der Dialyse plötzlich ohnmächtig — und wacht von allein wieder auf. Kein zweiter Wagner. Aber was jetzt? Ein einziger Handgriff entscheidet.",
+      "Herr Ríos sackt bei der Dialyse plötzlich weg. Kein zweiter Wagner: Sein Kreislauf läuft. Aber er wacht nicht von allein auf. Ein einziger Handgriff zeigt dir, was zu tun ist.",
     // Outcome wortgetreu aus der Übergeben-Phase: Glukose vom Arzt,
     // Kontroll-BZ 120 mg/dl, Verlegung zur Überwachung.
     abschlussText:

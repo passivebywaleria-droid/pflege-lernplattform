@@ -230,8 +230,9 @@ export const CE06_SIT_PETROVA_ERKENNEN: SituationsPhase = {
       lernziel: "ce06-petrova-differenzieren",
       tag: "pflege",
       themaPrimaer: "neurologische-akutsituationen",
-      // F-01 Synkope · F-04 „erst Blutzucker" (imitiert alles) · F-08 Apoplex · F-10 Krampfanfall · F-13 Differenzial.
-      kernfaktId: ["F-01", "F-04", "F-08", "F-10", "F-13"],
+      // F-01 Synkope · F-04 „erst Blutzucker" (imitiert alles) · F-08 Apoplex · F-10 Krampfanfall ·
+      // F-12 Status epilepticus (>5 Min) · F-13 Differenzial.
+      kernfaktId: ["F-01", "F-04", "F-08", "F-10", "F-12", "F-13"],
       transition: "Bei Frau Petrova ist der Blutzucker gleich da.",
       contentC1: {
         title: "Kreislauf da — erst Blutzucker, dann unterscheiden",
@@ -247,9 +248,9 @@ export const CE06_SIT_PETROVA_ERKENNEN: SituationsPhase = {
         storyAufhaengerB1:
           "Der Kreislauf läuft, du reanimierst nicht. Jetzt kommt der schwierigere Teil: Was ist es? Vier Bilder sehen sich sehr ähnlich. Aber jedes braucht eine andere erste Reaktion.",
         kerntext:
-          "Über allem steht ein Handgriff: Sobald der Kreislauf da ist, misst du zuerst den Blutzucker. Eine Unterzuckerung imitiert fast alles — Verwirrtheit, Ausfälle, sogar einen Schlaganfall — und ist die eine Ursache, die du sofort beheben kannst. Erst danach deutest du die Zeichen.\n\nWar der Mensch nur kurz weg und kommt von allein zurück, ohne bleibende Ausfälle, war es meist eine Synkope, eine kurze Ohnmacht. Du legst ihn hin, lagerst die Beine hoch und klärst die Ursache — denn eine Ohnmacht aus dem Herzen kann gefährlich sein.\n\nZeigt sich ein plötzlicher, einseitiger und bleibender Ausfall — ein hängender Mundwinkel, ein kraftloser Arm, verwaschene Sprache —, dann behandelst du es als Schlaganfall: sofort Arzt, jede Minute zählt.\n\nStürzt jemand und zuckt am ganzen Körper, ist es ein Krampfanfall: Du schützt ihn vor Verletzungen, steckst NICHTS in den Mund und merkst dir die Uhrzeit.\n\nUnd wenn jemand erregt und verwirrt ist, womöglich mit Fieber, denkst du an eine körperliche Ursache (etwa ein Delir) und achtest zuerst auf deine eigene Sicherheit.",
+          "Über allem steht ein Handgriff: Sobald der Kreislauf da ist, misst du zuerst den Blutzucker. Eine Unterzuckerung imitiert fast alles — Verwirrtheit, Ausfälle, sogar einen Schlaganfall — und ist die eine Ursache, die du sofort beheben kannst. Erst danach deutest du die Zeichen.\n\nWar der Mensch nur kurz weg und kommt von allein zurück, ohne bleibende Ausfälle, war es meist eine Synkope, eine kurze Ohnmacht. Du legst ihn hin, lagerst die Beine hoch und klärst die Ursache — denn eine Ohnmacht aus dem Herzen kann gefährlich sein.\n\nZeigt sich ein plötzlicher, einseitiger und bleibender Ausfall — ein hängender Mundwinkel, ein kraftloser Arm, verwaschene Sprache —, dann behandelst du es als Schlaganfall: sofort Arzt, jede Minute zählt.\n\nStürzt jemand und zuckt am ganzen Körper, ist es ein Krampfanfall: Du schützt ihn vor Verletzungen, steckst NICHTS in den Mund, merkst dir die Uhrzeit und rufst unverzüglich den Arzt — dauert der Anfall länger als fünf Minuten, ist es ein Status epilepticus.\n\nUnd wenn jemand erregt und verwirrt ist, womöglich mit Fieber, denkst du an eine körperliche Ursache (etwa ein Delir) und achtest zuerst auf deine eigene Sicherheit.",
         kerntextB1:
-          "Ein Handgriff steht über allem: Sobald der Kreislauf da ist, misst du zuerst den Blutzucker. Eine Unterzuckerung sieht aus wie fast alles — Verwirrtheit, Ausfälle, sogar ein Schlaganfall. Und sie ist die eine Ursache, die du sofort beheben kannst. Erst danach deutest du die anderen Zeichen.\n\nWeg 1: War der Mensch nur kurz weg und kommt von allein zurück? Und bleiben keine Ausfälle? Dann war es meist eine Synkope — eine kurze Ohnmacht. Du legst ihn hin, lagerst die Beine hoch und klärst die Ursache. Denn eine Ohnmacht kann auch vom Herzen kommen, und das ist gefährlich.\n\nWeg 2: Zeigt sich ein plötzlicher Ausfall, der einseitig ist und bleibt? Zum Beispiel ein hängender Mundwinkel, ein kraftloser Arm oder eine verwaschene Sprache? Dann behandelst du es als Schlaganfall. Sofort den Arzt rufen, jede Minute zählt.\n\nWeg 3: Stürzt jemand und zuckt am ganzen Körper? Dann ist es ein Krampfanfall. Du schützt ihn vor Verletzungen. Du steckst NICHTS in den Mund. Und du merkst dir die Uhrzeit.\n\nWeg 4: Ist jemand erregt und verwirrt, vielleicht mit Fieber? Dann denkst du an eine körperliche Ursache, zum Beispiel ein Delir — eine plötzliche Verwirrtheit. Und du achtest zuerst auf deine eigene Sicherheit.",
+          "Ein Handgriff steht über allem: Sobald der Kreislauf da ist, misst du zuerst den Blutzucker. Eine Unterzuckerung sieht aus wie fast alles — Verwirrtheit, Ausfälle, sogar ein Schlaganfall. Und sie ist die eine Ursache, die du sofort beheben kannst. Erst danach deutest du die anderen Zeichen.\n\nWeg 1: War der Mensch nur kurz weg und kommt von allein zurück? Und bleiben keine Ausfälle? Dann war es meist eine Synkope — eine kurze Ohnmacht. Du legst ihn hin, lagerst die Beine hoch und klärst die Ursache. Denn eine Ohnmacht kann auch vom Herzen kommen, und das ist gefährlich.\n\nWeg 2: Zeigt sich ein plötzlicher Ausfall, der einseitig ist und bleibt? Zum Beispiel ein hängender Mundwinkel, ein kraftloser Arm oder eine verwaschene Sprache? Dann behandelst du es als Schlaganfall. Sofort den Arzt rufen, jede Minute zählt.\n\nWeg 3: Stürzt jemand und zuckt am ganzen Körper? Dann ist es ein Krampfanfall. Du schützt ihn vor Verletzungen. Du steckst NICHTS in den Mund. Du merkst dir die Uhrzeit. Und du rufst sofort den Arzt. Dauert der Anfall länger als fünf Minuten, ist es ein Status epilepticus — ein gefährlicher Dauer-Anfall.\n\nWeg 4: Ist jemand erregt und verwirrt, vielleicht mit Fieber? Dann denkst du an eine körperliche Ursache, zum Beispiel ein Delir — eine plötzliche Verwirrtheit. Und du achtest zuerst auf deine eigene Sicherheit.",
         faustregel:
           "Kreislauf da? Erst Blutzucker. Dann deuten: kurz weg + zurück = Synkope; einseitig + bleibend = Schlaganfall; Zuckungen am ganzen Körper = Krampfanfall; erregt + Fieber = an eine körperliche Ursache denken.",
         faustregelB1:
@@ -298,11 +299,11 @@ export const CE06_SIT_PETROVA_ERKENNEN: SituationsPhase = {
           vorderseite:
             "Der Kreislauf läuft — was misst du zuerst, und wie unterscheidest du Synkope, Schlaganfall und Krampfanfall?",
           rueckseite:
-            "Zuerst IMMER Blutzucker (Unterzuckerung imitiert alles). Synkope = kurz weg, kommt zurück, keine Ausfälle. Schlaganfall = plötzlich, einseitig, bleibend → sofort Arzt (time is brain). Krampfanfall = Zuckungen am ganzen Körper → schützen, nichts in den Mund, Zeit stoppen.",
+            "Zuerst IMMER Blutzucker (Unterzuckerung imitiert alles). Synkope = kurz weg, kommt zurück, keine Ausfälle. Schlaganfall = plötzlich, einseitig, bleibend → sofort Arzt (time is brain). Krampfanfall = Zuckungen am ganzen Körper → schützen, nichts in den Mund, Zeit stoppen, unverzüglich Arzt (>5 Min = Status epilepticus).",
           vorderseiteB1:
             "Der Kreislauf läuft. Was misst du zuerst? Und wie unterscheidest du Synkope (kurze Ohnmacht), Schlaganfall und Krampfanfall?",
           rueckseiteB1:
-            "Zuerst IMMER den Blutzucker messen (Unterzuckerung sieht aus wie alles). Synkope (kurze Ohnmacht) = kurz weg, kommt zurück, keine Ausfälle. Schlaganfall = plötzlich, einseitig, bleibend, sofort Arzt (jede Minute zählt fürs Gehirn). Krampfanfall = Zuckungen am ganzen Körper, schützen, nichts in den Mund, Zeit stoppen.",
+            "Zuerst IMMER den Blutzucker messen (Unterzuckerung sieht aus wie alles). Synkope (kurze Ohnmacht) = kurz weg, kommt zurück, keine Ausfälle. Schlaganfall = plötzlich, einseitig, bleibend, sofort Arzt (jede Minute zählt fürs Gehirn). Krampfanfall = Zuckungen am ganzen Körper: schützen, nichts in den Mund, Zeit stoppen und sofort den Arzt rufen. Dauert er länger als 5 Minuten, ist es ein Status epilepticus.",
         },
       },
     },
@@ -511,7 +512,7 @@ export const CE06_SIT_PETROVA_ERSTMASSNAHMEN: SituationsPhase = {
       lernziel: "ce06-petrova-fall-krampfanfall",
       tag: "pflege",
       themaPrimaer: "neurologische-akutsituationen",
-      kernfaktId: ["F-10", "F-11"],
+      kernfaktId: ["F-10", "F-11", "F-12"],
       contentC1: {
         title: "Fall 3: Sturz und Zuckungen am ganzen Körper",
         body: "Ein Bewohner stürzt vor dir zu Boden, schreit kurz auf, wird bewusstlos und beginnt am ganzen Körper zu zucken. Was tust — und was lässt du?",
@@ -583,7 +584,7 @@ export const CE06_SIT_PETROVA_UEBERGEBEN: SituationsPhase = {
       kernfaktId: ["F-07"],
       contentC1: {
         title: "SBAR-Übergabe",
-        body: "Welche Übergabe zu Frau Petrova folgt dem SBAR-Schema und bringt das Entscheidende — auch den systematischen Ausschluss — zuerst?",
+        body: "Welche Übergabe zu Frau Petrova folgt dem SBAR-Schema, bringt das Entscheidende zuerst und macht den systematischen Ausschluss explizit?",
         glossarBegriffe: ["SBAR"],
       },
       contentB1: {

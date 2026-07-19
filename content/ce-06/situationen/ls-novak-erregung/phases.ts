@@ -18,8 +18,8 @@
 //  - Tab A „Erst du sicher — dann er ruhig" (Ph.1, nach erk-01) — F-08/F-02/F-03 (Eigenschutz + Deeskalationsgrundhaltung).
 //  - Tab B „Erregung ≠ automatisch Psychose" (Ph.1, nach erk-02) — F-01, Wiederbegegnung→Ríos (erst Körper, dann Psyche).
 //  - Tab C „Grenzen des Zwangs" (Ph.3, vor erm-02) — F-04/F-05/F-06/F-07 (Fixierung letzte Stufe, Recht, Sedierung ärztlich).
-// KB-Marker aus dem LE1-Schwerpunkt-Set korrigiert: I.4 (primär, Akut-Handeln) · I.1 (Deeskalation) · I.2 (Recht) ·
-//   II.1 (SBAR) · V.2 (Reflexion=E1). (I.4 primär statt I.1-Wand: Erkennen/Eigenschutz/organ. Ausschluss = Akut-Handeln.)
+// KB-Marker aus dem LE1-Schwerpunkt-Set: I.4 (primär, Akut-Handeln) · II.1 (Deeskalation + SBAR; I.1 nicht im Set) ·
+//   II.3 (Recht; I.2 nicht im Set) · V.2 (Reflexion=E1). (I.4 primär: Erkennen/Eigenschutz/organ. Ausschluss = Akut-Handeln.)
 
 import type { SituationsPhase } from "../../../_types";
 
@@ -209,7 +209,7 @@ export const CE06_SIT_NOVAK_ERKENNEN: SituationsPhase = {
             text: "Das ist eindeutig ein Schizophrenie-Schub — das Fieber hat damit nichts zu tun.",
             isCorrect: false,
             explanation:
-              "Ein gefährlicher Kurzschluss. Bei einem psychiatrisch vorerkrankten Menschen wird Erregung schnell der Grunderkrankung zugeschrieben ('diagnostic overshadowing') — dabei können Fieber, Sauerstoffmangel oder eine Unterzuckerung genau dieselben Zeichen machen. Organische Ursachen müssen ausgeschlossen werden, sonst übersieht man einen behandelbaren Notfall.",
+              "Ein gefährlicher Kurzschluss. Bei einem psychiatrisch vorerkrankten Menschen wird Erregung schnell der Grunderkrankung zugeschrieben — dabei können Fieber, Sauerstoffmangel oder eine Unterzuckerung genau dieselben Zeichen machen. Organische Ursachen müssen ausgeschlossen werden, sonst übersieht man einen behandelbaren Notfall.",
             explanationB1:
               "Gefährlich. Bei psychisch kranken Menschen schiebt man Erregung schnell auf die Krankheit. Aber Fieber, Sauerstoffmangel oder Unterzucker machen dieselben Zeichen. Organische Ursachen musst du ausschließen.",
           },
@@ -248,7 +248,6 @@ export const CE06_SIT_NOVAK_ERKENNEN: SituationsPhase = {
         glossarBegriffe: [
           "Delir",
           "Fieberdelir",
-          "diagnostic overshadowing",
         ],
       },
       inlineWissen: {
@@ -260,9 +259,9 @@ export const CE06_SIT_NOVAK_ERKENNEN: SituationsPhase = {
         storyAufhaengerB1:
           "Der Mann hat eine bekannte Schizophrenie. Der schnelle Gedanke ist: „Das ist sein Schub.“ Aber er hat 39,2 °C Fieber bei einer Lungenentzündung. Was, wenn hier nicht die Psychose spricht, sondern der Körper?",
         kerntext:
-          "Eine akute Erregung kann körperliche Ursachen haben. Bei hohem Fieber entstehen motorische Unruhe, ängstliche Erregung, sogar Sinnestäuschungen — ein Fieberdelir. Eine Pneumonie bringt zusätzlich die Gefahr von Sauerstoffmangel.\n\nGenau hier liegt die Falle: Bei einem psychiatrisch vorerkrankten Menschen schiebt man eine Erregung schnell auf die Grunderkrankung. Dieses vorschnelle Zuschreiben (diagnostic overshadowing) übersieht leicht einen behandelbaren körperlichen Notfall — und der kann lebensbedrohlich sein.\n\nDeshalb gilt: nicht vorschnell „nur Psychose“ denken. Erst die körperlichen Ursachen prüfen — Vitalzeichen, Temperatur, Sauerstoffsättigung, Blutzucker. Das ist praktisch heikel, denn SpO2-Clip und Blutzucker-Stich brauchen Nähe; die Messung gelingt oft erst, wenn er dich heranlässt. Beliebig aufschieben lässt sie sich aber nicht: Bleibt er unzugänglich und ist die körperliche Gefahr hoch, holst du ohne Zögern den Arzt dazu. Deeskalation und Assessment gehen Hand in Hand.",
+          "Eine akute Erregung kann körperliche Ursachen haben. Bei hohem Fieber entstehen motorische Unruhe, ängstliche Erregung, sogar Sinnestäuschungen — ein Fieberdelir. Eine Pneumonie bringt zusätzlich die Gefahr von Sauerstoffmangel.\n\nGenau hier liegt die Falle: Bei einem psychiatrisch vorerkrankten Menschen schiebt man eine Erregung schnell auf die Grunderkrankung. Dieses vorschnelle Zuschreiben übersieht leicht einen behandelbaren körperlichen Notfall — und der kann lebensbedrohlich sein.\n\nDeshalb gilt: nicht vorschnell „nur Psychose“ denken. Erst die körperlichen Ursachen prüfen — Vitalzeichen, Temperatur, Sauerstoffsättigung, Blutzucker. Das ist praktisch heikel, denn SpO2-Clip und Blutzucker-Stich brauchen Nähe; die Messung gelingt oft erst, wenn er dich heranlässt. Beliebig aufschieben lässt sie sich aber nicht: Bleibt er unzugänglich und ist die körperliche Gefahr hoch, holst du ohne Zögern den Arzt dazu. Deeskalation und Assessment gehen Hand in Hand.",
         kerntextB1:
-          "Eine akute Erregung kann körperliche Ursachen haben. Hohes Fieber macht oft unruhig und ängstlich. Manche Menschen sehen oder hören dann sogar Dinge, die nicht da sind. Das nennt man Fieberdelir — eine akute Verwirrtheit durch Fieber. Eine Lungenentzündung bringt außerdem die Gefahr von Sauerstoffmangel.\n\nGenau hier liegt die Falle: Bei einem psychisch kranken Menschen schiebt man die Erregung schnell auf die Krankheit. Man nennt das diagnostic overshadowing — die Psyche überdeckt den Blick auf den Körper. So übersieht man leicht einen körperlichen Notfall. Und der kann lebensgefährlich sein.\n\nDeshalb gilt: nicht zu schnell „nur Psychose“ denken. Prüfe zuerst die körperlichen Ursachen — Vitalzeichen, Temperatur, Sauerstoff im Blut und Blutzucker. Das ist praktisch schwierig. Denn du brauchst dafür Nähe: Der Sauerstoff-Clip am Finger und der Blutzucker-Stich gehen nur, wenn er dich heranlässt. Aber du darfst es nicht beliebig aufschieben. Bleibt er abweisend und ist die körperliche Gefahr groß, holst du sofort den Arzt dazu. Beruhigen (Deeskalation) und Untersuchen gehören zusammen.",
+          "Eine akute Erregung kann körperliche Ursachen haben. Hohes Fieber macht oft unruhig und ängstlich. Manche Menschen sehen oder hören dann sogar Dinge, die nicht da sind. Das nennt man Fieberdelir — eine akute Verwirrtheit durch Fieber. Eine Lungenentzündung bringt außerdem die Gefahr von Sauerstoffmangel.\n\nGenau hier liegt die Falle: Bei einem psychisch kranken Menschen schiebt man die Erregung schnell auf die Krankheit. Die Psyche überdeckt dann den Blick auf den Körper. So übersieht man leicht einen körperlichen Notfall. Und der kann lebensgefährlich sein.\n\nDeshalb gilt: nicht zu schnell „nur Psychose“ denken. Prüfe zuerst die körperlichen Ursachen — Vitalzeichen, Temperatur, Sauerstoff im Blut und Blutzucker. Das ist praktisch schwierig. Denn du brauchst dafür Nähe: Der Sauerstoff-Clip am Finger und der Blutzucker-Stich gehen nur, wenn er dich heranlässt. Aber du darfst es nicht beliebig aufschieben. Bleibt er abweisend und ist die körperliche Gefahr groß, holst du sofort den Arzt dazu. Beruhigen (Deeskalation) und Untersuchen gehören zusammen.",
         faustregel:
           "Akute Erregung ist nicht automatisch Psychose. Erst an Fieber, Sauerstoffmangel, Unterzucker denken — Vitalzeichen, Temperatur, SpO2, Blutzucker. Sonst übersiehst du einen körperlichen Notfall.",
         faustregelB1:
@@ -279,7 +278,7 @@ export const CE06_SIT_NOVAK_ERKENNEN: SituationsPhase = {
           },
           {
             patientName: "Bekannte Schizophrenie",
-            hauptfaktor: "diagnostic overshadowing",
+            hauptfaktor: "vorschnelles Zuschreiben",
             kurzbeschreibung:
               "Die Gefahr, alles der Psyche zuzuschreiben. Körperliche Ursachen trotzdem konsequent ausschließen.",
             kurzbeschreibungB1:
@@ -304,11 +303,11 @@ export const CE06_SIT_NOVAK_ERKENNEN: SituationsPhase = {
           vorderseite:
             "Ein Mann mit bekannter Schizophrenie ist akut erregt und hat 39,2 °C Fieber — ist das einfach „sein Schub“?",
           rueckseite:
-            "Nicht vorschnell annehmen. Akute Erregung kann organisch sein (Fieberdelir, Hypoxie bei Pneumonie, Hypoglykämie). Bei psychisch Vorerkrankten Gefahr des diagnostic overshadowing. Erst Vitalzeichen/Temperatur/SpO2/Blutzucker, dann psychiatrisch einordnen.",
+            "Nicht vorschnell annehmen. Akute Erregung kann organisch sein (Fieberdelir, Hypoxie bei Pneumonie, Hypoglykämie). Bei psychisch Vorerkrankten droht das vorschnelle Zuschreiben zur Grunderkrankung. Erst Vitalzeichen/Temperatur/SpO2/Blutzucker, dann psychiatrisch einordnen.",
           vorderseiteB1:
             "Ein Mann mit bekannter Schizophrenie ist sehr erregt und hat 39,2 °C Fieber. Ist das einfach „sein Schub“?",
           rueckseiteB1:
-            "Nicht zu schnell annehmen. Akute Erregung kann körperliche Ursachen haben: Fieberdelir, Sauerstoffmangel bei Lungenentzündung, Hypoglykämie (Unterzucker). Bei psychisch Kranken droht diagnostic overshadowing — die Psyche überdeckt den Körper. Erst Vitalzeichen, Temperatur, Sauerstoff und Blutzucker prüfen. Dann psychisch einordnen.",
+            "Nicht zu schnell annehmen. Akute Erregung kann körperliche Ursachen haben: Fieberdelir, Sauerstoffmangel bei Lungenentzündung, Hypoglykämie (Unterzucker). Bei psychisch Kranken droht diese Falle: Die Psyche überdeckt den Blick auf den Körper. Erst Vitalzeichen, Temperatur, Sauerstoff und Blutzucker prüfen. Dann psychisch einordnen.",
         },
       },
     },
@@ -685,7 +684,7 @@ export const CE06_SIT_NOVAK_REFLEKTIEREN: SituationsPhase = {
       bloomLevel: 5,
       // E1 (eigene Gefühle/Erfahrungen reflektieren) → V.2, konsistent zu Ríos/Lehmann.
       kompetenzbereich: "V.2",
-      quellen: ["Pflege heute 2019, Kap. 12.3/16.6 (Delir/Deeskalation); Reflexion diagnostic overshadowing"],
+      quellen: ["Pflege heute 2019, Kap. 12.3/16.6 (Delir/Deeskalation); Reflexion organischer Ausschluss"],
       track: "basis",
       modus: "schreibtisch",
       lernziel: "ce06-novak-reflexion",
@@ -694,7 +693,7 @@ export const CE06_SIT_NOVAK_REFLEKTIEREN: SituationsPhase = {
       contentC1: {
         title: "Was nimmst du mit?",
         body: "Zwischen dem Reflex 'ist ja psychisch krank', der eigenen Sicherheit und der Ethik von Zwang — reflektiere die Situation.",
-        glossarBegriffe: ["diagnostic overshadowing", "Deeskalation", "Nachbesprechung"],
+        glossarBegriffe: ["Deeskalation", "Nachbesprechung"],
       },
       contentB1: {
         title: "Was nimmst du mit?",
@@ -709,7 +708,7 @@ export const CE06_SIT_NOVAK_REFLEKTIEREN: SituationsPhase = {
           placeholder:
             "Vorschnell 'nur Psychose' ist gefährlich, weil … Ausschließen muss ich … In der Deeskalation half … Die Grenze zum Zwang liegt bei … Für meine Sicherheit/Verarbeitung …",
           systemPrompt:
-            "Bewerte im Sandwich-Prinzip (loben → konkretisieren → ermutigen). Erkennt der Schüler die Gefahr des 'diagnostic overshadowing' (Erregung nicht automatisch der psychiatrischen Grunderkrankung zuschreiben) und nennt organische Ursachen zum Ausschluss (Fieber/Delir, Hypoxie, Hypoglykämie, Intoxikation/Entzug, Schmerz, (Neben-)Wirkung von Medikamenten)? Benennt er wirksame Deeskalationsprinzipien (eine Person, reizarm, Gefühl ernst nehmen ohne Wahn zu bestätigen/hart zu widerlegen)? Zieht er die rechtlich-ethische Grenze (Zwang nur bei echter Gefahr, Mindestmaß, Rechtsgrundlage Zustimmung/Gefahr im Verzug/richterlich, PsychKG; Sedierung ärztlich)? Adressiert er Eigenschutz und Nachbesprechung? Lob für differenzierte Bloom-5-Reflexion; niemals abwertend.",
+            "Bewerte im Sandwich-Prinzip (loben → konkretisieren → ermutigen). Erkennt der Schüler die Falle, Erregung vorschnell der psychiatrischen Grunderkrankung zuzuschreiben, und nennt organische Ursachen zum Ausschluss (Fieber/Delir, Hypoxie, Hypoglykämie, Intoxikation/Entzug, Schmerz, (Neben-)Wirkung von Medikamenten)? Benennt er wirksame Deeskalationsprinzipien (eine Person, reizarm, Gefühl ernst nehmen ohne Wahn zu bestätigen/hart zu widerlegen)? Zieht er die rechtlich-ethische Grenze (Zwang nur bei echter Gefahr, Mindestmaß, Rechtsgrundlage Zustimmung/Gefahr im Verzug/richterlich, PsychKG; Sedierung ärztlich)? Adressiert er Eigenschutz und Nachbesprechung? Lob für differenzierte Bloom-5-Reflexion; niemals abwertend.",
         },
       },
     },

@@ -200,12 +200,9 @@ export const CE06_GLOSSAR: GlossarEntry[] = [
       "Ein Delir, das durch hohes Fieber ausgelöst wird: motorische Unruhe, ängstliche Erregung und Sinnestäuschungen. Behandelt wird die Ursache (Fieber senken), nicht nur die Unruhe.",
     uebersetzungAr: "هذيان الحمّى",
   },
-  {
-    begriff: "diagnostic overshadowing",
-    erklaerung:
-      "Die Gefahr, bei einem psychisch (oder kognitiv) vorerkrankten Menschen neue Beschwerden vorschnell der bekannten Grunderkrankung zuzuschreiben — und dabei eine behandelbare körperliche Ursache zu übersehen.",
-    uebersetzungAr: "طغيان التشخيص (عزو أعراض جديدة خطأً إلى المرض النفسي المعروف)",
-  },
+  // „diagnostic overshadowing" entfernt (Text-Audit 2026-07-19): Terminus in
+  // keinem Korpus-Lehrbuch belegbar (Curriculum-Tiefe-Regel); das Konzept wird
+  // in Novak Tab B weiter beschreibend gelehrt (vorschnelles Zuschreiben).
   {
     begriff: "Gefahr im Verzug",
     erklaerung:
