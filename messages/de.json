@@ -504,6 +504,22 @@
       "rahmenlehrplan": "Lernziele nach Rahmenlehrplan",
       "schritte": "{schritte} Schritte",
       "los": "Los geht's"
+    },
+    "recheck": {
+      "titel": "Kurz nachgehakt",
+      "untertitel": "Erinnerst du dich?",
+      "frageSpektrum": "Welche Einordnung passt zu diesem Fall?",
+      "frageStimmt": "Stimmt diese Aussage?",
+      "stimmt": "Stimmt",
+      "stimmtNicht": "Stimmt nicht",
+      "sitzt": "Sitzt. Genau darum ging es vorhin.",
+      "nochNicht": "Noch nicht ganz — hier ist der Kern:",
+      "weiter": "Weiter"
+    },
+    "sprachangebot": {
+      "frage": "Soll ich einfacher erklären?",
+      "an": "Einfache Sprache an",
+      "spaeter": "Nein danke"
     }
   },
   "themaNav": {

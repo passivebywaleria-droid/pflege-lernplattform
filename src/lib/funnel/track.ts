@@ -27,6 +27,13 @@ export type FunnelEvent =
   | "paywall_konvertiert"
   // Kern-Loop (Option A + Adaptivitäts-Signal):
   | "spickzettel_offen"
+  // Adaptiv-v1 (PLAN-ADAPTIV-V1, Messbarkeit):
+  | "recheck_gezeigt"
+  | "recheck_richtig"
+  | "recheck_falsch"
+  | "spickzettel_angebot_angenommen"
+  | "sprache_angebot_gezeigt"
+  | "sprache_angebot_angenommen"
 
 const LS_KEY = "pflege:funnel"
 

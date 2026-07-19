@@ -504,6 +504,22 @@
       "rahmenlehrplan": "أهداف التعلّم وفق المنهج الإطاري",
       "schritte": "{schritte} خطوة",
       "los": "هيا نبدأ"
+    },
+    "recheck": {
+      "titel": "سؤال سريع",
+      "untertitel": "هل تتذكر؟",
+      "frageSpektrum": "أي تصنيف يناسب هذه الحالة؟",
+      "frageStimmt": "هل هذه العبارة صحيحة؟",
+      "stimmt": "صحيح",
+      "stimmtNicht": "غير صحيح",
+      "sitzt": "ممتاز. هذا بالضبط ما تعلمناه قبل قليل.",
+      "nochNicht": "ليس بعد — إليك الخلاصة:",
+      "weiter": "متابعة"
+    },
+    "sprachangebot": {
+      "frage": "هل أشرح بلغة أبسط؟",
+      "an": "تفعيل اللغة البسيطة",
+      "spaeter": "لا، شكرًا"
     }
   },
   "themaNav": {

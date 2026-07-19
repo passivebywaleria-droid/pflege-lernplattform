@@ -73,6 +73,11 @@ export interface StepRendererProps {
    * Alternativ-Erklärung nach falscher Antwort (nur Situation-Player).
    */
   erklaerKontext?: { ceId: string; situationId: string };
+  /**
+   * Adaptiv-v1 (Station ②): öffnet den Spickzettel-Baustein dieses Steps
+   * direkt aus dem AnswerSheet (nur gesetzt, wenn am Step einer hängt).
+   */
+  spickzettelOeffnen?: () => void;
 }
 
 export function StepRenderer({
@@ -88,6 +93,7 @@ export function StepRenderer({
   onGatedAnswer,
   gateReleased,
   erklaerKontext,
+  spickzettelOeffnen,
 }: StepRendererProps) {
   const content = sprachLevel === "b1" && step.contentB1 ? step.contentB1 : step.contentC1;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any -- v2 Steps nutzen kürzere Feldnamen, Fallback per runtime-check
@@ -287,6 +293,7 @@ export function StepRenderer({
               ? { ...erklaerKontext, stepId: step.stepId }
               : undefined
           }
+          spickzettelOeffnen={spickzettelOeffnen}
           onNext={(correct, gewaehlteAntwort) => onNext(correct, gewaehlteAntwort)}
         />
       );

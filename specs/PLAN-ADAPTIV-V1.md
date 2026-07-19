@@ -1,6 +1,15 @@
 # PLAN — Adaptivität v1: „Der Tutor merkt es sich"
 
-> **Status:** Plan für Waleria (2026-07-18), Baustein 4 des KERN-LOOP-STANDARD.
+> **Status:** GEBAUT (2026-07-19, unter Walerias Gesamtmandat „plane und führe
+> alles aus"). Umsetzung: kernfakt-register.ts + recheck-generator.ts (pure,
+> getestet) + RecheckIntermezzo + Player-Wiring + AnswerSheet-Angebote +
+> Sprach-Angebot + 6 Funnel-Events. Offene Ton-Fragen mit den Plan-Empfehlungen
+> beantwortet (Anrede „Kurz nachgehakt · Erinnerst du dich?", dezente
+> Sitzt-Zeile) — von Waleria jederzeit umstimmbar. Abweichungen transparent:
+> Schwächen-POST (Station ④, Server) wartet auf den Prod-Migrations-Workflow
+> (Register liegt upsert-fähig in localStorage); Sprach-Trigger v1 = „2× falsch";
+> Abschluss-Zeile ist durch die Schwächen-Zeile des Abschluss-Screens abgedeckt.
+> Ursprünglicher Plan (2026-07-18), Baustein 4 des KERN-LOOP-STANDARD.
 > Kern-Idee von Waleria: Falsche Antwort → Erklärung (existiert) → **ein paar Steps
 > später denselben Inhalt ANDERS abfragen („Erinnerst du dich…?")** → Spaced Repetition.
 > Dieses Dokument denkt den Loop ganzheitlich zu Ende — von der Antwort bis zum nächsten Tag.

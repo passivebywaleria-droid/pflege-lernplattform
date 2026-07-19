@@ -31,6 +31,8 @@ interface StepMCProps {
   isAnticipation?: boolean;
   /** „Erklär mir das anders": Step-Adresse für die RAG-gebundene Alternativ-Erklärung. */
   erklaerKontext?: { ceId: string; situationId: string; stepId: string };
+  /** Adaptiv-v1: Spickzettel dieses Steps aus dem AnswerSheet öffnen. */
+  spickzettelOeffnen?: () => void;
   onNext: (correct: boolean, gewaehlteAntwort?: string) => void;
 }
 
@@ -45,6 +47,7 @@ export function StepMC({
   bloomLevel,
   isAnticipation = false,
   erklaerKontext,
+  spickzettelOeffnen,
   onNext,
 }: StepMCProps) {
   const [selected, setSelected] = useState<number[]>([]);
@@ -379,6 +382,7 @@ export function StepMC({
           fehlerKategorie={fehlerAnalyse?.kategorie}
           warumWahl={warumWahl}
           andereErklaerungen={andereErklaerungen}
+          spickzettelOeffnen={spickzettelOeffnen}
           erklaerAnders={
             !isCorrect && erklaerKontext
               ? {

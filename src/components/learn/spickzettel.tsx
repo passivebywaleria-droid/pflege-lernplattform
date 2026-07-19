@@ -13,7 +13,7 @@
 // Rückkehr-Chip, und der Fortschritt HIER bleibt gespeichert (localStorage/
 // Server pro Situation). Saubere Hin-und-zurück-Kante.
 
-import { useState } from "react";
+import { useEffect, useState, type MutableRefObject } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useRouter } from "next/navigation";
 import { NotebookText, ArrowRight } from "lucide-react";
@@ -29,6 +29,11 @@ interface SpickzettelProps {
   locale: string;
   sprachLevel?: "c1" | "b1";
   glossar?: GlossarEntry[];
+  /**
+   * Adaptiv-v1 (Station ②): Ref, über die das AnswerSheet den ersten Baustein
+   * direkt aus dem Feedback öffnen kann („Spickzettel ansehen").
+   */
+  oeffnenRef?: MutableRefObject<(() => void) | null>;
 }
 
 /** localStorage-Key fürs Besucht-Tracking (füttert Adaptivität + Lernzeit-Nachweis). */
@@ -43,9 +48,22 @@ export function Spickzettel({
   locale,
   sprachLevel = "c1",
   glossar,
+  oeffnenRef,
 }: SpickzettelProps) {
   const router = useRouter();
   const [offenerIndex, setOffenerIndex] = useState<number | null>(null);
+
+  // Externes Öffnen (AnswerSheet-Angebot) — Ref statt Prop-Drilling des States.
+  useEffect(() => {
+    if (!oeffnenRef) return;
+    oeffnenRef.current = () => {
+      if (bausteine.length > 0) oeffnen(0);
+    };
+    return () => {
+      oeffnenRef.current = null;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [oeffnenRef, bausteine]);
 
   if (bausteine.length === 0) return null;
 

@@ -9,8 +9,17 @@ interface AnswerSheetProps {
   open: boolean;
   isCorrect: boolean;
   feedback: SandwichFeedback;
-  /** @deprecated Wird nicht mehr angezeigt (Feedback auf 2 Absätze gestrafft). Callers dürfen es weiter übergeben. */
+  /**
+   * Fehlerkategorie aus analysiereFehler. Adaptiv-v1 (Station ②): bei „raten"
+   * rückt „Erklär mir das anders" VOR die Erklärung — wer geraten hat, braucht
+   * einen anderen Zugang, nicht dieselbe Erklärung (VISION-Strategiewechsel).
+   */
   fehlerKategorie?: FehlerKategorie;
+  /**
+   * Adaptiv-v1 (Station ②): Falsch am Anker-Step → der Spickzettel-Baustein
+   * lässt sich direkt aus dem Feedback öffnen.
+   */
+  spickzettelOeffnen?: () => void;
   /**
    * „Erklär mir das anders" (VISION-Strategiewechsel): Wenn gesetzt und die
    * Antwort falsch war, kann der Schüler eine KI-Alternativ-Erklärung anfordern
@@ -28,11 +37,15 @@ export function AnswerSheet({
   open,
   isCorrect,
   feedback,
+  fehlerKategorie,
   erklaerAnders,
   warumWahl,
   andereErklaerungen,
+  spickzettelOeffnen,
   onNext,
 }: AnswerSheetProps) {
+  // Bei „geraten" zuerst der Strategiewechsel, dann die Erklärung.
+  const geraten = !isCorrect && fehlerKategorie === "raten";
   // Falsch = warmes Amber (unterstützend), nicht wertendes Rot (Dozentin-Feedback
   // 2026-07-16: „das Rot wirkt wertend"). Der Weiter-Button bleibt IMMER der neutrale
   // Sage-Akzent — „weiter" ist eine Handlung, kein Urteil (Verdikt von Aktion entkoppelt).
@@ -74,6 +87,10 @@ export function AnswerSheet({
               </p>
             </div>
 
+            {/* Bei „geraten": Strategiewechsel ZUERST (VISION: von Grund auf
+                anders erklären, nicht dieselbe Musterlösung nochmal). */}
+            {geraten && erklaerAnders && <ErklaerAnders kontext={erklaerAnders} />}
+
             {/* Feedback-Anatomie (KERN-LOOP-STANDARD 2026-07-16): Verdikt →
                 Warum (eigene Wahl + Musterlösung) → Tiefe on-demand. Die
                 Erklärungen der Optionen stehen NUR noch hier, nicht mehr
@@ -94,9 +111,21 @@ export function AnswerSheet({
               {feedback.ermutigung}
             </p>
 
+            {/* Adaptiv-v1: Spickzettel direkt aus dem Feedback öffnen —
+                der Schüler muss nicht wissen, dass er unterm Step hängt. */}
+            {!isCorrect && spickzettelOeffnen && (
+              <button
+                type="button"
+                onClick={spickzettelOeffnen}
+                className="w-full rounded-2xl border-[1.5px] border-[var(--lern-border)] bg-[var(--lern-bg-primary)] px-4 py-2.5 text-sm font-medium text-[var(--lern-text-primary)] transition-all active:scale-[0.99]"
+              >
+                🗒 Spickzettel ansehen
+              </button>
+            )}
+
             {/* Strategiewechsel nur bei falscher Antwort — wer richtig lag,
                 braucht keine zweite Erklärung. */}
-            {!isCorrect && erklaerAnders && (
+            {!geraten && !isCorrect && erklaerAnders && (
               <ErklaerAnders kontext={erklaerAnders} />
             )}
 

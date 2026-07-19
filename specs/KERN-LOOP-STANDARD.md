@@ -138,3 +138,27 @@ Screenshots an Waleria · Deploy nur nach Freigabe.
 - Einen zweiten Feedback-Ort.
 - Einen zweiten On-demand-Mechanismus (alles öffnet als Sheet von unten).
 - Arbeit an Baustein N+1, solange N nicht abgenommen ist.
+
+---
+
+## 6. Der Adaptiv-Loop (Baustein 4, GEBAUT 2026-07-19 — PLAN-ADAPTIV-V1)
+
+Fünf Stationen, Währung = Kernfakt (nicht Step):
+① **Messen:** falsche Antwort → alle kernfaktIds des Steps „wackelig" im
+Kernfakt-Register (`kernfakte:{situationId}`, localStorage, first-party, Gast
+und eingeloggt identisch). ② **Sofort:** AnswerSheet bietet bei Falsch am
+Anker-Step „Spickzettel ansehen"; bei Kategorie „raten" rückt Erklär-anders VOR
+die Erklärung. ③ **Nachhaken:** „Kurz nachgehakt · Erinnerst du dich?" —
+Intermezzo frühestens 2 Steps später, Spektrum-Transfer (Szenario = wortgleicher
+Befund-Teil, Optionen = hauptfaktor-Etiketten) mit TrueFalse-Fallback; zählt
+nicht im x/12; max 3/Situation, 1/Kernfakt, Gäste erst nach dem Gate.
+④ **Festigen:** richtig → „Sitzt."-Zeile + gefestigt; falsch → Faustregel
+direkt + bleibt wackelig (Register überlebt die Session in localStorage).
+⑤ **Entlasten:** wer richtig antwortet, bekommt NICHTS eingeschoben; nach der
+2. falschen Antwort einmalig das Sprach-Angebot (B1).
+
+Transparente v1-Grenzen: Server-Sync des Schwächen-Registers wartet auf den
+geklärten Prod-Migrations-Workflow (neue DB-Tabelle nötig) · Sprach-Trigger v1
+= „2× falsch" statt Antwortzeit-Kategorie · Skip bewusst nicht in v1 (Waleria).
+Messung: Funnel-Events recheck_gezeigt/richtig/falsch,
+spickzettel_angebot_angenommen, sprache_angebot_gezeigt/angenommen.

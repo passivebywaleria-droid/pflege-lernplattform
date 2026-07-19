@@ -27,7 +27,17 @@ import { verteileSpickzettel } from "@/lib/learn/spickzettel-verteilung";
 import { Spickzettel } from "@/components/learn/spickzettel";
 import { AbschlussScreen } from "@/components/learn/abschluss-screen";
 import { AuftaktScreen } from "@/components/learn/auftakt-screen";
+import { RecheckIntermezzo } from "@/components/learn/recheck-intermezzo";
 import { sammleAbschlussDaten } from "@/lib/learn/abschluss-daten";
+import {
+  markiereWackelig,
+  markiereGefestigt,
+  markiereRecheckGestellt,
+} from "@/lib/adaptive/kernfakt-register";
+import {
+  generiereRecheck,
+  type RecheckFrage,
+} from "@/lib/adaptive/recheck-generator";
 import { CE02_THEMA_STURZ_PROPHYLAXE_GLOSSAR } from "../../../../../../content/ce-02/themen/sturz-prophylaxe/glossar";
 import { CE06_GLOSSAR } from "../../../../../../content/ce-06/glossar";
 
@@ -110,6 +120,23 @@ export default function SituationLernenPage() {
   // Auftakt-Screen (Audit-Lücke 1): nur bei frischem Start — Resume mitten in
   // der Situation springt direkt in den Step. Wird nach Hydration gesetzt.
   const [auftaktAktiv, setAuftaktAktiv] = useState(false);
+
+  // Adaptiv-v1 (PLAN-ADAPTIV-V1): „Erinnerst du dich?"-Intermezzo.
+  // Queue wackeliger Kernfakten (Position = globaler Schritt-Zähler, Recheck
+  // frühestens 2 Steps nach dem Fehler), max. 3 pro Situation, nie zwei
+  // hintereinander, für Gäste erst nach dem Gate-Fenster.
+  const [aktiverRecheck, setAktiverRecheck] = useState<RecheckFrage | null>(null);
+  const recheckQueueRef = useRef<{ kernfaktId: string; beiPos: number }[]>([]);
+  const recheckAnzahlRef = useRef(0);
+  const letzterRecheckPosRef = useRef(-99);
+  const globalPosRef = useRef(0);
+  const falschZaehlerRef = useRef(0);
+  // Sprach-Angebot (Station ⑤): nach der 2. falschen Antwort EINMALIG anbieten,
+  // einfacher zu erklären (öffnet B1) — v1-Trigger bewusst simpel (2× falsch),
+  // die Antwortzeit-Kategorie folgt in v2.
+  const [sprachAngebot, setSprachAngebot] = useState<"aus" | "zeigen" | "erledigt">("aus");
+  // Ref, über die das AnswerSheet den Spickzettel des aktuellen Steps öffnet.
+  const spickzettelOeffnenRef = useRef<(() => void) | null>(null);
   // Nächste Situation der CE (für den „Als Nächstes"-Ausblick).
   const [naechsteSituation, setNaechsteSituation] =
     useState<Lernsituation | null>(null);
@@ -429,6 +456,36 @@ export default function SituationLernenPage() {
 
   const advanceStep = useCallback(() => {
     if (isGuest) trackFunnel("step_fertig", { situationId });
+    // Adaptiv-v1: globaler Schritt-Zähler + fälliges Intermezzo prüfen.
+    globalPosRef.current += 1;
+    const pos = globalPosRef.current;
+    const gateOffenFuerGast = isGuest !== true || gateStatus === "dismissed";
+    if (
+      situation &&
+      recheckAnzahlRef.current < 3 &&
+      gateOffenFuerGast &&
+      pos - letzterRecheckPosRef.current >= 2
+    ) {
+      const idx = recheckQueueRef.current.findIndex((e) => pos - e.beiPos >= 2);
+      if (idx !== -1) {
+        const [eintrag] = recheckQueueRef.current.splice(idx, 1);
+        markiereRecheckGestellt(situationId, eintrag.kernfaktId);
+        const frage = generiereRecheck(
+          situation,
+          eintrag.kernfaktId,
+          sprachLevel === "b1"
+        );
+        if (frage) {
+          recheckAnzahlRef.current += 1;
+          letzterRecheckPosRef.current = pos;
+          setAktiverRecheck(frage);
+          trackFunnel("recheck_gezeigt", {
+            situationId,
+            kernfaktId: eintrag.kernfaktId,
+          });
+        }
+      }
+    }
     if (currentStepIndex < phaseSteps.length - 1) {
       setCurrentStepIndex((prev) => prev + 1);
     } else {
@@ -441,7 +498,7 @@ export default function SituationLernenPage() {
         setCurrentStepIndex(0);
       }
     }
-  }, [currentStepIndex, phaseSteps.length, completedPhases, currentPhaseId, phaseOrder, isGuest, situationId]);
+  }, [currentStepIndex, phaseSteps.length, completedPhases, currentPhaseId, phaseOrder, isGuest, situationId, situation, gateStatus, sprachLevel]);
 
   const handleNextStep = useCallback(() => {
     // Micro-Narration: wenn Step ein transition-Feld hat, kurzen
@@ -690,6 +747,28 @@ export default function SituationLernenPage() {
                 </p>
               </motion.div>
             </AnimatePresence>
+          ) : aktiverRecheck ? (
+            /* Adaptiv-v1 (Station ③): Intermezzo statt nächstem Step —
+               zählt nicht im x/12-Zähler, die Situation wird nicht länger. */
+            <RecheckIntermezzo
+              frage={aktiverRecheck}
+              sprachLevel={sprachLevel}
+              onFertig={(richtig) => {
+                if (richtig) {
+                  markiereGefestigt(situationId, aktiverRecheck.kernfaktId);
+                  trackFunnel("recheck_richtig", {
+                    situationId,
+                    kernfaktId: aktiverRecheck.kernfaktId,
+                  });
+                } else {
+                  trackFunnel("recheck_falsch", {
+                    situationId,
+                    kernfaktId: aktiverRecheck.kernfaktId,
+                  });
+                }
+                setAktiverRecheck(null);
+              }}
+            />
           ) : currentStep ? (
             <AnimatePresence mode="wait">
               <motion.div
@@ -699,6 +778,33 @@ export default function SituationLernenPage() {
                 exit={{ opacity: 0, x: -20 }}
                 transition={{ duration: 0.2 }}
               >
+                {/* Sprach-Angebot (Station ⑤): einmalig, dezent, wegklickbar */}
+                {sprachAngebot === "zeigen" && (
+                  <div className="mb-3 flex items-center gap-2 rounded-2xl border-[1.5px] border-[var(--lern-accent)]/35 bg-[var(--lern-accent-bg)] px-3.5 py-2.5">
+                    <p className="min-w-0 flex-1 text-sm text-[var(--lern-text-primary)]">
+                      {t("sprachangebot.frage")}
+                    </p>
+                    <button
+                      type="button"
+                      className="shrink-0 rounded-xl bg-[var(--lern-accent)] px-3 py-1.5 text-xs font-semibold text-white"
+                      onClick={() => {
+                        setSprachLevel("b1");
+                        setSprachAngebot("erledigt");
+                        trackFunnel("sprache_angebot_angenommen", { situationId });
+                      }}
+                    >
+                      {t("sprachangebot.an")}
+                    </button>
+                    <button
+                      type="button"
+                      aria-label={t("sprachangebot.spaeter")}
+                      className="shrink-0 px-1 text-sm text-[var(--lern-text-secondary)]"
+                      onClick={() => setSprachAngebot("erledigt")}
+                    >
+                      ✕
+                    </button>
+                  </div>
+                )}
                 <StepRenderer
                   step={currentStep}
                   sprachLevel={sprachLevel}
@@ -714,6 +820,42 @@ export default function SituationLernenPage() {
                           ? prev
                           : new Map(prev).set(stepId, correct)
                       );
+                      // Adaptiv-v1 (Station ①): Kernfakt-Register + Recheck-Queue.
+                      if (correct === false) {
+                        const kernfakte = currentStep.kernfaktId ?? [];
+                        if (kernfakte.length > 0) {
+                          const register = markiereWackelig(
+                            situationId,
+                            kernfakte,
+                            stepId
+                          );
+                          // EIN Recheck pro verpatzter Frage: erster Kernfakt,
+                          // der noch keinen Recheck bekommen hat.
+                          const kandidat = kernfakte.find(
+                            (id) =>
+                              !register[id]?.recheckGestellt &&
+                              !recheckQueueRef.current.some(
+                                (e) => e.kernfaktId === id
+                              )
+                          );
+                          if (kandidat) {
+                            recheckQueueRef.current.push({
+                              kernfaktId: kandidat,
+                              beiPos: globalPosRef.current,
+                            });
+                          }
+                        }
+                        // Sprach-Angebot: ab der 2. falschen Antwort, einmalig.
+                        falschZaehlerRef.current += 1;
+                        if (
+                          falschZaehlerRef.current === 2 &&
+                          sprachLevel === "c1" &&
+                          sprachAngebot === "aus"
+                        ) {
+                          setSprachAngebot("zeigen");
+                          trackFunnel("sprache_angebot_gezeigt", { situationId });
+                        }
+                      }
                     }
                     handleNextStep();
                   }}
@@ -731,6 +873,16 @@ export default function SituationLernenPage() {
                       : undefined
                   }
                   gateReleased={gateStatus === "dismissed"}
+                  spickzettelOeffnen={
+                    currentSpickzettel.length > 0
+                      ? () => {
+                          spickzettelOeffnenRef.current?.();
+                          trackFunnel("spickzettel_angebot_angenommen", {
+                            situationId,
+                          });
+                        }
+                      : undefined
+                  }
                 />
                 {/* Option A: vollständige Wissens-Bausteine als Spickzettel
                     am Anwendungs-Step (Chip unter der Interaktion) */}
@@ -742,6 +894,7 @@ export default function SituationLernenPage() {
                     locale={locale}
                     sprachLevel={sprachLevel}
                     glossar={SITUATION_GLOSSAR[situationId] ?? []}
+                    oeffnenRef={spickzettelOeffnenRef}
                   />
                 )}
               </motion.div>

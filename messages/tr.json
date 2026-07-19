@@ -504,6 +504,22 @@
       "rahmenlehrplan": "Çerçeve müfredata göre öğrenme hedefleri",
       "schritte": "{schritte} adım",
       "los": "Hadi başlayalım"
+    },
+    "recheck": {
+      "titel": "Kısa bir soru",
+      "untertitel": "Hatırlıyor musun?",
+      "frageSpektrum": "Bu duruma hangi sınıflandırma uyar?",
+      "frageStimmt": "Bu ifade doğru mu?",
+      "stimmt": "Doğru",
+      "stimmtNicht": "Doğru değil",
+      "sitzt": "Oturdu. Az önce tam da bunu öğrendik.",
+      "nochNicht": "Henüz değil — işte özü:",
+      "weiter": "Devam"
+    },
+    "sprachangebot": {
+      "frage": "Daha basit anlatayım mı?",
+      "an": "Basit dili aç",
+      "spaeter": "Hayır, teşekkürler"
     }
   },
   "themaNav": {
