@@ -36,7 +36,16 @@
 3. ✅ Adaptiv-v1 GEBAUT+DEPLOYED 2026-07-19 (Register, Intermezzo, Sheet-Angebote, Sprach-Angebot; Status in PLAN-ADAPTIV-V1). Alt: nach PLAN-ADAPTIV-V1 inkl. Frust-Bremse (3× falsch → Eskalation).
    Merken: Nachhaken = Spektrum-Kontrastfall (NIE wortgleich), Karteikarten sind
    WISSENS-Karten (Upsert, keine Duplikate), Skip bewusst nicht in v1.
-4. 🔶 GEBAUT, NICHT deployed (E2E: Recorder „Kein Mikrofon", Whisper unverifiziert → Azure-EU-STT + Gratis-Programme, specs/STARTUP-CREDITS-RECHERCHE.md; Bewerbungen offen). **Sprech-/Hör-Moment** Wagner „Übergeben" (SBAR, TTS existiert).
+4. 🔶 **Sprech-Moment** Wagner „Übergeben" (SBAR) GEBAUT, NICHT deployed.
+   E2E-Befund v2 (2026-07-19, isoliert verifiziert): Recorder FEHLERFREI (alter
+   Fehler = fehlendes Chromium-Flag); ABER use-whisper.ts hat 2 echte Bugs
+   (Bare-Import löst in keinem Browser auf; transcribe-Rückgabe falsch typisiert)
+   UND Whisper-WASM braucht crossOriginIsolated (COOP/COEP fehlen auf carovia.de,
+   app-weit riskant wg. Stripe). Positiv-Beweis: mit COI+URL-Import läuft die
+   Kette (8,5 s/10,5 s Audio, tiny-Qualität für freie Übergaben grenzwertig:
+   „admitent nicht", „Herztruckmassage"). → Waleria-Entscheidung: (A) Azure STT EU
+   Server-Route für Pilot (Empfehlung), (B) On-Device fixen (COI + Self-Host-Modell),
+   (C) zurückstellen. Details: Memory pilot-ux-haertung. Credits-Bewerbungen als Texte fertig.
 5. Danach: Rechtstexte-Status (Task #11 — evtl. Parallel-Chat), Mastery-Definition.
 
 ## Offen / nicht vergessen

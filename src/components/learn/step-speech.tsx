@@ -4,7 +4,7 @@ import { useState, useCallback, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTts } from "@/hooks/use-tts";
 import { useRecorder } from "@/hooks/use-recorder";
-import { useWhisper } from "@/hooks/use-whisper";
+import { useStt } from "@/hooks/use-stt";
 import type { GlossarEntry } from "../../../content/_types";
 import type { SpeechData } from "../../../content/_types";
 import { FachbegriffText } from "./fachbegriff-tooltip";
@@ -72,7 +72,7 @@ export function StepSpeech({
 }: StepSpeechProps) {
   const { speak: ttsSpeak, playing: ttsPlaying } = useTts();
   const { startRecording, stopRecording, recording, audioBlob, error: recorderError } = useRecorder();
-  const { transcribe, transcript, loading: whisperLoading, modelReady, modelProgress, error: whisperError } = useWhisper();
+  const { transcribe, transcript, loading: sttLoading, error: sttError } = useStt();
 
   const [bewertung, setBewertung] = useState<Bewertung | null>(null);
   const [similarity, setSimilarity] = useState<number | null>(null);
@@ -109,23 +109,29 @@ export function StepSpeech({
   const fetchKiFeedback = useCallback(async (spokenText: string) => {
     setKiFeedbackLoading(true);
     try {
+      const systemPrompt = [
+        "Du bist eine erfahrene Praxisanleiterin in der Pflegeausbildung. Eine Schülerin hat eine Sprechübung gemacht — du bekommst die automatische Transkription ihrer gesprochenen Antwort.",
+        `Aufgabe der Schülerin: ${aufgabe ?? speech.aufgabe ?? "Erkläre den Fachbegriff"}`,
+        speech.bewertungshinweis
+          ? `Bewerte NUR anhand dieser fachlichen Kriterien: ${speech.bewertungshinweis}`
+          : "",
+        "Gib Feedback nach dem Sandwich-Prinzip: erst konkret benennen was fachlich stimmt, dann was fehlt oder unpräzise ist (mit dem korrekten Wortlaut), dann ermutigen. Erfinde keine Fakten, die nicht in den Kriterien stehen. Transkriptionsfehler einzelner Wörter nicht ankreiden.",
+        sprachLevel === "b1"
+          ? "Schreibe in einfacher Sprache (B1): kurze Sätze, keine Schachtelsätze."
+          : "",
+        "Maximal 90 Wörter. Sprich die Schülerin mit du an.",
+      ]
+        .filter(Boolean)
+        .join("\n");
+
       const response = await fetch("/api/ki-feedback", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          text: spokenText,
-          aufgabe: aufgabe ?? speech.aufgabe ?? "Erkläre den Fachbegriff",
-          bewertungshinweis: speech.bewertungshinweis ?? "",
-          sprachLevel,
-        }),
+        body: JSON.stringify({ systemPrompt, userMessage: spokenText }),
       });
       if (response.ok) {
         const data = await response.json();
-        setKiFeedback(data.feedback ?? data.bewertung ?? null);
-        // Bewertung basierend auf KI-Score
-        if (data.score !== undefined) {
-          setBewertung(data.score >= 70 ? "perfekt" : data.score >= 40 ? "gut" : "nochmal");
-        }
+        setKiFeedback(data.feedback ?? null);
       }
     } catch {
       // Kein KI-Feedback — nicht kritisch
@@ -144,7 +150,7 @@ export function StepSpeech({
     onNext(bewertung === "perfekt" || bewertung === "gut");
   }, [onNext, bewertung]);
 
-  const error = recorderError || whisperError;
+  const error = recorderError || sttError;
 
   return (
     <div className="space-y-5" style={{ color: "var(--lern-text-primary)" }}>
@@ -195,26 +201,16 @@ export function StepSpeech({
         </div>
       )}
 
-      {/* Modell-Download-Fortschritt */}
-      {!modelReady && whisperLoading && (
-        <div className="text-center p-4">
-          <div className="w-full h-2 bg-[var(--lern-divider)] rounded-full overflow-hidden mb-2">
-            <motion.div
-              className="h-full bg-[var(--lern-accent)] rounded-full"
-              initial={{ width: 0 }}
-              animate={{ width: `${modelProgress}%` }}
-            />
-          </div>
-          <p className="text-xs text-[var(--lern-text-tertiary)]">
-            Spracherkennung wird geladen... {modelProgress}%
-          </p>
-        </div>
-      )}
-
-      {/* Fehler */}
-      {error && (
+      {/* Fehler — mit ehrlichem Ausweg: der Schritt darf nie blockieren */}
+      {error && !bewertung && (
         <div className="p-3 rounded-xl bg-[#C96B5C]/10 border border-[#C96B5C]/20">
           <p className="text-sm text-[#C96B5C]">{error}</p>
+          <button
+            onClick={() => onNext()}
+            className="mt-2 text-xs font-medium text-[var(--lern-text-secondary)] underline underline-offset-2"
+          >
+            Diesen Schritt überspringen
+          </button>
         </div>
       )}
 
@@ -223,12 +219,12 @@ export function StepSpeech({
         <div className="flex flex-col items-center gap-3 py-4">
           <button
             onClick={recording ? stopRecording : startRecording}
-            disabled={whisperLoading}
+            disabled={sttLoading}
             aria-label={recording ? "Aufnahme stoppen" : "Aufnahme starten"}
             className={`relative flex h-20 w-20 items-center justify-center rounded-full transition-all ${
               recording
                 ? "bg-[#C96B5C] text-white scale-110"
-                : whisperLoading
+                : sttLoading
                   ? "bg-[var(--lern-divider)] text-[var(--lern-text-tertiary)]"
                   : "bg-[var(--lern-accent)] text-white active:scale-95"
             }`}
@@ -247,7 +243,7 @@ export function StepSpeech({
               <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
                 <rect x="6" y="6" width="12" height="12" rx="2" />
               </svg>
-            ) : whisperLoading ? (
+            ) : sttLoading ? (
               // Spinner
               <motion.div
                 className="w-7 h-7 border-3 border-current border-t-transparent rounded-full"
@@ -266,7 +262,7 @@ export function StepSpeech({
           <p className="text-xs text-[var(--lern-text-tertiary)]">
             {recording
               ? "Aufnahme läuft — tippe zum Stoppen"
-              : whisperLoading
+              : sttLoading
                 ? "Wird verarbeitet..."
                 : "Tippe zum Sprechen"}
           </p>

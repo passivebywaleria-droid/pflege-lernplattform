@@ -7,6 +7,20 @@ import { useState, useRef, useCallback, useEffect } from "react";
  * Nutzt MediaRecorder API (Browser-nativ).
  * Max 30 Sekunden, auto-stop.
  */
+
+/**
+ * iOS Safari kennt KEIN audio/webm — ein nicht unterstützter mimeType lässt
+ * den MediaRecorder-Konstruktor mit NotSupportedError werfen. Deshalb:
+ * Kandidaten durchprobieren (Chrome/Android → webm/opus, iOS → mp4),
+ * sonst den Browser wählen lassen (undefined).
+ */
+export function pickRecorderMimeType(
+  isTypeSupported: (type: string) => boolean
+): string | undefined {
+  const candidates = ["audio/webm;codecs=opus", "audio/webm", "audio/mp4"];
+  return candidates.find((c) => isTypeSupported(c));
+}
+
 export function useRecorder() {
   const [recording, setRecording] = useState(false);
   const [audioBlob, setAudioBlob] = useState<Blob | null>(null);
@@ -47,12 +61,13 @@ export function useRecorder() {
       });
       streamRef.current = stream;
 
-      // Preferred: webm/opus, Fallback: whatever browser supports
-      const mimeType = MediaRecorder.isTypeSupported("audio/webm;codecs=opus")
-        ? "audio/webm;codecs=opus"
-        : "audio/webm";
-
-      const recorder = new MediaRecorder(stream, { mimeType });
+      const mimeType = pickRecorderMimeType((t) =>
+        MediaRecorder.isTypeSupported(t)
+      );
+      const recorder = new MediaRecorder(
+        stream,
+        mimeType ? { mimeType } : undefined
+      );
       mediaRecorderRef.current = recorder;
 
       recorder.ondataavailable = (e) => {
@@ -62,7 +77,10 @@ export function useRecorder() {
       };
 
       recorder.onstop = () => {
-        const blob = new Blob(chunksRef.current, { type: mimeType });
+        // recorder.mimeType = was der Browser WIRKLICH aufgenommen hat
+        const blob = new Blob(chunksRef.current, {
+          type: recorder.mimeType || mimeType || "audio/webm",
+        });
         setAudioBlob(blob);
         setRecording(false);
 
