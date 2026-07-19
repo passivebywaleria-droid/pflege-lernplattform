@@ -228,6 +228,20 @@ export const CE06_SITUATIONEN: Lernsituation[] = [
     ],
     komplikationen: [],
     bausteinTrigger: [],
+    // Auftakt: 1:1 aus CE06-LE1-K1 („führen Erste-Hilfemaßnahmen bei Wunden,
+    // Blutungen, Sturz … durch"), auf die Situations-Inhalte aufgeteilt.
+    lernzieleSchueler: [
+      {
+        lernergebnisId: "CE06-LE1-K1",
+        text: "Du führst die Erste Hilfe nach einem Sturz durch — Wunde versorgen, Blutung stillen, richtig lagern.",
+        textB1: "Du machst die Erste Hilfe nach einem Sturz: Wunde versorgen, Blutung stillen, richtig lagern.",
+      },
+      {
+        lernergebnisId: "CE06-LE1-K1",
+        text: "Du erkennst, wann ein Sturz zum Notfall wird — und überwachst, bis der Rettungsdienst da ist.",
+        textB1: "Du erkennst: Wann wird ein Sturz zum Notfall? Und du überwachst, bis der Rettungsdienst kommt.",
+      },
+    ],
     // Teaser erscheint auf dem Ríos-Abschluss; Fakten aus patient.ts
     // (86, nachts im Pflegeheim, Kopfplatzwunde, V. a. SHT).
     teaser:
@@ -254,6 +268,20 @@ export const CE06_SITUATIONEN: Lernsituation[] = [
     ],
     komplikationen: [],
     bausteinTrigger: [],
+    // Auftakt: 1:1 aus CE06-LE1-K4 („diagnostizieren akute psychotische
+    // Erregungszustände und leiten Maßnahmen der 1. Hilfe ein"), in zwei Zeilen.
+    lernzieleSchueler: [
+      {
+        lernergebnisId: "CE06-LE1-K4",
+        text: "Du erkennst einen akuten psychotischen Erregungszustand — und was auch dahinterstecken kann.",
+        textB1: "Du erkennst eine akute psychotische Erregung. Und du weißt: Es kann auch etwas anderes dahinterstecken.",
+      },
+      {
+        lernergebnisId: "CE06-LE1-K4",
+        text: "Du leitest die richtigen ersten Maßnahmen ein — mit deiner eigenen Sicherheit zuerst.",
+        textB1: "Du startest die richtigen ersten Maßnahmen. Deine eigene Sicherheit kommt zuerst.",
+      },
+    ],
   },
   {
     situationId: "ls-yildiz-thoraxschmerz",
@@ -274,6 +302,25 @@ export const CE06_SITUATIONEN: Lernsituation[] = [
     ],
     komplikationen: [],
     bausteinTrigger: [],
+    // Auftakt: 1:1 aus CE06-LE2-W3 (Klinik/Therapie Herzinfarkt),
+    // CE06-LE2-K3 (atemunterstützende Lagerungen), CE06-LE2-K1 (Vitalzeichen).
+    lernzieleSchueler: [
+      {
+        lernergebnisId: "CE06-LE2-W3",
+        text: "Du erklärst, woran man einen Herzinfarkt erkennt — und was sofort zu tun ist.",
+        textB1: "Du erklärst: Woran erkennt man einen Herzinfarkt? Und was tut man sofort?",
+      },
+      {
+        lernergebnisId: "CE06-LE2-K3",
+        text: "Du führst atemunterstützende Lagerungen durch — und weißt, wann welche passt.",
+        textB1: "Du lagerst so, dass das Atmen leichter wird. Und du weißt, wann welche Lagerung passt.",
+      },
+      {
+        lernergebnisId: "CE06-LE2-K1",
+        text: "Du überwachst die Vitalzeichen engmaschig und erkennst eine Verschlechterung früh.",
+        textB1: "Du überwachst die Vitalzeichen genau. So erkennst du früh, wenn es schlechter wird.",
+      },
+    ],
   },
   {
     situationId: "ls-gruber-schock",
@@ -294,6 +341,31 @@ export const CE06_SITUATIONEN: Lernsituation[] = [
     ],
     komplikationen: [],
     bausteinTrigger: [],
+    // Auftakt: 1:1 aus CE06-LE2-W2 (Schockursachen/-formen), CE06-LE2-K1
+    // (Vitalzeichen/Geräte), CE06-LE2-K2 (Material venöse Zugänge),
+    // CE06-LE2-W3 (Teil: Sauerstoffgabe/Infusionen).
+    lernzieleSchueler: [
+      {
+        lernergebnisId: "CE06-LE2-W2",
+        text: "Du erklärst, wie ein Schock entsteht und welche Formen es gibt.",
+        textB1: "Du erklärst: Wie entsteht ein Schock? Und welche Formen gibt es?",
+      },
+      {
+        lernergebnisId: "CE06-LE2-K1",
+        text: "Du beobachtest die Vitalzeichen — auch mit Monitor und intensivmedizinischen Geräten.",
+        textB1: "Du beobachtest die Vitalzeichen. Auch mit Monitor und Geräten der Intensivmedizin.",
+      },
+      {
+        lernergebnisId: "CE06-LE2-K2",
+        text: "Du bereitest die Materialien für venöse Zugänge vor.",
+        textB1: "Du bereitest das Material für Zugänge in die Vene vor.",
+      },
+      {
+        lernergebnisId: "CE06-LE2-W3",
+        text: "Du erklärst die Sauerstoffgabe und den Umgang mit Infusionen im Notfall.",
+        textB1: "Du erklärst: Wie gibt man Sauerstoff? Und wie geht man mit Infusionen um?",
+      },
+    ],
   },
   {
     situationId: "ls-kortmann-abdomen",
@@ -314,6 +386,31 @@ export const CE06_SITUATIONEN: Lernsituation[] = [
     ],
     komplikationen: [],
     bausteinTrigger: [],
+    // Auftakt: 1:1 aus CE06-LE3-W1 (akutes Abdomen), CE06-LE3-W2
+    // (Ileo-/Kolostoma), CE06-LE3-W3 (Drainagesysteme), CE06-LE3-K1 (Stoma-
+    // Versorgung). Spoiler-Regel: Nachblutungs-Dramaturgie bleibt verborgen.
+    lernzieleSchueler: [
+      {
+        lernergebnisId: "CE06-LE3-W1",
+        text: "Du beschreibst, woran man ein akutes Abdomen erkennt.",
+        textB1: "Du beschreibst: Woran erkennt man ein akutes Abdomen (einen akuten Bauch)?",
+      },
+      {
+        lernergebnisId: "CE06-LE3-W2",
+        text: "Du erklärst den Unterschied zwischen Ileostoma und Kolostoma — und was er für die Versorgung bedeutet.",
+        textB1: "Du erklärst den Unterschied: Ileostoma und Kolostoma. Und was das für die Pflege heißt.",
+      },
+      {
+        lernergebnisId: "CE06-LE3-W3",
+        text: "Du erklärst, wie die verschiedenen Drainagen wirken — mit Sog und ohne.",
+        textB1: "Du erklärst, wie Drainagen arbeiten: mit Sog und ohne Sog.",
+      },
+      {
+        lernergebnisId: "CE06-LE3-K1",
+        text: "Du versorgst einen Menschen nach einer frischen Stoma-Anlage.",
+        textB1: "Du pflegst einen Menschen mit einem neuen Stoma.",
+      },
+    ],
   },
   {
     situationId: "ls-radtke-brand",
@@ -334,6 +431,30 @@ export const CE06_SITUATIONEN: Lernsituation[] = [
     ],
     komplikationen: [],
     bausteinTrigger: [],
+    // Auftakt: 1:1 aus CE06-LE4-K2 (Brandschutz/Notfallplan), CE06-LE4-W1
+    // (Teil: Triage), CE06-LE4-K3 (Krisenintervention), CE06-LE4-E2 (Supervision).
+    lernzieleSchueler: [
+      {
+        lernergebnisId: "CE06-LE4-K2",
+        text: "Du planst dein Handeln bei einem Brand — nach Brandschutzordnung und Notfallplan.",
+        textB1: "Du planst: Was tue ich bei einem Brand? Nach Brandschutz-Ordnung und Notfallplan.",
+      },
+      {
+        lernergebnisId: "CE06-LE4-W1",
+        text: "Du erklärst, wie die Sichtung (Triage) funktioniert, wenn viele Menschen verletzt sind.",
+        textB1: "Du erklärst die Sichtung (Triage): Wer bekommt zuerst Hilfe, wenn viele verletzt sind?",
+      },
+      {
+        lernergebnisId: "CE06-LE4-K3",
+        text: "Du stellst dar, wie eine Krisenintervention abläuft.",
+        textB1: "Du zeigst: So läuft eine Krisen-Hilfe ab.",
+      },
+      {
+        lernergebnisId: "CE06-LE4-E2",
+        text: "Du diskutierst, wie Supervision hilft, selbst stabil zu bleiben.",
+        textB1: "Du sprichst darüber: Wie hilft Supervision, selbst stark zu bleiben?",
+      },
+    ],
   },
   {
     situationId: "ls-erlemann-organspende",
@@ -354,6 +475,31 @@ export const CE06_SITUATIONEN: Lernsituation[] = [
     ],
     komplikationen: [],
     bausteinTrigger: [],
+    // Auftakt: 1:1 aus CE06-LE5-W3 (Ablauf postmortale Organspende),
+    // CE06-LE5-K1 (Recht/Ethik), CE06-LE5-W4 (Pflege eines hirntoten Menschen),
+    // CE06-LE5-W1 (fehlende Spenderorgane).
+    lernzieleSchueler: [
+      {
+        lernergebnisId: "CE06-LE5-W3",
+        text: "Du erklärst, wie eine postmortale Organspende abläuft.",
+        textB1: "Du erklärst: Wie läuft eine Organspende nach dem Tod ab?",
+      },
+      {
+        lernergebnisId: "CE06-LE5-K1",
+        text: "Du skizzierst die rechtlichen Grundlagen — und die ethischen Fragen dahinter.",
+        textB1: "Du kennst die wichtigsten Regeln im Gesetz. Und die ethischen Fragen dazu.",
+      },
+      {
+        lernergebnisId: "CE06-LE5-W4",
+        text: "Du erläuterst, was die Pflege eines hirntoten Menschen besonders macht.",
+        textB1: "Du erklärst: Was ist bei der Pflege eines hirntoten Menschen besonders?",
+      },
+      {
+        lernergebnisId: "CE06-LE5-W1",
+        text: "Du erläuterst, warum Spenderorgane fehlen — und welche Folgen das hat.",
+        textB1: "Du erklärst: Warum fehlen Spender-Organe? Und welche Folgen hat das?",
+      },
+    ],
   },
   {
     situationId: "ls-sander-verbruehung",
@@ -374,6 +520,21 @@ export const CE06_SITUATIONEN: Lernsituation[] = [
     ],
     komplikationen: [],
     bausteinTrigger: [],
+    // Auftakt: 1:1 aus CE06-LE1-K1 („führen Erste-Hilfemaßnahmen bei …
+    // Hitzeerschöpfung, Verbrennungen, Erfrierungen, Verätzungen durch") —
+    // Sander deckt die im Scaffold als „offen" markierten K1-Teile ab.
+    lernzieleSchueler: [
+      {
+        lernergebnisId: "CE06-LE1-K1",
+        text: "Du führst die Erste Hilfe bei Verbrühungen und Verbrennungen durch — kühlen, versorgen, einschätzen.",
+        textB1: "Du machst die Erste Hilfe bei Verbrühungen: kühlen, versorgen, einschätzen.",
+      },
+      {
+        lernergebnisId: "CE06-LE1-K1",
+        text: "Du weißt, was bei Verätzungen und Unterkühlung zu tun ist — und was auf keinen Fall.",
+        textB1: "Du weißt: Was tut man bei Verätzung und Unterkühlung? Und was darf man nicht tun?",
+      },
+    ],
   },
   {
     situationId: "ls-capstone-am-boden",
@@ -394,5 +555,20 @@ export const CE06_SITUATIONEN: Lernsituation[] = [
     ],
     komplikationen: [],
     bausteinTrigger: [],
+    // Auftakt: Capstone integriert die LE1-Kernkompetenzen — 1:1 aus
+    // CE06-LE1-K2 (lebenserhaltende Sofortmaßnahmen, hier die Entscheidung)
+    // und CE06-LE1-K3 (neurologische Akutsituationen differenzieren).
+    lernzieleSchueler: [
+      {
+        lernergebnisId: "CE06-LE1-K2",
+        text: "Du entscheidest in Sekunden, ob reanimiert werden muss.",
+        textB1: "Du entscheidest in Sekunden: Muss ich reanimieren?",
+      },
+      {
+        lernergebnisId: "CE06-LE1-K3",
+        text: "Du hältst Synkope, Schlaganfall und Krampfanfall auseinander und leitest die richtige Erste Hilfe ein.",
+        textB1: "Du hältst Synkope (kurze Ohnmacht), Schlaganfall und Krampfanfall auseinander. Und du startest die richtige Erste Hilfe.",
+      },
+    ],
   },
 ];
