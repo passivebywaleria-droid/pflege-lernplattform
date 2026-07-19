@@ -224,6 +224,7 @@ export function StepSpeech({
           <button
             onClick={recording ? stopRecording : startRecording}
             disabled={whisperLoading}
+            aria-label={recording ? "Aufnahme stoppen" : "Aufnahme starten"}
             className={`relative flex h-20 w-20 items-center justify-center rounded-full transition-all ${
               recording
                 ? "bg-[#C96B5C] text-white scale-110"
