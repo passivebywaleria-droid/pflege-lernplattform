@@ -27,6 +27,7 @@ import { verteileSpickzettel } from "@/lib/learn/spickzettel-verteilung";
 import { Spickzettel } from "@/components/learn/spickzettel";
 import { AbschlussScreen } from "@/components/learn/abschluss-screen";
 import { AuftaktScreen } from "@/components/learn/auftakt-screen";
+import { prefetchWhisperAssets } from "@/hooks/use-whisper";
 import { RecheckIntermezzo } from "@/components/learn/recheck-intermezzo";
 import { sammleAbschlussDaten } from "@/lib/learn/abschluss-daten";
 import {
@@ -159,6 +160,17 @@ export default function SituationLernenPage() {
           setCurrentPhaseId(sit.phasen[0].phase);
           setCompletedPhases([]);
           setCurrentStepIndex(0);
+        }
+        // Sprech-Step in der Situation? → Whisper-Modell (57 MB) im Leerlauf
+        // vorwärmen, damit beim Step niemand auf den Download wartet.
+        if (
+          sit?.phasen?.some((p) =>
+            [...p.kernSteps, ...p.optionaleSteps].some(
+              (s) => s.stepType === "speech"
+            )
+          )
+        ) {
+          prefetchWhisperAssets();
         }
       })
       .finally(() => setLoading(false));

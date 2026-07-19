@@ -78,6 +78,45 @@ async function fetchModel(onProgress: (pct: number) => void): Promise<Uint8Array
   return out;
 }
 
+// Prefetch-Guard: pro Seite/Session nur ein Versuch
+let prefetchStarted = false;
+
+/**
+ * Wärmt Modul + Modell im Hintergrund (SW-/HTTP-Cache), OHNE zu initialisieren
+ * (Init kostet ~200 MB RAM und gehört an den ersten Sprech-Moment).
+ * Aufruf beim Situations-Start, wenn die Situation einen Sprech-Step enthält —
+ * dann wartet beim Step niemand mehr auf den 57-MB-Download.
+ * Leitplanken: Datensparmodus respektieren, nur online, nur wenn das Gerät
+ * Whisper überhaupt kann (COI + SIMD) — sonst wären 57 MB verschenkt.
+ */
+export function prefetchWhisperAssets(): void {
+  if (prefetchStarted || typeof window === "undefined") return;
+  prefetchStarted = true;
+
+  const conn = (navigator as { connection?: { saveData?: boolean } }).connection;
+  if (!navigator.onLine || conn?.saveData) return;
+  if (typeof crossOriginIsolated !== "undefined" && !crossOriginIsolated) return;
+
+  const idle =
+    typeof requestIdleCallback === "function"
+      ? requestIdleCallback
+      : (cb: () => void) => setTimeout(cb, 2000);
+
+  idle(() => {
+    void (async () => {
+      try {
+        const { WhisperWasmService } = await importWhisperModule();
+        const whisper = new WhisperWasmService({ logLevel: 3 });
+        if (!(await whisper.checkWasmSupport())) return;
+        // Download in den Browser-/SW-Cache — Response verwerfen, kein Init.
+        await fetch(MODEL_URL, { priority: "low" } as RequestInit);
+      } catch {
+        // still scheitern — der Sprech-Step lädt dann regulär mit Progress-UI
+      }
+    })();
+  });
+}
+
 export function useWhisper() {
   const [transcript, setTranscript] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);

@@ -41,6 +41,37 @@ export function aehnlichkeit(a: string, b: string): number {
   return 1 - prev[b.length] / Math.max(a.length, b.length);
 }
 
+/**
+ * Entfernt DIREKT aufeinanderfolgende Wiederholungen von Satz-/Komma-Segmenten
+ * („Ich übergebe, ich übergebe, er kollabiert, er kollabiert." →
+ * „Ich übergebe, er kollabiert."). Whisper neigt bei leisem/verrauschtem Audio
+ * zu solchen Schleifen (iPhone-Live-Befund 2026-07-19). Nur benachbarte
+ * Duplikate — bewusst gesprochene Wiederholungen an anderer Stelle bleiben.
+ */
+export function entferneDirekteWiederholungen(text: string): string {
+  const teile = text.split(/([,.;:!?]+\s*)/);
+  const paare: Array<{ seg: string; sep: string }> = [];
+  let vorherigesSegment = "";
+  for (let i = 0; i < teile.length; i += 2) {
+    const seg = teile[i] ?? "";
+    const sep = teile[i + 1] ?? "";
+    const norm = normalize(seg);
+    if (norm.length > 0 && norm === vorherigesSegment) {
+      // Duplikat fällt weg — sein Satzzeichen ersetzt das des Originals
+      // („übergebe, übergebe." → „übergebe.")
+      if (paare.length && sep) paare[paare.length - 1].sep = sep;
+      continue;
+    }
+    if (norm.length > 0) vorherigesSegment = norm;
+    paare.push({ seg, sep });
+  }
+  return paare
+    .map((p) => p.seg + p.sep)
+    .join("")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 export interface KorrekturErgebnis {
   text: string;
   ersetzungen: Array<{ von: string; zu: string }>;

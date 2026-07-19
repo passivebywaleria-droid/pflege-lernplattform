@@ -6,7 +6,10 @@ import { useTts } from "@/hooks/use-tts";
 import { useRecorder } from "@/hooks/use-recorder";
 import { useStt } from "@/hooks/use-stt";
 import { useWhisper, WHISPER_UNSUPPORTED } from "@/hooks/use-whisper";
-import { korrigiereTranskript } from "@/lib/learn/transkript-korrektur";
+import {
+  korrigiereTranskript,
+  entferneDirekteWiederholungen,
+} from "@/lib/learn/transkript-korrektur";
 import type { GlossarEntry } from "../../../content/_types";
 import type { SpeechData } from "../../../content/_types";
 import { FachbegriffText } from "./fachbegriff-tooltip";
@@ -111,13 +114,17 @@ export function StepSpeech({
       }
       if (!text) return;
 
-      // Whisper verstümmelt Fachbegriffe systematisch — die Situation kennt
-      // ihre Begriffe (Glossar + Zielwort) und repariert genau diese Klasse.
+      // Whisper-Schleifen glätten (doppelte Phrasen bei leisem Audio), dann
+      // Fachbegriffe reparieren — die Situation kennt ihre Begriffe
+      // (Glossar + Zielwort) und repariert genau diese Klasse.
       const lexikon = [
         ...glossar.map((g) => g.begriff),
         ...(speech.zielwort ? [speech.zielwort] : []),
       ];
-      text = korrigiereTranskript(text, lexikon).text;
+      text = korrigiereTranskript(
+        entferneDirekteWiederholungen(text),
+        lexikon
+      ).text;
       setTranskriptText(text);
 
       if (isNachsprechen && speech.zielwort) {
@@ -271,7 +278,12 @@ export function StepSpeech({
       {!bewertung && (
         <div className="flex flex-col items-center gap-3 py-4">
           <button
-            onClick={recording ? stopRecording : startRecording}
+            onClick={
+              recording
+                ? stopRecording
+                : // Freie Übergabe braucht Zeit — 60 s; Nachsprechen bleibt bei 30 s
+                  () => startRecording(isNachsprechen ? 30 : 60)
+            }
             disabled={sttLoading}
             aria-label={recording ? "Aufnahme stoppen" : "Aufnahme starten"}
             className={`relative flex h-20 w-20 items-center justify-center rounded-full transition-all ${
@@ -314,7 +326,7 @@ export function StepSpeech({
           </button>
           <p className="text-xs text-[var(--lern-text-tertiary)]">
             {recording
-              ? "Aufnahme läuft — tippe zum Stoppen"
+              ? `Aufnahme läuft — tippe zum Stoppen (max. ${isNachsprechen ? "30 Sek." : "1 Min."})`
               : sttLoading
                 ? "Wird verarbeitet..."
                 : "Tippe zum Sprechen"}

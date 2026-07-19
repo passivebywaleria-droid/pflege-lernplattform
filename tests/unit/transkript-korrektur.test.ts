@@ -1,6 +1,7 @@
 import { describe, it, expect } from "vitest";
 import {
   korrigiereTranskript,
+  entferneDirekteWiederholungen,
   aehnlichkeit,
 } from "@/lib/learn/transkript-korrektur";
 import { resampleLinear } from "@/lib/audio/wav";
@@ -86,6 +87,39 @@ describe("korrigiereTranskript — echte Whisper-Fehler (Benchmark 2026-07-19)",
   it("ist robust bei leerem Transkript und leerem Lexikon", () => {
     expect(korrigiereTranskript("", LEXIKON).text).toBe("");
     expect(korrigiereTranskript("Hallo Welt", []).text).toBe("Hallo Welt");
+  });
+});
+
+describe("entferneDirekteWiederholungen — iPhone-Live-Befund 2026-07-19", () => {
+  it("glättet Whisper-Schleifen (echtes iPhone-Transkript)", () => {
+    expect(
+      entferneDirekteWiederholungen(
+        "Ich übergebe, ich übergebe, herwachn, herwachn. Es kollobiert, es kollobiert, mir weiß ich nicht, mir weiß ich nicht."
+      )
+    ).toBe("Ich übergebe, herwachn. Es kollobiert, mir weiß ich nicht.");
+  });
+
+  it("glättet den halluzinierten Schwanz-Satz aus dem Benchmark", () => {
+    expect(
+      entferneDirekteWiederholungen(
+        "Hier ist Station 3. Wir haben begonnen. Hier ist Station 3."
+      )
+      // NICHT benachbart → bleibt (bewusst konservativ)
+    ).toBe("Hier ist Station 3. Wir haben begonnen. Hier ist Station 3.");
+    expect(
+      entferneDirekteWiederholungen("Wir haben begonnen. Wir haben begonnen.")
+    ).toBe("Wir haben begonnen.");
+  });
+
+  it("lässt Text ohne Wiederholungen unangetastet", () => {
+    const s = "Herr Wagner ist 67 Jahre alt, er atmet nicht.";
+    expect(entferneDirekteWiederholungen(s)).toBe(s);
+  });
+
+  it("ignoriert Groß-/Kleinschreibung beim Vergleich", () => {
+    expect(entferneDirekteWiederholungen("Er kollabiert, er kollabiert.")).toBe(
+      "Er kollabiert."
+    );
   });
 });
 
