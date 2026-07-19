@@ -26,6 +26,7 @@ import { trackFunnel } from "@/lib/funnel/track";
 import { verteileSpickzettel } from "@/lib/learn/spickzettel-verteilung";
 import { Spickzettel } from "@/components/learn/spickzettel";
 import { AbschlussScreen } from "@/components/learn/abschluss-screen";
+import { AuftaktScreen } from "@/components/learn/auftakt-screen";
 import { sammleAbschlussDaten } from "@/lib/learn/abschluss-daten";
 import { CE02_THEMA_STURZ_PROPHYLAXE_GLOSSAR } from "../../../../../../content/ce-02/themen/sturz-prophylaxe/glossar";
 import { CE06_GLOSSAR } from "../../../../../../content/ce-06/glossar";
@@ -106,6 +107,9 @@ export default function SituationLernenPage() {
     () => new Map()
   );
   const [sessionVonAnfang, setSessionVonAnfang] = useState(true);
+  // Auftakt-Screen (Audit-Lücke 1): nur bei frischem Start — Resume mitten in
+  // der Situation springt direkt in den Step. Wird nach Hydration gesetzt.
+  const [auftaktAktiv, setAuftaktAktiv] = useState(false);
   // Nächste Situation der CE (für den „Als Nächstes"-Ausblick).
   const [naechsteSituation, setNaechsteSituation] =
     useState<Lernsituation | null>(null);
@@ -229,6 +233,15 @@ export default function SituationLernenPage() {
       return true;
     };
 
+    // Frischer Start = kein (gültiger) Stand ODER Stand ganz am Anfang →
+    // Auftakt-Screen zeigen. Resume mitten in der Situation überspringt ihn.
+    const amStart = (s: Parameters<typeof applySaved>[0]): boolean =>
+      !s?.currentPhaseId ||
+      !validPhases.includes(s.currentPhaseId) ||
+      (s.currentPhaseId === validPhases[0] &&
+        (s.currentStepIndex ?? 0) === 0 &&
+        (s.completedPhases ?? []).length === 0);
+
     let localSaved: Parameters<typeof applySaved>[0] = null;
     try {
       localSaved = JSON.parse(
@@ -240,12 +253,14 @@ export default function SituationLernenPage() {
 
     if (isGuest) {
       applySaved(localSaved);
+      setAuftaktAktiv(amStart(localSaved));
       return;
     }
 
     // Gast→Account-Merge: lokalen Stand übernehmen, zum Server schieben,
     // lokal aufräumen (Fortschritt gehört jetzt dem Account).
     if (applySaved(localSaved) && localSaved) {
+      setAuftaktAktiv(amStart(localSaved));
       const completed = (localSaved.completedPhases ?? []).filter((p) =>
         validPhases.includes(p)
       );
@@ -277,15 +292,26 @@ export default function SituationLernenPage() {
     )
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => {
-        if (cancelled || !d?.progress) return;
-        applySaved({
+        if (cancelled) return;
+        if (!d?.progress) {
+          setAuftaktAktiv(true);
+          return;
+        }
+        const serverSaved = {
           currentPhaseId: d.progress.currentPhase,
           completedPhases: d.progress.resumeState?.completedPhases,
           currentStepIndex: d.progress.resumeState?.currentStepIndex,
-        });
+        };
+        applySaved(serverSaved);
+        // Abgeschlossene Situation → Abschluss-Screen, kein Auftakt.
+        const fertig = validPhases.every((p) =>
+          (serverSaved.completedPhases ?? []).includes(p)
+        );
+        setAuftaktAktiv(!fertig && amStart(serverSaved));
       })
       .catch(() => {
         // offline/Fehler — frisch starten ist ok
+        if (!cancelled) setAuftaktAktiv(true);
       });
     return () => {
       cancelled = true;
@@ -634,6 +660,16 @@ export default function SituationLernenPage() {
               gesamtSteps={totalSituationSteps}
               locale={locale}
               ceId={ceId}
+            />
+          ) : auftaktAktiv ? (
+            /* Auftakt (Audit-Lücke 1): Patient + Szene + Rahmenlehrplan-
+               Lernziele in Schülersprache — nur bei frischem Start. */
+            <AuftaktScreen
+              situation={situation}
+              sprachLevel={sprachLevel}
+              gesamtSteps={totalSituationSteps}
+              onStart={() => setAuftaktAktiv(false)}
+              onPatientTap={() => setPatientModalOpen(true)}
             />
           ) : transitionText ? (
             /* Micro-Narration — Zwischenscreen, länger sichtbar (4.5-7s je nach Textlänge) */

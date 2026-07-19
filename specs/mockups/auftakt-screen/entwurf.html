@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Entwurf — Auftakt-Screen (Wagner)</title>
+<style>
+  :root {
+    --rose: #C4877F; --rose-bg: #C4877F14; --sage: #6B8F71; --sage-bg: #6B8F7114;
+    --text-1: #2E2A28; --text-2: #6E635D; --card: #FFFFFF; --border: #E5DAD2;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, "Segoe UI", Roboto, sans-serif; background: #F3EDE7; color: var(--text-1); padding: 24px 12px 60px; }
+  h1 { font-size: 16px; font-weight: 600; text-align: center; margin-bottom: 4px; }
+  .sub { font-size: 12px; color: var(--text-2); text-align: center; margin-bottom: 20px; }
+  .controls { max-width: 390px; margin: 0 auto 16px; display: flex; flex-direction: column; gap: 8px; }
+  .ctl-row { display: flex; align-items: center; gap: 6px; }
+  .ctl-label { font-size: 11px; font-weight: 600; color: var(--text-2); width: 88px; flex-shrink: 0; text-transform: uppercase; letter-spacing: .04em; }
+  .ctl-row button { flex: 1; font-size: 12px; padding: 7px 4px; border-radius: 10px; border: 1.5px solid var(--border); background: #fff; color: var(--text-2); cursor: pointer; }
+  .ctl-row button.on { border-color: var(--rose); background: var(--rose-bg); color: var(--rose); font-weight: 600; }
+  .phone { max-width: 390px; margin: 0 auto; background: #FDFBF9; border: 1.5px solid var(--border); border-radius: 28px; overflow: hidden; box-shadow: 0 8px 32px rgba(0,0,0,.08); }
+  .screen { padding: 22px 18px 24px; }
+
+  .patient { display: flex; align-items: center; gap: 12px; border: 1.5px solid var(--border); border-radius: 16px; background: var(--card); padding: 12px; }
+  .avatar { width: 44px; height: 44px; border-radius: 50%; background: var(--sage-bg); border: 1.5px solid #6B8F7150; color: var(--sage); font-weight: 700; font-size: 15px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .patient .name { font-size: 15px; font-weight: 700; }
+  .patient .setting { font-size: 12px; color: var(--text-2); margin-top: 2px; line-height: 1.4; }
+
+  .szene { margin-top: 16px; font-size: 14px; font-style: italic; line-height: 1.6; color: var(--text-2); }
+
+  .sect { font-size: 11px; font-weight: 700; letter-spacing: .06em; color: var(--text-2); margin: 18px 0 8px; text-transform: uppercase; }
+  .frage { display: flex; gap: 8px; font-size: 14px; font-weight: 600; line-height: 1.5; margin-bottom: 8px; }
+  .frage::before { content: "?"; flex-shrink: 0; width: 20px; height: 20px; border-radius: 50%; background: var(--rose-bg); color: var(--rose); font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center; margin-top: 1px; }
+  .kompetenz { font-size: 14px; line-height: 1.6; }
+  .kompetenz li { margin-left: 18px; margin-bottom: 4px; }
+
+  .meta { text-align: center; font-size: 12px; color: var(--text-2); margin-top: 18px; }
+  .cta { display: block; width: 100%; margin-top: 10px; padding: 13px; border: none; border-radius: 14px; background: var(--rose); color: #fff; font-size: 15px; font-weight: 600; cursor: pointer; }
+  .hidden { display: none !important; }
+  .hinweis { max-width: 390px; margin: 14px auto 0; font-size: 11px; color: var(--text-2); line-height: 1.5; }
+</style>
+</head>
+<body>
+<h1>Auftakt-Screen — Entwurf (Herr Wagner)</h1>
+<p class="sub">Erscheint nur bei frischem Start · Szene = bislang ungenutzter Phase-1-Kontext (wortgleich)</p>
+
+<div class="controls">
+  <div class="ctl-row"><span class="ctl-label">Lernziel</span>
+    <button data-g="ziel" data-v="fragen" class="on">A2 Fragen</button>
+    <button data-g="ziel" data-v="kompetenz">A1 Kompetenz</button>
+    <button data-g="ziel" data-v="beides">A3 Beides</button>
+  </div>
+  <div class="ctl-row"><span class="ctl-label">Szene</span>
+    <button data-g="szene" data-v="ja" class="on">B ja</button>
+    <button data-g="szene" data-v="nein">B nein</button>
+  </div>
+  <div class="ctl-row"><span class="ctl-label">Meta</span>
+    <button data-g="meta" data-v="schritte" class="on">C1 nur Schritte</button>
+    <button data-g="meta" data-v="zeit">C2 Schritte + Min</button>
+  </div>
+</div>
+
+<div class="phone"><div class="screen">
+  <div class="patient">
+    <div class="avatar">KW</div>
+    <div>
+      <div class="name">Klaus Wagner · 67</div>
+      <div class="setting">Kardiologische Normalstation, Flur vor Zimmer 7, 08:15 Uhr</div>
+    </div>
+  </div>
+
+  <p class="szene el-szene">Du kommst mit dem Frühdienst auf den Flur, als Herr Wagner ein paar Meter vor dir zu Boden geht. Du bist in Sekunden bei ihm. Er liegt auf dem Rücken, reagiert nicht, als du ihn ansprichst. Du beugst dich über sein Gesicht: Der Brustkorb hebt sich kaum, und alle paar Sekunden ringt er nach einem einzelnen, schnappenden Atemzug.</p>
+
+  <div class="el-kompetenz hidden">
+    <p class="sect">Das lernst du hier</p>
+    <ul class="kompetenz">
+      <li>den Herz-Kreislauf-Stillstand sicher erkennen</li>
+      <li>richtig alarmieren, ohne den Patienten allein zu lassen</li>
+      <li>wirksam drücken — und wissen, warum jede Pause zählt</li>
+    </ul>
+  </div>
+
+  <div class="el-fragen">
+    <p class="sect">Am Ende kannst du das beantworten</p>
+    <p class="frage">Woran erkennst du den Kreislauf-Stillstand — und was gilt bei Schnappatmung?</p>
+    <p class="frage">Du bist allein bei Herrn Wagner: Was kommt zuerst — und darfst du zum Defi laufen?</p>
+    <p class="frage">Warum ist beim Drücken jede Pause gefährlich?</p>
+  </div>
+
+  <p class="meta"><span class="el-meta-schritte">12 Schritte</span><span class="el-meta-zeit hidden">12 Schritte · ca. 15–20 Min</span></p>
+  <button class="cta">Los geht's</button>
+</div></div>
+
+<p class="hinweis">
+  <b>Regeln im Entwurf:</b> Die A2-Fragen sind die ECHTEN Abruf-Fragen des Abschluss-Screens (wortgleich, 0 neuer Content) — Auftakt fragt, Abschluss deckt auf.
+  Spoiler-Regel: Fragen dürfen den Twist nicht verraten (Ríos bekommt handkuratierte twist-freie Fragen statt „Unterzucker…").
+  Ohne kuratierte Fragen entfällt der Block ersatzlos — kein generisches Lernziel-Blabla.
+  Resume mitten in der Situation überspringt den Auftakt.
+</p>
+
+<script>
+  document.querySelectorAll('.controls button').forEach(b => b.addEventListener('click', () => {
+    document.querySelectorAll(`[data-g="${b.dataset.g}"]`).forEach(x => x.classList.remove('on'));
+    b.classList.add('on');
+    const v = b.dataset.v;
+    if (b.dataset.g === 'ziel') {
+      document.querySelector('.el-fragen').classList.toggle('hidden', v === 'kompetenz');
+      document.querySelector('.el-kompetenz').classList.toggle('hidden', v === 'fragen');
+      if (v === 'beides') {
+        document.querySelector('.el-fragen').classList.remove('hidden');
+        document.querySelector('.el-kompetenz').classList.remove('hidden');
+      }
+    }
+    if (b.dataset.g === 'szene') document.querySelector('.el-szene').classList.toggle('hidden', v === 'nein');
+    if (b.dataset.g === 'meta') {
+      document.querySelector('.el-meta-schritte').classList.toggle('hidden', v === 'zeit');
+      document.querySelector('.el-meta-zeit').classList.toggle('hidden', v === 'schritte');
+    }
+  }));
+</script>
+</body>
+</html>

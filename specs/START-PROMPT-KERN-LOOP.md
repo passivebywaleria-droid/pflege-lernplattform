@@ -30,7 +30,9 @@
 1. ✅ **Abschluss-Screen** GEBAUT (2026-07-18, Waleria: B-Abruf + C1 Coach +
    Gast-Zeile dezent; specs/ENTWURF-ABSCHLUSS-SCREEN.md). Walkthrough verifiziert,
    Screenshots an Waleria. **Deploy-Freigabe offen.**
-2. **Auftakt-Screen**: Lernziel in Schülersprache + Patient + Los.
+2. ✅ **Auftakt-Screen** GEBAUT (2026-07-19, Waleria: Lernziele aus dem
+   Rahmenlehrplan pro Situation + Szene + nur Schrittzahl;
+   specs/ENTWURF-AUFTAKT-SCREEN.md). **Deploy-Freigabe offen.**
 3. **Adaptiv-v1** nach PLAN-ADAPTIV-V1 inkl. Frust-Bremse (3× falsch → Eskalation).
    Merken: Nachhaken = Spektrum-Kontrastfall (NIE wortgleich), Karteikarten sind
    WISSENS-Karten (Upsert, keine Duplikate), Skip bewusst nicht in v1.

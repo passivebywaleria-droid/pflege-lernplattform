@@ -1389,6 +1389,17 @@ export interface Lernsituation {
   komplikationen: Komplikation[];
   bausteinTrigger: BausteinTrigger[];
 
+  // Auftakt-Screen (specs/ENTWURF-AUFTAKT-SCREEN.md, Waleria 2026-07-19):
+  // Lernziele stammen aus dem Rahmenlehrplan (PflBG) und teilen sich auf die
+  // Situationen auf — jede Zeile ist die schülersprachliche 1:1-Übersetzung
+  // EINES offiziellen Lernergebnisses (lernergebnisId = Traceability für den
+  // Kompetenznachweis). Optional; ohne Feld entfällt der Lernziel-Block.
+  lernzieleSchueler?: {
+    lernergebnisId: string;     // z. B. "CE06-LE1-K2"
+    text: string;
+    textB1?: string;
+  }[];
+
   // Abschluss-Screen (specs/ENTWURF-ABSCHLUSS-SCREEN.md) — beide optional mit
   // generischem Fallback, keine Zwangsmigration.
   /** Story-Abschluss: 1-2 Sätze Patient-Outcome, NUR aus belegtem Content der Situation. */

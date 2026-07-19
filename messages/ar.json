@@ -498,6 +498,12 @@
       "naechsteFallback": "التالي: {titel}",
       "gastZeile": "أنشئ حسابًا مجانيًا — يبقى تقدّمك محفوظًا على كل الأجهزة.",
       "ganzerBaustein": "اقرأ الوحدة كاملة"
+    },
+    "auftakt": {
+      "lernenHier": "هذا ما ستتعلمه هنا",
+      "rahmenlehrplan": "أهداف التعلّم وفق المنهج الإطاري",
+      "schritte": "{schritte} خطوة",
+      "los": "هيا نبدأ"
     }
   },
   "themaNav": {

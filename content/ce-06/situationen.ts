@@ -121,6 +121,34 @@ export const CE06_SITUATIONEN: Lernsituation[] = [
     ],
     komplikationen: [],
     bausteinTrigger: [],
+    // Auftakt: schülersprachliche 1:1-Übersetzungen der Rahmenlehrplan-
+    // Lernergebnisse dieser Situation (specs/ce-06/lernergebnis-mapping.json).
+    lernzieleSchueler: [
+      {
+        // „führen lebenserhaltende Sofortmaßnahmen durch"
+        lernergebnisId: "CE06-LE1-K2",
+        text: "Du führst lebenserhaltende Sofortmaßnahmen durch — Schritt für Schritt.",
+        textB1: "Du machst lebensrettende Sofortmaßnahmen — Schritt für Schritt.",
+      },
+      {
+        // „erläutern rechtliche und ethische Aspekte zur Ersten Hilfe … BLS/ALS/KPR-Indikation/AED"
+        lernergebnisId: "CE06-LE1-W1",
+        text: "Du erklärst die medizinischen, rechtlichen und ethischen Grundlagen der Reanimation.",
+        textB1: "Du erklärst die Grundlagen der Reanimation: medizinisch, rechtlich und ethisch.",
+      },
+      {
+        // „analysieren einrichtungsspezifische Notfallpläne und identifizieren das Aufgabenfeld von Pflegefachkräften"
+        lernergebnisId: "CE06-LE1-K5",
+        text: "Du kennst den Notfallplan der Station und weißt, was deine Aufgabe darin ist.",
+        textB1: "Du kennst den Notfallplan der Station. Und du weißt, was deine Aufgabe ist.",
+      },
+      {
+        // „reflektieren eigene Gefühle und erfahrene Hilfen in Not-/Unfallsituationen … empathisches Handeln"
+        lernergebnisId: "CE06-LE1-E1",
+        text: "Du reflektierst, was so ein Notfall mit dir und dem Team macht.",
+        textB1: "Du denkst darüber nach: Was macht so ein Notfall mit dir und dem Team?",
+      },
+    ],
     // Abschluss-Screen: Outcome wortgetreu aus Phase 5 („Danach"): Verlegung
     // auf die Intensivstation mit wiederkehrendem Kreislauf.
     abschlussText:
@@ -150,6 +178,23 @@ export const CE06_SITUATIONEN: Lernsituation[] = [
     ],
     komplikationen: [],
     bausteinTrigger: [],
+    // Auftakt: schülersprachliche 1:1-Übersetzung des Rahmenlehrplan-
+    // Lernergebnisses CE06-LE1-K3 (in zwei Zeilen aufgeteilt) — Spoiler-Regel
+    // beachtet: die Auflösung (Hypoglykämie) wird nicht verraten.
+    lernzieleSchueler: [
+      {
+        // „diagnostizieren neurologische Akutsituationen (z. B. Synkopen, Apoplex, epileptischer Anfall) …"
+        lernergebnisId: "CE06-LE1-K3",
+        text: "Du erkennst neurologische Akutsituationen — Synkope, Schlaganfall, Krampfanfall — und hältst sie auseinander.",
+        textB1: "Du erkennst neurologische Notfälle: Synkope (kurze Ohnmacht), Schlaganfall, Krampfanfall. Und du hältst sie auseinander.",
+      },
+      {
+        // „… und leiten Maßnahmen der 1. Hilfe ein"
+        lernergebnisId: "CE06-LE1-K3",
+        text: "Du leitest die richtigen Erste-Hilfe-Maßnahmen ein.",
+        textB1: "Du startest die richtige Erste Hilfe.",
+      },
+    ],
     // Teaser erscheint auf dem Wagner-Abschluss. Text-Audit F-01 (2026-07-19):
     // Ríos kommt NICHT von allein zurück — er bleibt bewusstseinsgetrübt und
     // klart erst nach ärztlicher Glukose auf (Phase-4-kontext wörtlich).

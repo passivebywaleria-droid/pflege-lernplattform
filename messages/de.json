@@ -498,6 +498,12 @@
       "naechsteFallback": "Als Nächstes wartet: {titel}",
       "gastZeile": "Kostenloses Konto sichern — dein Fortschritt bleibt erhalten, auf jedem Gerät.",
       "ganzerBaustein": "Ganzen Baustein lesen"
+    },
+    "auftakt": {
+      "lernenHier": "Das lernst du hier",
+      "rahmenlehrplan": "Lernziele nach Rahmenlehrplan",
+      "schritte": "{schritte} Schritte",
+      "los": "Los geht's"
     }
   },
   "themaNav": {

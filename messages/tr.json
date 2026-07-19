@@ -498,6 +498,12 @@
       "naechsteFallback": "Sırada: {titel}",
       "gastZeile": "Ücretsiz hesap oluştur — ilerlemen her cihazda kayıtlı kalır.",
       "ganzerBaustein": "Bölümün tamamını oku"
+    },
+    "auftakt": {
+      "lernenHier": "Burada bunları öğreneceksin",
+      "rahmenlehrplan": "Çerçeve müfredata göre öğrenme hedefleri",
+      "schritte": "{schritte} adım",
+      "los": "Hadi başlayalım"
     }
   },
   "themaNav": {
