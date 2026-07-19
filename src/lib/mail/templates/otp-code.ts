@@ -12,8 +12,10 @@ export function otpCodeMail(params: {
 }): { subject: string; html: string; text: string } {
   const { code, spitzname, ttlMinutes } = params
   const anrede = spitzname ? `Hallo ${spitzname},` : "Hallo,"
-  // Betreff enthält den Code — iOS schlägt ihn dann direkt zum Einfügen vor.
-  const subject = `${code} ist dein ${SITE_NAME}-Code`
+  // Betreff enthält den Code (iOS schlägt ihn zum Einfügen vor), beginnt aber
+  // NICHT mit der nackten Zahl — Zahl-zuerst ist eine klassische
+  // Spam-Heuristik (Yahoo-Spam-Befund 2026-07-19).
+  const subject = `Dein ${SITE_NAME}-Code: ${code}`
 
   const text = [
     anrede,

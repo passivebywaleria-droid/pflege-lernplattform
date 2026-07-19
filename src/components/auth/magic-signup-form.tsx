@@ -460,6 +460,14 @@ function OtpCodeStep({
         {submitting ? "Wird geprüft…" : "Bestätigen"}
       </button>
 
+      {/* Zustellbarkeits-Realität (Yahoo/GMX sortieren junge Domains in Spam):
+          ohne diesen Hinweis hängen Nutzer minutenlang fest (Live-Befund 2026-07-19) */}
+      <p className="text-xs text-[var(--lern-text-tertiary)]">
+        Nichts angekommen? Schau auch im <strong>Spam-Ordner</strong> nach —
+        und markiere die Mail dort als „Kein Spam", damit der nächste Code
+        direkt ankommt.
+      </p>
+
       <div className="flex items-center justify-between text-sm">
         <button
           type="button"
