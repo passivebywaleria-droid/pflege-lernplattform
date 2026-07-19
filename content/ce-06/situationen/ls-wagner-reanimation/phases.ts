@@ -419,10 +419,15 @@ export const CE06_SIT_WAGNER_ERSTMASSNAHMEN: SituationsPhase = {
           "Drücke tief, drücke schnell, lass vollständig los — und hör so gut wie nie auf. Jede Pause ist No-Flow-Zeit.",
         faustregelB1:
           "Drücke tief, drücke schnell, lass ganz los — und höre fast nie auf. Jede Pause ist No-Flow-Zeit.",
+        // Frage-Scope == Faustregel-Scope (Waleria 2026-07-19): Die vollständige
+        // Technik (5–6 cm, 100–120/min, Entlastung, harte Unterlage — I care
+        // 3. Aufl., Abb. 23.6) steht im Kerntext, den die Abschluss-Karte über
+        // „Ganzen Baustein lesen" wortgleich zeigt. Die Frage verspricht nur,
+        // was die Faustregel selbst beantwortet.
         faustregelAbruf:
-          "Wie drückst du richtig — und warum ist jede Pause gefährlich?",
+          "Warum ist beim Drücken jede Pause gefährlich?",
         faustregelAbrufB1:
-          "Wie drückst du richtig? Und warum ist jede Pause gefährlich?",
+          "Warum ist beim Drücken jede Pause gefährlich?",
         spektrum: [
           {
             patientName: "Zu flach, zu langsam",

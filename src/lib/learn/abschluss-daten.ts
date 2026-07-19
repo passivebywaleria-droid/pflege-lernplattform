@@ -16,6 +16,13 @@ export interface AbschlussBaustein {
   /** Abruf-Frage (Content-Feld faustregelAbruf); fehlt sie, baut die UI einen Fallback aus dem Titel. */
   abrufFrage?: string;
   abrufFrageB1?: string;
+  /**
+   * Vollständiger Kerntext wortgleich (bereits literatur-gegengelesen) —
+   * „Ganzen Baustein lesen" auf der aufgedeckten Karte. Die Faustregel allein
+   * ist ein Destillat, nie das komplette Pflegewissen (Waleria 2026-07-19).
+   */
+  kerntext: string;
+  kerntextB1?: string;
   /** true = die Antwort am Anker-Step dieses Bausteins war falsch. */
   wacklig: boolean;
 }
@@ -67,6 +74,8 @@ export function sammleAbschlussDaten(
         faustregelB1: wissen.faustregelB1,
         abrufFrage: wissen.faustregelAbruf,
         abrufFrageB1: wissen.faustregelAbrufB1,
+        kerntext: wissen.kerntext,
+        kerntextB1: wissen.kerntextB1,
         wacklig: anker != null && antworten.get(anker) === false,
       });
     });

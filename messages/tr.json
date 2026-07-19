@@ -496,7 +496,8 @@
       "schwaechenOhneNamen": "Her cevap ilk denemede oturmadı. Gitmeden önce yukarıdaki kuralları bir kez daha gözden geçir.",
       "naechstes": "Sırada ne var",
       "naechsteFallback": "Sırada: {titel}",
-      "gastZeile": "Ücretsiz hesap oluştur — ilerlemen her cihazda kayıtlı kalır."
+      "gastZeile": "Ücretsiz hesap oluştur — ilerlemen her cihazda kayıtlı kalır.",
+      "ganzerBaustein": "Bölümün tamamını oku"
     }
   },
   "themaNav": {

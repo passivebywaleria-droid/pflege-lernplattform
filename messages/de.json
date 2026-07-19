@@ -496,7 +496,8 @@
       "schwaechenOhneNamen": "Nicht alles saß beim ersten Versuch. Geh die Faustregeln oben noch einmal durch, bevor du gehst.",
       "naechstes": "Als Nächstes",
       "naechsteFallback": "Als Nächstes wartet: {titel}",
-      "gastZeile": "Kostenloses Konto sichern — dein Fortschritt bleibt erhalten, auf jedem Gerät."
+      "gastZeile": "Kostenloses Konto sichern — dein Fortschritt bleibt erhalten, auf jedem Gerät.",
+      "ganzerBaustein": "Ganzen Baustein lesen"
     }
   },
   "themaNav": {

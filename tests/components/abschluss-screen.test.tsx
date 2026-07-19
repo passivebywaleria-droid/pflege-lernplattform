@@ -78,6 +78,8 @@ const DATEN: AbschlussDaten = {
       titel: "Herz-Kreislauf-Stillstand erkennen",
       faustregel: "Schnappen ist kein Atmen.",
       abrufFrage: "Woran erkennst du den Kreislauf-Stillstand?",
+      kerntext:
+        "Zwei Fragen entscheiden alles.\n\nDer Brustkorb muss beim Erwachsenen fünf bis sechs Zentimeter nachgeben.",
       wacklig: true,
     },
     {
@@ -85,6 +87,7 @@ const DATEN: AbschlussDaten = {
       titel: "Hilfe holen — aber richtig",
       faustregel: "Erst das Team rufen, dann sofort drücken.",
       abrufFrage: "Was kommt zuerst?",
+      kerntext: "Vier Schritte, immer in derselben Ordnung.",
       wacklig: false,
     },
   ],
@@ -122,6 +125,16 @@ describe("AbschlussScreen", () => {
     expect(screen.getByText("Schnappen ist kein Atmen.")).toBeTruthy();
     // Teaser der nächsten Situation
     expect(screen.getByText(/sackt während der Dialyse weg/)).toBeTruthy();
+  });
+
+  it("aufgedeckte Karte bietet den VOLLSTÄNDIGEN Kerntext an (kein Halbwissen-Ende)", () => {
+    renderScreen();
+    fireEvent.click(screen.getByText("Woran erkennst du den Kreislauf-Stillstand?"));
+    // Expander vorhanden, Kerntext wortgleich (inkl. der Zahlen aus der Literatur)
+    expect(screen.getByText("Ganzen Baustein lesen")).toBeTruthy();
+    expect(
+      screen.getByText(/fünf bis sechs Zentimeter nachgeben/)
+    ).toBeTruthy();
   });
 
   it("Schwächen-Zeile (C1): benennt wacklige Bausteine, wackliger Baustein steht markiert oben", () => {

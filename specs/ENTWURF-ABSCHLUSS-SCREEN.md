@@ -14,6 +14,17 @@
 > belegtem Situations-Content. i18n ×3 (situation.abschluss.*).
 > Walkthrough-verifiziert (lokale Prod-Instanz, echter 12-Step-Durchlauf).
 >
+> **Pflegefachliche Korrektur (Waleria 2026-07-19):** Die Abruf-Frage „Wie drückst
+> du richtig?" versprach die vollständige Technik, deckte aber nur die Faustregel
+> auf (ohne 5–6 cm / 100–120/min — I care 3. Aufl., Abb. 23.6 wortwörtlich
+> nachgelesen) = Halbwissen. Fix: (1) Frage-Scope == Faustregel-Scope („Warum ist
+> beim Drücken jede Pause gefährlich?"), die übrigen 6 Fragen gegen ihre
+> Faustregeln geprüft (Scope deckt); (2) jede aufgedeckte Karte hat jetzt
+> „Ganzen Baustein lesen" → vollständiger, bereits gegengelesener Kerntext
+> wortgleich. REGEL für alle künftigen Meta-Texte: erst Literatur wortwörtlich
+> lesen, Frage nie mehr versprechen lassen als die Antwort liefert, Destillat nie
+> als Endpunkt.
+>
 > **Bewusste Abweichung (Ehrlichkeit):** Die Gast-Zeile verspricht FORTSCHRITT
 > („bleibt erhalten, auf jedem Gerät"), NICHT „Schwächen kommen wieder" — Letzteres
 > existiert erst mit Adaptiv-v1/Karten-Upsert. Dann Text nachschärfen.

@@ -32,17 +32,20 @@ function AbrufKarte({
   aufdeckenLabel,
   nochmalLabel,
   fallbackFrage,
+  ganzerBausteinLabel,
 }: {
   baustein: AbschlussBaustein;
   b1: boolean;
   aufdeckenLabel: string;
   nochmalLabel: string;
   fallbackFrage: string;
+  ganzerBausteinLabel: string;
 }) {
   const [offen, setOffen] = useState(false);
   const frage =
     (b1 && baustein.abrufFrageB1) || baustein.abrufFrage || fallbackFrage;
   const regel = (b1 && baustein.faustregelB1) || baustein.faustregel;
+  const kerntext = (b1 && baustein.kerntextB1) || baustein.kerntext;
 
   return (
     <div
@@ -63,6 +66,26 @@ function AbrufKarte({
           <p className="mt-2 border-s-[3px] border-[var(--lern-accent)] ps-3 text-sm font-bold leading-relaxed text-[var(--lern-text-primary)]">
             {regel}
           </p>
+          {/* Die Faustregel ist ein Destillat — das VOLLSTÄNDIGE, literatur-
+              gegengelesene Wissen (Zahlen, Technik) steht im Kerntext,
+              wortgleich. Kein Karten-Ende beim Halbwissen. */}
+          {kerntext && (
+            <details className="mt-2">
+              <summary className="cursor-pointer text-xs font-medium text-[var(--lern-text-secondary)] underline decoration-dotted underline-offset-2">
+                {ganzerBausteinLabel}
+              </summary>
+              <div className="mt-2 space-y-2">
+                {kerntext.split(/\n\n+/).map((absatz, i) => (
+                  <p
+                    key={i}
+                    className="text-sm leading-relaxed text-[var(--lern-text-primary)]"
+                  >
+                    {absatz}
+                  </p>
+                ))}
+              </div>
+            </details>
+          )}
         </>
       ) : (
         <button
@@ -167,6 +190,7 @@ export function AbschlussScreen({
               fallbackFrage={t("abrufFallback", {
                 titel: (b1 && b.titelB1) || b.titel,
               })}
+              ganzerBausteinLabel={t("ganzerBaustein")}
             />
           ))}
         </>

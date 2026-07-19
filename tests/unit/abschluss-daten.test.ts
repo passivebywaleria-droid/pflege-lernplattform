@@ -73,6 +73,8 @@ describe("sammleAbschlussDaten", () => {
     expect(daten.bausteine).toHaveLength(1);
     expect(daten.bausteine[0].faustregel).toBe("Faustregel Erkennen");
     expect(daten.bausteine[0].abrufFrage).toBe("Woran erkennst du X?");
+    // Kerntext wird wortgleich mitgegeben — die Karte darf nie beim Destillat enden
+    expect(daten.bausteine[0].kerntext).toBe("k");
     expect(daten.bausteine[0].wacklig).toBe(false);
   });
 
