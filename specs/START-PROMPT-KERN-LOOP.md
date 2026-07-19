@@ -36,16 +36,15 @@
 3. ✅ Adaptiv-v1 GEBAUT+DEPLOYED 2026-07-19 (Register, Intermezzo, Sheet-Angebote, Sprach-Angebot; Status in PLAN-ADAPTIV-V1). Alt: nach PLAN-ADAPTIV-V1 inkl. Frust-Bremse (3× falsch → Eskalation).
    Merken: Nachhaken = Spektrum-Kontrastfall (NIE wortgleich), Karteikarten sind
    WISSENS-Karten (Upsert, keine Duplikate), Skip bewusst nicht in v1.
-4. 🔶 **Sprech-Moment** Wagner „Übergeben" (SBAR) GEBAUT, NICHT deployed.
-   E2E-Befund v2 (2026-07-19, isoliert verifiziert): Recorder FEHLERFREI (alter
-   Fehler = fehlendes Chromium-Flag); ABER use-whisper.ts hat 2 echte Bugs
-   (Bare-Import löst in keinem Browser auf; transcribe-Rückgabe falsch typisiert)
-   UND Whisper-WASM braucht crossOriginIsolated (COOP/COEP fehlen auf carovia.de,
-   app-weit riskant wg. Stripe). Positiv-Beweis: mit COI+URL-Import läuft die
-   Kette (8,5 s/10,5 s Audio, tiny-Qualität für freie Übergaben grenzwertig:
-   „admitent nicht", „Herztruckmassage"). → Waleria-Entscheidung: (A) Azure STT EU
-   Server-Route für Pilot (Empfehlung), (B) On-Device fixen (COI + Self-Host-Modell),
-   (C) zurückstellen. Details: Memory pilot-ux-haertung. Credits-Bewerbungen als Texte fertig.
+4. ✅ **Sprech-Moment** Wagner „Übergeben" (SBAR) auf **Azure STT EU umgebaut**
+   (Waleria-Entscheidung 2026-07-19, Commit `6ae4c04`, gepusht, NICHT deployed).
+   On-Device-Whisper war nachweislich tot (Bare-Import + COI-Pflicht) und ist
+   entfernt; E2E der neuen Kette grün (Fake-Mikro → WAV → /api/stt-Mock →
+   echtes Nebius-Feedback erkennt fehlende SBAR-Elemente). **Blocker: Azure-
+   Speech-Resource existiert nicht — AZURE_SPEECH_KEY/REGION überall leer,
+   dadurch lief auch TTS immer nur als Browser-Stimme.** Waleria: Resource
+   anlegen (Empfehlung germanywestcentral), Keys lokal + /opt/pflege/deploy/.env,
+   dann Deploy-Freigabe. Details: Memory pilot-ux-haertung.
 5. Danach: Rechtstexte-Status (Task #11 — evtl. Parallel-Chat), Mastery-Definition.
 
 ## Offen / nicht vergessen
