@@ -706,6 +706,51 @@ export const CE06_SIT_WAGNER_UEBERGEBEN: SituationsPhase = {
       },
     },
     {
+      // Sprech-Moment (Audit-Lücke 5, Schritt 4 — VISION: Pflege ist ein
+      // Sprechberuf): Nach dem Erkennen der guten Übergabe (ueb-01) spricht
+      // der Schüler seine SBAR-Übergabe SELBST — Whisper transkribiert
+      // on-device (DSGVO), KI-Feedback prüft die 4 SBAR-Elemente gegen die
+      // etablierten Fallfakten. musterText = wortgleich die richtige
+      // ueb-01-Option (kein neuer Content). Der ALS-Spickzettel wandert durch
+      // die Anker-Regel an diesen Step (zeitlich passend: Team übernimmt).
+      stepId: "ce06-wagner-ueb-02",
+      phase: 4,
+      stepType: "speech",
+      bloomLevel: 3,
+      kompetenzbereich: "II.1",
+      quellen: ["Leonard et al. 2004 (SBAR)", "Pflege heute 2019, Kap. 14 (Übergabe im Notfall)"],
+      track: "basis",
+      modus: "challenge",
+      lernziel: "ce06-wagner-sbar-sprechen",
+      tag: "pflege",
+      themaPrimaer: "notfallassessment",
+      kernfaktId: ["F-07"],
+      contentC1: {
+        title: "Jetzt du: Sprich die Übergabe",
+        body: "Pflege ist ein Sprechberuf — die Übergabe passiert mündlich, unter Druck. Die Ärztin wartet. Sprich deine SBAR-Übergabe laut aus, in deinen eigenen Worten. Wichtig ist: Alle vier Elemente sind drin.",
+        glossarBegriffe: ["SBAR"],
+      },
+      contentB1: {
+        title: "Jetzt du: Sprich die Übergabe",
+        body: "Pflege ist ein Sprech-Beruf. Die Übergabe ist mündlich. Die Ärztin wartet. Sprich deine SBAR-Übergabe laut, in deinen eigenen Worten. Wichtig ist: Alle vier Teile sind drin.",
+        glossarBegriffe: ["SBAR (= Situation, Background, Assessment, Recommendation)"],
+      },
+      question: {
+        fragetext: "Sprich deine SBAR-Übergabe an die Ärztin.",
+        speech: {
+          speechType: "erklaeren",
+          aufgabe:
+            "Übergib Herrn Wagner mündlich nach SBAR an die Ärztin: Situation (wer, was, wann) → Background (Vorgeschichte) → Assessment (Zustand + bereits Getanes mit Zeiten) → Recommendation (was du jetzt brauchst).",
+          aufgabeB1:
+            "Übergib Herrn Wagner mündlich mit SBAR: Situation (wer, was, wann) → Background (Vorgeschichte) → Assessment (Zustand + was schon getan wurde) → Recommendation (was du jetzt brauchst).",
+          bewertungshinweis:
+            "Prüfe die SBAR-Vollständigkeit gegen die Fallfakten: S = Herr Wagner, 67, Kollaps im Flur um 08:15. B = instabile Angina pectoris, zwei Herzinfarkte in der Vorgeschichte, Vorhofflimmern unter Apixaban. A = keine Reaktion, keine normale Atmung, Herzdruckmassage seit 08:16, ein Schock um 08:19. R = i.v.-Zugang und Übernahme der Reanimationsleitung. Alle 4 Elemente in eigenen Worten = hoher Score. Fehlt ein Element (besonders der Background mit Apixaban oder die Recommendation), benenne es konkret. Sandwich-Prinzip, nie abwertend, keine neuen medizinischen Fakten erfinden.",
+          musterText:
+            "Herr Wagner, 67, kollabiert im Flur um 08:15. Aufnahme wegen instabiler Angina, zwei Infarkte in der Vorgeschichte, Vorhofflimmern unter Apixaban. Keine Reaktion, keine normale Atmung, Herzdruckmassage seit 08:16, ein Schock um 08:19. Bitte i.v.-Zugang und Übernahme der Reanimationsleitung.",
+        },
+      },
+    },
+    {
       // Wissens-Tab (Redesign): das ALS-Prinzip — leicht, auf Pflege-Assist-Niveau.
       // Deckt W1 (Prinzipien des Advanced Life Support). Baut auf No-Flow-Tab auf:
       // ALS ersetzt BLS nicht. Literatur-belegt (F-06/F-10/F-11/F-12/F-13, Pflege heute

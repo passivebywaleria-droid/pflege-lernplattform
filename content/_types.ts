@@ -700,6 +700,12 @@ export interface SpeechData {
   aufgabe?: string;             // Typ "erklaeren": "Erkläre dem Patienten..."
   aufgabeB1?: string;           // B1-Version der Aufgabe
   bewertungshinweis?: string;   // Für KI-Feedback: Was soll der Schüler sagen?
+  /**
+   * Wortgleiche Muster-Antwort (z. B. die korrekte SBAR-Übergabe) — nach dem
+   * eigenen Versuch als TTS anhörbar („so klingt eine gute Übergabe").
+   * Nur bereits geprüfter Content, nie neu formulieren.
+   */
+  musterText?: string;
 }
 
 // CrowdPoll — Umfrage mit Seed-Ergebnissen (Mentimeter-Stil)
