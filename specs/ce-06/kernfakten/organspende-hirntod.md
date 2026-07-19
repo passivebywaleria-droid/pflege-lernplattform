@@ -114,6 +114,7 @@ Zu den in Deutschland transplantierten Organen zählen u. a. Niere und Leber; di
 - Quelle: `pflege-heute-volltext/pflege-heute.txt`
 - Zitat: "Die Nierentransplantation"
 - Primärquelle: (DSO Jahresbericht „Organspende und Transplantation in Deutschland 2024"; Pflege heute 2019, Kap. 43/33.5.8)
+- Gegenlese: Zahlentripel 3.701/3.013/688 am 2026-07-19 von der Gründerin unabhängig bestätigt (Sekundärquelle doccheck.com zu DSO 2024).
 
 ### F-08: Kulturelle/religiöse Bedeutung — Hirntod und Organspende im Spektrum
 Die Bewertung von Hirntod und Organspende ist kulturell und religiös unterschiedlich. In manchen Traditionen wird das Konzept des Hirntods anerkannt und die Spende als Akt der Nächstenliebe verstanden; in einer Sicht gilt die Organspende als gottfällige Haltung, weil ein Menschenleben zu retten oberste Priorität hat. In anderer Auslegung ist der Hirntod nicht dem Tod des Menschen gleichzusetzen, weshalb eine Organentnahme bei Hirntoten nicht zulässig ist — während wieder andere (z. B. liberale Juden) das Hirntodkonzept anerkennen.

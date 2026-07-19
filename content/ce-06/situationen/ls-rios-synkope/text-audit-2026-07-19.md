@@ -38,3 +38,10 @@ Merk-Botschaft legitim. Beobachtung, kein Fix nötig.
 Lehrsatz korrekt (Pflege punktiert nicht eigenmächtig, Glukose i.v. ärztlich).
 Nuance: während laufender Dialyse existiert die Dialyse-Linie als Zugang.
 Keine Änderung nötig.
+
+## Nachtrag (2026-07-19, Waleria-Entscheidung)
+- F-02 ✅ GEFIXT: Titel „Synkope während der Dialyse" → **„Kollaps während der
+  Dialyse"** (B1: „Kollaps bei der Dialyse"). Begründung: Titel ist der
+  Erinnerungsanker und widersprach der eigenen Synkope-Definition des Falls
+  (kommt von allein zurück — Ríos nicht). situationId bleibt ls-rios-synkope
+  (URLs/Fortschritt unangetastet). Der Hypoglykämie-Twist bleibt im Spielverlauf.

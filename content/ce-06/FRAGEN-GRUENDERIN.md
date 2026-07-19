@@ -24,8 +24,11 @@ erm-03-Content). Quelle: DSO-Jahresbericht „Organspende und Transplantation in
 BMG/DSO-Pressemeldung). Das ist eine **externe amtliche Primärquelle** (wie BfArM/BÄK) — der lokale zitat-verifizierer
 kann sie nicht bestätigen (nur die historische 2017-Zahl aus Pflege heute). Intern konsistent (3.013+688=3.701),
 jahres- und quellengetaggt.
-→ **Zu tun (Gründerin, vor Live):** das Zahlentripel einmal gegen den echten DSO-Jahresbericht-2024-PDF gegenlesen —
-der einzige nicht maschinell verifizierbare Wert der 2025-Runde. Kein Blocker.
+→ **✅ ERLEDIGT (2026-07-19, Waleria-Gegenlese):** Zahlentripel unabhängig bestätigt
+(3.701 gesamt / 3.013 postmortal / 688 Lebendspende, DSO 2024; Sekundärquelle doccheck.com,
+zusätzlich plausibel: Niere 2.075 am häufigsten — deckt F-07-Aussage „Niere häufig").
+Ehrlicher Rest-Vorbehalt: Abgleich lief gegen Sekundärquellen, nicht das DSO-PDF selbst —
+für die Plattform-Genauigkeitsstufe ausreichend, da dreifach konsistent.
 
 ## ✅ Erledigt — 2026-07-13 (Dozentin-Freigabe „passt so" + Web-Recherche + Korpus-Abgleich)
 

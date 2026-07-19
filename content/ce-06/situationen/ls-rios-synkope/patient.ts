@@ -1,4 +1,4 @@
-// CE-06 Situation „Herr Ríos — Synkope während der Dialyse" — Patient
+// CE-06 Situation „Herr Ríos — Kollaps während der Dialyse" — Patient
 // SituationsTyp: akutsituation. Showcase: neurologische Akutsituation DIAGNOSTIZIEREN
 // (Differentialdiagnose Synkope) + Erste Hilfe einleiten unter Kompetenzgrenzen (LE1-K3).
 

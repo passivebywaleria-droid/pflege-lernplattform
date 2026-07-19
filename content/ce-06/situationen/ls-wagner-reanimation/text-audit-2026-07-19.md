@@ -134,3 +134,10 @@ dasselbe wie C1, keine weggekürzte Bedingung, keine Bedeutungsverschiebung (ink
 - F-02 ✅ „Überlebenskette"-Gleichsetzung ENTFERNT (beide Stellen) — Verbatim-Prüfung ergab: Prüfungswissen Tab. 3.22 definiert die Überlebenskette anders (4. Glied = erweiterte Maßnahmen/Postreanimationsmanagement, Erkennen+Notruf = EIN Glied). Die echte Überlebenskette jetzt wortgetreu als sonstBox in ala-00b + Quelle am Step. Die vier Handgriffe bleiben als situatives Gerüst („deine Rettungskette in dieser Situation").
 - F-03 ✅ Pulstasten in 3. Person („erfahrenen Pflegefachpersonen vorbehalten"), C1+B1.
 - PRÜFEN-Punkte (AED-Position, Kammerflimmern) bleiben dokumentiert, Inhalt korrekt.
+
+## Nachtrag (2026-07-19): Spektrum-Fehler von den Agenten übersehen — GEFIXT
+erk-01b-Spektrum sagte „**Frau** Ríos" (falsches Geschlecht) + „kommt von allein
+zu sich" (falsch — Ríos klart erst nach ärztlicher Glukose auf; gleiche
+Fehlerklasse wie der Teaser). Fix: „Herr Ríos", hauptfaktor „Kreislauf läuft",
+Text auf das belegte Abgrenzungs-Merkmal (kein Stillstand → Ursachensuche,
+zuerst Blutzucker) umgestellt, C1+B1.

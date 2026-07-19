@@ -133,8 +133,11 @@ export const CE06_SITUATIONEN: Lernsituation[] = [
     ceId: "ce-06",
     situationsTyp: "akutsituation",
     patient: CE06_SIT_RIOS_PATIENT,
-    titel: "Herr Ríos — Synkope während der Dialyse",
-    titelB1: "Herr Ríos — Ohnmacht bei der Dialyse",
+    // Text-Audit F-02 + Waleria 2026-07-19: „Synkope" als Titel war fachlich
+    // falsch für DIESEN Fall (Synkope = kommt von allein zurück — Ríos nicht).
+    // „Kollaps" ist neutral; der Hypoglykämie-Twist bleibt im Spielverlauf.
+    titel: "Herr Ríos — Kollaps während der Dialyse",
+    titelB1: "Herr Ríos — Kollaps bei der Dialyse",
     themen: ["neurologische-akutsituationen", "notfallkommunikation-sbar"],
     spirale: 2,
     geschaetzteUE: 1,

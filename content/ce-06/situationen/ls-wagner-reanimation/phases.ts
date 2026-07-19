@@ -126,13 +126,16 @@ export const CE06_SIT_WAGNER_ERKENNEN: SituationsPhase = {
           "Woran erkennst du den Kreislauf-Stillstand? Und was gilt bei Schnappatmung?",
         spektrum: [
           {
-            patientName: "Frau Ríos",
+            // Text-Audit-Nachfix 2026-07-19: war „Frau Ríos" + „kommt von allein
+            // zu sich" — falsches Geschlecht, und Ríos klart erst nach ärztlicher
+            // Glukose auf (gleicher Fehler wie der alte Teaser).
+            patientName: "Herr Ríos",
             situationsId: "ls-rios-synkope",
-            hauptfaktor: "Synkope",
+            hauptfaktor: "Kreislauf läuft",
             kurzbeschreibung:
-              "Kippt auch weg — aber ihr Gehirn wird nur kurz zu schwach durchblutet. Der Kreislauf läuft weiter, sie kommt von allein zu sich. Kein Stillstand.",
+              "Kippt auch weg — aber sein Kreislauf läuft weiter und er atmet. Kein Stillstand, keine Reanimation: Bei ihm zählt die Ursachensuche, zuerst der Blutzucker.",
             kurzbeschreibungB1:
-              "Sie kippt auch um. Aber ihr Gehirn bekommt nur kurz zu wenig Blut. Der Kreislauf läuft weiter. Sie wacht von allein wieder auf. Kein Stillstand.",
+              "Er kippt auch um. Aber sein Kreislauf läuft weiter, und er atmet. Kein Stillstand, keine Reanimation. Bei ihm sucht man die Ursache — zuerst mit dem Blutzucker.",
           },
           {
             patientName: "Bewusstloser mit ruhiger Atmung",

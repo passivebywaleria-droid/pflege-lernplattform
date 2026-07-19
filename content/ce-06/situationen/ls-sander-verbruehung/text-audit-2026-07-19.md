@@ -32,3 +32,9 @@ ein Satz zur Wegewahl (112 vs. organisierter Transport) — Entscheidung Gründe
 
 ## Fix-Status (2026-07-19, Haupt-Session)
 Keine Content-Änderung erforderlich.
+
+## Nachtrag (2026-07-19, Waleria-Entscheidung)
+- F-01 ✅ GEFIXT: Wegewahl-Satz in ala-01-Erklärung (C1+B1) ergänzt —
+  Rettungsdienst wegen „allein lebend + starke Schmerzen" begründet, Alternative
+  (Hausarzt/Bereitschaftsdienst am selben Tag) für stabile, begleitete Menschen
+  benannt. Option selbst unverändert.

@@ -67,7 +67,7 @@ const SITUATION = {
 
 const NAECHSTE = {
   situationId: "ls-rios-synkope",
-  titel: "Herr Ríos — Synkope während der Dialyse",
+  titel: "Herr Ríos — Kollaps während der Dialyse",
   teaser: "Herr Ríos sackt während der Dialyse weg — und kommt von allein wieder zu sich.",
 } as unknown as Lernsituation;
 

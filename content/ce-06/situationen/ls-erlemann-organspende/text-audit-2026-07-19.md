@@ -32,3 +32,8 @@ abnehmen) unverändert.
 
 ## Fix-Status (2026-07-19, Haupt-Session)
 - F-01 ✅ (Zitat vor dem Fix selbst wortwörtlich nachgelesen und bestätigt).
+
+## Nachtrag (2026-07-19): DSO-2024-Zahl von Waleria gegengelesen ✅
+Zahlentripel 3.701/3.013/688 unabhängig bestätigt (Sekundärquelle doccheck.com);
+Vermerk in FRAGEN-GRUENDERIN.md + Kernfakt F-07. Rest-Vorbehalt (kein
+DSO-PDF-Direktabgleich) dokumentiert — kein offener Punkt mehr vor Live.

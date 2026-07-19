@@ -1,4 +1,4 @@
-// CE-06 Situation „Herr Ríos — Synkope während der Dialyse"
+// CE-06 Situation „Herr Ríos — Kollaps während der Dialyse"
 // SituationsTyp: akutsituation — 5 Phasen: erkennen → alarmieren → erstmassnahmen → uebergeben → reflektieren
 // Deckt: CE06-LE1-K3 (neurologische Akutsituationen diagnostizieren + Erste Hilfe einleiten).
 // Grounding: specs/ce-06/kernfakten/neurologische-akutsituationen.md + notfallassessment.md (Verbatim-belegt).
