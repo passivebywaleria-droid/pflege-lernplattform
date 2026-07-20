@@ -18,10 +18,14 @@ safety-critical audience; TTS only (no student data leaves the device).
 ## 2) Microsoft for Startups Founders Hub
 **Company:** Carovia — adaptive learning platform for German nursing education,
 GDPR-first (EU hosting), AI tutor grounded in verified textbook content.
-**Azure use case:** Azure AI Speech (EU region) for speech-to-text of student
-SBAR handover exercises (data processed in EU under DPA) + Neural TTS fallback;
-later Azure OpenAI for grounded feedback. Predictable, capped usage.
+**Azure use case:** Neural TTS (EU) for read-aloud + medical-term pronunciation;
+Azure AI Speech STT (EU, under DPA) as a server fallback to our on-device
+speech recognition; later Azure OpenAI for grounded feedback. Predictable,
+capped usage.
 **Stage:** live product, pre-revenue→early revenue, no VC funding required.
+**Update 2026-07-20:** primary speech recognition now runs fully on-device
+(Whisper WASM, no student audio leaves the phone) — Azure STT is the classroom/
+low-end-device fallback, TTS + future Azure OpenAI remain the main draw.
 
 ## 3) NVIDIA Inception → Nebius AI Lift (nebius.com/startups/apply)
 **Schritt 1:** NVIDIA Inception beitreten (kostenlos, nvidia.com/inception).
