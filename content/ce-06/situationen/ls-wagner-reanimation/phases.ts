@@ -745,6 +745,55 @@ export const CE06_SIT_WAGNER_UEBERGEBEN: SituationsPhase = {
             "Übergib Herrn Wagner mündlich mit SBAR: Situation (wer, was, wann) → Background (Vorgeschichte) → Assessment (Zustand + was schon getan wurde) → Recommendation (was du jetzt brauchst).",
           bewertungshinweis:
             "Prüfe die SBAR-Vollständigkeit gegen die Fallfakten: S = Herr Wagner, 67, Kollaps im Flur um 08:15. B = instabile Angina pectoris, zwei Herzinfarkte in der Vorgeschichte, Vorhofflimmern unter Apixaban. A = keine Reaktion, keine normale Atmung, Herzdruckmassage seit 08:16, ein Schock um 08:19. R = i.v.-Zugang und Übernahme der Reanimationsleitung. Alle 4 Elemente in eigenen Worten = hoher Score. Fehlt ein Element (besonders der Background mit Apixaban oder die Recommendation), benenne es konkret. Sandwich-Prinzip, nie abwertend, keine neuen medizinischen Fakten erfinden.",
+          // Geschlossene Checkliste (LLM = Detektor, nicht Autor): Feedback-
+          // Sätze wortgetreu aus bewertungshinweis + ueb-01-Explanation
+          // (auditierter Content), nichts neu erfunden.
+          bewertungsKriterien: [
+            {
+              id: "sbar-s",
+              label: "Situation (wer, was, wann)",
+              labelB1: "Situation: wer, was, wann",
+              pruefHinweis:
+                "Erfüllt, wenn Patient (Herr Wagner, 67), Ereignis (Kollaps/zusammengebrochen/bewusstlos geworden) und Ort oder Zeit (Flur, 08:15) genannt sind — eigene Worte und Synonyme zählen, mindestens wer + was.",
+              feedbackFehlt:
+                "Die Situation fehlt: wer (Herr Wagner, 67), was (Kollaps) und wann (08:15 im Flur) — damit steigt das Team sofort richtig ein.",
+              feedbackFehltB1:
+                "Es fehlt die Situation: wer (Herr Wagner, 67), was (Kollaps) und wann (08:15, im Flur).",
+            },
+            {
+              id: "sbar-b",
+              label: "Background (Vorgeschichte)",
+              labelB1: "Background: die Vorgeschichte",
+              pruefHinweis:
+                "Erfüllt, wenn relevante Vorgeschichte genannt ist: instabile Angina pectoris, frühere Herzinfarkte, Vorhofflimmern oder Apixaban/Blutverdünner — eines davon reicht.",
+              feedbackFehlt:
+                "Der Background fehlt: instabile Angina pectoris, zwei Infarkte in der Vorgeschichte, Vorhofflimmern unter Apixaban — gerade die Antikoagulation ist für die weiteren Entscheidungen wichtig.",
+              feedbackFehltB1:
+                "Es fehlt die Vorgeschichte: instabile Angina pectoris, zwei Herzinfarkte, Vorhofflimmern mit Apixaban (Blutverdünner). Das ist wichtig für die nächsten Entscheidungen.",
+            },
+            {
+              id: "sbar-a",
+              label: "Assessment (Zustand + bereits Getanes)",
+              labelB1: "Assessment: Zustand + was schon getan wurde",
+              pruefHinweis:
+                "Erfüllt, wenn aktueller Zustand (keine Reaktion / keine normale Atmung / bewusstlos) UND bereits Getanes (Herzdruckmassage/Reanimation seit 08:16, ein Schock um 08:19) genannt sind — Zeiten sind ein Plus, kein Muss.",
+              feedbackFehlt:
+                "Das Assessment fehlt: keine Reaktion, keine normale Atmung, Herzdruckmassage seit 08:16, ein Schock um 08:19 — der aktuelle Zustand und bereits Getanes mit Zeiten.",
+              feedbackFehltB1:
+                "Es fehlt das Assessment: keine Reaktion, keine normale Atmung, Herzdruckmassage seit 08:16, ein Schock um 08:19 — also der Zustand und was schon getan wurde.",
+            },
+            {
+              id: "sbar-r",
+              label: "Recommendation (was du jetzt brauchst)",
+              labelB1: "Recommendation: was du jetzt brauchst",
+              pruefHinweis:
+                "Erfüllt, wenn eine konkrete Bitte ans Team genannt ist: i.v.-Zugang, Übernahme der Reanimationsleitung oder eine vergleichbar konkrete Anforderung.",
+              feedbackFehlt:
+                "Die Recommendation fehlt: Sag konkret, was du jetzt brauchst — i.v.-Zugang und Übernahme der Reanimationsleitung.",
+              feedbackFehltB1:
+                "Es fehlt die Recommendation: Sag konkret, was du brauchst — i.v.-Zugang und dass das Team die Leitung übernimmt.",
+            },
+          ],
           musterText:
             "Herr Wagner, 67, kollabiert im Flur um 08:15. Aufnahme wegen instabiler Angina, zwei Infarkte in der Vorgeschichte, Vorhofflimmern unter Apixaban. Keine Reaktion, keine normale Atmung, Herzdruckmassage seit 08:16, ein Schock um 08:19. Bitte i.v.-Zugang und Übernahme der Reanimationsleitung.",
         },

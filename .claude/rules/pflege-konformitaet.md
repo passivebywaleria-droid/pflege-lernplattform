@@ -53,6 +53,18 @@
 - Bewertungskriterien fachlich orientiert (z.B. „SBAR alle 4 Elemente?")
 - Musterantwort vorbildlich, mit Standards-Bezug
 
+### Speech (KI-bewertet) — „LLM als Detektor, nicht als Autor" (2026-07-20)
+- **Neue Speech-Steps vom Typ `erklaeren` MÜSSEN `bewertungsKriterien[]` haben**
+  (geschlossene Checkliste statt freiem KI-Feedback): `id`, `label(B1)`,
+  `pruefHinweis` (Fallfakten, WORAN erkennt man Erfüllung), `feedbackFehlt(B1)`
+- **`feedbackFehlt` ist geprüfter Content** — wortgetreu aus Kernfakten/
+  Musterlösung des Steps, NIE frei formuliert (das ist der einzige fachliche
+  Satz, den der Schüler je liest — das LLM liefert nur erfüllt/nicht-erfüllt
+  mit Zitatpflicht, Zitat wird serverseitig mechanisch verifiziert)
+- Transkripte laufen zusätzlich durch den deterministischen Gefahren-Check
+  (`src/lib/learn/gefahren-check.ts`, Teilmenge der AP-Registry unten, IDs
+  identisch, Sync-Test in tests/unit/sprech-bewertung.test.ts)
+
 ### Selfrating / Confidence
 - KEINE Wahr/Falsch-Validierung — Selbsteinschätzung ist subjektiv
 - Sprache nicht bewertend („Sie haben sich falsch eingeschätzt")

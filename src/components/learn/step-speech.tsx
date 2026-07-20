@@ -10,6 +10,12 @@ import {
   korrigiereTranskript,
   entferneDirekteWiederholungen,
 } from "@/lib/learn/transkript-korrektur";
+import {
+  komponiereSprechFeedback,
+  type KriteriumsUrteil,
+  type SprechFeedback,
+} from "@/lib/learn/sprech-bewertung";
+import type { GefahrenTreffer } from "@/lib/learn/gefahren-check";
 import type { GlossarEntry } from "../../../content/_types";
 import type { SpeechData } from "../../../content/_types";
 import { FachbegriffText } from "./fachbegriff-tooltip";
@@ -85,6 +91,10 @@ export function StepSpeech({
   const [transkriptText, setTranskriptText] = useState<string | null>(null);
   const [kiFeedback, setKiFeedback] = useState<string | null>(null);
   const [kiFeedbackLoading, setKiFeedbackLoading] = useState(false);
+  // Kriterien-Modus (LLM = Detektor): Checkliste + Gefahren, Sätze NUR aus Content
+  const [kriterienFeedback, setKriterienFeedback] = useState<SprechFeedback | null>(null);
+  const [gefahren, setGefahren] = useState<GefahrenTreffer[]>([]);
+  const [auswertungOffline, setAuswertungOffline] = useState(false);
   const [versuch, setVersuch] = useState(0);
   // On-Device zuerst (DSGVO-USP); kann das Gerät kein Whisper (kein COI/SIMD),
   // fällt die Session still auf Server-STT zurück (503 ohne Azure-Config →
@@ -132,8 +142,12 @@ export function StepSpeech({
         const score = levenshteinSimilarity(text, speech.zielwort);
         setSimilarity(score);
         setBewertung(bewerteSimilarity(score));
+      } else if (speech.bewertungsKriterien?.length) {
+        // Typ B, sicher: geschlossene Checkliste (LLM = Detektor + Zitatpflicht)
+        setBewertung("gut"); // neutral, bis Checkliste da ist
+        await fetchKriterienBewertung(text);
       } else {
-        // Typ B: KI-Feedback holen
+        // Typ B, Legacy: freies KI-Feedback (Situationen ohne Kriterien)
         setBewertung("gut"); // Erstmal neutral
         await fetchKiFeedback(text);
       }
@@ -141,6 +155,51 @@ export function StepSpeech({
     })();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [audioBlob]);
+
+  const fetchKriterienBewertung = useCallback(
+    async (spokenText: string) => {
+      const kriterien = speech.bewertungsKriterien ?? [];
+      setKiFeedbackLoading(true);
+      setAuswertungOffline(false);
+      try {
+        const response = await fetch("/api/sprech-bewertung", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            transkript: spokenText,
+            kriterien: kriterien.map(({ id, label, pruefHinweis }) => ({
+              id,
+              label,
+              pruefHinweis,
+            })),
+          }),
+        });
+        if (!response.ok) throw new Error("Auswertung fehlgeschlagen");
+        const data = (await response.json()) as {
+          urteile: KriteriumsUrteil[] | null;
+          gefahren: GefahrenTreffer[];
+        };
+        setGefahren(data.gefahren ?? []);
+        if (data.urteile) {
+          const feedback = komponiereSprechFeedback(
+            kriterien,
+            data.urteile,
+            sprachLevel
+          );
+          setKriterienFeedback(feedback);
+          setBewertung(feedback.alleErfuellt ? "perfekt" : "gut");
+        } else {
+          // KI nicht verfügbar → ehrlich sagen, nichts erfinden
+          setAuswertungOffline(true);
+        }
+      } catch {
+        setAuswertungOffline(true);
+      } finally {
+        setKiFeedbackLoading(false);
+      }
+    },
+    [speech.bewertungsKriterien, sprachLevel]
+  );
 
   const fetchKiFeedback = useCallback(async (spokenText: string) => {
     setKiFeedbackLoading(true);
@@ -181,6 +240,9 @@ export function StepSpeech({
     setSimilarity(null);
     setKiFeedback(null);
     setTranskriptText(null);
+    setKriterienFeedback(null);
+    setGefahren([]);
+    setAuswertungOffline(false);
   }, []);
 
   const handleWeiter = useCallback(() => {
@@ -370,8 +432,75 @@ export function StepSpeech({
               </div>
             )}
 
-            {/* Erklären: KI-Feedback */}
-            {!isNachsprechen && (
+            {/* Gefahren-Hinweis (deterministisch, Anti-Pattern-Registry) —
+                IMMER zuerst: Gefährliches darf nie unkommentiert bleiben */}
+            {gefahren.length > 0 && (
+              <div className="p-4 rounded-2xl bg-[#D4956A]/10 border border-[#D4956A]/30">
+                <p className="text-xs font-medium text-[#D4956A] mb-1.5">
+                  Wichtig — schau da nochmal hin:
+                </p>
+                <div className="space-y-2">
+                  {gefahren.map((g) => (
+                    <p
+                      key={g.id}
+                      className="text-sm text-[var(--lern-text-primary)] leading-relaxed"
+                    >
+                      {sprachLevel === "b1" ? g.hinweisB1 : g.hinweis}
+                    </p>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Erklären mit Kriterien: verifizierte Checkliste — jeder Satz
+                stammt aus geprüftem Content, das LLM war nur Detektor */}
+            {!isNachsprechen && speech.bewertungsKriterien?.length ? (
+              <div className="p-4 rounded-2xl bg-[#9B7EA6]/5 border border-[#9B7EA6]/20">
+                {kiFeedbackLoading ? (
+                  <p className="text-sm text-[var(--lern-text-tertiary)]">
+                    Deine Übergabe wird geprüft …
+                  </p>
+                ) : kriterienFeedback ? (
+                  <div className="space-y-2.5">
+                    <p className="text-xs font-medium text-[#9B7EA6]">
+                      {kriterienFeedback.anzahlErfuellt} von{" "}
+                      {kriterienFeedback.anzahlGesamt} Elementen sind drin
+                      {kriterienFeedback.alleErfuellt ? " — vollständig!" : ":"}
+                    </p>
+                    {kriterienFeedback.zeilen.map((z) => (
+                      <div key={z.id} className="flex gap-2.5">
+                        <span
+                          aria-hidden="true"
+                          className="mt-0.5 shrink-0 text-sm font-semibold"
+                          style={{ color: z.erfuellt ? "#6B8F71" : "#D4956A" }}
+                        >
+                          {z.erfuellt ? "✓" : "○"}
+                        </span>
+                        <div>
+                          <p className="text-sm font-medium text-[var(--lern-text-primary)]">
+                            {z.label}
+                          </p>
+                          {z.satz && (
+                            <p className="mt-0.5 text-sm text-[var(--lern-text-secondary)] leading-relaxed">
+                              {z.satz}
+                            </p>
+                          )}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <p className="text-sm text-[var(--lern-text-secondary)]">
+                    {auswertungOffline
+                      ? "Die automatische Auswertung ist gerade nicht erreichbar. Vergleiche deine Übergabe selbst mit der Muster-Übergabe unten."
+                      : "Deine Übergabe wird geprüft …"}
+                  </p>
+                )}
+              </div>
+            ) : null}
+
+            {/* Erklären ohne Kriterien (Legacy): freies KI-Feedback */}
+            {!isNachsprechen && !speech.bewertungsKriterien?.length && (
               <div className="p-4 rounded-2xl bg-[#9B7EA6]/5 border border-[#9B7EA6]/20">
                 {kiFeedbackLoading ? (
                   <p className="text-sm text-[var(--lern-text-tertiary)]">KI bewertet deine Antwort...</p>
@@ -406,7 +535,13 @@ export function StepSpeech({
 
             {/* Buttons */}
             <div className="flex gap-3">
-              {bewertung === "nochmal" || (isNachsprechen && bewertung === "gut" && versuch < 3) ? (
+              {bewertung === "nochmal" ||
+              (isNachsprechen && bewertung === "gut" && versuch < 3) ||
+              // Checkliste unvollständig → Nochmal anbieten (nie erzwingen)
+              (!isNachsprechen &&
+                kriterienFeedback !== null &&
+                !kriterienFeedback.alleErfuellt &&
+                versuch < 3) ? (
                 <>
                   <button
                     onClick={handleNochmal}

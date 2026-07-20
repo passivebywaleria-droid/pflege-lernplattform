@@ -694,12 +694,36 @@ export interface AudioData {
   transcript?: string;
 }
 
+/**
+ * Geschlossenes Bewertungskriterium für Sprech-/Freitext-Auswertung.
+ * Grundsatz „LLM als Detektor, nicht als Autor" (Waleria 2026-07-20):
+ * Die KI entscheidet NUR erfüllt/nicht erfüllt mit wörtlichem Transkript-Zitat
+ * (wird serverseitig verifiziert). Jeder Satz, den der Schüler liest, stammt
+ * aus diesen geprüften Feldern — nie aus dem LLM.
+ */
+export interface SprechKriterium {
+  id: string;                   // "sbar-s"
+  label: string;                // "Situation (wer, was, wann)"
+  labelB1?: string;
+  /** Für die KI: WORAN erkennt man, dass das Kriterium erfüllt ist (Fallfakten). */
+  pruefHinweis: string;
+  /** Geprüfter Satz, wenn das Kriterium FEHLT — aus auditiertem Content. */
+  feedbackFehlt: string;
+  feedbackFehltB1?: string;
+}
+
 export interface SpeechData {
   speechType: "nachsprechen" | "erklaeren";
   zielwort?: string;            // Typ "nachsprechen": "Dekubitus"
   aufgabe?: string;             // Typ "erklaeren": "Erkläre dem Patienten..."
   aufgabeB1?: string;           // B1-Version der Aufgabe
   bewertungshinweis?: string;   // Für KI-Feedback: Was soll der Schüler sagen?
+  /**
+   * Geschlossene Kriterien-Checkliste — wenn gesetzt, läuft die Auswertung
+   * über /api/sprech-bewertung (Detektor + Zitatpflicht) statt freiem
+   * KI-Feedback. Feedback-Sätze kommen ausschließlich aus diesen Feldern.
+   */
+  bewertungsKriterien?: SprechKriterium[];
   /**
    * Wortgleiche Muster-Antwort (z. B. die korrekte SBAR-Übergabe) — nach dem
    * eigenen Versuch als TTS anhörbar („so klingt eine gute Übergabe").
