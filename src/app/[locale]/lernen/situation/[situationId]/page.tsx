@@ -27,6 +27,7 @@ import { verteileSpickzettel } from "@/lib/learn/spickzettel-verteilung";
 import { Spickzettel } from "@/components/learn/spickzettel";
 import { AbschlussScreen } from "@/components/learn/abschluss-screen";
 import { AuftaktScreen } from "@/components/learn/auftakt-screen";
+import { WiedereinstiegScreen } from "@/components/learn/wiedereinstieg-screen";
 import { prefetchWhisperAssets } from "@/hooks/use-whisper";
 import { RecheckIntermezzo } from "@/components/learn/recheck-intermezzo";
 import { sammleAbschlussDaten } from "@/lib/learn/abschluss-daten";
@@ -121,6 +122,10 @@ export default function SituationLernenPage() {
   // Auftakt-Screen (Audit-Lücke 1): nur bei frischem Start — Resume mitten in
   // der Situation springt direkt in den Step. Wird nach Hydration gesetzt.
   const [auftaktAktiv, setAuftaktAktiv] = useState(false);
+  // Wiedereinstieg (Waleria 2026-07-20): kommt der Schüler MITTEN in eine
+  // Situation zurück, wählt er selbst „weiter" oder „neu" — statt still an der
+  // alten Stelle zu landen. Nur nach Hydration, nur bei mittigem Resume.
+  const [wiedereinstiegAktiv, setWiedereinstiegAktiv] = useState(false);
 
   // Adaptiv-v1 (PLAN-ADAPTIV-V1): „Erinnerst du dich?"-Intermezzo.
   // Queue wackeliger Kernfakten (Position = globaler Schritt-Zähler, Recheck
@@ -291,15 +296,19 @@ export default function SituationLernenPage() {
     }
 
     if (isGuest) {
-      applySaved(localSaved);
-      setAuftaktAktiv(amStart(localSaved));
+      const applied = applySaved(localSaved);
+      const start = amStart(localSaved);
+      setAuftaktAktiv(start);
+      setWiedereinstiegAktiv(applied && !start);
       return;
     }
 
     // Gast→Account-Merge: lokalen Stand übernehmen, zum Server schieben,
     // lokal aufräumen (Fortschritt gehört jetzt dem Account).
     if (applySaved(localSaved) && localSaved) {
-      setAuftaktAktiv(amStart(localSaved));
+      const start = amStart(localSaved);
+      setAuftaktAktiv(start);
+      setWiedereinstiegAktiv(!start);
       const completed = (localSaved.completedPhases ?? []).filter((p) =>
         validPhases.includes(p)
       );
@@ -341,12 +350,14 @@ export default function SituationLernenPage() {
           completedPhases: d.progress.resumeState?.completedPhases,
           currentStepIndex: d.progress.resumeState?.currentStepIndex,
         };
-        applySaved(serverSaved);
+        const applied = applySaved(serverSaved);
         // Abgeschlossene Situation → Abschluss-Screen, kein Auftakt.
         const fertig = validPhases.every((p) =>
           (serverSaved.completedPhases ?? []).includes(p)
         );
-        setAuftaktAktiv(!fertig && amStart(serverSaved));
+        const start = amStart(serverSaved);
+        setAuftaktAktiv(!fertig && start);
+        setWiedereinstiegAktiv(!fertig && applied && !start);
       })
       .catch(() => {
         // offline/Fehler — frisch starten ist ok
@@ -739,6 +750,26 @@ export default function SituationLernenPage() {
               gesamtSteps={totalSituationSteps}
               onStart={() => setAuftaktAktiv(false)}
               onPatientTap={() => setPatientModalOpen(true)}
+            />
+          ) : wiedereinstiegAktiv ? (
+            /* Wiedereinstieg (Waleria 2026-07-20): weiter oder neu — der
+               Schüler entscheidet, statt still an der alten Stelle zu landen. */
+            <WiedereinstiegScreen
+              situation={situation}
+              schrittNummer={globalStepIndex + 1}
+              gesamtSteps={totalSituationSteps}
+              sprachLevel={sprachLevel}
+              onWeiter={() => setWiedereinstiegAktiv(false)}
+              onNeuBeginnen={() => {
+                setWiedereinstiegAktiv(false);
+                setCurrentPhaseId(situation.phasen[0].phase);
+                setCurrentStepIndex(0);
+                setCompletedPhases([]);
+                setAntworten(new Map());
+                setSessionVonAnfang(true);
+                setAuftaktAktiv(true);
+                trackFunnel("situation_neu_begonnen", { situationId });
+              }}
             />
           ) : transitionText ? (
             /* Micro-Narration — Zwischenscreen, länger sichtbar (4.5-7s je nach Textlänge) */

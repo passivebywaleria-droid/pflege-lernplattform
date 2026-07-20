@@ -34,6 +34,7 @@ export type FunnelEvent =
   | "spickzettel_angebot_angenommen"
   | "sprache_angebot_gezeigt"
   | "sprache_angebot_angenommen"
+  | "situation_neu_begonnen"
 
 const LS_KEY = "pflege:funnel"
 

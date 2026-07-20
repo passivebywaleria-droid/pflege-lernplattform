@@ -105,6 +105,11 @@ export function prefetchWhisperAssets(): void {
   idle(() => {
     void (async () => {
       try {
+        // Persistenten Speicher anfragen: iOS Safari räumt große Cache-
+        // Einträge (57 MB) im normalen Tab sonst aggressiv weg → Modell
+        // müsste bei jedem Besuch neu laden. persist() reduziert das (voll
+        // zuverlässig nur „Zum Home-Bildschirm"; hier best effort).
+        await navigator.storage?.persist?.();
         const { WhisperWasmService } = await importWhisperModule();
         const whisper = new WhisperWasmService({ logLevel: 3 });
         if (!(await whisper.checkWasmSupport())) return;
