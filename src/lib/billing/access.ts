@@ -50,8 +50,11 @@ export async function getAccessState(userId: string): Promise<AccessState> {
   const isAdult =
     user?.birthYear != null && currentYear - user.birthYear >= ADULT_AGE
 
-  let hasAccess = false
-  if (user) {
+  // Pilot-Modus = kostenloser Early-Access: keine Paywall. EIN Flag steuert den
+  // ganzen Pilot — derselbe Schalter befreit auch vom Einstufungs-Guard
+  // (einstufungs-guard.tsx + lernen/page.tsx hören auf NEXT_PUBLIC_PILOT_MODE).
+  let hasAccess = process.env.NEXT_PUBLIC_PILOT_MODE === "true"
+  if (!hasAccess && user) {
     if (user.subscriptionStatus === "active") {
       hasAccess = true
     } else if (user.accessUntil && user.accessUntil.getTime() > Date.now()) {

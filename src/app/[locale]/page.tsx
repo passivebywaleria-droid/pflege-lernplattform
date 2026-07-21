@@ -7,6 +7,8 @@ import { FounderAvatar } from "@/components/marketing/founder-avatar"
 import { PhoneMockup } from "@/components/marketing/phone-mockup"
 import { ZweiAchsenDiagramm } from "@/components/marketing/zwei-achsen-diagramm"
 import { locales } from "@/lib/i18n/request"
+import { getSession } from "@/lib/auth/session"
+import { getLetzterFortschritt } from "@/lib/progress/letzte-situation"
 
 // Newsreader für Display-Headlines — selbst gehostet via next/font
 const newsreader = Newsreader({
@@ -67,6 +69,30 @@ export default async function LandingPage({
   // Kante 7: Rückkehrer melden sich passwortlos per Code an (nicht /login = Passwort).
   const loginHref = `/${locale}/mitmachen`
 
+  // Session-aware (SPEC-PILOT-FLOW Kante 7 / Retention): ein eingeloggter
+  // Rückkehrer sieht „Weiterlernen" → genau dort, wo er war, statt auf der
+  // Marketing-/Warteliste-Seite den Weg zurück selbst suchen zu müssen.
+  // (getSession liest das Cookie → die Landing rendert dadurch dynamisch.)
+  const session = await getSession()
+  let weiterHref: string | null = null
+  if (session) {
+    try {
+      const letzter = await getLetzterFortschritt(session.userId)
+      weiterHref = letzter
+        ? letzter.isComplete
+          ? `/${locale}/lernen/ce/${letzter.ceId}`
+          : `/${locale}/lernen/situation/${letzter.situationId}?ce=${letzter.ceId}`
+        : demoHref
+    } catch {
+      // DB nicht erreichbar → wenigstens in die CE-Übersicht statt ins Leere.
+      weiterHref = `/${locale}/lernen/ce/ce-06`
+    }
+  }
+  const primaryHref = weiterHref ?? demoHref
+  const primaryLabel = weiterHref ? t("heroCtaWeiter") : t("heroCtaPrimary")
+  const navHref = weiterHref ?? demoHref
+  const navLabel = weiterHref ? t("heroCtaWeiter") : t("navTryFree")
+
   const waitlistLabels = {
     emailLabel: t("waitlistEmailLabel"),
     emailPlaceholder: t("waitlistEmailPlaceholder"),
@@ -123,10 +149,10 @@ export default async function LandingPage({
               {t("navLogin")}
             </Link>
             <Link
-              href={demoHref}
+              href={navHref}
               className="rounded-full bg-[var(--lern-accent)] px-5 py-2 text-sm font-semibold text-white transition-colors hover:bg-[#4C6A52]"
             >
-              {t("navTryFree")}
+              {navLabel}
             </Link>
           </div>
         </div>
@@ -148,10 +174,10 @@ export default async function LandingPage({
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
             <Link
-              href={demoHref}
+              href={primaryHref}
               className="rounded-full bg-[var(--lern-accent)] px-8 py-3.5 text-base font-semibold text-white shadow-lg shadow-[var(--lern-accent)]/25 transition-all hover:bg-[#4C6A52] hover:shadow-xl"
             >
-              {t("heroCtaPrimary")}
+              {primaryLabel}
             </Link>
             <a
               href="#warteliste"

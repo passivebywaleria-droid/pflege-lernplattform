@@ -25,10 +25,16 @@ export default function LernenUebersichtPage() {
   const { profil, loaded: profilLoaded } = useLernFortschritt();
 
   useEffect(() => {
-    // Vorschau-Modus (NEXT_PUBLIC_PREVIEW_OPEN=1): ueberspringt die Einstufungs-
-    // Pflicht, damit Inhalte ohne Login/Test angeschaut werden koennen. NUR fuer
-    // den Vorschau-Server — im echten Pilot ist der Schalter AUS (Default).
-    if (process.env.NEXT_PUBLIC_PREVIEW_OPEN === "1") return;
+    // Einstufungs-Pflicht ueberspringen, wenn Pilot- ODER Vorschau-Modus aktiv
+    // ist. NEXT_PUBLIC_PILOT_MODE ist das kanonische Pilot-Flag (dasselbe, auf
+    // das der zentrale EinstufungsGuard hoert) — diese Seite liegt ausserhalb
+    // des (dashboard)-Layouts und braucht den Bypass darum separat.
+    // NEXT_PUBLIC_PREVIEW_OPEN bleibt als Escape-Hatch fuer den Vorschau-Server.
+    if (
+      process.env.NEXT_PUBLIC_PILOT_MODE === "true" ||
+      process.env.NEXT_PUBLIC_PREVIEW_OPEN === "1"
+    )
+      return;
     if (einstufungLoaded && !hatEinstufung) {
       router.replace(`/${locale}/einstufung`);
     }

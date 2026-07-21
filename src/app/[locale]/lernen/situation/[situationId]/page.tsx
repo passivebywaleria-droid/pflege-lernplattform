@@ -31,6 +31,7 @@ import { WiedereinstiegScreen } from "@/components/learn/wiedereinstieg-screen";
 import { prefetchWhisperAssets } from "@/hooks/use-whisper";
 import { RecheckIntermezzo } from "@/components/learn/recheck-intermezzo";
 import { sammleAbschlussDaten } from "@/lib/learn/abschluss-daten";
+import { recordLearningActivity } from "@/components/pwa/learning-reminder-banner";
 import {
   markiereWackelig,
   markiereGefestigt,
@@ -40,6 +41,9 @@ import {
   generiereRecheck,
   type RecheckFrage,
 } from "@/lib/adaptive/recheck-generator";
+import { markiereLerntagLokal, type StepAntwort } from "@/hooks/use-lern-fortschritt";
+import { berechneAchsen, type LernAchsen } from "@/lib/adaptive/lern-profil";
+import { klassifiziereZeit } from "@/lib/adaptive/antwortzeit";
 import { CE02_THEMA_STURZ_PROPHYLAXE_GLOSSAR } from "../../../../../../content/ce-02/themen/sturz-prophylaxe/glossar";
 import { CE06_GLOSSAR } from "../../../../../../content/ce-06/glossar";
 
@@ -118,6 +122,12 @@ export default function SituationLernenPage() {
   const [antworten, setAntworten] = useState<ReadonlyMap<string, boolean>>(
     () => new Map()
   );
+  // Reicheres Event-Log DERSELBEN Session (inkl. Antwortzeit + Bloom-Level) —
+  // die Wahrheit, aus der die verdiente Zwei-Achsen-Auswertung am Abschluss
+  // gerechnet wird (Adaptivität sichtbar). Nur erster Versuch je Step.
+  const [antwortEvents, setAntwortEvents] = useState<StepAntwort[]>([]);
+  // Tages-Streak (geteilter Store, gesetzt bei Abschluss) — Retention-Motivator.
+  const [streakTage, setStreakTage] = useState(0);
   const [sessionVonAnfang, setSessionVonAnfang] = useState(true);
   // Auftakt-Screen (Audit-Lücke 1): nur bei frischem Start — Resume mitten in
   // der Situation springt direkt in den Step. Wird nach Hydration gesetzt.
@@ -137,6 +147,11 @@ export default function SituationLernenPage() {
   const letzterRecheckPosRef = useRef(-99);
   const globalPosRef = useRef(0);
   const falschZaehlerRef = useRef(0);
+  // Antwortzeit-Messung (VISION: „Die Zeit ist ein ehrlicheres Signal als die
+  // Antwort selbst"). Startzeitpunkt des aktuell sichtbaren Antwort-Steps.
+  const stepStartRef = useRef<number>(0);
+  // Wie viele beantwortete Steps liefen im B1-Modus — Proxy für die Sprach-Achse.
+  const b1StepsRef = useRef(0);
   // Sprach-Angebot (Station ⑤): nach der 2. falschen Antwort EINMALIG anbieten,
   // einfacher zu erklären (öffnet B1) — v1-Trigger bewusst simpel (2× falsch),
   // die Antwortzeit-Kategorie folgt in v2.
@@ -461,6 +476,29 @@ export default function SituationLernenPage() {
     };
   }, [isGuest, situation, situationId]);
 
+  // Antwortzeit-Timer auf den SICHTBAREN Antwort-Step zurücksetzen. Übergangs-
+  // Narration und Recheck-Intermezzo sind Overlays vor dem Step → sie zählen
+  // nicht zur Nachdenkzeit (Timer startet erst, wenn der Step wirklich dran ist).
+  useEffect(() => {
+    if (!aktiverRecheck && !transitionText) {
+      stepStartRef.current = Date.now();
+    }
+  }, [currentPhaseId, currentStepIndex, aktiverRecheck, transitionText]);
+
+  // Lerntag festhalten, sobald die Situation abgeschlossen ist. EIN Signal
+  // (localStorage „pflege-letzte-aktivitaet"), das der app-weite Reminder-Banner
+  // liest → „heute gelernt" statt fälschlich „heute noch nicht gelernt", und die
+  // Grundlage für den Streak. Bisher schrieb NUR der alte LE-Player dieses Signal
+  // — der Situations-Player (Pilot) war davon abgeklemmt.
+  useEffect(() => {
+    if (!situation) return;
+    const phasen = situation.phasen.map((p) => p.phase);
+    if (phasen.length > 0 && phasen.every((p) => completedPhases.includes(p))) {
+      recordLearningActivity();
+      setStreakTage(markiereLerntagLokal());
+    }
+  }, [situation, completedPhases]);
+
   // Reihenfolge der Phasen dieser Situation (situationsTyp-abhängig)
   const phaseOrder: AnyPhase[] = situation?.phasen.map((p) => p.phase) ?? [];
 
@@ -649,6 +687,14 @@ export default function SituationLernenPage() {
     !isGateStep &&
     !allPhasesCompleted;
 
+  // Verdiente Zwei-Achsen-Auswertung (Adaptivität sichtbar) — aus dem Event-Log
+  // dieser Session. Nur bei Abschluss + echten Antworten; der Abschluss-Screen
+  // blendet sie ohne vollständige Session-Daten ohnehin aus (nie raten).
+  const achsen: LernAchsen | null =
+    allPhasesCompleted && antwortEvents.length > 0
+      ? berechneAchsen(antwortEvents, [], b1StepsRef.current, totalSituationSteps)
+      : null;
+
   return (
     <div className="h-dvh bg-[var(--lern-bg)] flex flex-col overflow-hidden">
       {/* Sticky Header — KERN-LOOP-STANDARD (2026-07-16): EINE Meta-Zeile.
@@ -733,6 +779,8 @@ export default function SituationLernenPage() {
             <AbschlussScreen
               situation={situation}
               daten={sammleAbschlussDaten(situation, antworten)}
+              achsen={achsen}
+              streakTage={streakTage}
               antwortDatenVollstaendig={sessionVonAnfang}
               sprachLevel={sprachLevel}
               isGuest={isGuest === true}
@@ -766,6 +814,8 @@ export default function SituationLernenPage() {
                 setCurrentStepIndex(0);
                 setCompletedPhases([]);
                 setAntworten(new Map());
+                setAntwortEvents([]);
+                b1StepsRef.current = 0;
                 setSessionVonAnfang(true);
                 setAuftaktAktiv(true);
                 trackFunnel("situation_neu_begonnen", { situationId });
@@ -858,11 +908,29 @@ export default function SituationLernenPage() {
                     // des Abschluss-Screens (Info-Steps liefern kein correct).
                     if (correct !== undefined) {
                       const stepId = currentStep.stepId;
+                      const zeitMs = Date.now() - stepStartRef.current;
                       setAntworten((prev) =>
                         prev.has(stepId)
                           ? prev
                           : new Map(prev).set(stepId, correct)
                       );
+                      // Reicheres Event (Antwortzeit + Bloom) — nur erster
+                      // Versuch, gleiche Guard wie die Boolean-Map oben.
+                      setAntwortEvents((prev) =>
+                        prev.some((e) => e.stepId === stepId)
+                          ? prev
+                          : [
+                              ...prev,
+                              {
+                                stepId,
+                                stepType: currentStep.stepType,
+                                correct,
+                                zeitMs,
+                                bloomLevel: currentStep.bloomLevel,
+                              },
+                            ]
+                      );
+                      if (sprachLevel === "b1") b1StepsRef.current += 1;
                       // Adaptiv-v1 (Station ①): Kernfakt-Register + Recheck-Queue.
                       if (correct === false) {
                         const kernfakte = currentStep.kernfaktId ?? [];
@@ -888,12 +956,23 @@ export default function SituationLernenPage() {
                             });
                           }
                         }
-                        // Sprach-Angebot: ab der 2. falschen Antwort, einmalig.
+                        // Sprach-Angebot (Adaptiv v2): einmalig, wenn der Schüler
+                        // KÄMPFT — nach der 2. falschen Antwort ODER schon nach
+                        // der 1., wenn die Antwortzeit „unsicher"/„geraten" war.
+                        // Die Zeit ist das ehrlichere Signal als der reine Fehler
+                        // (VISION) — reagiert so auf Ringen, nicht nur auf Klick.
                         falschZaehlerRef.current += 1;
+                        const zeitKlasse = klassifiziereZeit(
+                          zeitMs,
+                          currentStep.stepType
+                        );
+                        const kampfSignal =
+                          zeitKlasse === "unsicher" || zeitKlasse === "geraten";
                         if (
-                          falschZaehlerRef.current === 2 &&
                           sprachLevel === "c1" &&
-                          sprachAngebot === "aus"
+                          sprachAngebot === "aus" &&
+                          (falschZaehlerRef.current >= 2 ||
+                            (falschZaehlerRef.current >= 1 && kampfSignal))
                         ) {
                           setSprachAngebot("zeigen");
                           trackFunnel("sprache_angebot_gezeigt", { situationId });

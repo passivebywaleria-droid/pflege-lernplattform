@@ -6,6 +6,7 @@ import { updateKompetenz, lernzielVonStep, type KompetenzRegister } from "@/lib/
 import type { EinstufungsErgebnis } from "@/lib/einstufung/algorithmus";
 import type { StrategieTyp, StrategiePraeferenzen } from "@/lib/adaptive/strategie";
 import { updateStrategiePraeferenz } from "@/lib/adaptive/strategie";
+import { naechsterStreak } from "@/lib/learn/streak";
 
 // --- Types ---
 
@@ -344,22 +345,13 @@ export function useLernFortschritt() {
     setProfil((prev) => {
       if (!prev) return prev;
       const heute = new Date().toISOString().split("T")[0];
-
       if (prev.letzterStreakTag === heute) return prev; // Schon gezählt
-
-      const gestern = new Date(Date.now() - 86400000)
-        .toISOString()
-        .split("T")[0];
-      const next = { ...prev };
-
-      if (prev.letzterStreakTag === gestern) {
-        next.streakTage = prev.streakTage + 1;
-      } else if (prev.letzterStreakTag !== heute) {
-        next.streakTage = 1; // Reset
-      }
-
-      next.letzterStreakTag = heute;
-      return next;
+      // Geteilte Regel (streak.ts) — identisch mit dem Situations-Player.
+      const { streakTage, letzterStreakTag } = naechsterStreak(
+        { streakTage: prev.streakTage, letzterStreakTag: prev.letzterStreakTag },
+        heute
+      );
+      return { ...prev, streakTage, letzterStreakTag };
     });
   }, []);
 
@@ -847,4 +839,45 @@ function createEmptyProfil(): LernProfil {
     gesamtXp: 0,
     schwaechen: [],
   };
+}
+
+/**
+ * Markiert HEUTE als Lerntag im geteilten Profil-Store (localStorage
+ * `pflege-lernprofil`) und gibt den aktuellen Streak zurück. Für Player, die den
+ * useLernFortschritt-Hook NICHT mounten (Situations-Player/Pilot) — nutzt aber
+ * denselben Store, dieselbe Regel (streak.ts) und dieselbe Default-Factory wie
+ * der Hook: EIN Streak, kein paralleler Zähler, keine Logik-Dopplung.
+ *
+ * Fehlt das Profil (frischer Gast), wird ein VOLLSTÄNDIGES Default-Profil
+ * (createEmptyProfil) angelegt — nie ein Teil-Objekt, das den Hook-Load bräche
+ * (der lädt roh via JSON.parse ... as LernProfil, ohne Merge).
+ * Hinweis: schreibt nur localStorage, nicht den IndexedDB-Spiegel; die
+ * localStorage↔IndexedDB-Reconciliation bleibt Sache des Hooks (die Pilot-Cohort
+ * spielt situations-only und hat keinen IndexedDB-Stand).
+ */
+export function markiereLerntagLokal(): number {
+  if (typeof window === "undefined") return 0;
+  const heute = new Date().toISOString().split("T")[0];
+  try {
+    const raw = window.localStorage.getItem(STORAGE_KEY);
+    const profil: LernProfil = raw
+      ? (JSON.parse(raw) as LernProfil)
+      : createEmptyProfil();
+    if (profil.letzterStreakTag === heute) {
+      return profil.streakTage ?? 0; // heute schon gezählt
+    }
+    const { streakTage, letzterStreakTag } = naechsterStreak(
+      {
+        streakTage: profil.streakTage ?? 0,
+        letzterStreakTag: profil.letzterStreakTag ?? null,
+      },
+      heute
+    );
+    profil.streakTage = streakTage;
+    profil.letzterStreakTag = letzterStreakTag;
+    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(profil));
+    return streakTage;
+  } catch {
+    return 0;
+  }
 }

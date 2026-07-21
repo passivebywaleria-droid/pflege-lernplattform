@@ -12,10 +12,18 @@ import { Check } from "lucide-react";
 import { useTranslations } from "next-intl";
 import type { Lernsituation } from "../../../content/_types";
 import type { AbschlussDaten, AbschlussBaustein } from "@/lib/learn/abschluss-daten";
+import { achsenBeschreibung, type LernAchsen } from "@/lib/adaptive/lern-profil";
 
 interface AbschlussScreenProps {
   situation: Lernsituation;
   daten: AbschlussDaten;
+  /**
+   * Verdiente Zwei-Achsen-Auswertung dieser Session (Sprache + Fachwissen).
+   * null = keine/unvollständige Daten → Block wird nicht gezeigt.
+   */
+  achsen?: LernAchsen | null;
+  /** Tages-Streak (geteilter Store). 0 = ausblenden. */
+  streakTage?: number;
   /** false = Session lief nicht von Step 1 (Resume) → keine Schwächen-Aussage. */
   antwortDatenVollstaendig: boolean;
   sprachLevel: "c1" | "b1";
@@ -106,9 +114,46 @@ function AbrufKarte({
   );
 }
 
+/** Ein Achsen-Balken (5 Stufen) + Kurzbeschreibung darunter. */
+function AchsenBalken({
+  label,
+  wert,
+  beschreibung,
+}: {
+  label: string;
+  wert: number;
+  beschreibung: string;
+}) {
+  const stufen = Math.max(1, Math.min(5, Math.round(wert)));
+  return (
+    <div>
+      <span className="text-sm font-semibold text-[var(--lern-text-primary)]">
+        {label}
+      </span>
+      <div className="mt-1.5 flex gap-1" aria-hidden="true">
+        {[1, 2, 3, 4, 5].map((i) => (
+          <span
+            key={i}
+            className={`h-1.5 flex-1 rounded-full ${
+              i <= stufen
+                ? "bg-[var(--lern-accent)]"
+                : "bg-[var(--lern-border)]"
+            }`}
+          />
+        ))}
+      </div>
+      <span className="mt-1 block text-xs text-[var(--lern-text-secondary)]">
+        {beschreibung}
+      </span>
+    </div>
+  );
+}
+
 export function AbschlussScreen({
   situation,
   daten,
+  achsen,
+  streakTage,
   antwortDatenVollstaendig,
   sprachLevel,
   isGuest,
@@ -120,6 +165,10 @@ export function AbschlussScreen({
   const t = useTranslations("situation.abschluss");
   const tSit = useTranslations("situation");
   const b1 = sprachLevel === "b1";
+
+  // „Dein Stand": nur mit vollständigen Session-Daten (nie raten, nie schmeicheln).
+  const zeigeAchsen = !!achsen && antwortDatenVollstaendig && daten.beantwortet > 0;
+  const achsenTexte = achsen ? achsenBeschreibung(achsen) : null;
 
   const abschlussText =
     (b1 && situation.abschlussTextB1) ||
@@ -172,7 +221,36 @@ export function AbschlussScreen({
         <p className="mt-1.5 text-xs text-[var(--lern-text-secondary)]">
           {t("leistung", { schritte: gesamtSteps })}
         </p>
+        {typeof streakTage === "number" && streakTage > 0 && (
+          <p className="mt-2 inline-flex items-center gap-1 rounded-full bg-[#D4956A]/10 px-3 py-1 text-xs font-bold text-[#D4956A]">
+            {streakTage >= 2
+              ? t("streakTage", { tage: streakTage })
+              : t("streakTag1")}
+          </p>
+        )}
       </div>
+
+      {/* Dein Stand: die verdiente Zwei-Achsen-Auswertung — der „es kennt mich"-
+          Moment. Fachwissen zuerst (Kern der Situation), dann Fachsprache. */}
+      {zeigeAchsen && achsen && achsenTexte && (
+        <div className="mb-6">
+          <p className="mb-2 text-[11px] font-bold uppercase tracking-widest text-[var(--lern-text-secondary)]">
+            {t("deinStand")}
+          </p>
+          <div className="space-y-3 rounded-2xl border-[1.5px] border-[var(--lern-border)] bg-[var(--lern-bg-primary)] p-3">
+            <AchsenBalken
+              label={t("achseFachwissen")}
+              wert={achsen.fachwissen}
+              beschreibung={achsenTexte.fachwissen}
+            />
+            <AchsenBalken
+              label={t("achseSprache")}
+              wert={achsen.sprache}
+              beschreibung={achsenTexte.sprache}
+            />
+          </div>
+        </div>
+      )}
 
       {/* Recap: aktiver Abruf — Frage zuerst, Tap deckt die Faustregel wortgleich auf */}
       {daten.bausteine.length > 0 && (
