@@ -492,6 +492,11 @@
       "achseSprache": "Fachsprache",
       "streakTag1": "🔥 Dein 1. Lerntag",
       "streakTage": "🔥 Tag {tage} in Folge",
+      "profilBautSichAuf": "Dein Profil baut sich auf",
+      "genauigkeit": "Genauigkeit",
+      "nochSituationen": "Noch {anzahl, plural, one {# Situation} other {# Situationen}}, bis dein Profil scharf ist",
+      "spracheKeinHindernis": "Deutsch ist für dich kein Hindernis",
+      "schwaechenKurz": "Ein paar Faustregeln wackeln noch — die oben mit 🟠 sind dran. Nächstes Mal sitzen sie.",
       "mitnehmen": "Das nimmst du mit",
       "aufdecken": "Antippen zum Aufdecken",
       "nochmalAnsehen": "Nochmal ansehen",
@@ -526,6 +531,11 @@
       "frage": "Soll ich einfacher erklären?",
       "an": "Einfache Sprache an",
       "spaeter": "Nein danke"
+    },
+    "b1Hinweis": {
+      "text": "Du liest gerade in einfacher Sprache (B1).",
+      "zuC1": "Zu C1",
+      "behalten": "B1 behalten"
     }
   },
   "themaNav": {

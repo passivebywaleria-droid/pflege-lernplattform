@@ -41,8 +41,13 @@ import {
   generiereRecheck,
   type RecheckFrage,
 } from "@/lib/adaptive/recheck-generator";
-import { markiereLerntagLokal, type StepAntwort } from "@/hooks/use-lern-fortschritt";
-import { berechneAchsen, type LernAchsen } from "@/lib/adaptive/lern-profil";
+import {
+  markiereLerntagLokal,
+  speichereSituationsProfil,
+  type StepAntwort,
+  type SituationsProfilAggregat,
+} from "@/hooks/use-lern-fortschritt";
+import { berechneAchsen } from "@/lib/adaptive/lern-profil";
 import { klassifiziereZeit } from "@/lib/adaptive/antwortzeit";
 import { CE02_THEMA_STURZ_PROPHYLAXE_GLOSSAR } from "../../../../../../content/ce-02/themen/sturz-prophylaxe/glossar";
 import { CE06_GLOSSAR } from "../../../../../../content/ce-06/glossar";
@@ -101,6 +106,15 @@ export default function SituationLernenPage() {
     localStorage.setItem("pflege-sprachlevel", level);
     setSprachLevelState(level);
   }, []);
+  // Einmalig beim Start prüfen: kommt die Situation in geerbtem B1 an? → Hinweis.
+  useEffect(() => {
+    if (
+      typeof window !== "undefined" &&
+      window.localStorage.getItem("pflege-sprachlevel") === "b1"
+    ) {
+      setGeerbtesB1Hinweis(true);
+    }
+  }, []);
   // Micro-Narration: erzählerischer Übergang — wird als Intro-Text
   // OBEN im nächsten Step angezeigt (vom vorherigen Step mitgegeben).
   const [transitionText, setTransitionText] = useState<string | null>(null);
@@ -128,6 +142,9 @@ export default function SituationLernenPage() {
   const [antwortEvents, setAntwortEvents] = useState<StepAntwort[]>([]);
   // Tages-Streak (geteilter Store, gesetzt bei Abschluss) — Retention-Motivator.
   const [streakTage, setStreakTage] = useState(0);
+  // Aggregiertes „schärfer werdendes" Zwei-Achsen-Profil (über alle Situationen).
+  const [profilAggregat, setProfilAggregat] =
+    useState<SituationsProfilAggregat | null>(null);
   const [sessionVonAnfang, setSessionVonAnfang] = useState(true);
   // Auftakt-Screen (Audit-Lücke 1): nur bei frischem Start — Resume mitten in
   // der Situation springt direkt in den Step. Wird nach Hydration gesetzt.
@@ -156,6 +173,9 @@ export default function SituationLernenPage() {
   // einfacher zu erklären (öffnet B1) — v1-Trigger bewusst simpel (2× falsch),
   // die Antwortzeit-Kategorie folgt in v2.
   const [sprachAngebot, setSprachAngebot] = useState<"aus" | "zeigen" | "erledigt">("aus");
+  // Geerbtes B1: startet die Situation in (aus früherer Sitzung übernommenem)
+  // B1, wird das EINMALIG sichtbar gemacht — nie still vereinfachen.
+  const [geerbtesB1Hinweis, setGeerbtesB1Hinweis] = useState(false);
   // Ref, über die das AnswerSheet den Spickzettel des aktuellen Steps öffnet.
   const spickzettelOeffnenRef = useRef<(() => void) | null>(null);
   // Nächste Situation der CE (für den „Als Nächstes"-Ausblick).
@@ -493,11 +513,37 @@ export default function SituationLernenPage() {
   useEffect(() => {
     if (!situation) return;
     const phasen = situation.phasen.map((p) => p.phase);
-    if (phasen.length > 0 && phasen.every((p) => completedPhases.includes(p))) {
-      recordLearningActivity();
-      setStreakTage(markiereLerntagLokal());
-    }
-  }, [situation, completedPhases]);
+    if (!(phasen.length > 0 && phasen.every((p) => completedPhases.includes(p))))
+      return;
+    recordLearningActivity();
+    setStreakTage(markiereLerntagLokal());
+    // Achsen-Sample dieser Situation ins schärfer werdende Profil legen.
+    if (antwortEvents.length === 0) return;
+    const gesamt = situation.phasen.reduce(
+      (a, p) =>
+        a +
+        verteileSpickzettel([...p.kernSteps, ...p.optionaleSteps])
+          .sichtbareSteps.length,
+      0
+    );
+    const sessionAchsen = berechneAchsen(
+      antwortEvents,
+      [],
+      b1StepsRef.current,
+      gesamt
+    );
+    setProfilAggregat(
+      speichereSituationsProfil({
+        situationId,
+        fachwissen: sessionAchsen.fachwissen,
+        sprache: sessionAchsen.sprache,
+        scoredSteps: antwortEvents.length,
+        // Sprach-Signal nur bei BEWUSSTER B1-Nutzung dieser Session.
+        hatSprachSignal: b1StepsRef.current > 0,
+        aktualisiert: new Date().toISOString(),
+      })
+    );
+  }, [situation, completedPhases, antwortEvents, situationId]);
 
   // Reihenfolge der Phasen dieser Situation (situationsTyp-abhängig)
   const phaseOrder: AnyPhase[] = situation?.phasen.map((p) => p.phase) ?? [];
@@ -687,14 +733,6 @@ export default function SituationLernenPage() {
     !isGateStep &&
     !allPhasesCompleted;
 
-  // Verdiente Zwei-Achsen-Auswertung (Adaptivität sichtbar) — aus dem Event-Log
-  // dieser Session. Nur bei Abschluss + echten Antworten; der Abschluss-Screen
-  // blendet sie ohne vollständige Session-Daten ohnehin aus (nie raten).
-  const achsen: LernAchsen | null =
-    allPhasesCompleted && antwortEvents.length > 0
-      ? berechneAchsen(antwortEvents, [], b1StepsRef.current, totalSituationSteps)
-      : null;
-
   return (
     <div className="h-dvh bg-[var(--lern-bg)] flex flex-col overflow-hidden">
       {/* Sticky Header — KERN-LOOP-STANDARD (2026-07-16): EINE Meta-Zeile.
@@ -745,12 +783,17 @@ export default function SituationLernenPage() {
           )}
           <button
             onClick={() => setSpracheSheetOpen(true)}
-            aria-label="Sprache wählen"
+            aria-label={`Sprache wählen (aktuell ${sprachLevel === "b1" ? "einfache Sprache B1" : "C1"})`}
             aria-expanded={spracheSheetOpen}
-            className={`shrink-0 text-[var(--lern-text-secondary)] hover:text-[var(--lern-text-primary)] ${
+            className={`shrink-0 inline-flex items-center gap-1 text-[var(--lern-text-secondary)] hover:text-[var(--lern-text-primary)] ${
               sprachLevel === "b1" ? "text-[var(--lern-accent)]" : ""
             }`}
           >
+            {/* Sichtbare Sprachstufe — nie mehr still in B1: der Schüler SIEHT,
+                in welcher Stufe er liest, und kann mit einem Tap wechseln. */}
+            <span className="text-[11px] font-bold tabular-nums">
+              {sprachLevel === "b1" ? "B1" : "C1"}
+            </span>
             <Languages className="h-5 w-5" />
           </button>
         </div>
@@ -759,6 +802,35 @@ export default function SituationLernenPage() {
       {/* Content */}
       <main className="flex-1 min-h-0 overflow-y-auto">
         <div className="mx-auto max-w-3xl px-4 py-5 pb-24">
+          {/* Geerbtes-B1-Hinweis: nie still in einfacher Sprache lesen. */}
+          {geerbtesB1Hinweis &&
+            !allPhasesCompleted &&
+            !auftaktAktiv &&
+            !wiedereinstiegAktiv && (
+              <div className="mb-4 flex items-center gap-2 rounded-2xl border-[1.5px] border-[var(--lern-accent)]/35 bg-[var(--lern-accent-bg)] px-3.5 py-2.5">
+                <p className="min-w-0 flex-1 text-sm text-[var(--lern-text-primary)]">
+                  {t("b1Hinweis.text")}
+                </p>
+                <button
+                  type="button"
+                  className="shrink-0 rounded-xl bg-[var(--lern-accent)] px-3 py-1.5 text-xs font-semibold text-white"
+                  onClick={() => {
+                    setSprachLevel("c1");
+                    setGeerbtesB1Hinweis(false);
+                  }}
+                >
+                  {t("b1Hinweis.zuC1")}
+                </button>
+                <button
+                  type="button"
+                  aria-label={t("b1Hinweis.behalten")}
+                  className="shrink-0 px-1 text-sm text-[var(--lern-text-secondary)]"
+                  onClick={() => setGeerbtesB1Hinweis(false)}
+                >
+                  ✕
+                </button>
+              </div>
+            )}
           {/* Rückkehr-Chip nach Spickzettel-Ausflug: ein Tap zurück zur
               Quell-Situation, die am gespeicherten Schritt weitermacht. */}
           {vonSituationId && vonSituationId !== situationId && vonPatientName && (
@@ -779,7 +851,7 @@ export default function SituationLernenPage() {
             <AbschlussScreen
               situation={situation}
               daten={sammleAbschlussDaten(situation, antworten)}
-              achsen={achsen}
+              profilAggregat={profilAggregat}
               streakTage={streakTage}
               antwortDatenVollstaendig={sessionVonAnfang}
               sprachLevel={sprachLevel}

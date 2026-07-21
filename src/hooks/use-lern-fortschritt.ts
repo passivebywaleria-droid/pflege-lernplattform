@@ -80,6 +80,31 @@ export interface LernAchsen {
   letzteBerechnung: string;  // ISO-String
 }
 
+/**
+ * Ein Achsen-Mess-Sample pro abgeschlossener Situation. Grundlage für das
+ * „schärfer werdende Profil": je mehr Situationen, desto verlässlicher das
+ * aggregierte Bild. `hatSprachSignal` = wurde B1 in dieser Situation BEWUSST
+ * genutzt? Nur dann fließt ein Sprach-Wert ein — sonst behaupten wir kein
+ * Sprachniveau (Ehrlichkeit: Testen/Nicht-Brauchen ≠ „braucht einfache Sprache").
+ */
+export interface SituationsAchsenSample {
+  situationId: string;
+  fachwissen: number;
+  sprache: number;
+  scoredSteps: number;
+  hatSprachSignal: boolean;
+  aktualisiert: string;
+}
+
+/** Aggregiertes Situations-Profil (gewichtetes Mittel + Reife). */
+export interface SituationsProfilAggregat {
+  fachwissen: number;
+  /** null = noch kein echtes Sprach-Signal → kein Sprachniveau behaupten. */
+  sprache: number | null;
+  situationenAbsolviert: number;
+  scoredStepsGesamt: number;
+}
+
 export interface LernProfil {
   fortschritte: Record<string, LeFortschritt>;  // Key: leId
   tagesAktivitaeten: TagesAktivitaet[];
@@ -96,6 +121,7 @@ export interface LernProfil {
   einstufungsErgebnis?: EinstufungsErgebnis; // Vollständiges Einstufungsergebnis (aus einstufung/page.tsx)
   modus?: "theorie" | "praxis";             // Praktikums-Modus (default: theorie)
   strategiePraeferenzen?: StrategiePraeferenzen; // KI-Didaktik: Welche Strategien funktionieren?
+  situationsAchsen?: SituationsAchsenSample[]; // Ein Sample je Situation → schärfer werdendes Profil
 }
 
 export interface SchwachstellenKarte {
@@ -879,5 +905,67 @@ export function markiereLerntagLokal(): number {
     return streakTage;
   } catch {
     return 0;
+  }
+}
+
+/** Gewichtetes Mittel (Gewicht = Anzahl bewerteter Steps) über alle Samples. */
+export function aggregiereSituationsProfil(
+  liste: SituationsAchsenSample[]
+): SituationsProfilAggregat {
+  if (liste.length === 0) {
+    return { fachwissen: 3, sprache: null, situationenAbsolviert: 0, scoredStepsGesamt: 0 };
+  }
+  let fwSum = 0;
+  let wSum = 0;
+  for (const s of liste) {
+    const w = Math.max(1, s.scoredSteps);
+    fwSum += s.fachwissen * w;
+    wSum += w;
+  }
+  // Sprache NUR aus Samples mit echtem Signal — sonst kein Niveau behaupten.
+  const sprachSamples = liste.filter((s) => s.hatSprachSignal);
+  let sprache: number | null = null;
+  if (sprachSamples.length > 0) {
+    let spSum = 0;
+    let spW = 0;
+    for (const s of sprachSamples) {
+      const w = Math.max(1, s.scoredSteps);
+      spSum += s.sprache * w;
+      spW += w;
+    }
+    sprache = Math.round((spSum / spW) * 10) / 10;
+  }
+  return {
+    fachwissen: Math.round((fwSum / wSum) * 10) / 10,
+    sprache,
+    situationenAbsolviert: liste.length,
+    scoredStepsGesamt: wSum,
+  };
+}
+
+/**
+ * Speichert das Achsen-Sample einer abgeschlossenen Situation im geteilten
+ * Profil-Store (dedupliziert je situationId) und gibt das aktualisierte
+ * Aggregat zurück. Gleiche Store-/Safety-Regeln wie markiereLerntagLokal.
+ */
+export function speichereSituationsProfil(
+  sample: SituationsAchsenSample
+): SituationsProfilAggregat {
+  const nurDieses = aggregiereSituationsProfil([sample]);
+  if (typeof window === "undefined") return nurDieses;
+  try {
+    const raw = window.localStorage.getItem(STORAGE_KEY);
+    const profil: LernProfil = raw
+      ? (JSON.parse(raw) as LernProfil)
+      : createEmptyProfil();
+    const liste = (profil.situationsAchsen ?? []).filter(
+      (s) => s.situationId !== sample.situationId
+    );
+    liste.push(sample);
+    profil.situationsAchsen = liste;
+    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(profil));
+    return aggregiereSituationsProfil(liste);
+  } catch {
+    return nurDieses;
   }
 }

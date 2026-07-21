@@ -12,16 +12,17 @@ import { Check } from "lucide-react";
 import { useTranslations } from "next-intl";
 import type { Lernsituation } from "../../../content/_types";
 import type { AbschlussDaten, AbschlussBaustein } from "@/lib/learn/abschluss-daten";
-import { achsenBeschreibung, type LernAchsen } from "@/lib/adaptive/lern-profil";
+import { achsenBeschreibung } from "@/lib/adaptive/lern-profil";
+import type { SituationsProfilAggregat } from "@/hooks/use-lern-fortschritt";
 
 interface AbschlussScreenProps {
   situation: Lernsituation;
   daten: AbschlussDaten;
   /**
-   * Verdiente Zwei-Achsen-Auswertung dieser Session (Sprache + Fachwissen).
+   * Aggregiertes „schärfer werdendes" Zwei-Achsen-Profil über alle Situationen.
    * null = keine/unvollständige Daten → Block wird nicht gezeigt.
    */
-  achsen?: LernAchsen | null;
+  profilAggregat?: SituationsProfilAggregat | null;
   /** Tages-Streak (geteilter Store). 0 = ausblenden. */
   streakTage?: number;
   /** false = Session lief nicht von Step 1 (Resume) → keine Schwächen-Aussage. */
@@ -114,15 +115,17 @@ function AbrufKarte({
   );
 }
 
-/** Ein Achsen-Balken (5 Stufen) + Kurzbeschreibung darunter. */
+/** Ein Achsen-Balken (5 Stufen). `faint` = Profil noch im Aufbau (gedämpft). */
 function AchsenBalken({
   label,
   wert,
   beschreibung,
+  faint,
 }: {
   label: string;
   wert: number;
-  beschreibung: string;
+  beschreibung?: string | null;
+  faint?: boolean;
 }) {
   const stufen = Math.max(1, Math.min(5, Math.round(wert)));
   return (
@@ -136,15 +139,19 @@ function AchsenBalken({
             key={i}
             className={`h-1.5 flex-1 rounded-full ${
               i <= stufen
-                ? "bg-[var(--lern-accent)]"
+                ? faint
+                  ? "bg-[var(--lern-accent)]/40"
+                  : "bg-[var(--lern-accent)]"
                 : "bg-[var(--lern-border)]"
             }`}
           />
         ))}
       </div>
-      <span className="mt-1 block text-xs text-[var(--lern-text-secondary)]">
-        {beschreibung}
-      </span>
+      {beschreibung && (
+        <span className="mt-1 block text-xs text-[var(--lern-text-secondary)]">
+          {beschreibung}
+        </span>
+      )}
     </div>
   );
 }
@@ -152,7 +159,7 @@ function AchsenBalken({
 export function AbschlussScreen({
   situation,
   daten,
-  achsen,
+  profilAggregat,
   streakTage,
   antwortDatenVollstaendig,
   sprachLevel,
@@ -166,34 +173,42 @@ export function AbschlussScreen({
   const tSit = useTranslations("situation");
   const b1 = sprachLevel === "b1";
 
-  // „Dein Stand": nur mit vollständigen Session-Daten (nie raten, nie schmeicheln).
-  const zeigeAchsen = !!achsen && antwortDatenVollstaendig && daten.beantwortet > 0;
-  const achsenTexte = achsen ? achsenBeschreibung(achsen) : null;
+  // Schärfer werdendes Profil: erst ab genug Situationen ein hartes Niveau,
+  // vorher nur ein sich formendes Bild (Ehrlichkeit + Progress-Psychologie).
+  const ZIEL_SITUATIONEN = 4;
+  const agg =
+    profilAggregat &&
+    antwortDatenVollstaendig &&
+    daten.beantwortet > 0 &&
+    profilAggregat.situationenAbsolviert > 0
+      ? profilAggregat
+      : null;
+  const reife = agg ? Math.min(agg.situationenAbsolviert, ZIEL_SITUATIONEN) : 0;
+  const scharf = agg ? agg.situationenAbsolviert >= ZIEL_SITUATIONEN : false;
+  // Harte Niveau-Labels ERST wenn scharf — sonst kein Verdikt behaupten.
+  const fwText =
+    scharf && agg
+      ? achsenBeschreibung({ sprache: 3, fachwissen: agg.fachwissen, letzteBerechnung: "" }).fachwissen
+      : null;
+  const spText =
+    scharf && agg && agg.sprache !== null
+      ? achsenBeschreibung({ sprache: agg.sprache, fachwissen: 3, letzteBerechnung: "" }).sprache
+      : null;
 
   const abschlussText =
     (b1 && situation.abschlussTextB1) ||
     situation.abschlussText ||
     ((b1 && situation.titelB1) || situation.titel);
 
-  const wacklige = daten.bausteine.filter((b) => b.wacklig);
-  const wackligeNamen = wacklige.map(
-    (b) => (b1 && b.titelB1) || b.titel
-  );
-  // Schwächen-Zeile (Ton C1 Coach) — nur mit vollständigen Session-Daten,
-  // sonst kein Block (nie raten, nie „alles super" lügen).
+  // Ehrliche Zeile — nur mit vollständigen Session-Daten. Keine Fehler-LISTE
+  // mehr (die stünde doppelt zu den 🟠-Karten oben); stattdessen ein kurzer,
+  // ermutigender Zeiger — Ende auf Ermutigung (Sandwich-Prinzip).
   const zeigeEhrlich = antwortDatenVollstaendig && daten.beantwortet > 0;
-  let ehrlichText: string | null = null;
-  if (zeigeEhrlich) {
-    if (daten.falsch === 0) {
-      ehrlichText = t("alleRichtig");
-    } else if (wackligeNamen.length > 0) {
-      ehrlichText = t("schwaechen", {
-        liste: wackligeNamen.join(" · "),
-      });
-    } else {
-      ehrlichText = t("schwaechenOhneNamen");
-    }
-  }
+  const ehrlichText: string | null = !zeigeEhrlich
+    ? null
+    : daten.falsch === 0
+      ? t("alleRichtig")
+      : t("schwaechenKurz");
 
   const teaser = naechsteSituation
     ? (b1 && naechsteSituation.teaserB1) ||
@@ -230,24 +245,59 @@ export function AbschlussScreen({
         )}
       </div>
 
-      {/* Dein Stand: die verdiente Zwei-Achsen-Auswertung — der „es kennt mich"-
-          Moment. Fachwissen zuerst (Kern der Situation), dann Fachsprache. */}
-      {zeigeAchsen && achsen && achsenTexte && (
+      {/* Dein Stand — das „schärfer werdende" Profil. Formt sich über mehrere
+          Situationen, statt aus EINER Session ein hartes Verdikt zu behaupten
+          (Ehrlichkeit + Progress-Psychologie + Wiederkommens-Sog). */}
+      {agg && (
         <div className="mb-6">
           <p className="mb-2 text-[11px] font-bold uppercase tracking-widest text-[var(--lern-text-secondary)]">
-            {t("deinStand")}
+            {scharf ? t("deinStand") : t("profilBautSichAuf")}
           </p>
           <div className="space-y-3 rounded-2xl border-[1.5px] border-[var(--lern-border)] bg-[var(--lern-bg-primary)] p-3">
             <AchsenBalken
               label={t("achseFachwissen")}
-              wert={achsen.fachwissen}
-              beschreibung={achsenTexte.fachwissen}
+              wert={agg.fachwissen}
+              beschreibung={fwText}
+              faint={!scharf}
             />
-            <AchsenBalken
-              label={t("achseSprache")}
-              wert={achsen.sprache}
-              beschreibung={achsenTexte.sprache}
-            />
+            {agg.sprache !== null ? (
+              <AchsenBalken
+                label={t("achseSprache")}
+                wert={agg.sprache}
+                beschreibung={spText}
+                faint={!scharf}
+              />
+            ) : (
+              <div>
+                <span className="text-sm font-semibold text-[var(--lern-text-primary)]">
+                  {t("achseSprache")}
+                </span>
+                <span className="mt-1 block text-xs text-[var(--lern-text-secondary)]">
+                  {t("spracheKeinHindernis")}
+                </span>
+              </div>
+            )}
+            {/* Reife-Meter — der Zeigarnik-Sog: das Profil vervollständigen wollen */}
+            <div className="border-t border-[var(--lern-border)] pt-3">
+              <span className="text-xs font-medium text-[var(--lern-text-secondary)]">
+                {t("genauigkeit")}
+              </span>
+              <div className="mt-1 flex gap-1" aria-hidden="true">
+                {Array.from({ length: ZIEL_SITUATIONEN }).map((_, i) => (
+                  <span
+                    key={i}
+                    className={`h-1.5 flex-1 rounded-full ${
+                      i < reife ? "bg-[#D4956A]" : "bg-[var(--lern-border)]"
+                    }`}
+                  />
+                ))}
+              </div>
+              {!scharf && (
+                <span className="mt-1 block text-xs text-[var(--lern-text-secondary)]">
+                  {t("nochSituationen", { anzahl: ZIEL_SITUATIONEN - reife })}
+                </span>
+              )}
+            </div>
           </div>
         </div>
       )}

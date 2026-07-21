@@ -137,12 +137,45 @@ describe("AbschlussScreen", () => {
     ).toBeTruthy();
   });
 
-  it("Schwächen-Zeile (C1): benennt wacklige Bausteine, wackliger Baustein steht markiert oben", () => {
+  it("Schwächen-Zeile (C1): kurzer ermutigender Zeiger statt Fehler-Liste, wackliger Baustein markiert oben", () => {
     renderScreen();
-    expect(
-      screen.getByText(/Daneben lagst du bei: Herz-Kreislauf-Stillstand erkennen\./)
-    ).toBeTruthy();
+    // Keine Namens-LISTE mehr (die stünde doppelt zu den 🟠-Karten) — ein kurzer,
+    // ermutigender Zeiger, Ende auf Ermutigung (Sandwich).
+    expect(screen.getByText(/Nächstes Mal sitzen sie/)).toBeTruthy();
+    expect(screen.queryByText(/Daneben lagst du/)).toBeNull();
+    // Wackliger Baustein bleibt oben markiert.
     expect(screen.getByText("Nochmal ansehen")).toBeTruthy();
+  });
+
+  it("Profil formt sich: unter Ziel zeigt es sich formend, kein hartes Niveau", () => {
+    renderScreen({
+      profilAggregat: {
+        fachwissen: 2,
+        sprache: null,
+        situationenAbsolviert: 1,
+        scoredStepsGesamt: 10,
+      },
+    });
+    expect(screen.getByText("Dein Profil baut sich auf")).toBeTruthy();
+    expect(screen.getByText(/bis dein Profil scharf ist/)).toBeTruthy();
+    // Ohne Sprach-Signal: positive, ehrliche Zeile statt „braucht einfache Sprache".
+    expect(screen.getByText(/kein Hindernis/)).toBeTruthy();
+    // Kein hartes Fachwissen-Verdikt, solange unscharf.
+    expect(screen.queryByText(/Theorie lückenhaft/)).toBeNull();
+  });
+
+  it("Profil scharf: ab Ziel-Situationen hartes Niveau und Dein Stand", () => {
+    renderScreen({
+      profilAggregat: {
+        fachwissen: 2,
+        sprache: null,
+        situationenAbsolviert: 4,
+        scoredStepsGesamt: 40,
+      },
+    });
+    expect(screen.getByText("Dein Stand")).toBeTruthy();
+    expect(screen.getByText(/Theorie lückenhaft/)).toBeTruthy();
+    expect(screen.queryByText(/bis dein Profil scharf ist/)).toBeNull();
   });
 
   it("0 Fehler → ehrliches Lob statt Schwächen", () => {

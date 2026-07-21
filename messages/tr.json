@@ -492,6 +492,11 @@
       "achseSprache": "Meslek dili",
       "streakTag1": "🔥 İlk öğrenme günün",
       "streakTage": "🔥 Üst üste {tage}. gün",
+      "profilBautSichAuf": "Profilin oluşuyor",
+      "genauigkeit": "Doğruluk",
+      "nochSituationen": "Profilin netleşene kadar {anzahl} durum daha",
+      "spracheKeinHindernis": "Almanca senin için bir engel değil",
+      "schwaechenKurz": "Birkaç kural henüz oturmadı — yukarıda 🟠 ile işaretli olanlar. Bir dahaki sefere oturacak.",
       "mitnehmen": "Bunları yanına al",
       "aufdecken": "Görmek için dokun",
       "nochmalAnsehen": "Tekrar bak",
@@ -526,6 +531,11 @@
       "frage": "Daha basit anlatayım mı?",
       "an": "Basit dili aç",
       "spaeter": "Hayır, teşekkürler"
+    },
+    "b1Hinweis": {
+      "text": "Şu anda basit dilde (B1) okuyorsun.",
+      "zuC1": "C1'e geç",
+      "behalten": "B1'de kal"
     }
   },
   "themaNav": {
