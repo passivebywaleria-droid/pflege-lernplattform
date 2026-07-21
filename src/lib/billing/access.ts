@@ -50,10 +50,15 @@ export async function getAccessState(userId: string): Promise<AccessState> {
   const isAdult =
     user?.birthYear != null && currentYear - user.birthYear >= ADULT_AGE
 
-  // Pilot-Modus = kostenloser Early-Access: keine Paywall. EIN Flag steuert den
-  // ganzen Pilot — derselbe Schalter befreit auch vom Einstufungs-Guard
-  // (einstufungs-guard.tsx + lernen/page.tsx hören auf NEXT_PUBLIC_PILOT_MODE).
-  let hasAccess = process.env.NEXT_PUBLIC_PILOT_MODE === "true"
+  // Offener Pilot-Zugang = kostenloser Early-Access: keine Paywall. Symmetrisch
+  // zum Einstufungs-Guard (lernen/page.tsx) akzeptieren wir BEIDE Signale —
+  // NEXT_PUBLIC_PILOT_MODE ("true") und den Vorschau-Schalter PREVIEW_OPEN ("1").
+  // Hinweis: NEXT_PUBLIC_* wird von Next zur BUILD-Zeit inlined (auch hier im
+  // Server-Code) — der Wert muss also beim Build gesetzt sein, nicht erst zur
+  // Laufzeit.
+  let hasAccess =
+    process.env.NEXT_PUBLIC_PILOT_MODE === "true" ||
+    process.env.NEXT_PUBLIC_PREVIEW_OPEN === "1"
   if (!hasAccess && user) {
     if (user.subscriptionStatus === "active") {
       hasAccess = true
